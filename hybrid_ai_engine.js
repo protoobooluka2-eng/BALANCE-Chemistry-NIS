@@ -396,12 +396,22 @@ class HybridNarrationOrchestrator {
   updateUI() {
     const playBtn = el('narrateButton');
     if (playBtn) {
-      if (this.narratorEnabled) {
-        playBtn.textContent = 'Stop explanation';
+      const isPlaying = !!this.narratorEnabled;
+      const playSvg = `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>`;
+      const stopSvg = `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>`;
+      playBtn.innerHTML = `
+        <span class="narrate-icon">${isPlaying ? stopSvg : playSvg}</span>
+        <span class="narrate-label-full">${isPlaying ? 'Stop Explanation' : 'Play Explanation'}</span>
+        <span class="narrate-label-short">${isPlaying ? 'Stop' : 'Play'}</span>
+      `;
+      if (isPlaying) {
+        playBtn.classList.add('playing');
         playBtn.setAttribute('aria-pressed', 'true');
+        playBtn.title = 'Stop Explanation';
       } else {
-        playBtn.textContent = 'Play explanation';
+        playBtn.classList.remove('playing');
         playBtn.setAttribute('aria-pressed', 'false');
+        playBtn.title = 'Play Explanation';
       }
     }
 
@@ -1156,13 +1166,61 @@ function attachLabBridge(labIdx, frame) {
   } catch (err) {}
 }
 
+function updateAskTeacherVoiceBtnState(mode) {
+  const btn = document.getElementById('askTeacherVoiceBtn');
+  if (!btn) return;
+
+  const micSvg = `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>`;
+  const stopSvg = `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>`;
+  const spinSvg = `<svg class="spin-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`;
+
+  btn.classList.remove('recording', 'processing');
+
+  if (mode === 'recording') {
+    btn.classList.add('recording');
+    btn.title = 'Stop Recording';
+    btn.innerHTML = `
+      <span class="mic-icon">${stopSvg}</span>
+      <span class="mic-label-full">Stop Recording</span>
+      <span class="mic-label-short">Stop</span>
+    `;
+  } else if (mode === 'processing') {
+    btn.classList.add('processing');
+    btn.title = 'Processing…';
+    btn.innerHTML = `
+      <span class="mic-icon">${spinSvg}</span>
+      <span class="mic-label-full">Processing…</span>
+      <span class="mic-label-short">Processing…</span>
+    `;
+  } else {
+    btn.title = 'Ask AI Teacher';
+    btn.innerHTML = `
+      <span class="mic-icon">${micSvg}</span>
+      <span class="mic-label-full">Ask AI Teacher</span>
+      <span class="mic-label-short">Ask AI</span>
+    `;
+  }
+}
+window.updateAskTeacherVoiceBtnState = updateAskTeacherVoiceBtnState;
+
 // -------------------------------------------------------------
 // Component 6: Live Student Voice & Text Inquiry Interface
 // -------------------------------------------------------------
 function setupVoiceInquiryUI() {
   const askVoiceBtn = el('askTeacherVoiceBtn');
   if (askVoiceBtn) {
-    askVoiceBtn.onclick = toggleAskTeacherDrawer;
+    askVoiceBtn.onclick = () => {
+      if (window.liveAudioClient && window.liveAudioClient.isRecording) {
+        window.liveAudioClient.finishSpeechTurn();
+      } else {
+        const drawer = el('askTeacherDrawer');
+        if (drawer && drawer.classList.contains('hidden')) {
+          drawer.classList.remove('hidden');
+        }
+        toggleStudentMicrophone();
+      }
+    };
+    updateAskTeacherVoiceBtnState('idle');
   }
   if (el('askTeacherDrawer')) return;
 
@@ -1441,12 +1499,14 @@ function setVoiceUIState(state, text = '', detail = '') {
   if (state === VoiceUIState.IDLE) {
     card.classList.add('hidden');
     if (doneBtn) doneBtn.classList.add('hidden');
+    updateAskTeacherVoiceBtnState('idle');
     return;
   }
 
   card.classList.remove('hidden');
 
   if (state === VoiceUIState.LISTENING) {
+    updateAskTeacherVoiceBtnState('recording');
     card.style.background = '#ecfdf5';
     card.style.borderColor = '#6ee7b7';
     iconWrap.style.background = '#10b981';
@@ -1459,6 +1519,7 @@ function setVoiceUIState(state, text = '', detail = '') {
     if (doneBtn) doneBtn.classList.remove('hidden');
     bars.forEach(b => { b.style.background = '#10b981'; });
   } else if (state === VoiceUIState.SPEECH_DETECTED) {
+    updateAskTeacherVoiceBtnState('recording');
     card.style.background = '#f0fdf4';
     card.style.borderColor = '#34d399';
     iconWrap.style.background = '#059669';
@@ -1471,6 +1532,7 @@ function setVoiceUIState(state, text = '', detail = '') {
     if (doneBtn) doneBtn.classList.remove('hidden');
     bars.forEach(b => { b.style.background = '#059669'; });
   } else if (state === VoiceUIState.THINKING) {
+    updateAskTeacherVoiceBtnState('processing');
     card.style.background = '#eff6ff';
     card.style.borderColor = '#93c5fd';
     iconWrap.style.background = '#2563eb';
@@ -1495,6 +1557,7 @@ function setVoiceUIState(state, text = '', detail = '') {
     if (doneBtn) doneBtn.classList.add('hidden');
     bars.forEach(b => { b.style.background = '#7c3aed'; });
   } else if (state === VoiceUIState.PROBLEM) {
+    updateAskTeacherVoiceBtnState('idle');
     card.style.background = '#fef2f2';
     card.style.borderColor = '#fca5a5';
     iconWrap.style.background = '#dc2626';
@@ -2096,6 +2159,7 @@ class LiveAudioClient {
   }
 
   setMicUIActive(isActive) {
+    updateAskTeacherVoiceBtnState('recording');
     const btn = el('micToggleBtn');
     const dot = el('micDot');
     const text = el('micText');
@@ -2110,6 +2174,7 @@ class LiveAudioClient {
   }
 
   setMicUIProcessing() {
+    updateAskTeacherVoiceBtnState('processing');
     const dot = el('micDot');
     const text = el('micText');
     const doneBtn = el('micDoneBtn');
@@ -2122,6 +2187,7 @@ class LiveAudioClient {
   }
 
   resetMicUI() {
+    updateAskTeacherVoiceBtnState('idle');
     const btn = el('micToggleBtn');
     const dot = el('micDot');
     const text = el('micText');

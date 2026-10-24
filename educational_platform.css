@@ -991,62 +991,196 @@
   pointer-events: auto;
 }
 
-.voice-square-btn {
-  width: 44px !important;
-  height: 44px !important;
-  min-height: 44px !important;
-  max-width: 44px !important;
-  border-radius: 12px !important;
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  color: #0f172a;
-  font-size: 17px;
+/* Redesigned Voice Explanation Control */
+#narrateButton, .voice-narrate-btn, .voice-square-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  min-width: 140px !important;
+  max-width: 100% !important;
+  min-height: 42px !important;
+  height: 42px !important;
+  padding: 0 18px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f274a !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+  font-weight: 750 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.01em !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 8px rgba(0, 24, 64, 0.06) !important;
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  user-select: none !important;
+}
+
+#narrateButton:hover, .voice-narrate-btn:hover, .voice-square-btn:hover {
+  background: #f8fafc !important;
+  border-color: #94a3b8 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(0, 24, 64, 0.1) !important;
+}
+
+#narrateButton:focus-visible, .voice-narrate-btn:focus-visible, .voice-square-btn:focus-visible {
+  outline: 3px solid rgba(15, 39, 74, 0.35) !important;
+  outline-offset: 2px !important;
+}
+
+#narrateButton.playing, .voice-narrate-btn.playing, .voice-square-btn.playing {
+  background: #ef4444 !important;
+  border-color: #dc2626 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.35) !important;
+  animation: pulseRed 2s infinite !important;
+}
+
+#narrateButton svg, .voice-narrate-btn svg, .voice-square-btn svg {
+  width: 15px !important;
+  height: 15px !important;
+  flex-shrink: 0 !important;
+  transition: transform 140ms ease !important;
+}
+
+/* Redesigned AI Teacher Microphone Pill */
+#askTeacherVoiceBtn, .voice-mic-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  min-width: 140px !important;
+  max-width: 100% !important;
+  min-height: 42px !important;
+  height: 42px !important;
+  padding: 0 18px !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+  font-weight: 750 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.01em !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 8px rgba(0, 24, 64, 0.06) !important;
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  user-select: none !important;
+}
+
+#askTeacherVoiceBtn:hover, .voice-mic-pill:hover {
+  background: #f8fafc !important;
+  border-color: #94a3b8 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(0, 24, 64, 0.1) !important;
+}
+
+#askTeacherVoiceBtn:focus-visible, .voice-mic-pill:focus-visible {
+  outline: 3px solid rgba(15, 39, 74, 0.35) !important;
+  outline-offset: 2px !important;
+}
+
+#askTeacherVoiceBtn.recording, .voice-mic-pill.recording {
+  background: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #dc2626 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25) !important;
+  animation: pulseRed 1.8s infinite !important;
+}
+
+#askTeacherVoiceBtn.processing, .voice-mic-pill.processing {
+  background: #eff6ff !important;
+  border-color: #3b82f6 !important;
+  color: #1d4ed8 !important;
+  cursor: wait !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25) !important;
+}
+
+#askTeacherVoiceBtn svg, .voice-mic-pill svg {
+  width: 15px !important;
+  height: 15px !important;
+  flex-shrink: 0 !important;
+}
+
+.voice-actions-row {
   display: flex !important;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 160ms ease;
-  padding: 0 !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  margin: 14px 0 10px !important;
 }
 
-.voice-square-btn:hover {
-  background: #f1f5f9;
-  transform: scale(1.05);
+.voice-actions-row #narrateButton,
+.voice-actions-row .voice-narrate-btn,
+.voice-actions-row .voice-square-btn,
+.voice-actions-row #askTeacherVoiceBtn,
+.voice-actions-row .voice-mic-pill {
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
-.voice-square-btn.playing {
-  background: #ef4444;
-  border-color: #dc2626;
-  color: #ffffff;
-  animation: pulseRed 1.8s infinite;
+.narrate-label-full, .mic-label-full {
+  display: inline !important;
 }
 
-.voice-mic-pill {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  color: #1e293b;
-  font-size: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transition: all 160ms ease;
-  white-space: nowrap;
+.narrate-label-short, .mic-label-short {
+  display: none !important;
 }
 
-.voice-mic-pill:hover {
-  background: #f8fafc;
-  border-color: #94a3b8;
-  transform: translateY(-1px);
+@media (max-width: 600px) {
+  .narrate-label-full, .mic-label-full {
+    display: none !important;
+  }
+  .narrate-label-short, .mic-label-short {
+    display: inline !important;
+  }
 }
 
-.voice-mic-pill .mic-icon {
-  font-size: 14px;
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Permanent Finish Experiment Toolbar & Fullscreen Buttons */
+.finish-exp-btn {
+  background: var(--edu-btn-primary-bg, #0f274a) !important;
+  color: #ffffff !important;
+  border-color: var(--edu-btn-primary-bg, #0f274a) !important;
+  box-shadow: 0 3px 10px rgba(15, 39, 74, 0.2) !important;
+  font-weight: 800 !important;
+}
+
+.finish-exp-btn:hover {
+  background: var(--edu-btn-primary-hover, #081a33) !important;
+  border-color: var(--edu-btn-primary-hover, #081a33) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 5px 16px rgba(15, 39, 74, 0.3) !important;
+}
+
+.finish-exp-btn svg {
+  stroke-width: 2.5 !important;
+}
+
+.exit-fullscreen-btn.finish-full-btn {
+  right: 160px !important;
+  background: var(--edu-btn-primary-bg, rgba(15, 39, 74, 0.95)) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.exit-fullscreen-btn.finish-full-btn:hover {
+  background: var(--edu-btn-primary-hover, #081a33) !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
 }
 
 /* Keyframes */

@@ -91,6 +91,7 @@ window.EducationalPlatformCore = (function() {
   };
 
   let currentLabId = "lab01";
+  let isVerifiedCompletion = false;
   let activeAttempt = {
     attemptId: null,
     attemptNumber: 1
@@ -251,6 +252,15 @@ window.EducationalPlatformCore = (function() {
     window.addEventListener('balance-lab-action', (e) => {
       if (e.detail) handleLabEvent(e.detail);
     });
+
+    // Global click listener for permanent Finish Experiment buttons
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('#finishExperimentBtn, #finishExpFullscreenBtn, .finish-exp-btn');
+      if (btn) {
+        e.preventDefault();
+        manualFinishExperiment();
+      }
+    });
   }
 
   function handleLabEvent(evt) {
@@ -278,13 +288,14 @@ window.EducationalPlatformCore = (function() {
       }
       processedCompletionEvents.add(eventKey);
 
+      isVerifiedCompletion = true;
       FlowLogger.log('LAB', `Scientific interaction completed for ${activeLab}`);
       FlowLogger.log('BRIDGE', `EXPERIMENT_COMPLETED received for ${activeLab}`);
 
       if (currentStage === LearningStage.EXPERIMENT) {
-        FlowLogger.log('FLOW', 'EXPERIMENT -> READY_FOR_ASSESSMENT');
+        FlowLogger.log('FLOW', 'EXPERIMENT -> READY_FOR_ASSESSMENT (Verified Completion)');
         setTimeout(() => {
-          transitionTo(LearningStage.READY_FOR_ASSESSMENT);
+          showCompletionPanel(true);
         }, 500);
       } else {
         FlowLogger.log('FLOW', `Ignoring completion because current stage is ${currentStage}`);
@@ -322,12 +333,12 @@ window.EducationalPlatformCore = (function() {
     overlay.className = 'edu-modal-overlay hidden';
     overlay.innerHTML = `
       <div class="edu-modal-card">
-        <div class="completion-icon">
+        <div class="completion-icon" id="completionIcon">
           ${SvgIcons.microscope}
         </div>
-        <span class="edu-tag">INVESTIGATION MILESTONE REACHED</span>
-        <h2 class="edu-modal-title">Experiment Complete</h2>
-        <p class="edu-modal-body">
+        <span class="edu-tag" id="completionTag">INVESTIGATION MILESTONE REACHED</span>
+        <h2 class="edu-modal-title" id="completionTitle">Experiment Complete</h2>
+        <p class="edu-modal-body" id="completionBody">
           You have completed the practical laboratory investigation. Proceed to the four-level assessment to test your scientific understanding.
         </p>
         <div class="edu-modal-actions">
@@ -344,7 +355,7 @@ window.EducationalPlatformCore = (function() {
     document.body.appendChild(overlay);
 
     overlay.querySelector('#exploreAgainBtn').onclick = () => {
-      processedCompletionEvents.clear();
+      FlowLogger.log('USER', 'Explore Again clicked — returning to active laboratory without resetting state');
       transitionTo(LearningStage.EXPERIMENT);
       try {
         const frame = document.querySelector('.lab-frame.active') || document.querySelector('#frame-' + currentLabId);
@@ -360,8 +371,45 @@ window.EducationalPlatformCore = (function() {
     };
   }
 
-  function showCompletionPanel() {
+  function showCompletionPanel(verified = true) {
+    // Prevent duplicate popups if already visible or in assessment
+    if (currentStage === LearningStage.READY_FOR_ASSESSMENT && !document.getElementById('completionOverlay')?.classList.contains('hidden')) {
+      return;
+    }
+    if (currentStage === LearningStage.ASSESSMENT_ACTIVE || currentStage === LearningStage.ASSESSMENT_SAVED || currentStage === LearningStage.CASE_ACTIVE) {
+      return;
+    }
+
+    isVerifiedCompletion = !!verified;
+    const tagEl = document.getElementById('completionTag');
+    const titleEl = document.getElementById('completionTitle');
+    const bodyEl = document.getElementById('completionBody');
+
+    if (tagEl && titleEl && bodyEl) {
+      if (verified) {
+        tagEl.className = 'edu-tag lvl-1';
+        tagEl.textContent = 'INVESTIGATION MILESTONE REACHED';
+        titleEl.textContent = 'Experiment Complete';
+        bodyEl.textContent = 'You have completed the practical laboratory investigation. Proceed to the four-level assessment to test your scientific understanding.';
+      } else {
+        tagEl.className = 'edu-tag lvl-2';
+        tagEl.textContent = 'READY FOR ASSESSMENT';
+        titleEl.textContent = 'Ready for Assessment?';
+        bodyEl.textContent = 'You can begin your assessment now or return to the experiment to explore further.';
+      }
+    }
+
     transitionTo(LearningStage.READY_FOR_ASSESSMENT);
+  }
+
+  function manualFinishExperiment() {
+    FlowLogger.log('USER', `Manual Finish Experiment clicked for ${currentLabId}`);
+    try {
+      if (typeof window.closeExpanded === 'function') {
+        window.closeExpanded();
+      }
+    } catch (_) {}
+    showCompletionPanel(isVerifiedCompletion);
   }
 
   // -------------------------------------------------------------
@@ -381,6 +429,12 @@ window.EducationalPlatformCore = (function() {
   }
 
   async function startFourLevelAssessment() {
+    logStudentAction({
+      labId: currentLabId,
+      actionId: isVerifiedCompletion ? 'assessment_started_verified' : 'assessment_started_manual',
+      actionType: 'ASSESSMENT_START',
+      verified: isVerifiedCompletion
+    });
     try {
       const res = await fetch('/api/educational/assessment/generate', {
         method: 'POST',
@@ -2324,6 +2378,7 @@ window.EducationalPlatformCore = (function() {
     transitionTo: transitionTo,
     resetToExperiment: function(labId) {
       processedCompletionEvents.clear();
+      isVerifiedCompletion = false;
       if (labId !== undefined && labId !== null) {
         if (typeof labId === 'number') {
           currentLabId = labId < 10 ? `lab0${labId}` : `lab${labId}`;
@@ -2356,6 +2411,8 @@ window.EducationalPlatformCore = (function() {
     renderDeveloperInbox: renderDeveloperInbox,
     openTeacherReportFormModal: openTeacherReportFormModal,
     showCompletionPanel: showCompletionPanel,
+    manualFinishExperiment: manualFinishExperiment,
+    isVerified: function() { return isVerifiedCompletion; },
     startFourLevelAssessment: startFourLevelAssessment,
     launchChallengeCase: function() { transitionTo(LearningStage.CASE_ACTIVE); },
     setCurrentUser: function(name, role, school) {
@@ -2363,9 +2420,47 @@ window.EducationalPlatformCore = (function() {
     },
     getCurrentUser: function() { return currentUser; },
     getCurrentChallengeInstance: function() { return currentChallengeInstance; },
+    updateAskTeacherVoiceBtnState: updateAskTeacherVoiceBtnState,
     SvgIcons: SvgIcons
   };
 })();
+
+function updateAskTeacherVoiceBtnState(mode) {
+  const btn = document.getElementById('askTeacherVoiceBtn');
+  if (!btn) return;
+
+  const micSvg = `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>`;
+  const stopSvg = `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>`;
+  const spinSvg = `<svg class="spin-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`;
+
+  btn.classList.remove('recording', 'processing');
+
+  if (mode === 'recording') {
+    btn.classList.add('recording');
+    btn.title = 'Stop Recording';
+    btn.innerHTML = `
+      <span class="mic-icon">${stopSvg}</span>
+      <span class="mic-label-full">Stop Recording</span>
+      <span class="mic-label-short">Stop</span>
+    `;
+  } else if (mode === 'processing') {
+    btn.classList.add('processing');
+    btn.title = 'Processing…';
+    btn.innerHTML = `
+      <span class="mic-icon">${spinSvg}</span>
+      <span class="mic-label-full">Processing…</span>
+      <span class="mic-label-short">Processing…</span>
+    `;
+  } else {
+    btn.title = 'Ask AI Teacher';
+    btn.innerHTML = `
+      <span class="mic-icon">${micSvg}</span>
+      <span class="mic-label-full">Ask AI Teacher</span>
+      <span class="mic-label-short">Ask AI</span>
+    `;
+  }
+}
+window.updateAskTeacherVoiceBtnState = updateAskTeacherVoiceBtnState;
 
 // Auto-boot on DOMContentLoaded
 if (document.readyState === 'loading') {
