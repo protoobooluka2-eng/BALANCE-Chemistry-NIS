@@ -165,7 +165,7 @@ window.EducationalPlatformCore = (function() {
     const labKey = labNum < 10 ? `lab0${labNum}` : `lab${labNum}`;
     if (questionBankCache[labKey]) return questionBankCache[labKey];
     try {
-      const res = await fetch(`/question_bank_${labKey}.json`);
+      const res = await fetch(`question_bank_${labKey}.json`);
       if (res.ok) {
         questionBankCache[labKey] = await res.json();
         return questionBankCache[labKey];
