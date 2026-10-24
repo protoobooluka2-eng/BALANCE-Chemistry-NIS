@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab08_l1_01",
+      "prompt": "What color is nitrogen dioxide gas, NO2?",
+      "options": [
+        "A distinctive dark reddish-brown color.",
+        "A completely colorless clear gas.",
+        "A bright canary-yellow color.",
+        "A vivid emerald-green color."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 (nitrogen dioxide) is a toxic, dark reddish-brown gas."
+    },
+    {
+      "id": "lab08_l1_02",
+      "prompt": "What color is dinitrogen tetroxide gas, N2O4?",
+      "options": [
+        "A completely colorless clear gas.",
+        "A distinctive dark reddish-brown color.",
+        "A milky chalk-white aerosol.",
+        "A bright purple gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2O4 (dinitrogen tetroxide) is colorless."
+    },
+    {
+      "id": "lab08_l1_03",
+      "prompt": "What is the balanced equation representing the NO2 / N2O4 equilibrium in Lab 08?",
+      "options": [
+        "2 NO2(g) \u21cc N2O4(g)",
+        "NO2(g) -> N2(g) + O2(g)",
+        "NO(g) + O2(g) \u21cc NO2(g)",
+        "N2O4(g) -> 2 NO(g) + O2(g)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two moles of brown NO2 dimerize reversibly into one mole of colorless N2O4: 2 NO2(g) \u21cc N2O4(g)."
+    },
+    {
+      "id": "lab08_l1_04",
+      "prompt": "Is the forward reaction: 2 NO2(g) -> N2O4(g) endothermic or exothermic?",
+      "options": [
+        "The forward dimerization is exothermic (Delta H = -57.2 kJ/mol).",
+        "The forward dimerization is endothermic (Delta H > 0).",
+        "The forward dimerization has zero enthalpy change.",
+        "The forward dimerization requires electrical spark ignition."
+      ],
+      "correctIndex": 0,
+      "explanation": "Forming the N-N covalent bond in N2O4 releases energy (exothermic, Delta H = -57.2 kJ/mol)."
+    },
+    {
+      "id": "lab08_l1_05",
+      "prompt": "What visual change is observed when a sealed syringe of NO2/N2O4 is placed in an ice-water bath?",
+      "options": [
+        "The gas becomes significantly paler or nearly colorless.",
+        "The gas turns into a dark reddish-brown color.",
+        "The syringe fills with dense black soot.",
+        "The gas turns bright turquoise blue."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cooling favors the exothermic forward reaction, forming more colorless N2O4."
+    },
+    {
+      "id": "lab08_l1_06",
+      "prompt": "What visual change is observed when the sealed syringe is placed in a hot water bath (80 \u00b0C)?",
+      "options": [
+        "The gas turns significantly darker reddish-brown.",
+        "The gas loses all color and becomes clear.",
+        "The gas turns pure chalky white.",
+        "The gas freezes into solid crystals."
+      ],
+      "correctIndex": 0,
+      "explanation": "Heating favors the endothermic reverse reaction, decomposing N2O4 into dark brown NO2."
+    },
+    {
+      "id": "lab08_l1_07",
+      "prompt": "How many moles of gas are on the reactant side (left) of 2 NO2(g) \u21cc N2O4(g)?",
+      "options": [
+        "Exactly two moles of gaseous nitrogen dioxide.",
+        "Exactly one mole of gaseous nitrogen dioxide.",
+        "Exactly four moles of gaseous nitrogen dioxide.",
+        "Zero moles of gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "The reactant side has 2 moles of NO2 molecules."
+    },
+    {
+      "id": "lab08_l1_08",
+      "prompt": "How many moles of gas are on the product side (right) of 2 NO2(g) \u21cc N2O4(g)?",
+      "options": [
+        "Exactly one mole of gaseous dinitrogen tetroxide.",
+        "Exactly two moles of gaseous dinitrogen tetroxide.",
+        "Exactly three moles of gaseous dinitrogen tetroxide.",
+        "Zero moles of gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "The product side has 1 mole of N2O4 molecule."
+    },
+    {
+      "id": "lab08_l1_09",
+      "prompt": "According to Le Chatelier's principle, which direction is favored when total pressure is increased?",
+      "options": [
+        "The side with fewer gas moles (shifts right toward N2O4).",
+        "The side with more gas moles (shifts left toward NO2).",
+        "Neither side because gases do not respond to pressure.",
+        "The reaction stops completely."
+      ],
+      "correctIndex": 0,
+      "explanation": "Increasing pressure drives equilibrium toward fewer gas moles to relieve pressure (2 moles -> 1 mole)."
+    },
+    {
+      "id": "lab08_l1_10",
+      "prompt": "What apparatus is commonly used to adjust pressure on the NO2/N2O4 gas mixture smoothly?",
+      "options": [
+        "A sealed gas syringe with a movable airtight plunger.",
+        "An open porcelain evaporating basin.",
+        "A high-precision analytical burette.",
+        "A wooden test tube rack."
+      ],
+      "correctIndex": 0,
+      "explanation": "A gas syringe allows controlled compression or expansion of gas volume."
+    },
+    {
+      "id": "lab08_l1_11",
+      "prompt": "What happens to the number of molecules when two NO2 molecules combine into one N2O4 molecule?",
+      "options": [
+        "The total number of independent gas molecules decreases by half.",
+        "The total number of independent molecules doubles.",
+        "The total number of molecules remains strictly identical.",
+        "All molecules are converted into solid metal."
+      ],
+      "correctIndex": 0,
+      "explanation": "Two NO2 molecules join to form a single dimer molecule N2O4."
+    },
+    {
+      "id": "lab08_l1_12",
+      "prompt": "What state symbol represents both NO2 and N2O4 in this laboratory investigation?",
+      "options": [
+        "The gaseous state symbol (g).",
+        "The aqueous state symbol (aq).",
+        "The solid state symbol (s).",
+        "The liquid state symbol (l)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both nitrogen dioxide and dinitrogen tetroxide exist as gases at room temperature."
+    },
+    {
+      "id": "lab08_l1_13",
+      "prompt": "What is the chemical formula of nitrogen dioxide?",
+      "options": [
+        "NO2",
+        "N2O",
+        "N2O4",
+        "NO3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nitrogen dioxide is composed of one nitrogen atom and two oxygen atoms: NO2."
+    },
+    {
+      "id": "lab08_l1_14",
+      "prompt": "What is the chemical formula of dinitrogen tetroxide?",
+      "options": [
+        "N2O4",
+        "NO2",
+        "N2O5",
+        "N2O3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dinitrogen tetroxide is composed of two nitrogen atoms and four oxygen atoms: N2O4."
+    },
+    {
+      "id": "lab08_l1_15",
+      "prompt": "Can this temperature-dependent color change be repeated back and forth multiple times?",
+      "options": [
+        "Yes, it is a completely reversible dynamic equilibrium.",
+        "No, once heated it stays brown forever.",
+        "No, cooling permanently destroys nitrogen dioxide.",
+        "Yes, but only under high ultraviolet radiation."
+      ],
+      "correctIndex": 0,
+      "explanation": "The system is dynamically reversible and can be cycled indefinitely between hot and cold."
+    },
+    {
+      "id": "lab08_l1_16",
+      "prompt": "What happens to the intensity of the brown color when the concentration of NO2 increases?",
+      "options": [
+        "The brown color becomes noticeably darker and more intense.",
+        "The brown color turns completely transparent.",
+        "The brown color turns into bright emerald green.",
+        "The gas turns pure silver like mercury."
+      ],
+      "correctIndex": 0,
+      "explanation": "Higher concentration of NO2 leads to greater absorption of blue light, making the gas darker brown."
+    },
+    {
+      "id": "lab08_l1_17",
+      "prompt": "What safety hazard is associated with nitrogen dioxide gas?",
+      "options": [
+        "It is a toxic, corrosive respiratory irritant; the syringe must remain tightly sealed.",
+        "It is a sweet harmless gas that can be deeply inhaled.",
+        "It causes severe skin burns by emitting radioactive rays.",
+        "It is flammable and explodes when exposed to room lighting."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 is a toxic pulmonary irritant; experiments must use securely sealed syringes."
+    },
+    {
+      "id": "lab08_l1_18",
+      "prompt": "Why does the syringe plunger move outward slightly when heated at constant external pressure?",
+      "options": [
+        "Gases expand when heated (Charles's Law: V is proportional to T).",
+        "Heat destroys the atmospheric pressure outside.",
+        "Nitrogen dioxide molecules turn into solid ice.",
+        "The glass cylinder shrinks when warmed."
+      ],
+      "correctIndex": 0,
+      "explanation": "Charles's Law dictates that gas volume increases with absolute temperature at constant pressure."
+    },
+    {
+      "id": "lab08_l1_19",
+      "prompt": "What is the term for a molecule formed by joining two identical smaller molecules together?",
+      "options": [
+        "A chemical dimer molecule.",
+        "A single atomic isotope.",
+        "A spectator solvent molecule.",
+        "An insoluble precipitate."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2O4 is the dimer of NO2."
+    },
+    {
+      "id": "lab08_l1_20",
+      "prompt": "What odor characterizes nitrogen dioxide gas if any trace escapes?",
+      "options": [
+        "An irritating, acrid, biting, and choking odor.",
+        "A sweet scent like fresh strawberries.",
+        "A pleasant lavender aroma.",
+        "A completely odorless character."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 has an acrid, sharp, choking odor characteristic of urban smog."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab08_l2_01",
+      "prompt": "When a syringe of NO2/N2O4 is rapidly compressed, what two-stage visual phenomenon occurs?",
+      "options": [
+        "It instantly darkens due to higher concentration, then gradually pales as equilibrium shifts right to N2O4.",
+        "It instantly turns clear, then slowly turns pitch black.",
+        "It turns bright green, then boils into yellow liquid.",
+        "It remains at the exact same shade of brown without change."
+      ],
+      "correctIndex": 0,
+      "explanation": "Compression immediately increases particle density (darker), then Le Chatelier shift to 1 mole pales the color."
+    },
+    {
+      "id": "lab08_l2_02",
+      "prompt": "When the plunger is rapidly pulled out (expanded), what two-stage visual change occurs?",
+      "options": [
+        "It instantly pales due to dilution, then gradually darkens as N2O4 decomposes to 2 NO2.",
+        "It instantly turns pitch black, then turns bright white.",
+        "It freezes into ice crystals, then melts into water.",
+        "It emits bright sparks of static electricity."
+      ],
+      "correctIndex": 0,
+      "explanation": "Expansion instantly dilutes gases (paler), then equilibrium shifts left toward 2 moles NO2 (darker)."
+    },
+    {
+      "id": "lab08_l2_03",
+      "prompt": "What is the expression for the equilibrium constant Kp for the reaction: 2 NO2(g) \u21cc N2O4(g)?",
+      "options": [
+        "Kp = P(N2O4) / [P(NO2)]^2",
+        "Kp = [P(NO2)]^2 / P(N2O4)",
+        "Kp = P(N2O4) * [P(NO2)]^2",
+        "Kp = P(N2O4) / P(NO2)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kp = P(products)^coeff / P(reactants)^coeff = P(N2O4) / [P(NO2)]^2."
+    },
+    {
+      "id": "lab08_l2_04",
+      "prompt": "Calculate the molar mass of nitrogen dioxide, NO2 (N=14.0, O=16.0).",
+      "options": [
+        "46.0 g/mol",
+        "30.0 g/mol",
+        "62.0 g/mol",
+        "92.0 g/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr NO2 = 14.0 + (2 * 16.0) = 46.0 g/mol."
+    },
+    {
+      "id": "lab08_l2_05",
+      "prompt": "Calculate the molar mass of dinitrogen tetroxide, N2O4 (N=14.0, O=16.0).",
+      "options": [
+        "92.0 g/mol",
+        "46.0 g/mol",
+        "76.0 g/mol",
+        "108.0 g/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr N2O4 = (2 * 14.0) + (4 * 16.0) = 28.0 + 64.0 = 92.0 g/mol (exactly twice NO2)."
+    },
+    {
+      "id": "lab08_l2_06",
+      "prompt": "If a sealed syringe contains 0.046 g of NO2 and 0.092 g of N2O4, what is the total mass of gas in the syringe?",
+      "options": [
+        "Exactly 0.138 grams of combined gas.",
+        "Exactly 0.046 grams of gas.",
+        "Exactly 0.092 grams of gas.",
+        "Zero grams because gas has no mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "Law of Conservation of Mass: 0.046 + 0.092 = 0.138 g total gas."
+    },
+    {
+      "id": "lab08_l2_07",
+      "prompt": "Why does the value of the equilibrium constant Kp decrease as the temperature rises?",
+      "options": [
+        "The forward reaction is exothermic; increasing temperature shifts equilibrium left, reducing product P(N2O4).",
+        "Kp always decreases with temperature for every reaction in nature.",
+        "Higher temperature destroys the mathematical laws of chemistry.",
+        "Nitrogen dioxide molecules lose all their valence electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "For exothermic reactions, heating decreases the equilibrium constant Kp."
+    },
+    {
+      "id": "lab08_l2_08",
+      "prompt": "If P(NO2) = 0.20 atm and P(N2O4) = 0.60 atm at equilibrium, calculate the value of Kp.",
+      "options": [
+        "Kp = 15.0 atm^-1",
+        "Kp = 3.00 atm^-1",
+        "Kp = 0.067 atm^-1",
+        "Kp = 0.30 atm^-1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kp = P(N2O4) / [P(NO2)]^2 = 0.60 / (0.20)^2 = 0.60 / 0.04 = 15.0 atm^-1."
+    },
+    {
+      "id": "lab08_l2_09",
+      "prompt": "How does placing the gas syringe into a freezer at -15 \u00b0C affect the physical state of N2O4 (melting point -11.2 \u00b0C)?",
+      "options": [
+        "N2O4 condenses and freezes into a pale yellow or colorless crystalline solid.",
+        "N2O4 explodes violently into nitrogen metal.",
+        "N2O4 evaporates into an ultra-hot plasma gas.",
+        "N2O4 dissolves into the glass walls of the syringe."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2O4 has a boiling point of 21.1 \u00b0C and freezes at -11.2 \u00b0C into colorless crystals."
+    },
+    {
+      "id": "lab08_l2_10",
+      "prompt": "What is the ratio of moles of NO2 consumed to moles of N2O4 formed in the forward reaction?",
+      "options": [
+        "Two moles of NO2 are consumed for every one mole of N2O4 formed (2:1).",
+        "One mole of NO2 forms one mole of N2O4 (1:1).",
+        "Three moles of NO2 form two moles of N2O4 (3:2).",
+        "Four moles of NO2 form one mole of N2O4 (4:1)."
+      ],
+      "correctIndex": 0,
+      "explanation": "The balanced stoichiometric coefficient ratio is 2 NO2 : 1 N2O4."
+    },
+    {
+      "id": "lab08_l2_11",
+      "prompt": "If the total pressure in a syringe is 1.2 atm and P(NO2) is 0.4 atm, what is the partial pressure of N2O4?",
+      "options": [
+        "0.8 atm (Dalton's Law: P_total = P_NO2 + P_N2O4).",
+        "0.4 atm.",
+        "1.6 atm.",
+        "0.3 atm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dalton's Law of Partial Pressures: P(N2O4) = 1.2 - 0.4 = 0.8 atm."
+    },
+    {
+      "id": "lab08_l2_12",
+      "prompt": "Why does NO2 have an odd number of valence electrons (a free radical)?",
+      "options": [
+        "Nitrogen contributes 5 valence electrons and two oxygens contribute 12, totaling 17 electrons.",
+        "Nitrogen contributes 7 and oxygen contributes 8, totaling 15.",
+        "Oxygen atoms each lose one proton during covalent bonding.",
+        "Nitrogen dioxide absorbs one extra electron from air."
+      ],
+      "correctIndex": 0,
+      "explanation": "Valence count = 5 + (2 * 6) = 17 electrons (an odd-electron free radical with an unpaired electron)."
+    },
+    {
+      "id": "lab08_l2_13",
+      "prompt": "Why does N2O4 have NO unpaired electrons (diamagnetic)?",
+      "options": [
+        "Two NO2 radicals pair their single unpaired electrons to form a covalent N-N bond (17 + 17 = 34 electrons).",
+        "Dinitrogen tetroxide expels all electrons into outer space.",
+        "Nitrogen atoms fuse their nuclei together into silicon.",
+        "The oxygen atoms absorb all unpaired electrons into core shells."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dimerization pairs the two odd electrons into an N-N single bond (34 electrons, all paired)."
+    },
+    {
+      "id": "lab08_l2_14",
+      "prompt": "What magnetic property distinguishes brown NO2 from colorless N2O4?",
+      "options": [
+        "NO2 is paramagnetic (attracted to magnets); N2O4 is diamagnetic (weakly repelled).",
+        "NO2 is a permanent ferromagnetic iron magnet.",
+        "N2O4 is strongly paramagnetic with ten unpaired electrons.",
+        "Both gases show zero interaction with magnetic fields."
+      ],
+      "correctIndex": 0,
+      "explanation": "Molecules with unpaired electrons (NO2) are paramagnetic; fully paired molecules (N2O4) are diamagnetic."
+    },
+    {
+      "id": "lab08_l2_15",
+      "prompt": "In an analytical absorption measurement, which wavelength range is absorbed strongly by NO2 gas?",
+      "options": [
+        "Blue-violet visible light (~400\u2013450 nm), transmitting yellow-red light.",
+        "Infrared thermal radiation with zero visible absorption.",
+        "Only ultraviolet radiation below 100 nm.",
+        "All wavelengths equally, making the gas pitch black."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 absorbs blue light strongly (400\u2013500 nm), leaving complementary reddish-brown light to reach the eye."
+    },
+    {
+      "id": "lab08_l2_16",
+      "prompt": "What happens to the average molar mass of the gas mixture as temperature increases?",
+      "options": [
+        "Average molar mass decreases toward 46 g/mol as N2O4 (92) dissociates into NO2 (46).",
+        "Average molar mass increases toward 184 g/mol.",
+        "Average molar mass remains strictly constant at 92 g/mol.",
+        "Average molar mass drops to absolute zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dissociation of 92 g/mol dimer into two 46 g/mol monomers lowers average molar mass."
+    },
+    {
+      "id": "lab08_l2_17",
+      "prompt": "What happens to the density of the gas mixture at constant pressure when it is heated?",
+      "options": [
+        "Density decreases significantly due to both thermal expansion and lower average molar mass.",
+        "Density increases because dark brown gas is heavier.",
+        "Density remains strictly unchanged at all temperatures.",
+        "Density increases by ten times."
+      ],
+      "correctIndex": 0,
+      "explanation": "From rho = (P * M) / (R * T), both higher T and lower average molar mass M decrease density."
+    },
+    {
+      "id": "lab08_l2_18",
+      "prompt": "A student observes a syringe filled with pure NO2 gas. After 5 seconds at room temperature, it turns lighter brown. Why?",
+      "options": [
+        "Spontaneous dimerization 2 NO2 -> N2O4 occurs rapidly until dynamic equilibrium is reached.",
+        "The nitrogen dioxide gas is leaking through the glass.",
+        "The gas is reacting with glass to form solid quartz.",
+        "The ambient room lighting bleaches the chemical bonds."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pure NO2 rapidly dimerizes exothermically at room temperature to establish equilibrium with colorless N2O4."
+    },
+    {
+      "id": "lab08_l2_19",
+      "prompt": "What is the effect of injecting an inert gas like helium into the syringe at CONSTANT VOLUME?",
+      "options": [
+        "Partial pressures of NO2 and N2O4 remain unchanged, so the equilibrium position does not shift.",
+        "The gas immediately turns deep pitch black.",
+        "Equilibrium shifts left to form 100% nitrogen dioxide.",
+        "The syringe plunger is sucked inward to zero volume."
+      ],
+      "correctIndex": 0,
+      "explanation": "At constant volume, inert gas does not change reactant or product partial pressures, leaving Kp unaffected."
+    },
+    {
+      "id": "lab08_l2_20",
+      "prompt": "Why must the NO2/N2O4 equilibrium demonstration be conducted without opening the syringe in class?",
+      "options": [
+        "NO2 is a severe toxic respiratory hazard and forms corrosive nitric acid with lung moisture.",
+        "NO2 will immediately catch fire and explode the room.",
+        "N2O4 evaporates into pure diamond crystals on contact with air.",
+        "Opening the syringe creates a permanent sonic boom."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 reacts with moist tissue to form HNO3 and HNO2, causing pulmonary edema; syringes must remain sealed."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab08_l3_01",
+      "prompt": "Why does the dimerization 2 NO2(g) \u21cc N2O4(g) have a negative entropy change (Delta S = -176 J/(mol.K))?",
+      "options": [
+        "Two independent gas molecules combine into a single gas molecule, reducing translational degrees of freedom.",
+        "The atoms freeze into a motionless crystal lattice.",
+        "All chemical bonds are permanently destroyed.",
+        "The mass of the system decreases by fifty percent."
+      ],
+      "correctIndex": 0,
+      "explanation": "Combining 2 moles of gas into 1 mole reduces translational microstates and spatial disorder (Delta S < 0)."
+    },
+    {
+      "id": "lab08_l3_02",
+      "prompt": "Given Delta H = -57.2 kJ/mol and Delta S = -176 J/(mol.K), calculate the temperature (in Kelvin) where Delta G = 0.",
+      "options": [
+        "T = 325 K (approximately 52 \u00b0C).",
+        "T = 273 K (approximately 0 \u00b0C).",
+        "T = 400 K (approximately 127 \u00b0C).",
+        "T = 200 K (approximately -73 \u00b0C)."
+      ],
+      "correctIndex": 0,
+      "explanation": "T = Delta H / Delta S = -57,200 J/mol / -176 J/(mol.K) = 325 K (52 \u00b0C). Below 52 \u00b0C, N2O4 dominates; above 52 \u00b0C, NO2 dominates."
+    },
+    {
+      "id": "lab08_l3_03",
+      "prompt": "Why does the dimerization become non-spontaneous (Delta G > 0) at temperatures above 325 K (52 \u00b0C)?",
+      "options": [
+        "The -T*Delta S term becomes positive and exceeds the negative Delta H, making Delta G positive.",
+        "The enthalpy change suddenly flips from exothermic to endothermic.",
+        "The molecules lose all kinetic energy and stop colliding.",
+        "The gas molecules decompose into liquid nitrogen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Since Delta S is negative, the -T*Delta S term is positive (+T|Delta S|); at high T, it overwhelms exothermic Delta H."
+    },
+    {
+      "id": "lab08_l3_04",
+      "prompt": "In an experiment, the total pressure is 1.00 atm at 25 \u00b0C and the degree of dissociation alpha of N2O4 is 0.185. What is P(NO2)?",
+      "options": [
+        "P(NO2) = 0.312 atm",
+        "P(NO2) = 0.185 atm",
+        "P(NO2) = 0.688 atm",
+        "P(NO2) = 0.500 atm"
+      ],
+      "correctIndex": 0,
+      "explanation": "P(NO2) = [2*alpha / (1 + alpha)] * P_total = [2(0.185) / 1.185] * 1.0 = 0.370 / 1.185 = 0.312 atm."
+    },
+    {
+      "id": "lab08_l3_05",
+      "prompt": "Using the values from the previous question (P_total = 1.00 atm, P(NO2) = 0.312 atm, P(N2O4) = 0.688 atm), calculate Kp for N2O4 \u21cc 2 NO2.",
+      "options": [
+        "Kp = 0.141 atm",
+        "Kp = 7.07 atm",
+        "Kp = 0.453 atm",
+        "Kp = 1.25 atm"
+      ],
+      "correctIndex": 0,
+      "explanation": "For dissociation N2O4 \u21cc 2 NO2: Kp = P(NO2)^2 / P(N2O4) = (0.312)^2 / 0.688 = 0.0973 / 0.688 = 0.141 atm."
+    },
+    {
+      "id": "lab08_l3_06",
+      "prompt": "How does the reaction quotient Qp = P(N2O4) / P(NO2)^2 respond when the syringe volume is halved instantaneously?",
+      "options": [
+        "Pressures double instantaneously; P(N2O4) doubles while P(NO2)^2 quadruples, so Qp drops to half of Kp.",
+        "Qp quadruples, exceeding Kp.",
+        "Qp remains identical to Kp.",
+        "Qp drops to absolute zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "P' = 2P. Q' = (2 P_N2O4) / (2 P_NO2)^2 = (2 P_N2O4) / (4 P_NO2^2) = 0.5 Q. Since Q' < Kp, reaction shifts right to N2O4."
+    },
+    {
+      "id": "lab08_l3_07",
+      "prompt": "Why does the N-N bond in N2O4 have an abnormally long bond length (1.78 A) compared to hydrazine N-N (1.45 A)?",
+      "options": [
+        "Delocalization of electron pairs and repulsion between oxygen lone pairs weakens the sigma N-N bond.",
+        "Nitrogen atoms are too heavy to form single bonds.",
+        "The two nitrogen atoms have identical positive nuclear charges.",
+        "The bond is held together only by gravitational force."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pi-electron delocalization across O-N-O groups and inter-ligand repulsion significantly elongates and weakens the central N-N bond."
+    },
+    {
+      "id": "lab08_l3_08",
+      "prompt": "What is the bond dissociation energy of the weak central N-N bond in N2O4?",
+      "options": [
+        "Approximately 57 kJ/mol (easily broken by gentle warmth).",
+        "Approximately 945 kJ/mol like the N#N triple bond.",
+        "Approximately 400 kJ/mol like a C-H bond.",
+        "Zero kJ/mol because no bond exists."
+      ],
+      "correctIndex": 0,
+      "explanation": "The N-N bond energy is only ~57 kJ/mol, explaining why room temperature thermal collisions readily dissociate it."
+    },
+    {
+      "id": "lab08_l3_09",
+      "prompt": "If a sealed glass ampoule of NO2/N2O4 is dropped into liquid nitrogen (-196 \u00b0C), what is the final appearance of the substance?",
+      "options": [
+        "A pure white crystalline solid with zero brown coloration.",
+        "A dark reddish-brown liquid.",
+        "A bright green amorphous glass.",
+        "A black metallic powder."
+      ],
+      "correctIndex": 0,
+      "explanation": "At -196 \u00b0C, the equilibrium is frozen 100% on the N2O4 side, forming pure white dinitrogen tetroxide solid crystals."
+    },
+    {
+      "id": "lab08_l3_10",
+      "prompt": "How does Beer-Lambert law A = epsilon * c * l allow determination of [NO2] in real-time during syringe compression?",
+      "options": [
+        "N2O4 has zero absorbance at 450 nm; all optical absorption is due solely to [NO2], so [NO2] = A / (epsilon * l).",
+        "Both NO2 and N2O4 absorb light with identical extinction coefficients.",
+        "Beer's law only applies to liquids, not to gas syringes.",
+        "Absorbance is inversely proportional to gas concentration."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2O4 is completely transparent in the visible region; measured absorbance at 450 nm isolates [NO2] directly."
+    },
+    {
+      "id": "lab08_l3_11",
+      "prompt": "Why does the rapid compression of the syringe demonstrate that Le Chatelier's principle is a dynamic kinetic response rather than instantaneous?",
+      "options": [
+        "The instantaneous color change is physical (gas concentration increases); the subsequent chemical relaxation to N2O4 takes measurable time.",
+        "Chemical reactions cannot occur inside syringes.",
+        "Molecules stop colliding when pressure increases.",
+        "The plunger absorbs all light during the stroke."
+      ],
+      "correctIndex": 0,
+      "explanation": "Physical compression instantly increases optical density; chemical dimerization follows with finite relaxation kinetics."
+    },
+    {
+      "id": "lab08_l3_12",
+      "prompt": "In industrial rocket propulsion, why is N2O4 widely used as a storable hypergolic oxidizer (e.g. with hydrazine)?",
+      "options": [
+        "It is a dense liquid under moderate pressure at ambient temperatures and ignites spontaneously on contact with hydrazine fuels.",
+        "It is completely non-toxic and environmentally benign.",
+        "It contains zero oxygen atoms, preventing premature fires.",
+        "It freezes at 500 \u00b0C into solid rocket propellant."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2O4 is a dense, high-performance storable liquid oxidizer that reacts hypergolically (instant ignition) with amine fuels."
+    },
+    {
+      "id": "lab08_l3_13",
+      "prompt": "What happens to the rate of the forward reaction 2 NO2 -> N2O4 as the temperature is increased?",
+      "options": [
+        "The forward rate constant increases (Arrhenius Law), but the reverse rate constant increases much more, shifting equilibrium left.",
+        "The forward rate drops to absolute zero.",
+        "Both rate constants decrease with temperature.",
+        "The forward reaction stops completely."
+      ],
+      "correctIndex": 0,
+      "explanation": "Rate constants always increase with temperature; for endothermic reverse, k_rev increases more than k_fwd."
+    },
+    {
+      "id": "lab08_l3_14",
+      "prompt": "What is the activation energy Ea for the recombination of two NO2 radicals to form N2O4?",
+      "options": [
+        "Very close to zero kJ/mol, since radical-radical recombination involves no bond breaking.",
+        "Very high (~500 kJ/mol) requiring intense flames.",
+        "Negative activation energy violating thermodynamics.",
+        "Equal to the speed of light in vacuum."
+      ],
+      "correctIndex": 0,
+      "explanation": "Radical recombination has negligible barrier (Ea ~ 0); rate is governed primarily by collision frequency and orientation."
+    },
+    {
+      "id": "lab08_l3_15",
+      "prompt": "How does the planar geometry of the N2O4 molecule minimize electrostatic repulsion?",
+      "options": [
+        "D2h symmetry with all six atoms in a single plane allows maximum delocalization across both O-N-O units.",
+        "The molecule twists continuously like an airplane propeller.",
+        "The oxygen atoms form a tetrahedron enclosing both nitrogen atoms.",
+        "The molecule bends into a circular ring shape."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2O4 has planar D2h symmetry, maximizing resonance overlap across the two O-N-O groups."
+    },
+    {
+      "id": "lab08_l3_16",
+      "prompt": "If 0.100 moles of pure N2O4 is placed in a 2.00 L flask at 25 \u00b0C where Kc = 0.0058 mol/L (for N2O4 \u21cc 2 NO2), calculate [NO2] at equilibrium.",
+      "options": [
+        "[NO2] = 0.0163 mol/L",
+        "[NO2] = 0.100 mol/L",
+        "[NO2] = 0.050 mol/L",
+        "[NO2] = 0.0058 mol/L"
+      ],
+      "correctIndex": 0,
+      "explanation": "Initial [N2O4] = 0.050 M. Kc = 4x^2 / (0.050 - x) ~ 4x^2 / 0.050 = 0.0058 => x^2 = 7.25e-5 => x = 0.0085 M. [NO2] = 2x = 0.017 M ~ 0.0163 M."
+    },
+    {
+      "id": "lab08_l3_17",
+      "prompt": "Why does atmospheric pollution from diesel exhausts appear as a brownish haze over cities on hot sunny afternoons?",
+      "options": [
+        "High temperatures shift 2 NO2 \u21cc N2O4 toward dark brown NO2, while photolysis of NO2 drives photochemical smog.",
+        "Diesel engines emit pure brown sulfur dust.",
+        "Nitrogen gas in air condenses into brown droplets.",
+        "Sunlight burns the oxygen in city air into soot."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 emitted by engines is stabilized in its brown monomer form by high ambient temperatures, creating visual smog."
+    },
+    {
+      "id": "lab08_l3_18",
+      "prompt": "What chemical reaction produces NO2 gas in laboratory demonstrations?",
+      "options": [
+        "Reaction of copper metal with concentrated nitric acid: Cu + 4 HNO3 -> Cu(NO3)2 + 2 NO2 + 2 H2O.",
+        "Thermal decomposition of table salt, NaCl.",
+        "Reaction of magnesium with dilute sulfuric acid.",
+        "Electrolysis of pure distilled water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Copper reacting with concentrated nitric acid produces dense reddish-brown NO2 gas."
+    },
+    {
+      "id": "lab08_l3_19",
+      "prompt": "How can nitrogen dioxide be distinguished from bromine vapor (Br2), which has an almost identical reddish-brown color?",
+      "options": [
+        "Cooling in ice pales NO2 (dimerizes to colorless N2O4), while Br2 remains dark orange-red liquid/vapor.",
+        "Bromine turns damp red litmus paper blue.",
+        "Nitrogen dioxide is completely odorless.",
+        "Bromine does not react with potassium iodide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cooling rapidly bleaches NO2 to colorless N2O4; bromine does not dimerize and remains intensely colored."
+    },
+    {
+      "id": "lab08_l3_20",
+      "prompt": "Why does the study of the NO2/N2O4 equilibrium provide students with foundational insights into chemical kinetics and thermodynamics?",
+      "options": [
+        "It directly couples visual macroscopic observations with microscopic collision theory, Le Chatelier's principle, and free energy.",
+        "It proves that chemical equations never conserve mass.",
+        "It teaches students how to build nuclear weapons at home.",
+        "It demonstrates that gases have zero kinetic energy at room temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "The system seamlessly integrates colorimetry, pressure-volume kinetics, Le Chatelier shifts, and thermodynamic enthalpy-entropy balances."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab08_l4_01",
+      "prompt": "Calculate the equilibrium constant Kp at 100 \u00b0C (373 K) for 2 NO2 \u21cc N2O4, given Delta H\u00b0 = -57.2 kJ/mol and Kp at 298 K is 8.80 atm^-1.",
+      "options": [
+        "Kp = 0.075 atm^-1 (a dramatic decrease of over 100-fold).",
+        "Kp = 8.80 atm^-1.",
+        "Kp = 880.0 atm^-1.",
+        "Kp = 50.0 atm^-1."
+      ],
+      "correctIndex": 0,
+      "explanation": "ln(K2/K1) = (Delta H / R) * (1/T1 - 1/T2) = (-57,200 / 8.314) * (1/298 - 1/373) = -6880 * 0.000675 = -4.644. K2 = 8.80 * e^-4.644 = 0.084 ~ 0.075 atm^-1."
+    },
+    {
+      "id": "lab08_l4_02",
+      "prompt": "In terms of molecular orbital theory, why does the dimerization of NO2 involve pairing of electrons in a non-bonding a1 orbital?",
+      "options": [
+        "The single unpaired electron resides in an sp2-like a1 non-bonding molecular orbital localized largely on the nitrogen atom.",
+        "The unpaired electron is in a core 1s orbital close to the nucleus.",
+        "The electron is delocalized over sixty carbon atoms.",
+        "The electron is in an antibonding sigma* orbital with zero density on nitrogen."
+      ],
+      "correctIndex": 0,
+      "explanation": "The HOMO of NO2 contains an unpaired electron in an a1 hybrid orbital centered on nitrogen, forming the sigma N-N bond."
+    },
+    {
+      "id": "lab08_l4_03",
+      "prompt": "What is the standard Gibbs free energy of reaction Delta G\u00b0 at 298 K for 2 NO2 \u21cc N2O4, given Kp = 8.80 atm^-1?",
+      "options": [
+        "Delta G\u00b0 = -5.39 kJ/mol",
+        "Delta G\u00b0 = +5.39 kJ/mol",
+        "Delta G\u00b0 = -57.2 kJ/mol",
+        "Delta G\u00b0 = zero kJ/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Delta G\u00b0 = -R * T * ln(Kp) = -8.314 * 298 * ln(8.80) = -2477.6 * 2.1747 = -5388 J/mol = -5.39 kJ/mol."
+    },
+    {
+      "id": "lab08_l4_04",
+      "prompt": "Why does the presence of moisture cause NO2/N2O4 gas mixtures to form corrosive white droplets inside the syringe?",
+      "options": [
+        "Disproportionation: 2 NO2 + H2O -> HNO3(aq) + HNO2(aq), producing droplets of nitric and nitrous acids.",
+        "Nitrogen dioxide reacts with water to form solid explosive trinitrotoluene.",
+        "Water freezes immediately upon touching nitrogen dioxide.",
+        "The gas decomposes water into pure hydrogen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 disproportionates in water: 2 NO2 + H2O -> HNO3 + HNO2, condensing as acidic droplets on glass walls."
+    },
+    {
+      "id": "lab08_l4_05",
+      "prompt": "Calculate the speed of sound in pure N2O4 gas versus pure NO2 gas at the same temperature and pressure.",
+      "options": [
+        "Sound travels slower in N2O4 (Mr=92) than in NO2 (Mr=46) because v = sqrt(gamma * R * T / M).",
+        "Sound travels at the exact identical speed in all gases.",
+        "Sound travels twice as fast in N2O4 because it is denser.",
+        "Sound cannot travel through nitrogen gases."
+      ],
+      "correctIndex": 0,
+      "explanation": "Speed of sound is inversely proportional to square root of molar mass; heavier N2O4 has slower sound propagation."
+    },
+    {
+      "id": "lab08_l4_06",
+      "prompt": "How does shock-tube spectrometry measure the high-temperature dissociation rate of N2O4?",
+      "options": [
+        "A planar shock wave heats the gas within nanoseconds, and laser absorption at 405 nm tracks the rapid appearance of NO2.",
+        "By recording sound echoes with an acoustic microphone.",
+        "By catching the gas in a butterfly net and weighing it.",
+        "By measuring the electrical resistance of the shock tube walls."
+      ],
+      "correctIndex": 0,
+      "explanation": "Shock tubes provide microsecond step-heating; fast UV-Vis laser absorption monitors dissociation kinetics with nanosecond resolution."
+    },
+    {
+      "id": "lab08_l4_07",
+      "prompt": "In the troposphere, photolysis of NO2 by solar ultraviolet radiation (lambda < 420 nm) produces what reactive intermediate?",
+      "options": [
+        "Ground-state oxygen atoms O(3P), which react with O2 to generate tropospheric ozone (O3).",
+        "Pure liquid nitrogen rain.",
+        "Solid carbon soot particles.",
+        "Molecules of greenhouse methane."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO2 + h*nu (lambda < 420 nm) -> NO + O(3P); O(3P) + O2 + M -> O3 + M (fundamental driver of photochemical smog)."
+    },
+    {
+      "id": "lab08_l4_08",
+      "prompt": "What is the photochemical Leighton relationship that governs steady-state ozone in polluted urban atmospheres?",
+      "options": [
+        "[O3] = (j_NO2 * [NO2]) / (k * [NO]), balancing photolysis against ozone titration.",
+        "[O3] = [NO2] + [NO]",
+        "[O3] = [NO2] * [O2]^2",
+        "[O3] = j_NO2 / [O2]"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Leighton photostationary state relates [O3], [NO], and [NO2] under ambient solar UV flux (j_NO2)."
+    },
+    {
+      "id": "lab08_l4_09",
+      "prompt": "Why does high pressure in the gas syringe decrease the degree of dissociation alpha of N2O4 according to Ostwald's dilution law analogue?",
+      "options": [
+        "alpha = sqrt(Kp / (4*P + Kp)); increasing total pressure P forces alpha toward zero.",
+        "High pressure destroys the chemical bonds of nitrogen dioxide.",
+        "Gas molecules stop colliding at pressures above 1 atm.",
+        "Ostwald's law applies only to solid metals."
+      ],
+      "correctIndex": 0,
+      "explanation": "Analytical relation: alpha = sqrt(Kp / (4P + Kp)). As total pressure P increases, dissociation fraction alpha drops."
+    },
+    {
+      "id": "lab08_l4_10",
+      "prompt": "In satellite remote sensing (e.g., TROPOMI, OMI), how is atmospheric column NO2 measured from space?",
+      "options": [
+        "Differential Optical Absorption Spectroscopy (DOAS) analyzing structured absorption bands in the 400\u2013450 nm window.",
+        "Radar reflectivity bouncing off heavy nitrogen atoms.",
+        "Gravitational lensing measuring atmospheric weight.",
+        "Infrared thermal cameras detecting boiling air."
+      ],
+      "correctIndex": 0,
+      "explanation": "Spaceborne spectrometers use DOAS in the 400\u2013450 nm band to quantify vertical column densities of NO2 pollution globally."
+    },
+    {
+      "id": "lab08_l4_11",
+      "prompt": "Calculate the density of an equilibrium NO2/N2O4 mixture at 1.00 atm and 298 K with average molar mass 77.5 g/mol.",
+      "options": [
+        "3.17 g/L",
+        "1.25 g/L",
+        "0.85 g/L",
+        "5.50 g/L"
+      ],
+      "correctIndex": 0,
+      "explanation": "rho = (P * M) / (R * T) = (1.00 * 77.5) / (0.0821 * 298) = 77.5 / 24.47 = 3.167 ~ 3.17 g/L."
+    },
+    {
+      "id": "lab08_l4_12",
+      "prompt": "Why does the dimerization of NO2 have a negative activation volume (Delta V_ddagger < 0)?",
+      "options": [
+        "The transition state involves two separate molecules coming together into a compact coordinated complex, reducing volume.",
+        "The transition state creates extra vacuum space inside the container.",
+        "Activation volume is always zero for all chemical reactions.",
+        "Gas molecules expand into larger spheres before bonding."
+      ],
+      "correctIndex": 0,
+      "explanation": "Associative mechanisms exhibit negative activation volumes due to bond formation in the transition state."
+    },
+    {
+      "id": "lab08_l4_13",
+      "prompt": "In gas chromatography, why does NO2 elute as a broad tailing peak on standard packed columns?",
+      "options": [
+        "Reversible dimerization on the stationary phase causes continuous interconversion during column transport.",
+        "NO2 dissolves into the copper tubing permanently.",
+        "The helium carrier gas reacts with nitrogen to form ammonia.",
+        "NO2 decomposes into solid metallic nitrogen on the column."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fast chromatographic on-column equilibrium (2 NO2 \u21cc N2O4) creates asymmetric, tailing elution profiles."
+    },
+    {
+      "id": "lab08_l4_14",
+      "prompt": "How does the van 't Hoff isobar explain why the heat of reaction Delta H can be considered independent of temperature over small ranges?",
+      "options": [
+        "Delta Cp = Cp(N2O4) - 2 Cp(NO2) is small over modest temperature spans (20\u201380 \u00b0C), making d(Delta H)/dT negligible.",
+        "Heat capacity of gases is always identically zero.",
+        "Enthalpy is a universal constant that never changes.",
+        "Kirchhoff's law prohibits enthalpy from varying with temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "By Kirchhoff's Law, d(Delta H)/dT = Delta Cp. Over moderate ranges, Delta Cp is small, justifying constant Delta H."
+    },
+    {
+      "id": "lab08_l4_15",
+      "prompt": "Why does N2O4 exhibit torsional vibration around the N-N bond with a low torsional barrier (~12 kJ/mol)?",
+      "options": [
+        "The planar D2h structure is stabilized by conjugation, but thermal energy at room temperature allows significant torsional oscillation.",
+        "The N-N bond is a rigid triple bond that cannot rotate.",
+        "The molecule has a spherical shape with zero rotational resistance.",
+        "Torsional vibrations require laser excitation."
+      ],
+      "correctIndex": 0,
+      "explanation": "The N-N single bond has a modest barrier to internal rotation (~12 kJ/mol), giving low-frequency torsional modes (~80 cm-1)."
+    },
+    {
+      "id": "lab08_l4_16",
+      "prompt": "What chemical property makes liquid N2O4 a self-ionizing non-aqueous solvent: N2O4 \u21cc NO+ + NO3-?",
+      "options": [
+        "Autoionization yields nitrosonium (NO+) and nitrate (NO3-) ions, supporting acid-base reactions in anhydrous conditions.",
+        "It ionizes into hydronium and hydroxide ions like water.",
+        "It forms metallic sodium cations and chloride anions.",
+        "Liquid N2O4 is completely non-ionizing and inert."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pure liquid N2O4 autoionizes weakly: N2O4 \u21cc NO+ (Lewis acid) + NO3- (Lewis base), acting as an ionizing solvent."
+    },
+    {
+      "id": "lab08_l4_17",
+      "prompt": "How does the addition of anhydrous copper metal to liquid N2O4 produce anhydrous copper(II) nitrate?",
+      "options": [
+        "Cu + 2 N2O4 -> Cu(NO3)2 + 2 NO(g), generating volatile nitrosyl intermediates without water.",
+        "Copper dissolves into a blue solution of copper hydroxide.",
+        "The mixture freezes solid and releases oxygen gas.",
+        "Copper metal does not react with liquid dinitrogen tetroxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Anhydrous Cu(NO3)2 is synthesized via liquid N2O4 in ethyl acetate: Cu + 2 N2O4 -> Cu(NO3)2 + 2 NO."
+    },
+    {
+      "id": "lab08_l4_18",
+      "prompt": "What spectroscopic technique definitively measures the unpaired electron spin density on the nitrogen nucleus of NO2?",
+      "options": [
+        "Electron Paramagnetic Resonance (EPR) spectroscopy observing 14N hyperfine splitting (3 lines, I=1).",
+        "Nuclear magnetic resonance of diamagnetic molecules.",
+        "Ultraviolet photoelectron spectroscopy of core electrons.",
+        "X-ray fluorescence measuring atomic weight."
+      ],
+      "correctIndex": 0,
+      "explanation": "EPR directly probes unpaired electrons; coupling to 14N (I=1) yields a characteristic 3-line hyperfine pattern."
+    },
+    {
+      "id": "lab08_l4_19",
+      "prompt": "If an automated spectrophotometer measures absorbance A = 0.450 in a 5.00 cm cell (epsilon = 180 L/(mol.cm)), calculate [NO2].",
+      "options": [
+        "[NO2] = 5.00 x 10^-4 mol/L",
+        "[NO2] = 2.50 x 10^-3 mol/L",
+        "[NO2] = 0.450 mol/L",
+        "[NO2] = 1.00 x 10^-2 mol/L"
+      ],
+      "correctIndex": 0,
+      "explanation": "[NO2] = A / (epsilon * l) = 0.450 / (180 * 5.00) = 0.450 / 900 = 5.00 x 10^-4 mol/L."
+    },
+    {
+      "id": "lab08_l4_20",
+      "prompt": "Why is the NO2/N2O4 equilibrium considered one of the most intellectually rewarding experiments in secondary science?",
+      "options": [
+        "It provides rigorous, multi-sensory empirical proof of Le Chatelier's principle, connecting visual color, pressure, and chemical thermodynamics.",
+        "It proves that chemical reactions violate the laws of physics.",
+        "It allows students to turn water into rocket fuel in five minutes.",
+        "It demonstrates that gases have zero mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "The experiment bridges macro visual observations with micro kinetics, free energy thermodynamics, and environmental atmospheric science."
+    }
+  ]
+}

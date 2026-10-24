@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab03_l1_01",
+      "prompt": "What fundamental scientific law states that mass cannot be created or destroyed in a chemical reaction?",
+      "options": [
+        "The Law of Conservation of Mass.",
+        "The Law of Constant Acceleration.",
+        "The Law of Definite Proportions.",
+        "The Law of Universal Gravitation."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Law of Conservation of Mass dictates that total mass of reactants equals total mass of products."
+    },
+    {
+      "id": "lab03_l1_02",
+      "prompt": "Why must chemical equations always be balanced?",
+      "options": [
+        "To show that the total number of each type of atom is conserved.",
+        "To ensure that all reacting chemicals remain in the liquid state.",
+        "To increase the total volume of gases produced in the test tube.",
+        "To guarantee that the reaction releases heat into the surroundings."
+      ],
+      "correctIndex": 0,
+      "explanation": "Atoms are neither created nor destroyed during chemical reactions; they are merely rearranged."
+    },
+    {
+      "id": "lab03_l1_03",
+      "prompt": "When balancing a chemical equation, which numbers are permitted to be adjusted?",
+      "options": [
+        "Only the stoichiometric coefficients placed in front of chemical formulas.",
+        "Only the subscript numbers placed inside chemical formulas.",
+        "Only the atomic numbers of elements within the periodic table.",
+        "Only the superscripts indicating ionic charges on particles."
+      ],
+      "correctIndex": 0,
+      "explanation": "Coefficients adjust the ratio of formula units without changing the chemical identity of the substance."
+    },
+    {
+      "id": "lab03_l1_04",
+      "prompt": "What happens to the chemical identity of a substance if you alter its subscript numbers in an equation?",
+      "options": [
+        "The chemical identity changes into a completely different substance.",
+        "The substance dissolves instantly into pure distilled water.",
+        "The temperature of the reacting substance drops to zero.",
+        "The speed of the chemical reaction increases by ten times."
+      ],
+      "correctIndex": 0,
+      "explanation": "Changing subscripts alters the ratio of bonded atoms, fundamentally creating a different chemical compound."
+    },
+    {
+      "id": "lab03_l1_05",
+      "prompt": "In the formula 3 H2O, what does the number 3 represent?",
+      "options": [
+        "The stoichiometric coefficient indicating three water molecules.",
+        "The subscript indicating three bonded hydrogen atoms.",
+        "The oxidation number of the central oxygen atom.",
+        "The charge on each individual water molecule."
+      ],
+      "correctIndex": 0,
+      "explanation": "The leading integer 3 is a coefficient showing there are three independent H2O molecules."
+    },
+    {
+      "id": "lab03_l1_06",
+      "prompt": "In the formula 3 H2O, how many total hydrogen atoms are present?",
+      "options": [
+        "Exactly six hydrogen atoms in total.",
+        "Exactly three hydrogen atoms in total.",
+        "Exactly two hydrogen atoms in total.",
+        "Exactly five hydrogen atoms in total."
+      ],
+      "correctIndex": 0,
+      "explanation": "Total hydrogen atoms = 3 * 2 = 6."
+    },
+    {
+      "id": "lab03_l1_07",
+      "prompt": "In the formula 2 Fe2O3, how many total iron (Fe) atoms are represented?",
+      "options": [
+        "Exactly four iron atoms in total.",
+        "Exactly two iron atoms in total.",
+        "Exactly six iron atoms in total.",
+        "Exactly eight iron atoms in total."
+      ],
+      "correctIndex": 0,
+      "explanation": "Total Fe atoms = 2 * 2 = 4."
+    },
+    {
+      "id": "lab03_l1_08",
+      "prompt": "In the formula 2 Fe2O3, how many total oxygen (O) atoms are represented?",
+      "options": [
+        "Exactly six oxygen atoms in total.",
+        "Exactly three oxygen atoms in total.",
+        "Exactly five oxygen atoms in total.",
+        "Exactly two oxygen atoms in total."
+      ],
+      "correctIndex": 0,
+      "explanation": "Total O atoms = 2 * 3 = 6."
+    },
+    {
+      "id": "lab03_l1_09",
+      "prompt": "What are the starting substances on the left side of a reaction arrow called?",
+      "options": [
+        "The chemical reactants undergoing change.",
+        "The synthesized chemical reaction products.",
+        "The inert spectator solvents in solution.",
+        "The solid insoluble precipitates formed."
+      ],
+      "correctIndex": 0,
+      "explanation": "Substances present before the reaction begins on the left of the arrow are called reactants."
+    },
+    {
+      "id": "lab03_l1_10",
+      "prompt": "What are the substances formed on the right side of a reaction arrow called?",
+      "options": [
+        "The chemical reaction products formed.",
+        "The starting reactant molecules used.",
+        "The unreactive spectator catalysts.",
+        "The aqueous electrolyte solutions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Substances formed as a result of the chemical change on the right of the arrow are products."
+    },
+    {
+      "id": "lab03_l1_11",
+      "prompt": "What does the reaction arrow (->) in a chemical equation symbolize?",
+      "options": [
+        "Reactants react and transform into products.",
+        "Reactants are in static equilibrium with water.",
+        "Reactants are physically separated by filtration.",
+        "Reactants have identical boiling temperatures."
+      ],
+      "correctIndex": 0,
+      "explanation": "The arrow indicates the direction of chemical transformation from reactants to products."
+    },
+    {
+      "id": "lab03_l1_12",
+      "prompt": "If 10 grams of calcium carbonate completely decomposes in a closed container, what is the total mass of the products?",
+      "options": [
+        "Exactly 10 grams of combined products.",
+        "Less than 10 grams due to gas escape.",
+        "More than 10 grams due to new bonds.",
+        "Zero grams because solids disappear."
+      ],
+      "correctIndex": 0,
+      "explanation": "In a closed system, mass is strictly conserved; 10 g of reactant produces exactly 10 g of products."
+    },
+    {
+      "id": "lab03_l1_13",
+      "prompt": "What state symbol represents a substance dissolved in water in a chemical equation?",
+      "options": [
+        "The state symbol (aq) for aqueous.",
+        "The state symbol (s) for solid.",
+        "The state symbol (l) for liquid.",
+        "The state symbol (g) for gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "(aq) stands for aqueous, meaning dissolved in water."
+    },
+    {
+      "id": "lab03_l1_14",
+      "prompt": "What state symbol designates an insoluble precipitate forming in an aqueous reaction?",
+      "options": [
+        "The state symbol (s) for solid.",
+        "The state symbol (aq) for aqueous.",
+        "The state symbol (l) for liquid.",
+        "The state symbol (g) for gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Insoluble solids that precipitate from solution are designated with the state symbol (s)."
+    },
+    {
+      "id": "lab03_l1_15",
+      "prompt": "How many oxygen atoms are contained in one molecule of carbon dioxide, CO2?",
+      "options": [
+        "Exactly two oxygen atoms.",
+        "Exactly one oxygen atom.",
+        "Exactly three oxygen atoms.",
+        "Zero oxygen atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "The subscript 2 on oxygen indicates two oxygen atoms per CO2 molecule."
+    },
+    {
+      "id": "lab03_l1_16",
+      "prompt": "How many hydrogen atoms are present in one molecule of ammonia, NH3?",
+      "options": [
+        "Exactly three hydrogen atoms.",
+        "Exactly one hydrogen atom.",
+        "Exactly four hydrogen atoms.",
+        "Exactly two hydrogen atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia contains one nitrogen atom and three bonded hydrogen atoms."
+    },
+    {
+      "id": "lab03_l1_17",
+      "prompt": "In the balanced equation 2 H2 + O2 -> 2 H2O, how many oxygen atoms are on the reactant side?",
+      "options": [
+        "Exactly two oxygen atoms.",
+        "Exactly one oxygen atom.",
+        "Exactly four oxygen atoms.",
+        "Exactly three oxygen atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "One O2 molecule contains 1 * 2 = 2 oxygen atoms."
+    },
+    {
+      "id": "lab03_l1_18",
+      "prompt": "In the balanced equation 2 H2 + O2 -> 2 H2O, how many oxygen atoms are on the product side?",
+      "options": [
+        "Exactly two oxygen atoms.",
+        "Exactly one oxygen atom.",
+        "Exactly four oxygen atoms.",
+        "Exactly three oxygen atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "Two H2O molecules contain 2 * 1 = 2 oxygen atoms."
+    },
+    {
+      "id": "lab03_l1_19",
+      "prompt": "What is the coefficient of a reactant if no number is written in front of its formula?",
+      "options": [
+        "An implied coefficient of one (1).",
+        "An implied coefficient of zero (0).",
+        "An implied coefficient of two (2).",
+        "An undefined variable value."
+      ],
+      "correctIndex": 0,
+      "explanation": "When no coefficient is shown, it is conventionally understood to be 1."
+    },
+    {
+      "id": "lab03_l1_20",
+      "prompt": "Which of the following is a physical change rather than a chemical reaction?",
+      "options": [
+        "Ice melting into liquid water.",
+        "Iron metal rusting into brown oxide.",
+        "Methane gas burning in air.",
+        "Magnesium metal reacting with acid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Melting is a change of physical state without rearranging chemical bonds or altering chemical identity."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab03_l2_01",
+      "prompt": "Which coefficient balances the hydrogen in the equation: __ H2 + O2 -> 2 H2O?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of one (1).",
+        "A coefficient of three (3).",
+        "A coefficient of four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Product side has 2 * 2 = 4 H atoms. 2 H2 provides 4 H atoms."
+    },
+    {
+      "id": "lab03_l2_02",
+      "prompt": "Which set of coefficients correctly balances the synthesis of ammonia: __ N2 + __ H2 -> __ NH3?",
+      "options": [
+        "1 N2 + 3 H2 -> 2 NH3",
+        "1 N2 + 1 H2 -> 1 NH3",
+        "2 N2 + 3 H2 -> 2 NH3",
+        "1 N2 + 2 H2 -> 2 NH3"
+      ],
+      "correctIndex": 0,
+      "explanation": "N2 + 3 H2 -> 2 NH3 gives 2 N atoms and 6 H atoms on both sides."
+    },
+    {
+      "id": "lab03_l2_03",
+      "prompt": "Which coefficients balance the combustion of methane: CH4 + __ O2 -> CO2 + __ H2O?",
+      "options": [
+        "2 O2 and 2 H2O",
+        "1 O2 and 2 H2O",
+        "2 O2 and 1 H2O",
+        "3 O2 and 2 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "CH4 + 2 O2 -> CO2 + 2 H2O balances 1 C, 4 H, and 4 O atoms."
+    },
+    {
+      "id": "lab03_l2_04",
+      "prompt": "What coefficient is needed in front of HCl to balance: Mg + __ HCl -> MgCl2 + H2?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of one (1).",
+        "A coefficient of three (3).",
+        "A coefficient of four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Two chloride atoms in MgCl2 and two H atoms in H2 require 2 HCl."
+    },
+    {
+      "id": "lab03_l2_05",
+      "prompt": "Balance the decomposition of hydrogen peroxide: __ H2O2 -> 2 H2O + O2. What is the missing coefficient?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of one (1).",
+        "A coefficient of three (3).",
+        "A coefficient of four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 H2O2 -> 2 H2O + O2 gives 4 H and 4 O atoms on each side."
+    },
+    {
+      "id": "lab03_l2_06",
+      "prompt": "Which coefficients balance the reaction of sodium with water: __ Na + 2 H2O -> __ NaOH + H2?",
+      "options": [
+        "2 Na and 2 NaOH",
+        "1 Na and 1 NaOH",
+        "2 Na and 1 NaOH",
+        "1 Na and 2 NaOH"
+      ],
+      "correctIndex": 0,
+      "explanation": "2 Na + 2 H2O -> 2 NaOH + H2 balances 2 Na, 4 H, and 2 O atoms."
+    },
+    {
+      "id": "lab03_l2_07",
+      "prompt": "What coefficient balances oxygen in the combustion of ethane: 2 C2H6 + __ O2 -> 4 CO2 + 6 H2O?",
+      "options": [
+        "A coefficient of seven (7).",
+        "A coefficient of five (5).",
+        "A coefficient of six (6).",
+        "A coefficient of fourteen (14)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Products have (4 * 2) + (6 * 1) = 14 O atoms. 7 O2 provides 14 O atoms."
+    },
+    {
+      "id": "lab03_l2_08",
+      "prompt": "Balance the synthesis of aluminum oxide: 4 Al + __ O2 -> 2 Al2O3. What is the missing coefficient?",
+      "options": [
+        "A coefficient of three (3).",
+        "A coefficient of two (2).",
+        "A coefficient of six (6).",
+        "A coefficient of four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 Al2O3 has 2 * 3 = 6 O atoms. 3 O2 provides 6 O atoms."
+    },
+    {
+      "id": "lab03_l2_09",
+      "prompt": "Which equation correctly illustrates the Law of Conservation of Mass for carbon reacting with oxygen?",
+      "options": [
+        "C + O2 -> CO2",
+        "C + O2 -> CO",
+        "2 C + O2 -> CO2",
+        "C + 2 O2 -> CO2"
+      ],
+      "correctIndex": 0,
+      "explanation": "C + O2 -> CO2 has 1 C and 2 O atoms on both sides, conserving mass."
+    },
+    {
+      "id": "lab03_l2_10",
+      "prompt": "What coefficient balances iron in the reaction: __ Fe + 3 Cl2 -> 2 FeCl3?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of three (3).",
+        "A coefficient of one (1).",
+        "A coefficient of four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Product side has 2 Fe atoms, requiring 2 Fe on the reactant side."
+    },
+    {
+      "id": "lab03_l2_11",
+      "prompt": "Which balanced equation represents the neutralization of sulfuric acid by sodium hydroxide?",
+      "options": [
+        "2 NaOH + H2SO4 -> Na2SO4 + 2 H2O",
+        "NaOH + H2SO4 -> NaSO4 + H2O",
+        "NaOH + 2 H2SO4 -> Na(SO4)2 + H2O",
+        "2 NaOH + 2 H2SO4 -> 2 NaSO4 + H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "2 NaOH + H2SO4 -> Na2SO4 + 2 H2O has 2 Na, 1 S, 6 O, and 4 H atoms on both sides."
+    },
+    {
+      "id": "lab03_l2_12",
+      "prompt": "A student balances an equation by writing H2 + O2 -> H2O2 instead of 2 H2 + O2 -> 2 H2O. What error occurred?",
+      "options": [
+        "The student altered chemical subscripts, changing the product into toxic hydrogen peroxide.",
+        "The student forgot to heat the reaction mixture with a Bunsen burner flame.",
+        "The student used the wrong state symbol for liquid water.",
+        "The student created new carbon atoms out of hydrogen molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "Changing subscripts creates H2O2 (hydrogen peroxide) instead of H2O (water)."
+    },
+    {
+      "id": "lab03_l2_13",
+      "prompt": "In the reaction CaCO3 -> CaO + CO2, what is the atom count of oxygen on the product side?",
+      "options": [
+        "Exactly three oxygen atoms (1 in CaO + 2 in CO2).",
+        "Exactly two oxygen atoms from the carbon dioxide.",
+        "Exactly one oxygen atom from the calcium oxide.",
+        "Exactly four oxygen atoms combined together."
+      ],
+      "correctIndex": 0,
+      "explanation": "CaO has 1 O and CO2 has 2 O, giving 1 + 2 = 3 O atoms, matching CaCO3."
+    },
+    {
+      "id": "lab03_l2_14",
+      "prompt": "Balance the single displacement reaction: Zn + __ HCl -> ZnCl2 + H2. What coefficient is missing?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of one (1).",
+        "A coefficient of three (3).",
+        "A coefficient of four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Zn + 2 HCl -> ZnCl2 + H2 balances 1 Zn, 2 H, and 2 Cl atoms."
+    },
+    {
+      "id": "lab03_l2_15",
+      "prompt": "Which balanced equation shows the thermal decomposition of copper(II) carbonate?",
+      "options": [
+        "CuCO3 -> CuO + CO2",
+        "2 CuCO3 -> 2 CuO + 3 CO2",
+        "CuCO3 -> Cu + C + 3 O2",
+        "CuCO3 -> Cu2O + CO"
+      ],
+      "correctIndex": 0,
+      "explanation": "CuCO3 -> CuO + CO2 has 1 Cu, 1 C, and 3 O atoms on each side."
+    },
+    {
+      "id": "lab03_l2_16",
+      "prompt": "What coefficient is needed for water in: P4O10 + __ H2O -> 4 H3PO4?",
+      "options": [
+        "A coefficient of six (6).",
+        "A coefficient of four (4).",
+        "A coefficient of three (3).",
+        "A coefficient of five (5)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Product has 4 * 3 = 12 H atoms. 6 H2O provides 12 H atoms and 6 O atoms + 10 = 16 O atoms (4 * 4 = 16)."
+    },
+    {
+      "id": "lab03_l2_17",
+      "prompt": "Which coefficients balance the combustion of propane: C3H8 + 5 O2 -> __ CO2 + __ H2O?",
+      "options": [
+        "3 CO2 and 4 H2O",
+        "2 CO2 and 4 H2O",
+        "3 CO2 and 3 H2O",
+        "4 CO2 and 5 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "C3H8 + 5 O2 -> 3 CO2 + 4 H2O balances 3 C, 8 H, and 10 O atoms."
+    },
+    {
+      "id": "lab03_l2_18",
+      "prompt": "When 12 g of carbon reacts with 32 g of oxygen in a closed vessel, what mass of carbon dioxide is formed?",
+      "options": [
+        "Exactly 44 grams of carbon dioxide.",
+        "Exactly 20 grams of carbon dioxide.",
+        "Exactly 32 grams of carbon dioxide.",
+        "Exactly 24 grams of carbon dioxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mass of reactants = 12 g + 32 g = 44 g. Mass of product = 44 g."
+    },
+    {
+      "id": "lab03_l2_19",
+      "prompt": "In the reaction 2 KClO3 -> 2 KCl + 3 O2, how many oxygen atoms are present on each side?",
+      "options": [
+        "Exactly six oxygen atoms on each side.",
+        "Exactly three oxygen atoms on each side.",
+        "Exactly two oxygen atoms on each side.",
+        "Exactly five oxygen atoms on each side."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 * 3 = 6 O atoms in KClO3; 3 * 2 = 6 O atoms in 3 O2."
+    },
+    {
+      "id": "lab03_l2_20",
+      "prompt": "Which balanced equation represents the reaction between iron and copper(II) sulfate?",
+      "options": [
+        "Fe + CuSO4 -> FeSO4 + Cu",
+        "2 Fe + CuSO4 -> Fe2SO4 + Cu",
+        "Fe + 2 CuSO4 -> Fe(SO4)2 + Cu",
+        "Fe + CuSO4 -> FeS + CuO2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe + CuSO4 -> FeSO4 + Cu balances 1 Fe, 1 Cu, 1 S, and 4 O atoms."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab03_l3_01",
+      "prompt": "A student burns 2.4 g of magnesium in air. The white ash formed has a mass of 4.0 g. What mass of oxygen reacted?",
+      "options": [
+        "Exactly 1.6 grams of oxygen gas.",
+        "Exactly 2.4 grams of oxygen gas.",
+        "Exactly 6.4 grams of oxygen gas.",
+        "Exactly 0.8 grams of oxygen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mass of oxygen = Mass of magnesium oxide (4.0 g) - Mass of magnesium (2.4 g) = 1.6 g."
+    },
+    {
+      "id": "lab03_l3_02",
+      "prompt": "Why does burning a piece of wood in an open fireplace appear to lose mass?",
+      "options": [
+        "Gaseous products (CO2 and H2O) escape into the atmosphere unmeasured.",
+        "Atoms in the wood are converted directly into pure heat energy.",
+        "Combustion permanently destroys the carbon and hydrogen atoms.",
+        "The ash created has negative gravitational attraction."
+      ],
+      "correctIndex": 0,
+      "explanation": "In an open system, volatile gases escape; if all gases were collected, total mass would remain constant."
+    },
+    {
+      "id": "lab03_l3_03",
+      "prompt": "Balance the equation: __ FeS2 + __ O2 -> 2 Fe2O3 + 8 SO2. What are the reactant coefficients?",
+      "options": [
+        "4 FeS2 and 11 O2",
+        "2 FeS2 and 7 O2",
+        "4 FeS2 and 8 O2",
+        "2 FeS2 and 11 O2"
+      ],
+      "correctIndex": 0,
+      "explanation": "4 FeS2 + 11 O2 -> 2 Fe2O3 + 8 SO2. Fe: 4=4; S: 8=8; O: 22 = 6 + 16 = 22."
+    },
+    {
+      "id": "lab03_l3_04",
+      "prompt": "A sealed flashbulb contains magnesium wire and oxygen gas. The flashbulb is weighed, triggered, and reweighed. What is observed?",
+      "options": [
+        "The total mass remains completely unchanged.",
+        "The mass decreases as light energy radiates away.",
+        "The mass increases because magnesium oxide is formed.",
+        "The mass drops to zero due to intense heat generation."
+      ],
+      "correctIndex": 0,
+      "explanation": "In a closed system, mass is strictly conserved before and after the reaction."
+    },
+    {
+      "id": "lab03_l3_05",
+      "prompt": "Which balanced equation shows the reaction of copper with concentrated nitric acid producing NO2 gas?",
+      "options": [
+        "Cu + 4 HNO3 -> Cu(NO3)2 + 2 NO2 + 2 H2O",
+        "Cu + 2 HNO3 -> Cu(NO3)2 + H2",
+        "Cu + 2 HNO3 -> Cu(NO3)2 + NO2 + H2O",
+        "2 Cu + 6 HNO3 -> 2 Cu(NO3)2 + 2 NO2 + 3 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cu + 4 HNO3 -> Cu(NO3)2 + 2 NO2 + 2 H2O balances Cu, N (4=2+2), H (4=4), and O (12 = 6+4+2)."
+    },
+    {
+      "id": "lab03_l3_06",
+      "prompt": "How many moles of O2 are needed to completely combust 2 moles of butane (C4H10) according to: 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O?",
+      "options": [
+        "Exactly thirteen moles of oxygen gas.",
+        "Exactly eight moles of oxygen gas.",
+        "Exactly ten moles of oxygen gas.",
+        "Exactly twenty-six moles of oxygen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "The stoichiometric coefficient directly gives the molar ratio: 2 mol C4H10 reacts with 13 mol O2."
+    },
+    {
+      "id": "lab03_l3_07",
+      "prompt": "Balance the reaction: __ NH3 + __ O2 -> 4 NO + 6 H2O. What are the reactant coefficients?",
+      "options": [
+        "4 NH3 and 5 O2",
+        "2 NH3 and 3 O2",
+        "4 NH3 and 6 O2",
+        "2 NH3 and 5 O2"
+      ],
+      "correctIndex": 0,
+      "explanation": "4 NH3 + 5 O2 -> 4 NO + 6 H2O. N: 4=4; H: 12=12; O: 10 = 4 + 6 = 10."
+    },
+    {
+      "id": "lab03_l3_08",
+      "prompt": "Why is the reaction equation N2 + O2 -> 2 NO balanced, but N2 + O2 -> NO unbalanced?",
+      "options": [
+        "The second equation violates conservation of matter by discarding half the atoms.",
+        "The first equation produces liquid products instead of gaseous products.",
+        "The second equation violates the rules of thermodynamic temperature.",
+        "The first equation requires a solid platinum catalyst to occur."
+      ],
+      "correctIndex": 0,
+      "explanation": "N2 + O2 -> NO has 2 N and 2 O on the left but only 1 N and 1 O on the right."
+    },
+    {
+      "id": "lab03_l3_09",
+      "prompt": "A student claims that 2 H2 + O2 -> 2 H2O shows mass is NOT conserved because 3 reactant molecules become 2 product molecules. How do you refute this?",
+      "options": [
+        "Mass depends on total atom count and types, not the number of independent molecules.",
+        "The student is correct; mass is only conserved in nuclear reactions.",
+        "Product water molecules weigh three times more than reactant molecules.",
+        "Molecules combine their masses into denser gravitational fields."
+      ],
+      "correctIndex": 0,
+      "explanation": "Molecule count can change during reactions, but total atom count and atomic mass remain strictly conserved."
+    },
+    {
+      "id": "lab03_l3_10",
+      "prompt": "What coefficient balances lead in the thermal decomposition: 2 Pb(NO3)2 -> __ PbO + 4 NO2 + O2?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of one (1).",
+        "A coefficient of four (4).",
+        "A coefficient of three (3)."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 Pb on the left requires 2 PbO on the right (2 Pb, 4 N, 12 O = 2 + 8 + 2 = 12)."
+    },
+    {
+      "id": "lab03_l3_11",
+      "prompt": "Balance: Al2(SO4)3 + __ Ca(OH)2 -> 2 Al(OH)3 + __ CaSO4. What is the coefficient for Ca(OH)2 and CaSO4?",
+      "options": [
+        "Both coefficients are three (3).",
+        "Both coefficients are two (2).",
+        "Both coefficients are one (1).",
+        "Both coefficients are four (4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Al2(SO4)3 + 3 Ca(OH)2 -> 2 Al(OH)3 + 3 CaSO4 balances 2 Al, 3 SO4, 3 Ca, and 6 OH groups."
+    },
+    {
+      "id": "lab03_l3_12",
+      "prompt": "If 56 g of iron reacts completely with 32 g of sulfur, what mass of iron(II) sulfide (FeS) is formed?",
+      "options": [
+        "Exactly 88 grams of iron(II) sulfide.",
+        "Exactly 24 grams of iron(II) sulfide.",
+        "Exactly 112 grams of iron(II) sulfide.",
+        "Exactly 64 grams of iron(II) sulfide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mass conservation: 56 g Fe + 32 g S = 88 g FeS."
+    },
+    {
+      "id": "lab03_l3_13",
+      "prompt": "Balance the redox reaction: __ Cu + __ AgNO3 -> Cu(NO3)2 + __ Ag.",
+      "options": [
+        "1 Cu + 2 AgNO3 -> Cu(NO3)2 + 2 Ag",
+        "2 Cu + 2 AgNO3 -> 2 Cu(NO3)2 + Ag",
+        "1 Cu + 1 AgNO3 -> Cu(NO3)2 + Ag",
+        "2 Cu + 1 AgNO3 -> Cu(NO3)2 + 2 Ag"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cu + 2 AgNO3 -> Cu(NO3)2 + 2 Ag balances 1 Cu, 2 Ag, and 2 NO3 groups."
+    },
+    {
+      "id": "lab03_l3_14",
+      "prompt": "Why does an atom ledger/count table assist students in balancing complex chemical equations?",
+      "options": [
+        "It systematically tracks atom totals on both sides to verify equality.",
+        "It predicts whether the reaction will emit toxic radiation.",
+        "It measures the exact volume of water needed to dissolve the salt.",
+        "It calculates the market price of the chemicals used."
+      ],
+      "correctIndex": 0,
+      "explanation": "An atom ledger provides an inventory of reactant vs product atoms for each element."
+    },
+    {
+      "id": "lab03_l3_15",
+      "prompt": "In the reaction: __ C2H2 + 5 O2 -> 4 CO2 + 2 H2O, what coefficient balances ethyne (C2H2)?",
+      "options": [
+        "A coefficient of two (2).",
+        "A coefficient of one (1).",
+        "A coefficient of four (4).",
+        "A coefficient of three (3)."
+      ],
+      "correctIndex": 0,
+      "explanation": "4 CO2 has 4 C atoms. 2 C2H2 provides 4 C atoms (and 4 H atoms matching 2 H2O)."
+    },
+    {
+      "id": "lab03_l3_16",
+      "prompt": "A mixture of 4 g of hydrogen gas and 32 g of oxygen gas reacts completely. What is formed?",
+      "options": [
+        "36 g of water, with zero reactants remaining.",
+        "32 g of water, with 4 g of hydrogen unreacted.",
+        "18 g of water, with 18 g of oxygen unreacted.",
+        "40 g of water, with excess energy absorbed."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 H2 + O2 -> 2 H2O. 4 g H2 (2 mol) reacts with 32 g O2 (1 mol) to yield exactly 36 g H2O (2 mol)."
+    },
+    {
+      "id": "lab03_l3_17",
+      "prompt": "Balance: __ K + 2 H2O -> 2 KOH + __ H2. What are the missing coefficients?",
+      "options": [
+        "2 K and 1 H2",
+        "1 K and 2 H2",
+        "2 K and 2 H2",
+        "1 K and 1 H2"
+      ],
+      "correctIndex": 0,
+      "explanation": "2 K + 2 H2O -> 2 KOH + H2 balances 2 K, 4 H, and 2 O atoms."
+    },
+    {
+      "id": "lab03_l3_18",
+      "prompt": "What is the ratio of reactant moles to product moles in the Haber reaction: N2 + 3 H2 -> 2 NH3?",
+      "options": [
+        "A ratio of four reactant moles to two product moles (4:2).",
+        "A ratio of two reactant moles to three product moles (2:3).",
+        "A ratio of one reactant mole to two product moles (1:2).",
+        "A ratio of three reactant moles to four product moles (3:4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "1 mol N2 + 3 mol H2 = 4 moles of gaseous reactants producing 2 moles of NH3."
+    },
+    {
+      "id": "lab03_l3_19",
+      "prompt": "In the reaction: 2 Al + 6 HCl -> 2 AlCl3 + 3 H2, how many grams of hydrogen (H2=2.0 g/mol) form from 54 g of Al (Al=27.0 g/mol)?",
+      "options": [
+        "Exactly 6.0 grams of hydrogen gas.",
+        "Exactly 3.0 grams of hydrogen gas.",
+        "Exactly 2.0 grams of hydrogen gas.",
+        "Exactly 12.0 grams of hydrogen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "54 g Al = 2.0 mol Al. From stoichiometry, 2 mol Al yields 3 mol H2. Mass = 3 mol * 2.0 g/mol = 6.0 g."
+    },
+    {
+      "id": "lab03_l3_20",
+      "prompt": "What visual evidence in a particulate model indicates that a chemical equation is properly balanced?",
+      "options": [
+        "The total number of spheres of each color is identical before and after.",
+        "All product spheres are bonded together into a single giant clump.",
+        "The product side contains twice as many colored spheres as the reactant side.",
+        "The reactant spheres have completely changed into a different color."
+      ],
+      "correctIndex": 0,
+      "explanation": "Particulate models demonstrate conservation by having identical counts of each colored atomic sphere."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab03_l4_01",
+      "prompt": "Why does balancing equations reflect Dalton's atomic theory at the submicroscopic scale?",
+      "options": [
+        "Atoms are indivisible in chemical reactions; rearrangement preserves their number and identities.",
+        "Atoms lose valence electrons continuously until all mass converts into photons.",
+        "Chemical reactions cause atomic nuclei to fuse together into heavier elements.",
+        "Chemical bonds absorb atomic mass and convert it into gravitational attraction."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dalton posited that chemical reactions rearrange permanent, indivisible atoms, necessitating mass conservation."
+    },
+    {
+      "id": "lab03_l4_02",
+      "prompt": "For the combustion of a generic alkane CnH2n+2, what is the stoichiometric coefficient for O2 in terms of n?",
+      "options": [
+        "(3n + 1) / 2",
+        "(2n + 1) / 2",
+        "3n / 2",
+        "(n + 1) / 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "CnH2n+2 + (3n+1)/2 O2 -> n CO2 + (n+1) H2O. Product O atoms = 2n + (n+1) = 3n+1. Dividing by 2 gives (3n+1)/2."
+    },
+    {
+      "id": "lab03_l4_03",
+      "prompt": "A sample of hydrocarbon CxHy of mass 4.40 g is combusted, yielding 13.20 g of CO2 and 7.20 g of H2O. What is its empirical formula?",
+      "options": [
+        "C3H8 (propane)",
+        "C2H6 (ethane)",
+        "CH4 (methane)",
+        "C4H10 (butane)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles C = 13.20 / 44.0 = 0.30 mol. Moles H = (7.20 / 18.0) * 2 = 0.80 mol. Ratio C : H = 3 : 8 -> C3H8."
+    },
+    {
+      "id": "lab03_l4_04",
+      "prompt": "Balance the complex redox equation in acid: __ MnO4- + __ Fe2+ + __ H+ -> __ Mn2+ + __ Fe3+ + __ H2O.",
+      "options": [
+        "1 MnO4- + 5 Fe2+ + 8 H+ -> 1 Mn2+ + 5 Fe3+ + 4 H2O",
+        "2 MnO4- + 5 Fe2+ + 16 H+ -> 2 Mn2+ + 5 Fe3+ + 8 H2O",
+        "1 MnO4- + 2 Fe2+ + 4 H+ -> 1 Mn2+ + 2 Fe3+ + 2 H2O",
+        "1 MnO4- + 3 Fe2+ + 6 H+ -> 1 Mn2+ + 3 Fe3+ + 3 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "MnO4- + 8 H+ + 5 e- -> Mn2+ + 4 H2O; 5 Fe2+ -> 5 Fe3+ + 5 e-. Combined balances charge and atoms."
+    },
+    {
+      "id": "lab03_l4_05",
+      "prompt": "Why is a fractional coefficient (e.g., C2H6 + 7/2 O2 -> 2 CO2 + 3 H2O) acceptable in thermodynamics but cleared in basic equations?",
+      "options": [
+        "Thermodynamics operates on molar quantities; elementary reactions describe discrete indivisible molecules.",
+        "Fractional molecules can exist in high-temperature plasma states.",
+        "Oxygen molecules can be split into half-atoms in secondary school labs.",
+        "Thermodynamic equations ignore the conservation of mass law."
+      ],
+      "correctIndex": 0,
+      "explanation": "In thermochemistry, coefficients represent moles of substances; in basic stoichiometry, whole integers represent discrete molecules."
+    },
+    {
+      "id": "lab03_l4_06",
+      "prompt": "When 10.0 g of calcium reacts with 10.0 g of oxygen gas to form CaO (Ca=40.1, O=16.0), which reactant is limiting and what mass of CaO forms?",
+      "options": [
+        "Calcium is limiting; 14.0 g of calcium oxide is formed.",
+        "Oxygen is limiting; 20.0 g of calcium oxide is formed.",
+        "Calcium is limiting; 10.0 g of calcium oxide is formed.",
+        "Neither is limiting; exactly 20.0 g of calcium oxide forms."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 Ca + O2 -> 2 CaO. Moles Ca = 10.0 / 40.1 = 0.249 mol. Moles O2 = 10.0 / 32.0 = 0.3125 mol. 0.249 mol Ca needs 0.1245 mol O2. Ca is limiting. Mass CaO = 0.249 * 56.1 = 14.0 g."
+    },
+    {
+      "id": "lab03_l4_07",
+      "prompt": "Balance the disproportionation reaction of chlorine in hot concentrated alkali: __ Cl2 + __ OH- -> __ Cl- + __ ClO3- + __ H2O.",
+      "options": [
+        "3 Cl2 + 6 OH- -> 5 Cl- + 1 ClO3- + 3 H2O",
+        "2 Cl2 + 4 OH- -> 3 Cl- + 1 ClO3- + 2 H2O",
+        "1 Cl2 + 2 OH- -> 1 Cl- + 1 ClO3- + 1 H2O",
+        "3 Cl2 + 4 OH- -> 4 Cl- + 2 ClO3- + 2 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "3 Cl2 + 6 OH- -> 5 Cl- + ClO3- + 3 H2O. Cl: 6 = 5 + 1; O: 6 = 3 + 3; H: 6 = 6; Charge: -6 = -5 - 1."
+    },
+    {
+      "id": "lab03_l4_08",
+      "prompt": "What is the atom economy for the production of hydrogen gas in: CH4 + H2O -> CO + 3 H2 (C=12, H=1, O=16)?",
+      "options": [
+        "17.6% atom economy.",
+        "50.0% atom economy.",
+        "33.3% atom economy.",
+        "82.4% atom economy."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr desired product = 3 * 2.0 = 6.0. Total Mr reactants = 16.0 + 18.0 = 34.0. Atom economy = (6.0 / 34.0) * 100% = 17.6%."
+    },
+    {
+      "id": "lab03_l4_09",
+      "prompt": "In an industrial reactor, 100 kg of SO2 reacts with 25 kg of O2: 2 SO2 + O2 -> 2 SO3. What is the maximum theoretical mass of SO3 produced?",
+      "options": [
+        "125 kg of sulfur trioxide.",
+        "100 kg of sulfur trioxide.",
+        "80 kg of sulfur trioxide.",
+        "150 kg of sulfur trioxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles SO2 = 100,000 / 64.1 = 1560 mol. Moles O2 = 25,000 / 32.0 = 781.25 mol. 1560 mol SO2 requires 780 mol O2. Reactants are in exact stoichiometric ratio! Mass SO3 = 100 kg + 25 kg = 125 kg."
+    },
+    {
+      "id": "lab03_l4_10",
+      "prompt": "Why does Einstein's mass-energy equivalence E=mc2 NOT invalidate the Law of Conservation of Mass in ordinary chemistry labs?",
+      "options": [
+        "The mass defect from chemical bonding energy changes is on the order of 10^-9 g, far below balance detection.",
+        "Chemical reactions never release or absorb any form of energetic photons.",
+        "Mass converts into energy only inside the vacuum of deep outer space.",
+        "Atoms completely regenerate their lost mass by absorbing cosmic rays."
+      ],
+      "correctIndex": 0,
+      "explanation": "Chemical energy changes (~hundreds of kJ/mol) yield undetectable mass changes (dm = dE/c2 ~ 10^-9 g)."
+    },
+    {
+      "id": "lab03_l4_11",
+      "prompt": "Balance the synthesis of nitroglycerin: C3H5(OH)3 + 3 HNO3 -> C3H5(NO3)3 + __ H2O.",
+      "options": [
+        "Exactly three water molecules (3 H2O).",
+        "Exactly one water molecule (1 H2O).",
+        "Exactly two water molecules (2 H2O).",
+        "Exactly six water molecules (6 H2O)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Esterification of three -OH groups with nitric acid releases exactly 3 H2O molecules."
+    },
+    {
+      "id": "lab03_l4_12",
+      "prompt": "A student balances an equation using matrix algebra: A [reactants] = B [products]. What mathematical principle ensures a unique solution?",
+      "options": [
+        "Setting one coefficient arbitrarily to 1 and solving the system of homogeneous linear equations.",
+        "Inverting a singular zero-determinant matrix to cancel out spectator ions.",
+        "Multiplying all coefficients by imaginary numbers to balance ionic charges.",
+        "Adding an extra row of random variables to balance nuclear forces."
+      ],
+      "correctIndex": 0,
+      "explanation": "Balancing equations corresponds to finding the kernel (null space) of the atomic composition matrix."
+    },
+    {
+      "id": "lab03_l4_13",
+      "prompt": "How does the principle of charge conservation interact with mass conservation when balancing ionic half-equations?",
+      "options": [
+        "Both total atom count and net electrical charge must be identically balanced on both sides.",
+        "Net charge can be ignored as long as total mass of atoms is balanced.",
+        "Positive charges must always outnumber negative charges by two units.",
+        "Net charge on the product side must always equal exactly zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "In ionic equations, both matter and electrical charge are conserved simultaneously."
+    },
+    {
+      "id": "lab03_l4_14",
+      "prompt": "Balance: __ Cr2O7 2- + __ I- + __ H+ -> __ Cr3+ + __ I2 + __ H2O.",
+      "options": [
+        "1 Cr2O7 2- + 6 I- + 14 H+ -> 2 Cr3+ + 3 I2 + 7 H2O",
+        "2 Cr2O7 2- + 6 I- + 14 H+ -> 4 Cr3+ + 3 I2 + 7 H2O",
+        "1 Cr2O7 2- + 2 I- + 8 H+ -> 2 Cr3+ + 1 I2 + 4 H2O",
+        "1 Cr2O7 2- + 3 I- + 14 H+ -> 2 Cr3+ + 3 I2 + 7 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cr2O7 2- + 14 H+ + 6 e- -> 2 Cr3+ + 7 H2O; 6 I- -> 3 I2 + 6 e-. Charge: (-2) + (-6) + (+14) = +6 on both sides."
+    },
+    {
+      "id": "lab03_l4_15",
+      "prompt": "What happens to the pressure inside a rigid sealed container during the reaction: 2 CO(g) + O2(g) -> 2 CO2(g) at constant temperature?",
+      "options": [
+        "The total pressure decreases by 33% because 3 moles of gas become 2 moles of gas.",
+        "The total pressure increases by 50% because carbon dioxide is denser.",
+        "The total pressure remains completely constant because mass is conserved.",
+        "The total pressure drops immediately to a complete zero vacuum."
+      ],
+      "correctIndex": 0,
+      "explanation": "From PV=nRT, at constant T and V, pressure is proportional to moles of gas: 3 mol -> 2 mol (pressure decreases by 1/3)."
+    },
+    {
+      "id": "lab03_l4_16",
+      "prompt": "In the Ostwald process for nitric acid: 4 NH3 + 5 O2 -> 4 NO + 6 H2O. What volume of NO gas forms from 40 dm3 of NH3 at RTP?",
+      "options": [
+        "Exactly 40 dm3 of nitrogen monoxide gas.",
+        "Exactly 50 dm3 of nitrogen monoxide gas.",
+        "Exactly 60 dm3 of nitrogen monoxide gas.",
+        "Exactly 20 dm3 of nitrogen monoxide gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gay-Lussac's Law: equal volumes of gases at same T and P contain equal moles. 4 mol NH3 -> 4 mol NO (1:1 ratio, 40 dm3)."
+    },
+    {
+      "id": "lab03_l4_17",
+      "prompt": "Why does balancing equations with polyatomic ions (e.g. SO4 2-) as single intact units simplify balancing?",
+      "options": [
+        "When polyatomic ions do not break apart during reaction, treating them as single units reduces variable count.",
+        "Polyatomic ions have zero mass and do not contribute to atom counts.",
+        "Polyatomic ions always evaporate out of solution during neutralization.",
+        "Treating them as units allows students to ignore oxygen atom numbers."
+      ],
+      "correctIndex": 0,
+      "explanation": "If spectator polyatomic groups remain unchanged, treating them as single entities streamlines balancing."
+    },
+    {
+      "id": "lab03_l4_18",
+      "prompt": "A 10.00 g mixture of CaCO3 and MgCO3 yields 5.00 g of combined oxides (CaO and MgO) on heating. What is the mass percentage of CaCO3?",
+      "options": [
+        "Approximately 76% calcium carbonate by mass.",
+        "Approximately 24% calcium carbonate by mass.",
+        "Approximately 50% calcium carbonate by mass.",
+        "Approximately 90% calcium carbonate by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "Setting x = mass CaCO3, (10-x) = mass MgCO3. Moles CO2 lost = 5.00 / 44.0 = 0.1136 mol. Solving gives x ~ 7.6 g (76%)."
+    },
+    {
+      "id": "lab03_l4_19",
+      "prompt": "Balance the combustion of glucose in cellular respiration: C6H12O6 + __ O2 -> __ CO2 + __ H2O.",
+      "options": [
+        "6 O2, 6 CO2, and 6 H2O",
+        "6 O2, 12 CO2, and 6 H2O",
+        "12 O2, 6 CO2, and 12 H2O",
+        "3 O2, 6 CO2, and 6 H2O"
+      ],
+      "correctIndex": 0,
+      "explanation": "C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O balances 6 C, 12 H, and 18 O atoms."
+    },
+    {
+      "id": "lab03_l4_20",
+      "prompt": "What critical distinction separates an empirical chemical formula from a molecular chemical formula in balanced equations?",
+      "options": [
+        "Empirical formula is simplest whole-number atom ratio; molecular formula gives actual atom count in a molecule.",
+        "Empirical formula applies only to liquids; molecular formula applies only to gases.",
+        "Empirical formula contains no numbers; molecular formula contains only coefficients.",
+        "Empirical formulas cannot be balanced in chemical reactions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Empirical formula represents simplest integer ratio (e.g., CH2O), whereas molecular formula shows true composition (e.g., C6H12O6)."
+    }
+  ]
+}

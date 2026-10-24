@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab04_l1_01",
+      "prompt": "What is the primary agricultural purpose of synthetic chemical fertilizers?",
+      "options": [
+        "To supply essential mineral nutrients that promote healthy crop growth.",
+        "To sterilize the soil by eliminating all living bacteria and earthworms.",
+        "To change the physical color of agricultural soil to pure pitch-black.",
+        "To convert solid soil rock formations directly into pure liquid water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fertilizers supply essential elements (N, P, K) needed for plant protein synthesis and cellular growth."
+    },
+    {
+      "id": "lab04_l1_02",
+      "prompt": "Which three key elements are represented by the standard fertilizer designation 'NPK'?",
+      "options": [
+        "Nitrogen, Phosphorus, and Potassium.",
+        "Nickel, Platinum, and Krypton.",
+        "Sodium, Phosphorus, and Potassium.",
+        "Nitrogen, Lead, and Calcium."
+      ],
+      "correctIndex": 0,
+      "explanation": "N = Nitrogen, P = Phosphorus, K = Potassium (from Latin Kalium)."
+    },
+    {
+      "id": "lab04_l1_03",
+      "prompt": "Which chemical nutrient in fertilizers is primarily responsible for leafy green vegetative growth?",
+      "options": [
+        "Nitrogen (N) for protein and chlorophyll synthesis.",
+        "Potassium (K) for hardening external tree bark.",
+        "Phosphorus (P) for absorbing atmospheric nitrogen.",
+        "Calcium (Ca) for generating floral fragrance."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nitrogen is a vital component of amino acids, proteins, and chlorophyll, driving leafy vegetative growth."
+    },
+    {
+      "id": "lab04_l1_04",
+      "prompt": "What chemical compound is produced when aqueous ammonia reacts with sulfuric acid?",
+      "options": [
+        "Ammonium sulfate fertilizer salt.",
+        "Ammonium nitrate fertilizer salt.",
+        "Ammonium phosphate fertilizer salt.",
+        "Ammonium chloride cleaning salt."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 NH3 + H2SO4 -> (NH4)2SO4 (ammonium sulfate)."
+    },
+    {
+      "id": "lab04_l1_05",
+      "prompt": "What type of chemical reaction occurs when an acid neutralizes an alkaline ammonia solution?",
+      "options": [
+        "An acid-base neutralization reaction.",
+        "A thermal combustion oxidation reaction.",
+        "A nuclear fission decomposition reaction.",
+        "A physical condensation precipitation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Reaction of an acid with an alkaline base to form a salt is a neutralization reaction."
+    },
+    {
+      "id": "lab04_l1_06",
+      "prompt": "What is the chemical formula of the ammonium ion?",
+      "options": [
+        "NH4+ with a single positive charge.",
+        "NH3 with an overall neutral charge.",
+        "NH2- with a single negative charge.",
+        "NO3- with a single negative charge."
+      ],
+      "correctIndex": 0,
+      "explanation": "The ammonium polyatomic cation is NH4+."
+    },
+    {
+      "id": "lab04_l1_07",
+      "prompt": "What is the chemical formula of ammonium sulfate fertilizer?",
+      "options": [
+        "(NH4)2SO4",
+        "NH4SO4",
+        "(NH4)3SO4",
+        "NH4(SO4)2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sulfate has a 2- charge (SO4 2-), requiring two NH4+ ions: (NH4)2SO4."
+    },
+    {
+      "id": "lab04_l1_08",
+      "prompt": "What is the chemical formula of ammonium nitrate fertilizer?",
+      "options": [
+        "NH4NO3",
+        "(NH4)2NO3",
+        "NH4(NO3)2",
+        "NH3NO3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Both NH4+ and NO3- carry single opposite charges: NH4NO3."
+    },
+    {
+      "id": "lab04_l1_09",
+      "prompt": "What laboratory method is used to determine the exact volume of acid needed to neutralize ammonia?",
+      "options": [
+        "A volumetric acid-base titration.",
+        "Gravimetric density centrifugation.",
+        "Fractional vacuum distillation.",
+        "Paper chromatography separation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Titration accurately measures the volume of acid required to reach the equivalence point with a base."
+    },
+    {
+      "id": "lab04_l1_10",
+      "prompt": "What instrument is used to dispense controlled volumes of acid accurately during a titration?",
+      "options": [
+        "A calibrated glass burette.",
+        "A wide-mouth porcelain evaporating basin.",
+        "A heavy cast-iron Bunsen burner.",
+        "A wooden test tube drying rack."
+      ],
+      "correctIndex": 0,
+      "explanation": "A burette delivers precise, variable volumes of liquid drop by drop."
+    },
+    {
+      "id": "lab04_l1_11",
+      "prompt": "Why is an indicator (such as methyl orange) added to the titration flask?",
+      "options": [
+        "To signal the neutralization endpoint by changing color.",
+        "To speed up the rate of reaction between ions.",
+        "To increase the boiling temperature of the mixture.",
+        "To prevent the ammonium salt from dissolving in water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Indicators change color sharply at the neutralization equivalence point."
+    },
+    {
+      "id": "lab04_l1_12",
+      "prompt": "What is the physical appearance of pure ammonium sulfate crystals when dry?",
+      "options": [
+        "A white crystalline solid powder.",
+        "A dark reddish-brown oily liquid.",
+        "A bright canary-yellow slurry.",
+        "A brilliant sky-blue crystal chunk."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pure ammonium sulfate forms white crystalline salts."
+    },
+    {
+      "id": "lab04_l1_13",
+      "prompt": "How are solid fertilizer crystals isolated from the neutralized aqueous solution?",
+      "options": [
+        "By gentle heating to evaporate water to the crystallization point, then cooling.",
+        "By rapid freezing until the entire container solidifies into solid ice.",
+        "By filtering out the dissolved liquid with coarse laboratory paper.",
+        "By adding concentrated sodium hydroxide until a blue solid falls out."
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaporating solvent to saturation and allowing slow cooling yields pure crystalline salt."
+    },
+    {
+      "id": "lab04_l1_14",
+      "prompt": "What happens to fertilizer crystals if an evaporating dish is heated completely to dryness with high flame?",
+      "options": [
+        "The ammonium salt can thermally decompose and release pungent gases.",
+        "The crystals turn into metallic platinum wire automatically.",
+        "The total mass of the dish increases by ten times.",
+        "The salt converts into pure liquid elemental mercury."
+      ],
+      "correctIndex": 0,
+      "explanation": "Overheating decomposes ammonium salts; heating should stop at crystallization point."
+    },
+    {
+      "id": "lab04_l1_15",
+      "prompt": "What state symbol describes the sulfuric acid solution before reaction?",
+      "options": [
+        "(aq) for aqueous solution in water.",
+        "(s) for insoluble crystalline solid.",
+        "(l) for pure liquid without solvent.",
+        "(g) for gaseous vapor state."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sulfuric acid dissolved in water is aqueous, designated (aq)."
+    },
+    {
+      "id": "lab04_l1_16",
+      "prompt": "What is the pH of a neutral solution at room temperature (25 \u00b0C)?",
+      "options": [
+        "Exactly pH 7 (neutral).",
+        "Exactly pH 1 (strongly acidic).",
+        "Exactly pH 14 (strongly alkaline).",
+        "Exactly pH 0 (extreme acid)."
+      ],
+      "correctIndex": 0,
+      "explanation": "A neutral solution has a pH of 7 at 25 \u00b0C."
+    },
+    {
+      "id": "lab04_l1_17",
+      "prompt": "Which acid is used to produce ammonium nitrate fertilizer?",
+      "options": [
+        "Aqueous nitric acid (HNO3).",
+        "Aqueous sulfuric acid (H2SO4).",
+        "Aqueous hydrochloric acid (HCl).",
+        "Aqueous phosphoric acid (H3PO4)."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3 + HNO3 -> NH4NO3."
+    },
+    {
+      "id": "lab04_l1_18",
+      "prompt": "Which acid is used to produce ammonium phosphate fertilizer?",
+      "options": [
+        "Aqueous phosphoric acid (H3PO4).",
+        "Aqueous nitric acid (HNO3).",
+        "Aqueous sulfuric acid (H2SO4).",
+        "Aqueous carbonic acid (H2CO3)."
+      ],
+      "correctIndex": 0,
+      "explanation": "3 NH3 + H3PO4 -> (NH4)3PO4."
+    },
+    {
+      "id": "lab04_l1_19",
+      "prompt": "Why are ammonium salts suitable for plant roots to absorb?",
+      "options": [
+        "They are highly soluble in water and easily taken up by roots.",
+        "They are completely insoluble rocks that sit on the soil surface.",
+        "They emit radioactive rays that mutate plant leaves faster.",
+        "They repel moisture and keep plant roots completely dry."
+      ],
+      "correctIndex": 0,
+      "explanation": "High water solubility allows ammonium salts to dissolve in soil water for root uptake."
+    },
+    {
+      "id": "lab04_l1_20",
+      "prompt": "What common household liquid smells strongly of ammonia gas?",
+      "options": [
+        "Window and glass cleaning solutions.",
+        "Carbonated soda beverage drinks.",
+        "Pure virgin olive cooking oil.",
+        "Table sugar dissolved in water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Many window cleaners contain dilute aqueous ammonia as a grease-cutting alkaline agent."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab04_l2_01",
+      "prompt": "Which balanced chemical equation represents the reaction between ammonia and sulfuric acid?",
+      "options": [
+        "2 NH3(aq) + H2SO4(aq) -> (NH4)2SO4(aq)",
+        "NH3(aq) + H2SO4(aq) -> NH4SO4(aq)",
+        "NH3(aq) + 2 H2SO4(aq) -> (NH4)2(SO4)2(aq)",
+        "3 NH3(aq) + H2SO4(aq) -> (NH4)3SO4(aq)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two moles of NH3 react with one mole of diprotic H2SO4 to form (NH4)2SO4."
+    },
+    {
+      "id": "lab04_l2_02",
+      "prompt": "Which balanced equation represents the synthesis of ammonium nitrate fertilizer?",
+      "options": [
+        "NH3(aq) + HNO3(aq) -> NH4NO3(aq)",
+        "2 NH3(aq) + HNO3(aq) -> (NH4)2NO3(aq)",
+        "NH3(aq) + 2 HNO3(aq) -> NH4(NO3)2(aq)",
+        "NH4(aq) + NO3(aq) -> NH4NO3(s)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia reacts with monoprotic nitric acid in a 1:1 molar ratio: NH3 + HNO3 -> NH4NO3."
+    },
+    {
+      "id": "lab04_l2_03",
+      "prompt": "How many moles of ammonia are required to react completely with 0.50 moles of sulfuric acid?",
+      "options": [
+        "Exactly 1.0 mole of ammonia gas.",
+        "Exactly 0.50 moles of ammonia gas.",
+        "Exactly 0.25 moles of ammonia gas.",
+        "Exactly 2.0 moles of ammonia gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Stoichiometric ratio is 2 NH3 : 1 H2SO4. 0.50 mol H2SO4 * 2 = 1.0 mol NH3."
+    },
+    {
+      "id": "lab04_l2_04",
+      "prompt": "How many moles of ammonia are needed to react with 0.40 moles of phosphoric acid (H3PO4)?",
+      "options": [
+        "Exactly 1.20 moles of ammonia.",
+        "Exactly 0.40 moles of ammonia.",
+        "Exactly 0.80 moles of ammonia.",
+        "Exactly 0.13 moles of ammonia."
+      ],
+      "correctIndex": 0,
+      "explanation": "3 NH3 + H3PO4 -> (NH4)3PO4. 0.40 mol * 3 = 1.20 mol NH3."
+    },
+    {
+      "id": "lab04_l2_05",
+      "prompt": "Why is a titration performed once WITH indicator, and then repeated WITHOUT indicator to prepare pure crystals?",
+      "options": [
+        "To prevent the indicator dye from contaminating the fertilizer crystals.",
+        "Because indicator molecules explode when heated in an evaporating basin.",
+        "Because sulfuric acid destroys indicator molecules on the second run.",
+        "To allow the salt crystals to grow into ten times larger needles."
+      ],
+      "correctIndex": 0,
+      "explanation": "The first titration determines the exact neutral volumes; the repeat run without indicator yields pure uncolored salt."
+    },
+    {
+      "id": "lab04_l2_06",
+      "prompt": "What color does methyl orange indicator turn when excess sulfuric acid is present in the flask?",
+      "options": [
+        "A distinctive red-pink color.",
+        "A bright golden-yellow color.",
+        "A dark navy-blue color.",
+        "A completely colorless clear fluid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Methyl orange is red in acidic solution (pH < 3.1) and yellow in alkaline solution (pH > 4.4)."
+    },
+    {
+      "id": "lab04_l2_07",
+      "prompt": "What color does methyl orange indicator exhibit in an alkaline ammonia solution before titration starts?",
+      "options": [
+        "A bright golden-yellow color.",
+        "A distinctive red-pink color.",
+        "A deep forest-green color.",
+        "A murky purple-black shade."
+      ],
+      "correctIndex": 0,
+      "explanation": "In alkaline conditions (pH > 4.4), methyl orange displays its yellow form."
+    },
+    {
+      "id": "lab04_l2_08",
+      "prompt": "If 25.0 cm3 of 0.20 mol/dm3 H2SO4 neutralizes 20.0 cm3 of NH3 solution, what is the concentration of NH3?",
+      "options": [
+        "0.50 mol/dm3 ammonia.",
+        "0.25 mol/dm3 ammonia.",
+        "0.10 mol/dm3 ammonia.",
+        "0.40 mol/dm3 ammonia."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles H2SO4 = 0.025 * 0.20 = 0.005 mol. Moles NH3 = 2 * 0.005 = 0.010 mol. Conc NH3 = 0.010 / 0.020 = 0.50 mol/dm3."
+    },
+    {
+      "id": "lab04_l2_09",
+      "prompt": "How can a student test whether a heated solution has reached the crystallization point?",
+      "options": [
+        "Dip a cold glass rod; crystals form quickly on the cool glass tip.",
+        "Add ice cubes directly into the boiling evaporating dish.",
+        "Pour the hot liquid into plastic measuring cylinders.",
+        "Boil the solution until all water evaporates completely."
+      ],
+      "correctIndex": 0,
+      "explanation": "Forming tiny crystals on a cool glass rod indicates a saturated solution ready for crystallization."
+    },
+    {
+      "id": "lab04_l2_10",
+      "prompt": "What happens to the solubility of ammonium sulfate in water as the temperature decreases from 80 \u00b0C to 20 \u00b0C?",
+      "options": [
+        "Solubility decreases, forcing excess solute to crystallize out of solution.",
+        "Solubility increases, dissolving any solid crystals back into liquid.",
+        "Solubility remains strictly identical at all temperatures.",
+        "Solubility drops to zero, converting the liquid water into solid ice."
+      ],
+      "correctIndex": 0,
+      "explanation": "Solubility of most salts decreases with cooling, causing excess dissolved solute to crystallize."
+    },
+    {
+      "id": "lab04_l2_11",
+      "prompt": "Which of the following is a diprotic acid used in fertilizer manufacture?",
+      "options": [
+        "Sulfuric acid (H2SO4), donating two protons.",
+        "Nitric acid (HNO3), donating one proton.",
+        "Hydrochloric acid (HCl), donating one proton.",
+        "Ethanoic acid (CH3COOH), donating one proton."
+      ],
+      "correctIndex": 0,
+      "explanation": "H2SO4 is diprotic because each molecule can donate two protons (H+ ions)."
+    },
+    {
+      "id": "lab04_l2_12",
+      "prompt": "Calculate the molar mass of ammonium nitrate, NH4NO3 (N=14.0, H=1.0, O=16.0).",
+      "options": [
+        "80.0 g/mol",
+        "68.0 g/mol",
+        "76.0 g/mol",
+        "94.0 g/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr = (2 * 14.0) + (4 * 1.0) + (3 * 16.0) = 28.0 + 4.0 + 48.0 = 80.0 g/mol."
+    },
+    {
+      "id": "lab04_l2_13",
+      "prompt": "Calculate the percentage by mass of nitrogen in pure ammonium nitrate, NH4NO3 (Mr = 80.0).",
+      "options": [
+        "35.0% nitrogen by mass.",
+        "17.5% nitrogen by mass.",
+        "28.0% nitrogen by mass.",
+        "42.5% nitrogen by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "Two N atoms: mass = 28.0 g. %N = (28.0 / 80.0) * 100% = 35.0%."
+    },
+    {
+      "id": "lab04_l2_14",
+      "prompt": "Calculate the molar mass of ammonium sulfate, (NH4)2SO4 (N=14.0, H=1.0, S=32.1, O=16.0).",
+      "options": [
+        "132.1 g/mol",
+        "114.1 g/mol",
+        "126.1 g/mol",
+        "148.1 g/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr = 2 * (14.0 + 4.0) + 32.1 + (4 * 16.0) = 36.0 + 32.1 + 64.0 = 132.1 g/mol."
+    },
+    {
+      "id": "lab04_l2_15",
+      "prompt": "Calculate the percentage by mass of nitrogen in ammonium sulfate, (NH4)2SO4 (Mr = 132.1).",
+      "options": [
+        "21.2% nitrogen by mass.",
+        "28.0% nitrogen by mass.",
+        "35.0% nitrogen by mass.",
+        "14.1% nitrogen by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "Two N atoms: mass = 28.0 g. %N = (28.0 / 132.1) * 100% = 21.2%."
+    },
+    {
+      "id": "lab04_l2_16",
+      "prompt": "Why does a farmer choose ammonium nitrate over ammonium sulfate for rapid nitrogen delivery?",
+      "options": [
+        "Ammonium nitrate has a higher percentage of nitrogen by mass (35% vs 21%).",
+        "Ammonium nitrate does not dissolve in rainwater and lasts longer.",
+        "Ammonium sulfate contains radioactive sulfur that damages crop roots.",
+        "Ammonium nitrate turns the soil strongly alkaline to kill weeds."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonium nitrate delivers 35.0% nitrogen compared to 21.2% in ammonium sulfate."
+    },
+    {
+      "id": "lab04_l2_17",
+      "prompt": "What safety precaution must be observed when heating ammonium nitrate in a school laboratory?",
+      "options": [
+        "Heat gently and never to dryness, as dry ammonium nitrate can decompose explosively.",
+        "Wear insulated winter gloves to prevent severe cryogenic frostbite.",
+        "Keep the solution exposed to open sparks to ignite excess nitrogen.",
+        "Perform the experiment under green light to prevent crystallization."
+      ],
+      "correctIndex": 0,
+      "explanation": "Solid ammonium nitrate is an oxidizer that can decompose violently if overheated to dryness."
+    },
+    {
+      "id": "lab04_l2_18",
+      "prompt": "What piece of apparatus is used to separate crystallized fertilizer solid from the remaining mother liquor?",
+      "options": [
+        "A filter funnel fitted with folded filter paper.",
+        "A calibrated volumetric pipette with rubber bulb.",
+        "A glass thermometer with red alcohol bulb.",
+        "A metallic spatula for scraping porcelain."
+      ],
+      "correctIndex": 0,
+      "explanation": "Filtration separates solid crystals from the remaining saturated solution (mother liquor)."
+    },
+    {
+      "id": "lab04_l2_19",
+      "prompt": "After filtering fertilizer crystals, how should they be dried before weighing?",
+      "options": [
+        "Pressed gently between sheets of dry filter paper or in a warm desiccator.",
+        "Heated directly over an open roaring blue Bunsen burner flame.",
+        "Rinsed thoroughly with large amounts of boiling tap water.",
+        "Left submerged in concentrated sodium hydroxide overnight."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dabbing crystals between filter paper dries them without causing thermal decomposition."
+    },
+    {
+      "id": "lab04_l2_20",
+      "prompt": "What environmental problem results when excess synthetic fertilizer washes into lakes and rivers?",
+      "options": [
+        "Eutrophication leading to rapid algal blooms and fish suffocation.",
+        "Global cooling caused by reflection of sunlight off white fertilizer.",
+        "Acid rain forming immediately from ammonium gas emissions.",
+        "Depletion of river salt levels causing freshwater to freeze in summer."
+      ],
+      "correctIndex": 0,
+      "explanation": "Excess N and P cause rapid algal growth (algal blooms); decomposition depletes dissolved oxygen, killing fish."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab04_l3_01",
+      "prompt": "Why does the addition of sulfuric acid to ammonia produce an acidic salt solution at the equivalence point?",
+      "options": [
+        "Ammonium is the conjugate acid of a weak base, hydrolyzing to produce H3O+ ions: NH4+ + H2O <=> NH3 + H3O+.",
+        "Sulfuric acid molecules remain unreacted and float on the surface of the water.",
+        "Ammonium sulfate decomposes into pure gaseous sulfuric acid vapor.",
+        "Sulfate ions act as strong Lewis acids and donate protons into solution."
+      ],
+      "correctIndex": 0,
+      "explanation": "(NH4)2SO4 is formed from a weak base (NH3) and strong acid (H2SO4); NH4+ slightly hydrolyzes, giving pH ~ 5."
+    },
+    {
+      "id": "lab04_l3_02",
+      "prompt": "Which indicator is most appropriate for titrating aqueous ammonia with sulfuric acid?",
+      "options": [
+        "Methyl orange, which changes color in the acidic equivalence range (pH 3.1\u20134.4).",
+        "Phenolphthalein, which changes color in the alkaline range (pH 8.3\u201310.0).",
+        "Universal indicator, which produces ten confusing intermediate colors.",
+        "Litmus paper, which does not provide an accurate volumetric endpoint."
+      ],
+      "correctIndex": 0,
+      "explanation": "For weak base + strong acid, the equivalence point is acidic (pH ~ 5), making methyl orange ideal."
+    },
+    {
+      "id": "lab04_l3_03",
+      "prompt": "Why is phenolphthalein unsuitable for titrating aqueous ammonia with sulfuric acid?",
+      "options": [
+        "It changes color between pH 8.3\u201310.0, long before the true neutralization endpoint (pH ~ 5).",
+        "It reacts chemically with ammonia gas to produce toxic cyanide fumes.",
+        "It solidifies into insoluble plastic crystals when exposed to sulfate ions.",
+        "It permanently stains the glass burette and blocks the delivery tap."
+      ],
+      "correctIndex": 0,
+      "explanation": "Phenolphthalein's endpoint occurs while the solution is still alkaline, well before full neutralization."
+    },
+    {
+      "id": "lab04_l3_04",
+      "prompt": "A student neutralizes 25.0 cm3 of 1.0 mol/dm3 NH3 with 12.5 cm3 of 1.0 mol/dm3 H2SO4. What is the theoretical yield of (NH4)2SO4 (Mr=132.1)?",
+      "options": [
+        "1.65 grams of ammonium sulfate.",
+        "3.30 grams of ammonium sulfate.",
+        "0.825 grams of ammonium sulfate.",
+        "6.60 grams of ammonium sulfate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles H2SO4 = 0.0125 * 1.0 = 0.0125 mol. Moles (NH4)2SO4 = 0.0125 mol. Mass = 0.0125 * 132.1 = 1.65 g."
+    },
+    {
+      "id": "lab04_l3_05",
+      "prompt": "In an agricultural runoff study, a lake's dissolved oxygen drops from 9.0 mg/L to 1.5 mg/L after heavy rain. What process occurred?",
+      "options": [
+        "Fertilizer runoff triggered an algal bloom; decomposing bacteria consumed dissolved oxygen.",
+        "Fertilizer crystals directly absorbed all oxygen gas into their crystal lattice.",
+        "Ammonium ions chemically reacted with oxygen to form solid nitrogen metal.",
+        "The temperature of the lake water increased beyond the boiling point."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eutrophication: algae bloom, die, and decomposers consume dissolved oxygen, causing hypoxia."
+    },
+    {
+      "id": "lab04_l3_06",
+      "prompt": "Why is ammonium nitrate (NH4NO3) more hygroscopic (moisture-absorbing) than ammonium sulfate ((NH4)2SO4)?",
+      "options": [
+        "Nitrate ions have lower lattice energy and stronger hydrogen-bonding interactions with water vapor.",
+        "Ammonium sulfate forms an impermeable plastic coating that repels all moisture.",
+        "Nitrate ions are nonpolar and dissolve only in atmospheric hydrocarbon gases.",
+        "Ammonium sulfate contains radioactive sulfur atoms that evaporate moisture."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonium nitrate's crystal lattice has lower lattice enthalpy, making hydration thermodynamically spontaneous."
+    },
+    {
+      "id": "lab04_l3_07",
+      "prompt": "Calculate the percentage of phosphorus (P=31.0) in diammonium hydrogenphosphate, (NH4)2HPO4 (Mr=132.0).",
+      "options": [
+        "23.5% phosphorus by mass.",
+        "31.0% phosphorus by mass.",
+        "15.5% phosphorus by mass.",
+        "47.0% phosphorus by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "%P = (31.0 / 132.0) * 100% = 23.5%."
+    },
+    {
+      "id": "lab04_l3_08",
+      "prompt": "Why do commercial fertilizers often combine ammonium salts with potassium salts (e.g., KCl)?",
+      "options": [
+        "To provide balanced NPK nutrition: N for foliage, P for roots, and K for disease resistance and water regulation.",
+        "To neutralize the corrosive acidity of pure potassium metal in soil.",
+        "To ensure the fertilizer emits a fragrant odor that attracts honeybees.",
+        "To prevent rain from ever falling on the agricultural field."
+      ],
+      "correctIndex": 0,
+      "explanation": "Balanced fertilizers supply nitrogen, phosphorus, and potassium to support diverse plant physiological functions."
+    },
+    {
+      "id": "lab04_l3_09",
+      "prompt": "A batch of (NH4)2SO4 crystals has an actual yield of 3.96 g from a theoretical yield of 4.40 g. What is the percentage yield?",
+      "options": [
+        "90.0% percentage yield.",
+        "85.0% percentage yield.",
+        "95.0% percentage yield.",
+        "80.0% percentage yield."
+      ],
+      "correctIndex": 0,
+      "explanation": "% yield = (3.96 / 4.40) * 100% = 90.0%."
+    },
+    {
+      "id": "lab04_l3_10",
+      "prompt": "Why does adding solid calcium hydroxide (lime) to moist soil immediately after applying ammonium fertilizer reduce its efficacy?",
+      "options": [
+        "Ca(OH)2 is a strong base that reacts with NH4+ to release volatile NH3 gas into the air: NH4+ + OH- -> NH3(g) + H2O.",
+        "Calcium ions displace nitrogen atoms and convert them into solid limestone.",
+        "Lime lowers the soil temperature so severely that plant roots freeze solid.",
+        "The mixture produces toxic chlorine gas that kills the growing crop."
+      ],
+      "correctIndex": 0,
+      "explanation": "Alkalis deprotonate ammonium: NH4+ + OH- -> NH3(g) + H2O, causing nitrogen to be lost as ammonia gas."
+    },
+    {
+      "id": "lab04_l3_11",
+      "prompt": "How does slow cooling of a saturated fertilizer solution produce larger, purer crystals than rapid quenching in ice?",
+      "options": [
+        "Slow cooling allows solute particles time to organize into orderly crystal lattices, excluding impurities.",
+        "Rapid cooling forces water molecules into the crystal lattice, making crystals larger.",
+        "Slow cooling destroys all dissolved chemical impurities through thermal radiation.",
+        "Rapid cooling converts ammonium sulfate into insoluble calcium carbonate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Slow crystallization favors thermodynamic crystal growth over kinetic nucleation, yielding large, pure crystals."
+    },
+    {
+      "id": "lab04_l3_12",
+      "prompt": "What chemical test confirms that the fertilizer product contains sulfate ions (SO4 2-)?",
+      "options": [
+        "Add dilute hydrochloric acid followed by barium chloride solution; a white precipitate forms.",
+        "Add dilute nitric acid followed by silver nitrate solution; a yellow solid forms.",
+        "Add sodium hydroxide and warm gently; a gas turning red litmus blue emerges.",
+        "Dip a nichrome wire into the solution and observe a lilac flame in a burner."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ba2+(aq) + SO4 2-(aq) -> BaSO4(s) (dense white precipitate insoluble in dilute HCl)."
+    },
+    {
+      "id": "lab04_l3_13",
+      "prompt": "What chemical test confirms that the fertilizer salt contains ammonium ions (NH4+)?",
+      "options": [
+        "Add aqueous NaOH and warm gently; ammonia gas is released that turns damp red litmus blue.",
+        "Add acidified potassium manganate(VII) and observe instant decolourization.",
+        "Add barium chloride solution and observe effervescence of carbon dioxide.",
+        "Add copper metal turnings and observe immediate formation of hydrogen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Warming with NaOH releases NH3 gas, detected by damp red litmus paper turning blue."
+    },
+    {
+      "id": "lab04_l3_14",
+      "prompt": "Why does the Haber process serve as the essential precursor to the industrial fertilizer industry?",
+      "options": [
+        "It fixes unreactive atmospheric N2 into reactive NH3, the feedstock for all nitrogen fertilizers.",
+        "It extracts pure potassium metal from deep underground ocean trenches.",
+        "It converts carbon dioxide gas directly into solid phosphate fertilizer rocks.",
+        "It purifies sulfuric acid by removing all dissolved oxygen impurities."
+      ],
+      "correctIndex": 0,
+      "explanation": "Atmospheric nitrogen (N2) cannot be absorbed by crops; the Haber process fixes N2 into NH3 for fertilizer manufacture."
+    },
+    {
+      "id": "lab04_l3_15",
+      "prompt": "If an agricultural field requires 70 kg of nitrogen, what mass of ammonium nitrate (35% N by mass) must be applied?",
+      "options": [
+        "Exactly 200 kg of ammonium nitrate.",
+        "Exactly 140 kg of ammonium nitrate.",
+        "Exactly 100 kg of ammonium nitrate.",
+        "Exactly 250 kg of ammonium nitrate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mass needed = 70 kg / 0.35 = 200 kg."
+    },
+    {
+      "id": "lab04_l3_16",
+      "prompt": "If an agricultural field requires 70 kg of nitrogen, what mass of ammonium sulfate (21% N by mass) must be applied?",
+      "options": [
+        "Approximately 333 kg of ammonium sulfate.",
+        "Approximately 200 kg of ammonium sulfate.",
+        "Approximately 147 kg of ammonium sulfate.",
+        "Approximately 450 kg of ammonium sulfate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mass needed = 70 kg / 0.212 ~ 330\u2013333 kg."
+    },
+    {
+      "id": "lab04_l3_17",
+      "prompt": "Why is controlled-release fertilizer (coated with biodegradable polymer) beneficial for sandy soils?",
+      "options": [
+        "It prevents rapid leaching of highly soluble ammonium and nitrate into groundwater after rainfall.",
+        "It prevents earthworms from eating the crystalline fertilizer granules.",
+        "It converts sandy soil into rich volcanic clay within twenty-four hours.",
+        "It eliminates the need for plants to receive sunlight or water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Coated granules dissolve gradually, matching crop uptake rates and minimizing groundwater leaching."
+    },
+    {
+      "id": "lab04_l3_18",
+      "prompt": "Why does the reaction of ammonia with nitric acid require no subsequent crystallization evaporation stage in modern industry?",
+      "options": [
+        "The neutralization reaction is highly exothermic; the heat released evaporates water spontaneously to form molten salt.",
+        "Nitric acid and ammonia react to form a gaseous product that freezes in air.",
+        "Ammonium nitrate precipitates out instantly as an insoluble ceramic brick.",
+        "The reaction is carried out in liquid nitrogen at cryogenic temperatures."
+      ],
+      "correctIndex": 0,
+      "explanation": "Industrial neutralizers use the high heat of reaction to flash off water, producing molten NH4NO3 directly for prilling."
+    },
+    {
+      "id": "lab04_l3_19",
+      "prompt": "What distinguishes the biological action of nitrate (NO3-) from ammonium (NH4+) in plant nutrition?",
+      "options": [
+        "NO3- is absorbed immediately and moves with xylem transpiration; NH4+ is incorporated into amino acids in roots.",
+        "NO3- supplies phosphorus while NH4+ supplies elemental potassium to leaves.",
+        "NO3- is completely toxic to plants, whereas NH4+ is harmless.",
+        "NO3- blocks photosynthesis while NH4+ accelerates cellular respiration."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nitrate is mobile in soil and rapidly taken up; ammonium is bound to soil clay cations and converted by root enzymes."
+    },
+    {
+      "id": "lab04_l3_20",
+      "prompt": "A student observes that their synthesized fertilizer salt is slightly yellow instead of white. What was the source of contamination?",
+      "options": [
+        "Trace indicator dye from the preliminary titration was carried over into the crystallization dish.",
+        "Sulfuric acid decomposed into pure golden sulfur crystals during boiling.",
+        "Ammonia gas reacted with atmospheric nitrogen to form yellow nitrogen dioxide.",
+        "Atmospheric oxygen oxidized ammonium ions into yellow iron(III) oxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Using indicator in the crystallization batch contaminates the white salt with yellow/red indicator dye."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab04_l4_01",
+      "prompt": "Why does ammonium nitrate pose an industrial explosive hazard (e.g., Oppau, Texas City, Beirut) while ammonium sulfate does not?",
+      "options": [
+        "NH4NO3 contains both fuel (NH4+, reducing agent) and oxidizer (NO3-) in the same crystal lattice, decomposing exothermically.",
+        "Ammonium sulfate contains radioactive sulfur that dampens chemical explosions.",
+        "Ammonium nitrate absorbs cosmic radiation and undergoes spontaneous nuclear chain reactions.",
+        "Ammonium sulfate decomposes into pure metallic iron that absorbs all shockwaves."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4NO3 is an oxidizer and fuel together: 2 NH4NO3 -> 2 N2 + O2 + 4 H2O (exothermic gas expansion). Sulfate has no oxidizing power."
+    },
+    {
+      "id": "lab04_l4_02",
+      "prompt": "Calculate the pH of a 0.10 mol/dm3 solution of ammonium chloride, given Ka of NH4+ is 5.6 x 10^-10 mol/dm3.",
+      "options": [
+        "pH = 5.12",
+        "pH = 7.00",
+        "pH = 8.88",
+        "pH = 1.00"
+      ],
+      "correctIndex": 0,
+      "explanation": "[H+] = sqrt(Ka * C) = sqrt(5.6e-10 * 0.10) = sqrt(5.6e-11) = 7.48e-6 mol/dm3. pH = -log(7.48e-6) = 5.125 ~ 5.12."
+    },
+    {
+      "id": "lab04_l4_03",
+      "prompt": "In the production of triple superphosphate fertilizer: Ca3(PO4)2 + 4 H3PO4 -> 3 Ca(H2PO4)2. Why is Ca(H2PO4)2 superior to rock phosphate?",
+      "options": [
+        "Ca(H2PO4)2 is water-soluble, allowing plant roots to absorb phosphate ions immediately.",
+        "Ca(H2PO4)2 contains 100% pure elemental nitrogen by mass.",
+        "Ca(H2PO4)2 converts barren desert sand into fertile soil without water.",
+        "Ca(H2PO4)2 emits gaseous ammonia continuously into the lower atmosphere."
+      ],
+      "correctIndex": 0,
+      "explanation": "Insoluble rock phosphate Ca3(PO4)2 cannot be absorbed; converting it to Ca(H2PO4)2 makes phosphorus bioavailable."
+    },
+    {
+      "id": "lab04_l4_04",
+      "prompt": "What thermodynamic condition explains why the neutralization of ammonia by sulfuric acid is spontaneous at room temperature?",
+      "options": [
+        "Delta H is strongly negative (exothermic) and Delta S of solvent reorganization yields negative Delta G.",
+        "Delta H is positive (endothermic), driving the reaction through entropy increase alone.",
+        "The reaction occurs only when electrical currents are passed through the liquid.",
+        "The reaction absorbs gravitational energy from the earth's magnetic core."
+      ],
+      "correctIndex": 0,
+      "explanation": "Acid-base neutralization is exothermic (negative Delta H); Delta G = Delta H - T*Delta S < 0 at room temperature."
+    },
+    {
+      "id": "lab04_l4_05",
+      "prompt": "Calculate the mass of pure urea, (NH2)2CO (Mr=60.0), required to provide the same nitrogen as 100 kg of ammonium sulfate (21.2% N).",
+      "options": [
+        "45.4 kg of urea.",
+        "100.0 kg of urea.",
+        "21.2 kg of urea.",
+        "75.0 kg of urea."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nitrogen needed = 21.2 kg. Urea has 2 N: %N = (28.0 / 60.0) * 100% = 46.7%. Mass urea = 21.2 / 0.467 = 45.4 kg."
+    },
+    {
+      "id": "lab04_l4_06",
+      "prompt": "Why has urea ((NH2)2CO) largely superseded ammonium sulfate in global agriculture despite requiring enzyme hydrolysis?",
+      "options": [
+        "Urea has a vastly higher nitrogen density (46.7% N), dramatically lowering shipping and application costs.",
+        "Urea is completely explosive and eliminates all fungal crop infections.",
+        "Urea does not require any water to dissolve and works in arid deserts.",
+        "Urea permanently alters soil pH to a sterile zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "High N density (46.7%) cuts transportation, handling, and storage costs per kg of nitrogen delivered."
+    },
+    {
+      "id": "lab04_l4_07",
+      "prompt": "In soil chemistry, what enzyme hydrolyzes urea into ammonium and bicarbonate ions?",
+      "options": [
+        "Urease enzyme produced by soil bacteria.",
+        "DNA polymerase enzyme from plant roots.",
+        "Amylase enzyme secreted by earthworms.",
+        "Cellulase enzyme from decomposing fungi."
+      ],
+      "correctIndex": 0,
+      "explanation": "Urease catalyzes: (NH2)2CO + 2 H2O -> 2 NH4+ + CO3 2-."
+    },
+    {
+      "id": "lab04_l4_08",
+      "prompt": "Why does excessive application of ammonium-based fertilizers lead to long-term soil acidification?",
+      "options": [
+        "Nitrifying bacteria oxidize NH4+ to NO3-, releasing two H+ ions per ammonium ion: NH4+ + 2 O2 -> NO3- + H2O + 2 H+.",
+        "Ammonium ions decompose into concentrated hydrochloric acid in plant roots.",
+        "Sulfate ions selectively extract hydroxide ions from groundwater aquifers.",
+        "Plants release concentrated sulfuric acid from their leaves during transpiration."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nitrification by Nitrosomonas and Nitrobacter generates nitric acid, lowering soil pH over time."
+    },
+    {
+      "id": "lab04_l4_09",
+      "prompt": "What chemical remediation technique counteracts the soil acidification caused by long-term ammonium fertilizer use?",
+      "options": [
+        "Agricultural liming using crushed calcium carbonate (CaCO3) to neutralize excess H+ ions.",
+        "Flooding fields with concentrated hydrochloric acid to dissolve soil minerals.",
+        "Spraying fields with kerosene to sterilize the nitrifying bacterial population.",
+        "Covering the field with black plastic sheets to block atmospheric carbon dioxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Liming with agricultural lime (CaCO3) neutralizes acidity: CaCO3 + 2 H+ -> Ca2+ + H2O + CO2."
+    },
+    {
+      "id": "lab04_l4_10",
+      "prompt": "In an Ostwald nitric acid absorption tower: 3 NO2(g) + H2O(l) -> 2 HNO3(aq) + NO(g). How is the by-product NO recycled?",
+      "options": [
+        "It is re-oxidized with atmospheric air to NO2 and fed back into the absorption tower.",
+        "It is vented directly into the stratosphere to replenish the ozone layer.",
+        "It is converted into solid nitrogen metal and sold as building material.",
+        "It is reacted with helium gas to produce synthetic ammonia."
+      ],
+      "correctIndex": 0,
+      "explanation": "2 NO + O2 -> 2 NO2; recycled back to absorption, achieving >99% overall nitrogen efficiency."
+    },
+    {
+      "id": "lab04_l4_11",
+      "prompt": "Calculate the atom economy of the neutralization: 2 NH3 + H2SO4 -> (NH4)2SO4.",
+      "options": [
+        "100% atom economy.",
+        "50% atom economy.",
+        "75% atom economy.",
+        "85% atom economy."
+      ],
+      "correctIndex": 0,
+      "explanation": "Neutralization is an addition reaction with no co-products; atom economy is exactly 100%."
+    },
+    {
+      "id": "lab04_l4_12",
+      "prompt": "Calculate the atom economy of ammonium nitrate production: NH3 + HNO3 -> NH4NO3.",
+      "options": [
+        "100% atom economy.",
+        "67% atom economy.",
+        "82% atom economy.",
+        "45% atom economy."
+      ],
+      "correctIndex": 0,
+      "explanation": "Direct addition reaction: all reactant atoms end up in the desired product (100% atom economy)."
+    },
+    {
+      "id": "lab04_l4_13",
+      "prompt": "Why does ammonium nitrate undergo thermal decomposition via two distinct pathways depending on temperature?",
+      "options": [
+        "At gentle heat (~200 \u00b0C) it yields N2O and H2O; above 260 \u00b0C or with confinement it detonates to N2, O2, and H2O.",
+        "At low temperature it forms pure gold metal; at high temperature it forms helium gas.",
+        "It decomposes only in the presence of liquid nitrogen.",
+        "It never decomposes regardless of temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "Low temp: NH4NO3 -> N2O + 2 H2O. High temp/shock: 2 NH4NO3 -> 2 N2 + O2 + 4 H2O (detonation)."
+    },
+    {
+      "id": "lab04_l4_14",
+      "prompt": "What role does potassium chloride (KCl, potash) play in preventing plant wilting when used in NPK blends?",
+      "options": [
+        "K+ regulates osmotic potential and controls the opening and closing of leaf stomata.",
+        "K+ solidifies the cell wall into an impermeable glass barrier.",
+        "K+ absorbs atmospheric water vapor directly through plant flower petals.",
+        "K+ prevents plants from transpiring water completely."
+      ],
+      "correctIndex": 0,
+      "explanation": "K+ ions maintain cellular turgor and regulate stomatal guard cells, controlling transpiration."
+    },
+    {
+      "id": "lab04_l4_15",
+      "prompt": "Why is ammonium polyphosphate liquid fertilizer preferred over solid orthophosphate in automated drip irrigation?",
+      "options": [
+        "It sequesters micronutrient metal ions (Fe, Zn) in solution and does not precipitate in irrigation emitters.",
+        "It freezes at boiling temperature, preventing water from evaporating.",
+        "It destroys all plastic drip lines by acidic corrosion.",
+        "It contains no phosphorus atoms, eliminating nozzle clogging."
+      ],
+      "correctIndex": 0,
+      "explanation": "Polyphosphate acts as a chelating agent, preventing precipitation of insoluble calcium/iron phosphates in drip lines."
+    },
+    {
+      "id": "lab04_l4_16",
+      "prompt": "In gravimetric analysis of sulfate in fertilizer, BaSO4 precipitate is ignited in a porcelain crucible. Why must filter paper be carbon-free?",
+      "options": [
+        "Carbon residues could reduce BaSO4 to BaS at high temperature: BaSO4 + 4 C -> BaS + 4 CO.",
+        "Carbon atoms dissolve into the porcelain crucible and crack the glaze.",
+        "Carbon absorbs atmospheric moisture and falsely increases measured mass.",
+        "Carbon generates toxic chlorine gas in the presence of barium."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hot carbon reduces BaSO4 to BaS, causing negative gravimetric error; ashless paper is mandatory."
+    },
+    {
+      "id": "lab04_l4_17",
+      "prompt": "A fertilizer bag is labeled '15-15-15'. What does the first number 15 indicate?",
+      "options": [
+        "15% total nitrogen (N) by mass.",
+        "15% elemental phosphorus (P) by mass.",
+        "15% soluble potassium oxide (K2O) by mass.",
+        "15 kg of total fertilizer in the bag."
+      ],
+      "correctIndex": 0,
+      "explanation": "The NPK rating gives % N, % P2O5 equivalent, and % K2O equivalent by mass."
+    },
+    {
+      "id": "lab04_l4_18",
+      "prompt": "What chemical mechanism causes ammonium sulfate to generate sulfuric acid aerosols when industrial fertilizer plants lack scrubbers?",
+      "options": [
+        "Thermal dissociation at high temperatures releases volatile NH3 faster than H2SO4, leaving acidic aerosol droplets.",
+        "Sulfate ions react with atmospheric nitrogen gas to synthesize sulfuric acid.",
+        "Ammonium ions photochemically split into sulfuric acid and hydrogen.",
+        "Water vapor decomposes into sulfur dioxide in the presence of air."
+      ],
+      "correctIndex": 0,
+      "explanation": "Differential volatilization: NH3 escapes faster than H2SO4, forming acidic micro-droplets in stack emissions."
+    },
+    {
+      "id": "lab04_l4_19",
+      "prompt": "Why is nitrification inhibitor (e.g., dicyandiamide, DCD) added to commercial ammonium fertilizers?",
+      "options": [
+        "It inhibits Nitrosomonas bacteria, slowing conversion of stable NH4+ into easily leached NO3- ions.",
+        "It prevents crops from absorbing nitrogen too quickly.",
+        "It converts all ammonium ions into insoluble elemental nitrogen rock.",
+        "It accelerates the rate at which fertilizer evaporates into the clouds."
+      ],
+      "correctIndex": 0,
+      "explanation": "Inhibitors keep nitrogen in the cation form (NH4+), which binds to soil clay and resists leaching."
+    },
+    {
+      "id": "lab04_l4_20",
+      "prompt": "What analytical method provides instantaneous, non-destructive measurement of nitrogen status in crop leaves?",
+      "options": [
+        "Chlorophyll fluorescence and optical transmittance (SPAD meters).",
+        "Combustion gas chromatography mass spectrometry.",
+        "Titration with standardized sodium hydroxide in the field.",
+        "Boiling leaf samples in concentrated sulfuric acid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Optical meters (SPAD) measure chlorophyll absorbance at 650 nm, which correlates directly with leaf nitrogen content."
+    }
+  ]
+}

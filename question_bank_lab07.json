@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab07_l1_01",
+      "prompt": "What color is the aqueous cobalt complex ion [Co(H2O)6]2+?",
+      "options": [
+        "A distinct pale pink color.",
+        "A deep royal-blue color.",
+        "A brilliant emerald-green color.",
+        "A bright canary-yellow color."
+      ],
+      "correctIndex": 0,
+      "explanation": "[Co(H2O)6]2+ (hexaaquacobalt(II)) is pink in aqueous solution."
+    },
+    {
+      "id": "lab07_l1_02",
+      "prompt": "What color is the tetrachlorocobaltate(II) complex ion [CoCl4]2-?",
+      "options": [
+        "A deep royal-blue color.",
+        "A distinct pale pink color.",
+        "A milky chalk-white color.",
+        "A bright golden-orange color."
+      ],
+      "correctIndex": 0,
+      "explanation": "[CoCl4]2- is characteristically blue."
+    },
+    {
+      "id": "lab07_l1_03",
+      "prompt": "What chemical equation represents the cobalt chloride equilibrium in Lab 07?",
+      "options": [
+        "[Co(H2O)6]2+(aq) + 4 Cl-(aq) \u21cc [CoCl4]2-(aq) + 6 H2O(l)",
+        "[Co(H2O)6]2+(aq) + Cl2(g) -> CoCl2(s) + 6 H2O(l)",
+        "Co(s) + 2 HCl(aq) -> CoCl2(aq) + H2(g)",
+        "[Co(H2O)6]3+ + 3 e- -> Co(s) + 6 H2O(l)"
+      ],
+      "correctIndex": 0,
+      "explanation": "[Co(H2O)6]2+ (pink) + 4 Cl- \u21cc [CoCl4]2- (blue) + 6 H2O is the standard equilibrium."
+    },
+    {
+      "id": "lab07_l1_04",
+      "prompt": "What visual color change occurs when concentrated hydrochloric acid (HCl) is added to a pink cobalt solution?",
+      "options": [
+        "The pink solution turns into a deep blue solution.",
+        "The pink solution turns completely clear and colorless.",
+        "A heavy yellow precipitate falls to the bottom.",
+        "The solution turns bright orange with violent boiling."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding HCl supplies Cl- ions, shifting equilibrium to the right to form blue [CoCl4]2-."
+    },
+    {
+      "id": "lab07_l1_05",
+      "prompt": "What visual color change occurs when distilled water is added to the blue cobalt chloride solution?",
+      "options": [
+        "The blue solution shifts back to a pale pink color.",
+        "The blue solution turns into an opaque black sludge.",
+        "The blue color becomes ten times darker and purple.",
+        "Vigorous bubbling effervescence releases hydrogen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding water shifts equilibrium to the left, regenerating pink [Co(H2O)6]2+."
+    },
+    {
+      "id": "lab07_l1_06",
+      "prompt": "What happens to the color of the cobalt solution when it is heated in a hot water bath?",
+      "options": [
+        "It shifts from pink toward deep blue.",
+        "It shifts from blue toward pale pink.",
+        "It turns permanently chalky white.",
+        "It loses all color and freezes solid."
+      ],
+      "correctIndex": 0,
+      "explanation": "The forward reaction is endothermic; heating favors the forward reaction, turning blue."
+    },
+    {
+      "id": "lab07_l1_07",
+      "prompt": "What happens to the color of the cobalt solution when placed in an ice-water bath?",
+      "options": [
+        "It shifts from blue toward pale pink.",
+        "It shifts from pink toward deep blue.",
+        "It turns black and deposits metallic cobalt.",
+        "It releases clouds of chlorine gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cooling favors the exothermic reverse reaction, regenerating pink [Co(H2O)6]2+."
+    },
+    {
+      "id": "lab07_l1_08",
+      "prompt": "What scientific rule predicts how a dynamic equilibrium responds to an imposed change in conditions?",
+      "options": [
+        "Le Chatelier's Principle.",
+        "Newton's Second Law of Motion.",
+        "Avogadro's Hypothesis.",
+        "Mendel's Law of Independent Assortment."
+      ],
+      "correctIndex": 0,
+      "explanation": "Le Chatelier's Principle states that a system at equilibrium opposes any applied disturbance."
+    },
+    {
+      "id": "lab07_l1_09",
+      "prompt": "Is the forward reaction: [Co(H2O)6]2+ + 4 Cl- -> [CoCl4]2- + 6 H2O endothermic or exothermic?",
+      "options": [
+        "The forward reaction is endothermic (Delta H > 0).",
+        "The forward reaction is exothermic (Delta H < 0).",
+        "The forward reaction has zero enthalpy change.",
+        "The forward reaction is a nuclear fusion reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "The forward reaction absorbs thermal energy (endothermic), so heating shifts it right."
+    },
+    {
+      "id": "lab07_l1_10",
+      "prompt": "Which ion in hydrochloric acid drives the forward shift toward the blue complex?",
+      "options": [
+        "The chloride anion, Cl-.",
+        "The hydronium cation, H3O+.",
+        "The sodium cation, Na+.",
+        "The dissolved oxygen molecule, O2."
+      ],
+      "correctIndex": 0,
+      "explanation": "Chloride ions (Cl-) are reactants in the equilibrium: adding Cl- shifts the system right."
+    },
+    {
+      "id": "lab07_l1_11",
+      "prompt": "How many water molecules coordinate to the central cobalt ion in the pink complex [Co(H2O)6]2+?",
+      "options": [
+        "Exactly six water ligand molecules.",
+        "Exactly four water ligand molecules.",
+        "Exactly two water ligand molecules.",
+        "Zero water ligand molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "[Co(H2O)6]2+ is hexacoordinated, with six bonded water ligands."
+    },
+    {
+      "id": "lab07_l1_12",
+      "prompt": "How many chloride ligands coordinate to the cobalt ion in the blue complex [CoCl4]2-?",
+      "options": [
+        "Exactly four chloride ligand ions.",
+        "Exactly six chloride ligand ions.",
+        "Exactly two chloride ligand ions.",
+        "Exactly eight chloride ligand ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "[CoCl4]2- has four coordinated chloride ligands."
+    },
+    {
+      "id": "lab07_l1_13",
+      "prompt": "What intermediate color is observed when pink and blue cobalt complexes are present in equal amounts?",
+      "options": [
+        "A distinctive violet or purple color.",
+        "A bright canary-yellow color.",
+        "A murky olive-green color.",
+        "A pure jet-black shade."
+      ],
+      "correctIndex": 0,
+      "explanation": "A mixture of pink [Co(H2O)6]2+ and blue [CoCl4]2- appears violet or purple."
+    },
+    {
+      "id": "lab07_l1_14",
+      "prompt": "Can this cobalt chloride color change be reversed multiple times by alternating heating and cooling?",
+      "options": [
+        "Yes, it is a fully reversible equilibrium that can be cycled repeatedly.",
+        "No, once it turns blue it can never turn pink again.",
+        "No, heating permanently destroys the cobalt atoms.",
+        "Yes, but only if the solution is exposed to moonlight."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dynamic equilibrium allows indefinite cycling between pink and blue states by changing temperature."
+    },
+    {
+      "id": "lab07_l1_15",
+      "prompt": "What term describes a neutral molecule or anion that donates an electron pair to a central metal cation?",
+      "options": [
+        "A chemical ligand coordinating to the metal.",
+        "A spectator solvent molecule that repels charge.",
+        "A precipitate crystallizing out of solution.",
+        "A radioactive isotope undergoing decay."
+      ],
+      "correctIndex": 0,
+      "explanation": "A ligand is an ion or molecule with a lone pair that forms a coordinate bond with a metal ion."
+    },
+    {
+      "id": "lab07_l1_16",
+      "prompt": "What is the oxidation state of the cobalt metal ion in both pink and blue complexes?",
+      "options": [
+        "An oxidation state of positive two (+2).",
+        "An oxidation state of positive three (+3).",
+        "An oxidation state of zero (metallic Co).",
+        "An oxidation state of negative two (-2)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cobalt remains in the +2 oxidation state throughout: Co2+."
+    },
+    {
+      "id": "lab07_l1_17",
+      "prompt": "What is the state symbol for the dissolved cobalt complex in water?",
+      "options": [
+        "(aq) for aqueous complex ion in solution.",
+        "(s) for insoluble crystalline solid.",
+        "(g) for gaseous vapor state.",
+        "(l) for pure liquid metal."
+      ],
+      "correctIndex": 0,
+      "explanation": "Aqueous dissolved ions and complex ions carry the state symbol (aq)."
+    },
+    {
+      "id": "lab07_l1_18",
+      "prompt": "What common moisture indicator paper utilizes this cobalt chloride equilibrium?",
+      "options": [
+        "Cobalt chloride test paper (blue when dry, pink when hydrated).",
+        "Universal indicator paper testing pH values.",
+        "Starch-iodide paper testing for oxidizers.",
+        "Standard white cellulose filter paper."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dry cobalt chloride paper is blue; absorbing moisture shifts it to pink, detecting water."
+    },
+    {
+      "id": "lab07_l1_19",
+      "prompt": "What happens to cobalt chloride paper when it is breathed on by human breath?",
+      "options": [
+        "It turns pink from water vapor in the exhaled breath.",
+        "It turns black from carbon dioxide gas.",
+        "It catches fire from body heat.",
+        "It stays completely blue and dry."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moisture in exhaled breath hydrates the complex, turning blue paper pink."
+    },
+    {
+      "id": "lab07_l1_20",
+      "prompt": "Why does adding concentrated sulfuric acid to a pink cobalt solution turn it blue, even without chloride?",
+      "options": [
+        "H2SO4 is a powerful dehydrating agent that extracts water molecules, shifting equilibrium right.",
+        "Sulfuric acid bleaches the pink color into white light.",
+        "Sulfate ions transform cobalt into elemental sulfur.",
+        "Sulfuric acid cools the solution down to freezing point."
+      ],
+      "correctIndex": 0,
+      "explanation": "Concentrated H2SO4 strongly dehydrates the solution, removing free water and shifting the equilibrium right."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab07_l2_01",
+      "prompt": "Applying Le Chatelier's principle, what happens if sodium chloride (NaCl) solid is dissolved into the pink solution?",
+      "options": [
+        "The solution shifts toward blue as [Cl-] increases, favoring [CoCl4]2- formation.",
+        "The solution turns bright green because sodium is an alkali metal.",
+        "The solution turns completely clear as cobalt precipitates as metal.",
+        "No change occurs because table salt cannot affect complex ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding NaCl increases chloride concentration [Cl-], shifting equilibrium to the blue [CoCl4]2- side."
+    },
+    {
+      "id": "lab07_l2_02",
+      "prompt": "What observation occurs when silver nitrate (AgNO3) solution is added to the blue cobalt chloride solution?",
+      "options": [
+        "A white precipitate of AgCl forms and the solution turns pink.",
+        "A blue precipitate forms and the solution turns yellow.",
+        "The solution turns black and boils violently.",
+        "No precipitate forms and the blue color intensifies."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ag+ precipitates Cl- as white AgCl(s); removing Cl- shifts equilibrium left to pink [Co(H2O)6]2+."
+    },
+    {
+      "id": "lab07_l2_03",
+      "prompt": "Write the precipitation equation that removes chloride ions when AgNO3 is added to the cobalt equilibrium.",
+      "options": [
+        "Ag+(aq) + Cl-(aq) -> AgCl(s)",
+        "Ag+(aq) + [CoCl4]2-(aq) -> AgCo(s) + 2 Cl2(g)",
+        "AgNO3(aq) + H2O(l) -> AgOH(s) + HNO3(aq)",
+        "Co2+(aq) + 2 Ag+(aq) -> CoAg2(s)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ag+ selectively precipitates chloride: Ag+(aq) + Cl-(aq) -> AgCl(s) (white precipitate)."
+    },
+    {
+      "id": "lab07_l2_04",
+      "prompt": "What is the geometric shape of the pink hexaaquacobalt(II) complex, [Co(H2O)6]2+?",
+      "options": [
+        "An octahedral coordination geometry with 6 bonds.",
+        "A tetrahedral coordination geometry with 4 bonds.",
+        "A linear coordination geometry with 2 bonds.",
+        "A square planar coordination geometry with 4 bonds."
+      ],
+      "correctIndex": 0,
+      "explanation": "Six coordinated water ligands arrange in an octahedral geometry around the central Co2+ ion."
+    },
+    {
+      "id": "lab07_l2_05",
+      "prompt": "What is the geometric shape of the blue tetrachlorocobaltate(II) complex, [CoCl4]2-?",
+      "options": [
+        "A tetrahedral coordination geometry with 4 bonds.",
+        "An octahedral coordination geometry with 6 bonds.",
+        "A trigonal planar geometry with 3 bonds.",
+        "A pentagonal bipyramidal geometry with 7 bonds."
+      ],
+      "correctIndex": 0,
+      "explanation": "Four coordinated chloride ligands arrange in a tetrahedral geometry around Co2+."
+    },
+    {
+      "id": "lab07_l2_06",
+      "prompt": "Why does the complex change coordination number from 6 in [Co(H2O)6]2+ to 4 in [CoCl4]2-?",
+      "options": [
+        "Chloride ions (Cl-) are larger than neutral H2O molecules; steric crowding permits only 4 chlorides around Co2+.",
+        "Cobalt loses two protons when reacting with hydrochloric acid.",
+        "Water molecules are magnetically repelled by chloride ions.",
+        "The temperature of the solution forces two bonds to dissolve."
+      ],
+      "correctIndex": 0,
+      "explanation": "Chloride ions have a larger ionic radius (181 pm vs compact H2O); steric hindrance limits coordination to 4."
+    },
+    {
+      "id": "lab07_l2_07",
+      "prompt": "In terms of Le Chatelier's principle, why does adding ethanol (an organic solvent) shift a violet solution to intense blue?",
+      "options": [
+        "Ethanol reduces the activity/concentration of free water, shifting equilibrium toward the dehydrated blue side.",
+        "Ethanol oxidizes cobalt(II) into blue cobalt(IV) ions.",
+        "Ethanol adds chloride ions into the solution mixture.",
+        "Ethanol cools the solution below freezing point."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ethanol lowers water activity and solvates ions, favoring the less hydrated blue [CoCl4]2- complex."
+    },
+    {
+      "id": "lab07_l2_08",
+      "prompt": "What is the expression for the equilibrium constant Kc for this reaction: [Co(H2O)6]2+ + 4 Cl- \u21cc [CoCl4]2- + 6 H2O?",
+      "options": [
+        "Kc = ([CoCl4 2-] * [H2O]^6) / ([Co(H2O)6 2+] * [Cl-]^4)",
+        "Kc = [CoCl4 2-] / ([Co(H2O)6 2+] * [Cl-])",
+        "Kc = ([Co(H2O)6 2+] * [Cl-]^4) / [CoCl4 2-]",
+        "Kc = [CoCl4 2-] * [Cl-]^4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Standard law of mass action: products over reactants raised to their stoichiometric coefficients."
+    },
+    {
+      "id": "lab07_l2_09",
+      "prompt": "If a pink solution at 20 \u00b0C is warmed to 60 \u00b0C, does the value of the equilibrium constant Kc increase or decrease?",
+      "options": [
+        "Kc increases because the forward reaction is endothermic (Delta H > 0).",
+        "Kc decreases because temperature always lowers equilibrium constants.",
+        "Kc remains strictly identical at all temperatures.",
+        "Kc drops to zero because the complex decomposes."
+      ],
+      "correctIndex": 0,
+      "explanation": "For an endothermic reaction, raising temperature increases the equilibrium constant Kc."
+    },
+    {
+      "id": "lab07_l2_10",
+      "prompt": "A student has a violet cobalt solution. Which two actions will both shift the solution toward pink?",
+      "options": [
+        "Adding distilled water and placing the tube in an ice bath.",
+        "Adding concentrated HCl and heating over a Bunsen flame.",
+        "Adding solid NaCl and adding ethanol alcohol.",
+        "Heating the tube and adding silver nitrate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding water (shifts left) and cooling (favors exothermic reverse, shifts left) both promote the pink state."
+    },
+    {
+      "id": "lab07_l2_11",
+      "prompt": "Which two actions will both shift the solution toward blue?",
+      "options": [
+        "Adding concentrated HCl and heating in a hot water bath.",
+        "Adding distilled water and placing in an ice bath.",
+        "Adding silver nitrate solution and adding water.",
+        "Cooling in ice and adding liquid nitrogen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding Cl- (shifts right) and heating (favors endothermic forward, shifts right) both promote the blue state."
+    },
+    {
+      "id": "lab07_l2_12",
+      "prompt": "Why does the blue complex [CoCl4]2- have an absorption spectrum with peak absorbance around 660 nm (red light)?",
+      "options": [
+        "It absorbs red light strongly, transmitting complementary blue light to the human eye.",
+        "It emits pure blue laser light from radioactive cobalt decay.",
+        "It absorbs blue light and transmits all other colors.",
+        "It absorbs all ultraviolet radiation and converts it into heat."
+      ],
+      "correctIndex": 0,
+      "explanation": "Substances appear blue because they absorb the complementary wavelength (~660 nm red light) and transmit blue."
+    },
+    {
+      "id": "lab07_l2_13",
+      "prompt": "Why is the absorption molar extinction coefficient (intensity) of tetrahedral [CoCl4]2- much higher (~100x) than octahedral [Co(H2O)6]2+?",
+      "options": [
+        "Tetrahedral complexes lack an inversion center (Laporte allowed), making d-d electronic transitions much more intense.",
+        "The blue complex contains twice as many cobalt ions per mole.",
+        "Octahedral complexes absorb light only in the dark.",
+        "Chloride ions are naturally fluorescent in liquid water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Laporte selection rule: centrosymmetric octahedral complexes have forbidden d-d transitions; non-centrosymmetric tetrahedral complexes are allowed."
+    },
+    {
+      "id": "lab07_l2_14",
+      "prompt": "A student adds 5 cm3 of water to 5 cm3 of blue cobalt solution. The total volume is 10 cm3. Why does dilution favor the pink side?",
+      "options": [
+        "Dilution lowers the concentration of all species; equilibrium shifts toward the side with more dissolved solute particles (5 on left vs 1 on right).",
+        "Water cools the solution to absolute zero upon contact.",
+        "Water neutralizes all electrical charges on the cobalt ions.",
+        "Dilution destroys the coordination bonds permanently."
+      ],
+      "correctIndex": 0,
+      "explanation": "Left side has 1 + 4 = 5 dissolved solute particles (excluding solvent H2O); right has 1 solute particle. Dilution favors 5 particles."
+    },
+    {
+      "id": "lab07_l2_15",
+      "prompt": "Calculate the net ionic charge on the complex formed when one Co2+ ion coordinates with four Cl- ions.",
+      "options": [
+        "A net charge of negative two: (+2) + 4(-1) = 2-.",
+        "A net charge of positive two (+2).",
+        "A net charge of zero (neutral compound).",
+        "A net charge of negative four (4-)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Co2+ (+2) + 4 Cl- (-4) = net charge of -2: [CoCl4]2-."
+    },
+    {
+      "id": "lab07_l2_16",
+      "prompt": "Calculate the net ionic charge on the complex formed when one Co2+ coordinates with six neutral H2O molecules.",
+      "options": [
+        "A net charge of positive two: (+2) + 6(0) = 2+.",
+        "A net charge of zero (neutral compound).",
+        "A net charge of positive six (+6).",
+        "A net charge of negative two (2-)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Co2+ (+2) + 6 H2O (0) = net charge of +2: [Co(H2O)6]2+."
+    },
+    {
+      "id": "lab07_l2_17",
+      "prompt": "How does a spectrophotometer quantitatively measure the position of the cobalt chloride equilibrium?",
+      "options": [
+        "By measuring optical absorbance at 660 nm, which is directly proportional to [CoCl4 2-] concentration.",
+        "By weighing the test tube on an electronic microbalance.",
+        "By counting the number of sound waves produced by ions.",
+        "By measuring the electrical resistance of the glass walls."
+      ],
+      "correctIndex": 0,
+      "explanation": "Beer-Lambert Law (A = epsilon * c * l): absorbance at 660 nm measures the concentration of the blue tetrahedral complex."
+    },
+    {
+      "id": "lab07_l2_18",
+      "prompt": "When anhydrous CoCl2 dissolves in absolute ethanol, it forms an intensely blue solution immediately. Why?",
+      "options": [
+        "Ethanol contains virtually zero water, leaving Cl- as the only available ligand to coordinate Co2+.",
+        "Ethanol reduces cobalt ions to metallic cobalt atoms.",
+        "Ethanol oxidizes chloride ions to chlorine gas.",
+        "Ethanol creates an acidic solution of pH 1."
+      ],
+      "correctIndex": 0,
+      "explanation": "Without water to form [Co(H2O)6]2+, Co2+ coordinates with available chloride ions to form blue [CoCl4]2-."
+    },
+    {
+      "id": "lab07_l2_19",
+      "prompt": "What safety hazard is associated with handling concentrated hydrochloric acid when shifting the cobalt equilibrium?",
+      "options": [
+        "It is corrosive and fumes irritating, toxic hydrogen chloride gas, requiring a fume cupboard and goggles.",
+        "It catches fire spontaneously when exposed to room air.",
+        "It emits radioactive alpha rays that require lead aprons.",
+        "It freezes instantly and shatters glassware from ice expansion."
+      ],
+      "correctIndex": 0,
+      "explanation": "Concentrated HCl (~37%) is strongly corrosive and fumes hazardous acidic gas, necessitating safety goggles and fume hood use."
+    },
+    {
+      "id": "lab07_l2_20",
+      "prompt": "Why does the cobalt equilibrium in Lab 07 provide an ideal classroom model of Le Chatelier's principle?",
+      "options": [
+        "It produces distinct, vivid, and instantaneous color changes (pink vs blue) responding to concentration and temperature disturbances.",
+        "It requires a multi-million-dollar particle accelerator to observe.",
+        "It only works when heated to temperatures above 5000 \u00b0C.",
+        "It permanently consumes all reactants and cannot be reset."
+      ],
+      "correctIndex": 0,
+      "explanation": "The rapid, reversible visual shift between pink and blue makes Le Chatelier's principle concrete and easily observable."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab07_l3_01",
+      "prompt": "Why does the forward reaction [Co(H2O)6]2+ + 4 Cl- \u21cc [CoCl4]2- + 6 H2O have a large positive entropy change (Delta S > 0)?",
+      "options": [
+        "5 reacting solute particles (1 complex + 4 Cl-) release 7 independent particles (1 complex + 6 H2O), increasing disorder.",
+        "Crystalline cobalt solidifies into a perfect crystal lattice.",
+        "All water molecules stop moving and freeze in place.",
+        "The total mass of the system decreases by 50%."
+      ],
+      "correctIndex": 0,
+      "explanation": "Particle count increases from 5 to 7 free species; releasing 6 bound water molecules into bulk liquid increases entropy."
+    },
+    {
+      "id": "lab07_l3_02",
+      "prompt": "If Delta H = +50 kJ/mol and Delta S = +150 J/(mol.K), at what temperature (in Kelvin) does Delta G = 0 for the cobalt equilibrium?",
+      "options": [
+        "T = 333 K (approximately 60 \u00b0C).",
+        "T = 273 K (approximately 0 \u00b0C).",
+        "T = 298 K (approximately 25 \u00b0C).",
+        "T = 500 K (approximately 227 \u00b0C)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Delta G = Delta H - T * Delta S = 0 => T = 50,000 / 150 = 333.3 K ~ 333 K (60 \u00b0C). At room temp (298 K), pink dominates; at 60 \u00b0C, blue dominates."
+    },
+    {
+      "id": "lab07_l3_03",
+      "prompt": "How does crystal field theory explain why [Co(H2O)6]2+ is pink while [CoCl4]2- is deep blue?",
+      "options": [
+        "Octahedral splitting Delta_oct is larger than tetrahedral Delta_tet; [Co(H2O)6]2+ absorbs green-yellow light, [CoCl4]2- absorbs red light.",
+        "Octahedral complexes have zero d-electrons in their valence shell.",
+        "Chloride ligands have a stronger ligand field than water molecules.",
+        "Cobalt in [CoCl4]2- absorbs all visible photons without transmission."
+      ],
+      "correctIndex": 0,
+      "explanation": "Delta_tet ~ 4/9 Delta_oct. Smaller splitting in tetrahedral [CoCl4]2- absorbs lower-energy red photons, appearing deep blue."
+    },
+    {
+      "id": "lab07_l3_04",
+      "prompt": "Where does chloride (Cl-) rank relative to water (H2O) in the spectrochemical series?",
+      "options": [
+        "Cl- is a weaker-field ligand than H2O: I- < Br- < Cl- < F- < OH- < H2O < NH3 < CN-.",
+        "Cl- is a much stronger-field ligand than both H2O and cyanide.",
+        "Cl- and H2O have identical crystal field splitting parameters.",
+        "Cl- does not produce any crystal field splitting whatsoever."
+      ],
+      "correctIndex": 0,
+      "explanation": "The spectrochemical series ranks Cl- below H2O, consistent with smaller ligand field splitting in the chloro complex."
+    },
+    {
+      "id": "lab07_l3_05",
+      "prompt": "A student adds acetone to a pink cobalt chloride solution. The solution turns blue. What is the thermodynamic explanation?",
+      "options": [
+        "Acetone is a non-aqueous solvent with lower dielectric constant, favoring neutral/lower-charge species and reducing water activity.",
+        "Acetone adds millions of extra chloride ions into the solution.",
+        "Acetone reduces cobalt(II) ions to metallic cobalt nanoparticles.",
+        "Acetone cools the solution below the freezing point of water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Low-dielectric organic solvents decrease water chemical potential and stabilize the less polar [CoCl4]2- complex."
+    },
+    {
+      "id": "lab07_l3_06",
+      "prompt": "If the reaction quotient Q = ([CoCl4 2-][H2O]^6) / ([Co(H2O)6 2+][Cl-]^4) is less than Kc, which direction will the reaction shift?",
+      "options": [
+        "It will shift to the right (forward direction), producing more blue [CoCl4]2- until Q equals Kc.",
+        "It will shift to the left (reverse direction), producing more pink [Co(H2O)6]2+.",
+        "It will stop reacting because Q can never be less than Kc.",
+        "The container will spontaneously boil and evaporate all water."
+      ],
+      "correctIndex": 0,
+      "explanation": "When Q < Kc, forward reaction proceeds to form more products until dynamic equilibrium (Q = Kc) is reached."
+    },
+    {
+      "id": "lab07_l3_07",
+      "prompt": "What is the effect of adding excess calcium chloride (CaCl2) compared to sodium chloride (NaCl) on an equimolar basis?",
+      "options": [
+        "CaCl2 supplies twice as many Cl- ions per mole (CaCl2 -> Ca2+ + 2 Cl-), producing a more intense blue shift per gram.",
+        "CaCl2 turns the solution green while NaCl turns it blue.",
+        "CaCl2 neutralizes the complex into solid calcium cobaltate.",
+        "CaCl2 does not dissolve in water and has zero effect."
+      ],
+      "correctIndex": 0,
+      "explanation": "CaCl2 yields 2 moles of Cl- per mole of salt, driving the equilibrium right twice as effectively as 1 mole of NaCl."
+    },
+    {
+      "id": "lab07_l3_08",
+      "prompt": "Why does adding concentrated nitric acid (HNO3) NOT shift the cobalt solution to blue, whereas concentrated HCl does?",
+      "options": [
+        "Nitrate (NO3-) has low affinity for Co2+ and does not displace water, whereas chloride (Cl-) forms stable [CoCl4]2-.",
+        "Nitric acid permanently destroys all transition metal ions.",
+        "Nitric acid is an alkaline base that precipitates cobalt hydroxide.",
+        "Chloride ions are destroyed by nitric acid on contact."
+      ],
+      "correctIndex": 0,
+      "explanation": "NO3- is a very poor coordinating ligand; Cl- coordinates strongly to form tetrahedral tetrachlorocobaltate(II)."
+    },
+    {
+      "id": "lab07_l3_09",
+      "prompt": "A test tube of cobalt solution is violet at 25 \u00b0C. When immersed in a boiling water bath (100 \u00b0C), what absorbance change occurs at 660 nm?",
+      "options": [
+        "Absorbance at 660 nm increases significantly as the concentration of blue [CoCl4]2- rises.",
+        "Absorbance at 660 nm drops to absolute zero.",
+        "Absorbance shifts entirely to the ultraviolet spectrum.",
+        "The absorbance remains completely identical at all temperatures."
+      ],
+      "correctIndex": 0,
+      "explanation": "Heating increases [CoCl4]2-, which absorbs at 660 nm, dramatically increasing measured absorbance."
+    },
+    {
+      "id": "lab07_l3_10",
+      "prompt": "How does the presence of 6 water molecules on the product side explain why drying cobalt chloride paper changes its color?",
+      "options": [
+        "Removing water (drying) shifts the equilibrium right to blue [CoCl4]2-; re-absorbing water shifts it left to pink.",
+        "Drying evaporates the cobalt metal out of the paper.",
+        "Water molecules are black and cover up the blue color.",
+        "Paper turns pink only when burned by an open flame."
+      ],
+      "correctIndex": 0,
+      "explanation": "Desiccation removes H2O product, shifting equilibrium toward blue anhydrous/chloro complex."
+    },
+    {
+      "id": "lab07_l3_11",
+      "prompt": "In a spectrophotometric experiment, why must a blank cuvette containing pure solvent be measured before testing the cobalt solution?",
+      "options": [
+        "To calibrate the baseline and subtract background light absorption by solvent and cuvette walls.",
+        "To warm the spectrophotometer lamp to 10,000 \u00b0C.",
+        "To verify that water conducts electricity through light beams.",
+        "To convert ambient air into pure nitrogen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Blank calibration ensures that measured absorbance is due solely to the absorbing cobalt complex solute."
+    },
+    {
+      "id": "lab07_l3_12",
+      "prompt": "What happens if silver nitrate is added until ALL chloride is precipitated as AgCl, and then excess AgNO3 is added?",
+      "options": [
+        "The solution remains permanently pink, as zero Cl- remains to form the blue complex regardless of heating.",
+        "The solution turns bright yellow from silver metal.",
+        "The solution turns deep blue again due to nitrate coordination.",
+        "The AgCl precipitate dissolves into a clear liquid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Without Cl- ions, [CoCl4]2- cannot form; equilibrium is locked on the pink [Co(H2O)6]2+ side."
+    },
+    {
+      "id": "lab07_l3_13",
+      "prompt": "Why does adding solid mercury(II) chloride or mercury(II) nitrate affect the cobalt chloride equilibrium?",
+      "options": [
+        "Hg2+ binds Cl- very strongly into stable [HgCl4]2- complexes, stripping Cl- and shifting cobalt to pink.",
+        "Mercury turns the solution into liquid metal.",
+        "Mercury acts as an oxidant, converting cobalt into copper.",
+        "Mercury evaporates all water instantly."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hg2+ has exceptionally high affinity for halides, sequestering Cl- and shifting the cobalt equilibrium left (pink)."
+    },
+    {
+      "id": "lab07_l3_14",
+      "prompt": "Calculate the ratio of [CoCl4 2-] to [Co(H2O)6 2+] if the equilibrium constant Kc' (incorporating water) is 2.5 x 10^-3 dm12/mol4 and [Cl-] = 4.0 mol/dm3.",
+      "options": [
+        "Ratio = 0.64 (a violet mixture of pink and blue).",
+        "Ratio = 100.0 (almost entirely blue).",
+        "Ratio = 0.001 (almost entirely pink).",
+        "Ratio = 10.0 (intensely blue)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ratio = Kc' * [Cl-]^4 = (2.5e-3) * (4.0)^4 = (2.5e-3) * 256 = 0.64 (intermediate violet)."
+    },
+    {
+      "id": "lab07_l3_15",
+      "prompt": "What is the d-electron configuration of the Co2+ ion in these complexes?",
+      "options": [
+        "A d7 electron configuration (7 valence d-electrons).",
+        "A d9 electron configuration like copper(II).",
+        "A d5 electron configuration like iron(III).",
+        "A d0 configuration with zero d-electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cobalt is element 27 ([Ar] 4s2 3d7); Co2+ loses the two 4s electrons, leaving a 3d7 configuration."
+    },
+    {
+      "id": "lab07_l3_16",
+      "prompt": "In high-spin octahedral [Co(H2O)6]2+ (d7), how many unpaired electrons are present?",
+      "options": [
+        "Exactly three unpaired electrons (t2g 5 eg 2).",
+        "Exactly one unpaired electron.",
+        "Zero unpaired electrons (diamagnetic).",
+        "Exactly five unpaired electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "Weak-field H2O yields high-spin d7: t2g^5 eg^2 with 3 unpaired electrons (paramagnetic)."
+    },
+    {
+      "id": "lab07_l3_17",
+      "prompt": "In tetrahedral [CoCl4]2- (d7), how many unpaired electrons are present?",
+      "options": [
+        "Exactly three unpaired electrons (e 4 t2 3).",
+        "Exactly one unpaired electron.",
+        "Zero unpaired electrons.",
+        "Exactly seven unpaired electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tetrahedral splitting: e subshell is lower than t2; d7 fills as e^4 t2^3, having 3 unpaired electrons."
+    },
+    {
+      "id": "lab07_l3_18",
+      "prompt": "Why does the cobalt equilibrium NOT involve any change in oxidation state of cobalt metal?",
+      "options": [
+        "It is a pure ligand-substitution / coordination equilibrium, not a redox reaction.",
+        "Cobalt cannot undergo oxidation-reduction in liquid water.",
+        "Chloride ions are noble gases and cannot exchange electrons.",
+        "Electrons cannot move between transition metal complexes."
+      ],
+      "correctIndex": 0,
+      "explanation": "No electron transfer occurs; Co remains Co(II) throughout ligand exchange."
+    },
+    {
+      "id": "lab07_l3_19",
+      "prompt": "A student adds concentrated HCl and observes the solution turn blue. After 10 minutes in an open dish, it slowly reverts to pink. Why?",
+      "options": [
+        "Hygroscopic absorption of water vapor from atmospheric humidity dilutes the solution, shifting equilibrium left.",
+        "HCl gas decomposes into solid table salt.",
+        "Atmospheric nitrogen converts cobalt into copper.",
+        "Light rays destroy the coordination bonds permanently."
+      ],
+      "correctIndex": 0,
+      "explanation": "The concentrated solution absorbs moisture from humid air; increasing water shifts the equilibrium back to pink."
+    },
+    {
+      "id": "lab07_l3_20",
+      "prompt": "What thermodynamic principle dictates that all dynamic chemical equilibria must oppose applied disturbances?",
+      "options": [
+        "The Second Law of Thermodynamics (minimizing free energy Delta G toward thermodynamic equilibrium).",
+        "The Zeroth Law of Thermodynamics regarding temperature scales.",
+        "The Law of Conservation of Angular Momentum in atoms.",
+        "Boyle's Law of Ideal Gas Compression."
+      ],
+      "correctIndex": 0,
+      "explanation": "Le Chatelier's principle is a direct consequence of the Second Law of Thermodynamics (systems relax to minimize G)."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab07_l4_01",
+      "prompt": "From the van 't Hoff equation: d(ln Kc)/dT = Delta H / (R*T^2), calculate the ratio Kc(343 K) / Kc(293 K) if Delta H = +62.0 kJ/mol (R = 8.314 J/(mol.K)).",
+      "options": [
+        "Kc(343 K) is approximately 38 times larger than Kc(293 K).",
+        "Kc(343 K) is approximately 2 times larger than Kc(293 K).",
+        "Kc(343 K) is identical to Kc(293 K).",
+        "Kc(343 K) is 1000 times smaller than Kc(293 K)."
+      ],
+      "correctIndex": 0,
+      "explanation": "ln(K2/K1) = (Delta H / R) * (1/T1 - 1/T2) = (62,000 / 8.314) * (1/293 - 1/343) = 7457 * (0.003413 - 0.002915) = 7457 * 0.000498 = 3.71. K2/K1 = e^3.71 ~ 40.8 ~ 38\u201341x."
+    },
+    {
+      "id": "lab07_l4_02",
+      "prompt": "Why are tetrahedral d7 complexes like [CoCl4]2- invariably high-spin with Delta_tet << pairing energy P?",
+      "options": [
+        "Tetrahedral ligand field splitting Delta_tet is only 4/9 of Delta_oct, never exceeding electron pairing energy P.",
+        "Chloride ions force all electrons into low-energy core shells.",
+        "Tetrahedral complexes have no magnetic moments.",
+        "All four ligands donate four electrons each into the nucleus."
+      ],
+      "correctIndex": 0,
+      "explanation": "Delta_tet is inherently small (4/9 of Delta_oct), so electrons always occupy orbitals singly before pairing (high-spin)."
+    },
+    {
+      "id": "lab07_l4_03",
+      "prompt": "In the UV-Vis spectrum of [CoCl4]2-, the triple-peaked band around 660 nm corresponds to which electronic transition?",
+      "options": [
+        "Spin-allowed transition 4A2(F) -> 4T1(P) split by spin-orbit coupling.",
+        "Charge transfer from cobalt 3d to chloride 3p orbitals.",
+        "Pure vibrational stretching of the Co-Cl covalent bonds.",
+        "Spin-forbidden singlet to triplet transition."
+      ],
+      "correctIndex": 0,
+      "explanation": "The intense blue band arises from the spin-allowed 4A2(F) -> 4T1(P) transition, fine-structured by spin-orbit coupling."
+    },
+    {
+      "id": "lab07_l4_04",
+      "prompt": "Calculate the ionic strength (I = 0.5 * sum(ci * zi^2)) of a solution containing 0.05 mol/dm3 CoCl2 and 3.0 mol/dm3 HCl.",
+      "options": [
+        "Ionic strength I = 3.15 mol/dm3",
+        "Ionic strength I = 1.50 mol/dm3",
+        "Ionic strength I = 0.15 mol/dm3",
+        "Ionic strength I = 6.30 mol/dm3"
+      ],
+      "correctIndex": 0,
+      "explanation": "CoCl2: Co2+ (0.05*4 = 0.20), Cl- (0.10*1 = 0.10). HCl: H+ (3.0*1 = 3.0), Cl- (3.0*1 = 3.0). Sum = 0.20 + 0.10 + 3.0 + 3.0 = 6.30. I = 0.5 * 6.30 = 3.15 mol/dm3."
+    },
+    {
+      "id": "lab07_l4_05",
+      "prompt": "How does extremely high ionic strength (>3 mol/dm3) affect the activity coefficients of Co2+ and Cl- in solution?",
+      "options": [
+        "Activity coefficients deviate significantly from unity, requiring Pitzer or Davies equations rather than standard Debye-Huckel.",
+        "Activity coefficients drop to zero, stopping all chemical reactions.",
+        "Activity coefficients become infinite, causing water to freeze.",
+        "Ionic strength has zero mathematical impact on activities."
+      ],
+      "correctIndex": 0,
+      "explanation": "At high ionic strength, Debye-Huckel breaks down; ion-pairing and specific ion interaction models (Pitzer) are required."
+    },
+    {
+      "id": "lab07_l4_06",
+      "prompt": "Why does the coordination of chloride to cobalt involve significant covalent character, unlike hydration with water?",
+      "options": [
+        "Chloride 3p lone pairs overlap effectively with cobalt 3d/4p hybrid orbitals (nephelauxetic effect / cloud expanding).",
+        "Chloride ions transfer all their protons directly to the cobalt nucleus.",
+        "Water molecules cannot form coordinate bonds with transition metals.",
+        "Covalent character only exists in organic carbon compounds."
+      ],
+      "correctIndex": 0,
+      "explanation": "The nephelauxetic effect reduces interelectronic repulsion parameters (Racah B), proving substantial metal-ligand covalency."
+    },
+    {
+      "id": "lab07_l4_07",
+      "prompt": "In magnetic susceptibility measurements (Gouy balance), how does effective magnetic moment mu_eff compare between pink and blue complexes?",
+      "options": [
+        "Both show paramagnetism with mu_eff ~ 4.4\u20135.0 B.M. due to 3 unpaired electrons with unquenched orbital angular momentum.",
+        "Both complexes are diamagnetic with mu_eff = 0 B.M.",
+        "The pink complex is ferromagnetic; the blue is diamagnetic.",
+        "The blue complex has mu_eff of exactly 100 Bohr magnetons."
+      ],
+      "correctIndex": 0,
+      "explanation": "Co(II) d7 high-spin has 3 unpaired electrons; spin-orbit coupling gives experimental mu_eff ~ 4.4\u20135.2 B.M. for both."
+    },
+    {
+      "id": "lab07_l4_08",
+      "prompt": "Why does adding zinc metal powder to the blue cobalt chloride solution decolorize it with gas evolution and precipitation?",
+      "options": [
+        "Zinc is more reactive (E0 = -0.76 V vs Co2+ -0.28 V), displacing Co2+ to form black cobalt metal: Zn + Co2+ -> Zn2+ + Co(s).",
+        "Zinc metal absorbs all visible photons without chemical change.",
+        "Zinc converts chloride ions into radioactive sulfur.",
+        "Zinc dissolves glass and neutralizes the dye."
+      ],
+      "correctIndex": 0,
+      "explanation": "Redox displacement: Zn(s) reduces Co2+(aq) to metallic cobalt powder, discharging the solution color."
+    },
+    {
+      "id": "lab07_l4_09",
+      "prompt": "What is the role of the 6 coordinated water molecules in stabilizing the hexaaquacobalt(II) ion in terms of hydration enthalpy?",
+      "options": [
+        "High hydration enthalpy of Co2+ (~ -2050 kJ/mol) strongly stabilizes octahedral coordination in dilute aqueous solution.",
+        "Hydration enthalpy is zero because water is neutral.",
+        "Water molecules decrease the mass of the cobalt cation.",
+        "Hydration enthalpy makes all transition metal solutions boil."
+      ],
+      "correctIndex": 0,
+      "explanation": "Large negative hydration enthalpy (-2050 kJ/mol) makes [Co(H2O)6]2+ the thermodynamic ground state in water."
+    },
+    {
+      "id": "lab07_l4_10",
+      "prompt": "How can EXAFS (Extended X-ray Absorption Fine Structure) spectroscopy verify the structural change between pink and blue complexes?",
+      "options": [
+        "EXAFS directly measures radial bond distances: Co-O distance is ~2.08 A in octahedral; Co-Cl is ~2.28 A in tetrahedral.",
+        "EXAFS counts the number of neutrons in the cobalt nucleus.",
+        "EXAFS measures the speed of water molecules evaporating.",
+        "EXAFS measures the electrical voltage of the glass beaker."
+      ],
+      "correctIndex": 0,
+      "explanation": "EXAFS probes local coordination geometry, yielding exact bond lengths (Co-O ~2.08 A vs Co-Cl ~2.28 A) and coordination numbers."
+    },
+    {
+      "id": "lab07_l4_11",
+      "prompt": "If an automated spectrophotometer monitors the cobalt equilibrium at 660 nm, what mathematical equation converts absorbance to [CoCl4 2-]?",
+      "options": [
+        "[CoCl4 2-] = A_660 / (epsilon * l) according to the Beer-Lambert Law.",
+        "[CoCl4 2-] = A_660 * (epsilon * l)^2",
+        "[CoCl4 2-] = log(A_660) * 100",
+        "[CoCl4 2-] = (epsilon * l) / A_660"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beer-Lambert Law: A = epsilon * c * l => c = A / (epsilon * l)."
+    },
+    {
+      "id": "lab07_l4_12",
+      "prompt": "Why does temperature jump (T-jump) relaxation spectrometry allow measurement of the fast rate constants of this equilibrium?",
+      "options": [
+        "A rapid capacitor discharge heats the sample by 5 \u00b0C in microseconds, and the relaxation to new equilibrium is monitored optically.",
+        "T-jump permanently splits cobalt atoms into subatomic particles.",
+        "T-jump freezes the solution into solid ice in one nanosecond.",
+        "T-jump changes the color of glass cuvettes."
+      ],
+      "correctIndex": 0,
+      "explanation": "T-jump perturbs equilibrium thermally in microseconds; relaxation kinetics yield forward and reverse rate constants (k_f and k_r)."
+    },
+    {
+      "id": "lab07_l4_13",
+      "prompt": "What is the order of magnitude of the forward rate constant for ligand substitution in Co(II) aquo complexes?",
+      "options": [
+        "Approximately 10^5 to 10^6 s^-1 (extremely labile transition metal complex).",
+        "Approximately 10^-9 s^-1 (inert complex taking years to react).",
+        "Approximately 10^20 s^-1 (faster than the speed of light).",
+        "Exactly zero because complex ions do not exchange ligands."
+      ],
+      "correctIndex": 0,
+      "explanation": "Co(II) is a labile d7 complex with rapid water exchange rate constants on the order of ~10^6 s^-1."
+    },
+    {
+      "id": "lab07_l4_14",
+      "prompt": "Why is chromium(III) or cobalt(III) unsuitable for this rapid classroom equilibrium demonstration?",
+      "options": [
+        "Cr(III) and Co(III) are d3 and low-spin d6 inert complexes; ligand exchange takes hours to days at room temperature.",
+        "Cr(III) and Co(III) do not exist in aqueous solution.",
+        "Cr(III) and Co(III) explode when exposed to water.",
+        "Both metals are radioactive and emit lethal radiation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Co(III) (d6 low-spin) and Cr(III) (d3) have very high ligand field stabilization energy, making them substitutionally inert."
+    },
+    {
+      "id": "lab07_l4_15",
+      "prompt": "What chemical property allows cobalt chloride to serve as an industrial indicator in silica gel desiccant beads?",
+      "options": [
+        "Silica gel impregnated with CoCl2 is blue when actively dry and turns pink when saturated with water, signaling desiccant exhaustion.",
+        "It emits loud beeping sounds when moisture is present.",
+        "It converts absorbed water into flammable hydrogen gas.",
+        "It turns black and melts into liquid plastic when moist."
+      ],
+      "correctIndex": 0,
+      "explanation": "CoCl2-impregnated silica gel changes from blue (anhydrous) to pink (hydrated), visually indicating moisture capacity."
+    },
+    {
+      "id": "lab07_l4_16",
+      "prompt": "Why has cobalt chloride been largely replaced by iron(III) salts or organic dyes in modern commercial desiccant packs?",
+      "options": [
+        "Cobalt(II) chloride is classified as toxic and potentially carcinogenic upon inhalation of fine dust.",
+        "Cobalt chloride turns into pure gold, making desiccant too expensive.",
+        "Cobalt chloride absorbs so much water that it explodes.",
+        "Iron(III) salts turn bright purple and smell pleasant."
+      ],
+      "correctIndex": 0,
+      "explanation": "CoCl2 is classified as a Substance of Very High Concern (SVHC, carcinogenic/toxic); safer alternatives are favored."
+    },
+    {
+      "id": "lab07_l4_17",
+      "prompt": "In non-aqueous solvents, what is the structure of the intermediate species observed between hexaaquo and tetrachloro cobalt?",
+      "options": [
+        "Stepwise substitution intermediates: [CoCl(H2O)5]+, [CoCl2(H2O)4], and [CoCl3(H2O)]-.",
+        "Polymers of metallic cobalt chains floating in solution.",
+        "Gaseous chlorine bubbles containing dissolved cobalt atoms.",
+        "Clusters of sixty carbon atoms enclosing a cobalt nucleus."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ligand substitution occurs stepwise through intermediate chloroaquo complexes [CoCl_n(H2O)_(6-n)]^(2-n)."
+    },
+    {
+      "id": "lab07_l4_18",
+      "prompt": "How does the spectrochemical series explain why adding fluoride (F-) to [CoCl4]2- discharges the blue color and forms pink [CoF6]4-?",
+      "options": [
+        "Fluoride is higher in the spectrochemical series than chloride, restoring octahedral geometry with larger ligand splitting.",
+        "Fluoride reduces cobalt to shiny metallic cobalt mirrors.",
+        "Fluoride boils away all chloride ions as chlorine gas.",
+        "Fluoride destroys the d-orbitals of cobalt entirely."
+      ],
+      "correctIndex": 0,
+      "explanation": "F- is harder and less polarizable than Cl-, favoring octahedral coordination [CoF6]4- with different absorption characteristics."
+    },
+    {
+      "id": "lab07_l4_19",
+      "prompt": "What thermodynamic quantity is directly obtained from the slope of a ln(Kc) versus 1/T plot for the cobalt equilibrium?",
+      "options": [
+        "The standard enthalpy change of reaction, -Delta H\u00b0 / R.",
+        "The absolute zero temperature of the universe.",
+        "The speed of light in the aqueous solution.",
+        "The mass of the central cobalt nucleus."
+      ],
+      "correctIndex": 0,
+      "explanation": "Van 't Hoff equation: slope = -Delta H\u00b0 / R, giving standard enthalpy change directly from temperature data."
+    },
+    {
+      "id": "lab07_l4_20",
+      "prompt": "Why does the cobalt chloride equilibrium serve as an essential experiment in university coordination chemistry curricula?",
+      "options": [
+        "It unifies Le Chatelier's principle, crystal field splitting, coordination geometry shifts, and thermodynamic equilibria into one visual system.",
+        "It proves that chemical reactions violate the conservation of energy.",
+        "It teaches students how to synthesize radioactive transition metals.",
+        "It demonstrates that water is completely insoluble in hydrochloric acid."
+      ],
+      "correctIndex": 0,
+      "explanation": "The experiment bridges classical chemical equilibrium with modern coordination chemistry and ligand field theory."
+    }
+  ]
+}

@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab06_l1_01",
+      "prompt": "What is the primary chemical purpose of Lab 06: Ammonium Detective?",
+      "options": [
+        "To test for and confirm the presence of ammonium ions (NH4+) in unknown samples.",
+        "To measure the speed of light travelling through sodium chloride solution.",
+        "To convert transition metal ions into pure liquid mercury metal.",
+        "To determine the half-life of radioactive carbon-14 in soil."
+      ],
+      "correctIndex": 0,
+      "explanation": "Lab 06 focuses on the qualitative chemical identification of the ammonium cation, NH4+."
+    },
+    {
+      "id": "lab06_l1_02",
+      "prompt": "Which reagent solution must be added to an unknown salt to test for ammonium ions?",
+      "options": [
+        "Dilute aqueous sodium hydroxide solution (NaOH).",
+        "Concentrated sulfuric acid solution (H2SO4).",
+        "Dilute aqueous silver nitrate solution (AgNO3).",
+        "Aqueous potassium iodide solution (KI)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sodium hydroxide provides hydroxide ions (OH-) that react with NH4+ to liberate ammonia gas."
+    },
+    {
+      "id": "lab06_l1_03",
+      "prompt": "What physical step is required after adding sodium hydroxide to release ammonia gas effectively?",
+      "options": [
+        "Gently warming the test tube over a low Bunsen burner flame.",
+        "Cooling the test tube inside a freezing ice bath.",
+        "Centrifuging the sample at ultra-high rotational speed.",
+        "Shining ultraviolet laser light directly into the liquid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gentle warming drives dissolved ammonia gas out of solution so it can be detected at the tube mouth."
+    },
+    {
+      "id": "lab06_l1_04",
+      "prompt": "What gas is liberated when an ammonium salt reacts with warm sodium hydroxide?",
+      "options": [
+        "Ammonia gas, NH3.",
+        "Hydrogen chloride gas, HCl.",
+        "Carbon dioxide gas, CO2.",
+        "Sulfur dioxide gas, SO2."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4+(aq) + OH-(aq) -> NH3(g) + H2O(l)."
+    },
+    {
+      "id": "lab06_l1_05",
+      "prompt": "What distinctive odor identifies the release of ammonia gas?",
+      "options": [
+        "A sharp, choking, pungent alkaline odor.",
+        "A sweet fruity scent like ripe bananas.",
+        "An odorless and completely imperceptible gas.",
+        "A rotten egg smell characteristic of hydrogen sulfide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia has a uniquely sharp, pungent, choking smell."
+    },
+    {
+      "id": "lab06_l1_06",
+      "prompt": "What is the standard indicator paper test used to confirm ammonia gas at the test tube mouth?",
+      "options": [
+        "Damp red litmus paper turning blue.",
+        "Dry blue litmus paper turning red.",
+        "Dry filter paper turning transparent.",
+        "Starch-iodide paper turning dark purple."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia is an alkaline gas; when dissolved in moisture on damp red litmus paper, it turns blue."
+    },
+    {
+      "id": "lab06_l1_07",
+      "prompt": "Why must the red litmus paper be DAMP when testing for ammonia gas?",
+      "options": [
+        "Ammonia gas must dissolve in water to produce alkaline hydroxide ions (OH-).",
+        "Dry paper catches fire immediately when exposed to ammonia.",
+        "Water keeps the paper cold so it does not melt into liquid.",
+        "Moisture turns ammonia gas into solid crystalline ammonium."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gas dissolves in the moisture: NH3 + H2O \u21cc NH4+ + OH-; OH- ions cause the indicator color change."
+    },
+    {
+      "id": "lab06_l1_08",
+      "prompt": "What happens if completely DRY red litmus paper is held in dry ammonia gas?",
+      "options": [
+        "The paper remains red and shows no immediate color change.",
+        "The paper turns bright blue within one millisecond.",
+        "The paper dissolves into pure liquid water.",
+        "The paper turns deep black like carbon."
+      ],
+      "correctIndex": 0,
+      "explanation": "Without water, no hydroxide ions are formed, so dry litmus cannot detect the alkaline nature of NH3."
+    },
+    {
+      "id": "lab06_l1_09",
+      "prompt": "What second confirmatory test can identify ammonia gas using a glass rod?",
+      "options": [
+        "A glass rod dipped in concentrated hydrochloric acid, producing dense white smoke.",
+        "A glass rod dipped in olive oil, producing yellow flames.",
+        "A glass rod dipped in water, producing boiling bubbles.",
+        "A glass rod heated red-hot, turning the gas into gold."
+      ],
+      "correctIndex": 0,
+      "explanation": "Concentrated HCl vapor reacts with NH3 gas to produce dense white fumes of ammonium chloride: NH3 + HCl -> NH4Cl(s)."
+    },
+    {
+      "id": "lab06_l1_10",
+      "prompt": "What is the chemical composition of the dense white smoke formed with concentrated HCl?",
+      "options": [
+        "Solid particles of ammonium chloride, NH4Cl(s).",
+        "Tiny droplets of liquid hydrochloric acid, HCl(l).",
+        "Particles of elemental white phosphorus, P4(s).",
+        "Fine crystals of sodium chloride, NaCl(s)."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3(g) + HCl(g) -> NH4Cl(s) (fine aerosol particles of solid ammonium chloride)."
+    },
+    {
+      "id": "lab06_l1_11",
+      "prompt": "What charge does the ammonium ion carry?",
+      "options": [
+        "A single positive charge (1+).",
+        "A double positive charge (2+).",
+        "A single negative charge (1-).",
+        "A neutral zero charge (0)."
+      ],
+      "correctIndex": 0,
+      "explanation": "The ammonium ion is NH4+ with a +1 charge."
+    },
+    {
+      "id": "lab06_l1_12",
+      "prompt": "Is ammonia gas acidic, neutral, or alkaline?",
+      "options": [
+        "Ammonia gas is alkaline (basic).",
+        "Ammonia gas is strongly acidic.",
+        "Ammonia gas is completely neutral.",
+        "Ammonia gas is an amphoteric solid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia is the only common alkaline gas encountered in secondary chemistry qualitative analysis."
+    },
+    {
+      "id": "lab06_l1_13",
+      "prompt": "Why should you NEVER touch the damp litmus paper to the inside glass wall of the test tube?",
+      "options": [
+        "Splashes of sodium hydroxide on the glass will falsely turn the paper blue.",
+        "The glass will instantly absorb all the dye from the litmus paper.",
+        "The glass will shatter from chemical shock.",
+        "The sodium hydroxide will turn into explosive sodium metal."
+      ],
+      "correctIndex": 0,
+      "explanation": "Touching the alkaline reagent (NaOH) on the glass causes a false positive; test only the vapor above the mouth."
+    },
+    {
+      "id": "lab06_l1_14",
+      "prompt": "What safety technique should be used when smelling gases in a chemistry laboratory?",
+      "options": [
+        "Gently wafting vapors toward the nose with a cupped hand from a safe distance.",
+        "Placing the test tube directly into the nostril and inhaling deeply.",
+        "Boiling the tube until the room fills with dense fumes.",
+        "Drinking the liquid to taste the dissolved gases."
+      ],
+      "correctIndex": 0,
+      "explanation": "Wafting gently carries dilute vapor safely toward the nose without inhaling concentrated toxic fumes."
+    },
+    {
+      "id": "lab06_l1_15",
+      "prompt": "What is the appearance of typical solid ammonium salts (e.g., NH4Cl, (NH4)2SO4, NH4NO3)?",
+      "options": [
+        "White crystalline solids.",
+        "Dark reddish-brown oily liquids.",
+        "Bright canary-yellow powders.",
+        "Deep royal-blue crystals."
+      ],
+      "correctIndex": 0,
+      "explanation": "Common ammonium salts are white crystalline solids that form colorless aqueous solutions."
+    },
+    {
+      "id": "lab06_l1_16",
+      "prompt": "Does adding cold sodium hydroxide to an ammonium salt immediately produce a precipitate?",
+      "options": [
+        "No precipitate forms; ammonium hydroxide is fully soluble in water.",
+        "Yes, a dense white precipitate forms instantly.",
+        "Yes, a bright blue gelatinous precipitate forms.",
+        "Yes, a dirty green precipitate forms immediately."
+      ],
+      "correctIndex": 0,
+      "explanation": "Unlike transition metals, ammonium ions form soluble salts with hydroxide; no precipitate forms."
+    },
+    {
+      "id": "lab06_l1_17",
+      "prompt": "What happens to the rate of ammonia gas release when the test tube is warmed gently?",
+      "options": [
+        "The solubility of ammonia decreases with heat, causing rapid effervescence of gas.",
+        "Ammonia dissolves ten times more effectively in hot water.",
+        "The ammonia gas decomposes into solid nitrogen crystals.",
+        "The reaction stops completely because heat destroys alkali."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gas solubility in water decreases as temperature rises, driving NH3 gas out of solution."
+    },
+    {
+      "id": "lab06_l1_18",
+      "prompt": "Which of the following is an ammonium salt?",
+      "options": [
+        "Ammonium nitrate, NH4NO3.",
+        "Sodium chloride, NaCl.",
+        "Copper(II) sulfate, CuSO4.",
+        "Calcium carbonate, CaCO3."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4NO3 is composed of ammonium cations (NH4+) and nitrate anions (NO3-)."
+    },
+    {
+      "id": "lab06_l1_19",
+      "prompt": "What state symbol represents ammonia when it is dissolved in the test solution?",
+      "options": [
+        "(aq) for aqueous ammonia.",
+        "(s) for solid ammonia crystals.",
+        "(l) for pure liquid ammonia solvent.",
+        "(g) for gaseous ammonia vapor."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dissolved ammonia in water is represented as NH3(aq)."
+    },
+    {
+      "id": "lab06_l1_20",
+      "prompt": "Why is the test for ammonium ions unique compared to tests for other cations like Cu2+ or Fe3+?",
+      "options": [
+        "It relies on testing an alkaline gas evolved upon heating rather than observing a precipitate.",
+        "It requires a mass spectrometer to observe any chemical change.",
+        "It produces radioactive alpha particles that click on Geiger counters.",
+        "It only works when performed under vacuum in outer space."
+      ],
+      "correctIndex": 0,
+      "explanation": "Metal cations form colored hydroxide precipitates; ammonium is detected by gas evolution (NH3) with alkali and heat."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab06_l2_01",
+      "prompt": "Which ionic equation correctly represents the reaction of ammonium ion with hydroxide ion?",
+      "options": [
+        "NH4+(aq) + OH-(aq) -> NH3(g) + H2O(l)",
+        "NH4+(aq) + 2 OH-(aq) -> NH3(g) + H3O+(aq)",
+        "NH3(aq) + H+(aq) -> NH4+(aq)",
+        "NH4+(aq) + OH-(aq) -> NH4OH(s)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Net ionic equation: NH4+(aq) + OH-(aq) -> NH3(g) + H2O(l)."
+    },
+    {
+      "id": "lab06_l2_02",
+      "prompt": "A student tests an unknown white salt: adds NaOH, warms gently, and holds damp red litmus at the mouth. It turns blue. What cation is confirmed?",
+      "options": [
+        "The ammonium cation, NH4+.",
+        "The copper(II) cation, Cu2+.",
+        "The iron(III) cation, Fe3+.",
+        "The sodium cation, Na+."
+      ],
+      "correctIndex": 0,
+      "explanation": "Evolution of alkaline ammonia gas turning damp red litmus blue uniquely confirms NH4+."
+    },
+    {
+      "id": "lab06_l2_03",
+      "prompt": "Why does adding sodium hydroxide to sodium chloride (NaCl) followed by heating NOT turn damp red litmus paper blue?",
+      "options": [
+        "Sodium ions do not contain nitrogen and cannot form ammonia gas.",
+        "Sodium chloride decomposes into toxic chlorine gas that bleaches paper.",
+        "Sodium chloride absorbs all hydroxide ions and turns into hydrochloric acid.",
+        "Sodium ions are acidic and turn red litmus paper bright pink."
+      ],
+      "correctIndex": 0,
+      "explanation": "NaCl contains Na+ and Cl- ions; no ammonia or volatile alkali can be generated."
+    },
+    {
+      "id": "lab06_l2_04",
+      "prompt": "What visual observation occurs when a glass rod dipped in concentrated HCl is brought near the mouth of a tube releasing ammonia?",
+      "options": [
+        "Thick, dense white smoke/fumes form immediately around the rod.",
+        "The glass rod turns bright turquoise blue.",
+        "Vigorous orange sparks fly off the tip of the rod.",
+        "The glass rod dissolves into pure liquid water."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3(g) + HCl(g) -> NH4Cl(s), forming a dense white aerosol smoke of ammonium chloride particles."
+    },
+    {
+      "id": "lab06_l2_05",
+      "prompt": "Write the chemical equation for the formation of white smoke when ammonia meets hydrogen chloride vapor.",
+      "options": [
+        "NH3(g) + HCl(g) -> NH4Cl(s)",
+        "NH3(g) + 2 HCl(g) -> NH5Cl2(s)",
+        "2 NH3(g) + HCl(g) -> (NH3)2HCl(g)",
+        "NH4+(aq) + Cl-(aq) -> NH4Cl(aq)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gaseous ammonia reacts with gaseous hydrogen chloride to form solid ammonium chloride smoke: NH3 + HCl -> NH4Cl(s)."
+    },
+    {
+      "id": "lab06_l2_06",
+      "prompt": "A student tests an unknown solution and observes a pale blue precipitate upon adding NaOH. What cation is present?",
+      "options": [
+        "Copper(II) ion, Cu2+ (not ammonium).",
+        "Ammonium ion, NH4+.",
+        "Iron(II) ion, Fe2+.",
+        "Iron(III) ion, Fe3+."
+      ],
+      "correctIndex": 0,
+      "explanation": "A pale blue precipitate is Cu(OH)2; ammonium ions never form a blue precipitate."
+    },
+    {
+      "id": "lab06_l2_07",
+      "prompt": "How can a student confirm that a white salt is ammonium chloride (NH4Cl) and not ammonium sulfate ((NH4)2SO4)?",
+      "options": [
+        "Add dilute nitric acid and silver nitrate solution; a white precipitate confirms chloride.",
+        "Add sodium hydroxide and warm; smell for ammonia gas.",
+        "Test with damp red litmus paper to see if it turns blue.",
+        "Observe the color of the dry powder with the naked eye."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both contain NH4+, but chloride gives a white precipitate of AgCl with acidified AgNO3; sulfate does not."
+    },
+    {
+      "id": "lab06_l2_08",
+      "prompt": "How can a student confirm that a white salt is ammonium sulfate ((NH4)2SO4) rather than ammonium chloride?",
+      "options": [
+        "Add dilute hydrochloric acid and barium chloride solution; a white precipitate confirms sulfate.",
+        "Add aqueous sodium hydroxide and check for ammonia gas.",
+        "Heat the salt in a dry crucible to see if it melts.",
+        "Dip a wooden splint into the salt and perform a flame test."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ba2+(aq) + SO4 2-(aq) -> BaSO4(s) (dense white precipitate confirming sulfate)."
+    },
+    {
+      "id": "lab06_l2_09",
+      "prompt": "Why does testing for ammonium ions with NaOH NOT require adding an acid first?",
+      "options": [
+        "Acids would neutralize the hydroxide reagent and convert volatile NH3 back into non-volatile NH4+ ions.",
+        "Acids would explode when exposed to ammonium salts.",
+        "Acids turn all indicator papers bright blue automatically.",
+        "Acids convert sodium hydroxide into metallic sodium."
+      ],
+      "correctIndex": 0,
+      "explanation": "Acid neutralizes OH- and protonates ammonia: NH3 + H+ -> NH4+, preventing gas release."
+    },
+    {
+      "id": "lab06_l2_10",
+      "prompt": "If 0.10 moles of (NH4)2SO4 reacts with excess NaOH, how many moles of ammonia gas are theoretically produced?",
+      "options": [
+        "Exactly 0.20 moles of ammonia gas.",
+        "Exactly 0.10 moles of ammonia gas.",
+        "Exactly 0.05 moles of ammonia gas.",
+        "Exactly 0.40 moles of ammonia gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "(NH4)2SO4 contains 2 moles of NH4+ per mole of salt; 0.10 * 2 = 0.20 mol NH3."
+    },
+    {
+      "id": "lab06_l2_11",
+      "prompt": "What volume of NH3 gas (at RTP, 24 dm3/mol) is released from 0.050 moles of NH4Cl reacting with excess NaOH?",
+      "options": [
+        "1.20 dm3 of ammonia gas.",
+        "2.40 dm3 of ammonia gas.",
+        "0.60 dm3 of ammonia gas.",
+        "24.0 dm3 of ammonia gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles NH3 = 0.050 mol. Volume = 0.050 * 24 dm3/mol = 1.20 dm3."
+    },
+    {
+      "id": "lab06_l2_12",
+      "prompt": "Why should heating be gentle rather than vigorous when testing for ammonium ions?",
+      "options": [
+        "Vigorous boiling can cause corrosive alkaline NaOH solution to spit out of the tube onto skin or litmus paper.",
+        "Vigorous boiling converts ammonia gas into toxic nitrogen metal.",
+        "Gentle heating freezes the liquid into solid ice.",
+        "Vigorous heating destroys the glass test tube within one second."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gentle heating prevents hazardous bumping/spitting of hot corrosive sodium hydroxide solution."
+    },
+    {
+      "id": "lab06_l2_13",
+      "prompt": "Which cation produces NO precipitate with NaOH but releases ammonia gas ONLY upon heating with Devarda's alloy or aluminum foil?",
+      "options": [
+        "Nitrate ion, NO3- (an anion reduced to ammonia by Al/OH-).",
+        "Ammonium ion, NH4+ (which releases ammonia with NaOH alone).",
+        "Copper(II) ion, Cu2+.",
+        "Iron(II) ion, Fe2+."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nitrate (NO3-) requires reduction by Al powder (Devarda's alloy) in alkaline solution to produce NH3; NH4+ needs only NaOH."
+    },
+    {
+      "id": "lab06_l2_14",
+      "prompt": "A student observes damp blue litmus paper turning red when held at the mouth of a heated tube. What does this indicate?",
+      "options": [
+        "An acidic gas (such as HCl or SO2) was released, ruling out ammonium as the sole species.",
+        "Ammonia gas was released in extremely high concentration.",
+        "The test tube was completely sterile and clean.",
+        "The student has successfully confirmed pure ammonium ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Blue litmus turning red indicates an acidic gas, meaning ammonia (alkaline) is not present."
+    },
+    {
+      "id": "lab06_l2_15",
+      "prompt": "What happens if a student uses universal indicator paper instead of red litmus paper to test ammonia gas?",
+      "options": [
+        "The paper turns blue-purple, indicating alkaline pH ~ 10\u201311.",
+        "The paper turns bright scarlet red, indicating extreme acidity.",
+        "The paper remains neutral green and shows zero change.",
+        "The paper dissolves into pure liquid solvent."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia is a weak base, turning universal indicator blue to violet (pH ~ 10\u201311)."
+    },
+    {
+      "id": "lab06_l2_16",
+      "prompt": "In the reaction NH4Cl + NaOH -> NaCl + NH3 + H2O, which species are spectator ions?",
+      "options": [
+        "Sodium ions (Na+) and chloride ions (Cl-).",
+        "Ammonium ions (NH4+) and hydroxide ions (OH-).",
+        "Ammonia molecules (NH3) and water molecules (H2O).",
+        "Only the hydrogen ions in water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Na+ and Cl- remain unchanged in solution as spectator ions."
+    },
+    {
+      "id": "lab06_l2_17",
+      "prompt": "A student tests an unknown sample: adds NaOH, white precipitate forms that dissolves in excess NaOH. No ammonia on heating. What cation is present?",
+      "options": [
+        "Aluminum ion (Al3+) or zinc ion (Zn2+).",
+        "Ammonium ion, NH4+.",
+        "Iron(II) ion, Fe2+.",
+        "Copper(II) ion, Cu2+."
+      ],
+      "correctIndex": 0,
+      "explanation": "Amphoteric metal cations (Al3+, Zn2+) form white precipitates soluble in excess NaOH; NH4+ produces no precipitate."
+    },
+    {
+      "id": "lab06_l2_18",
+      "prompt": "Why does an unstoppered bottle of concentrated aqueous ammonia form white fumes when opened near an unstoppered bottle of conc. HCl?",
+      "options": [
+        "Vapors of NH3 and HCl diffuse into the air and react to form solid NH4Cl aerosol particles.",
+        "Oxygen in the air reacts with ammonia to produce clouds of nitrogen gas.",
+        "Water vapor from both bottles boils spontaneously upon contact.",
+        "The glass bottles emit microscopic glass shards that reflect light."
+      ],
+      "correctIndex": 0,
+      "explanation": "Volatile NH3 and HCl vapors meet in the ambient air, forming airborne solid NH4Cl smoke."
+    },
+    {
+      "id": "lab06_l2_19",
+      "prompt": "What is the pH of a 0.1 mol/dm3 aqueous ammonia solution approximately?",
+      "options": [
+        "Approximately pH 11 (weakly alkaline).",
+        "Approximately pH 7 (neutral).",
+        "Approximately pH 14 (strongly alkaline).",
+        "Approximately pH 1 (strongly acidic)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Aqueous ammonia is a weak base with pH ~ 11 in typical laboratory bench concentrations."
+    },
+    {
+      "id": "lab06_l2_20",
+      "prompt": "What safety item must always be worn during the ammonium ion test in Lab 06?",
+      "options": [
+        "Chemical splash safety goggles to protect eyes from corrosive NaOH.",
+        "Thermal radiation shielding boots.",
+        "A lead-lined apron to block gamma rays.",
+        "Soundproof earmuffs to block loud noise."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sodium hydroxide is corrosive and hazardous to eyes, especially when heated; safety goggles are mandatory."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab06_l3_01",
+      "prompt": "Why is ammonia the ONLY common alkaline gas produced in secondary school qualitative inorganic analysis?",
+      "options": [
+        "Most other simple basic compounds are non-volatile ionic solids (e.g. hydroxides, oxides) that cannot vaporize.",
+        "All other chemical elements are permanently acidic gases.",
+        "Nitrogen is the only element that can form covalent bonds with hydrogen.",
+        "Atmospheric oxygen destroys all other alkaline gases instantly."
+      ],
+      "correctIndex": 0,
+      "explanation": "Metal hydroxides are giant ionic lattices with negligible vapor pressure; NH3 is a small, neutral, volatile covalent molecule."
+    },
+    {
+      "id": "lab06_l3_02",
+      "prompt": "An analytical chemist has a mixture of NH4Cl and NaCl. How can they determine the mass of NH4Cl gravimetrically?",
+      "options": [
+        "Heat the mixture strongly in a crucible; NH4Cl dissociates and escapes, leaving pure NaCl behind (mass loss = mass NH4Cl).",
+        "Dissolve in water and filter out the insoluble sodium chloride.",
+        "Add sodium hydroxide and weigh the blue precipitate formed.",
+        "Expose to sunlight and measure the change in volume."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4Cl sublimes/dissociates cleanly at ~340 \u00b0C, leaving non-volatile NaCl (melting point 801 \u00b0C) in the crucible."
+    },
+    {
+      "id": "lab06_l3_03",
+      "prompt": "Calculate the percentage by mass of nitrogen in pure ammonium chloride, NH4Cl (N=14.0, H=1.0, Cl=35.5, Mr=53.5).",
+      "options": [
+        "26.2% nitrogen by mass.",
+        "14.0% nitrogen by mass.",
+        "33.3% nitrogen by mass.",
+        "50.0% nitrogen by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "%N = (14.0 / 53.5) * 100% = 26.17% ~ 26.2%."
+    },
+    {
+      "id": "lab06_l3_04",
+      "prompt": "Why does warming accelerate the release of ammonia from solution according to Henry's Law?",
+      "options": [
+        "Henry's Law constant decreases with temperature; gas solubility is inversely related to temperature due to exothermic dissolution.",
+        "Henry's Law states that gases become infinitely soluble in boiling water.",
+        "Heat converts nitrogen atoms into gaseous helium.",
+        "Thermal energy creates a vacuum that pulls gas into the air."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dissolution of gas is exothermic (Delta H < 0); heating shifts equilibrium gas <=> dissolved gas toward the gas phase."
+    },
+    {
+      "id": "lab06_l3_05",
+      "prompt": "A student performs the test with NaOH and notices the litmus paper turns blue, but no odor is detected. What explains this?",
+      "options": [
+        "Human olfactory threshold varies; litmus paper is far more sensitive to trace alkaline OH- than human smell.",
+        "The student was testing an acid rather than an alkali.",
+        "The blue color was caused by carbon dioxide gas.",
+        "Ammonia gas has zero odor at room temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "Indicator paper can detect micro-molar concentrations of OH- from trace NH3 well below human olfactory detection limits."
+    },
+    {
+      "id": "lab06_l3_06",
+      "prompt": "What happens if an unknown solution containing both Fe3+ and NH4+ is treated with excess warm NaOH?",
+      "options": [
+        "A reddish-brown precipitate of Fe(OH)3 forms, and ammonia gas is evolved from the solution.",
+        "No precipitate forms, but the solution turns bright green.",
+        "The solution freezes solid and releases toxic chlorine gas.",
+        "Both ions dissolve completely to leave a colorless solution."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe3+ precipitates as insoluble reddish-brown Fe(OH)3; NH4+ simultaneously reacts to liberate NH3 gas on warming."
+    },
+    {
+      "id": "lab06_l3_07",
+      "prompt": "How can a student confirm the presence of ammonium ions in fertilizer runoff without boiling off the ammonia?",
+      "options": [
+        "Use Nessler's reagent (K2[HgI4]), which produces a sensitive yellow-brown precipitate with trace NH4+.",
+        "Add concentrated sulfuric acid and observe explosive flames.",
+        "Dip a magnetic rod into the water to attract ammonium ions.",
+        "Expose the water to ultrasound waves and listen for echoes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nessler's reagent (alkaline potassium tetraiodomercurate(II)) is an ultra-sensitive colorimetric test for NH4+."
+    },
+    {
+      "id": "lab06_l3_08",
+      "prompt": "Why does adding concentrated HCl to an unknown salt produce white fumes with ammonia, but dilute HCl does not work as effectively?",
+      "options": [
+        "Concentrated HCl has high vapor pressure and fumes gaseous HCl into the air; dilute HCl does not emit gaseous HCl.",
+        "Dilute HCl destroys ammonia molecules by nuclear fission.",
+        "Concentrated HCl contains solid ammonium crystals in suspension.",
+        "Dilute HCl is an alkaline solution that neutralizes litmus."
+      ],
+      "correctIndex": 0,
+      "explanation": "Concentrated HCl (>37%) fumes gaseous HCl into the headspace, which collides with NH3 gas to form airborne NH4Cl smoke."
+    },
+    {
+      "id": "lab06_l3_09",
+      "prompt": "A sample of ammonium carbonate, (NH4)2CO3, is tested. What two gases are released upon adding dilute HCl?",
+      "options": [
+        "Carbon dioxide gas (effervescence) and water vapor; ammonia is retained as NH4+ in the acidic solution.",
+        "Ammonia gas and hydrogen chloride gas simultaneously.",
+        "Pure oxygen gas and nitrogen gas in 1:1 ratio.",
+        "Chlorine gas and methane gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "(NH4)2CO3 + 2 HCl -> 2 NH4Cl + CO2(g) + H2O; in acid, ammonia remains as non-volatile NH4+, releasing CO2."
+    },
+    {
+      "id": "lab06_l3_10",
+      "prompt": "How does the reaction of NH4+ with OH- illustrate Bronsted-Lowry acid-base theory?",
+      "options": [
+        "NH4+ acts as a Bronsted-Lowry acid by donating a proton (H+) to the Bronsted-Lowry base (OH-).",
+        "NH4+ donates an electron pair to form a coordinate bond with sodium.",
+        "OH- donates a proton to ammonia to form hydronium ions.",
+        "Both species act as Lewis acids by accepting electron pairs."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4+ + OH- -> NH3 + H2O: NH4+ donates H+ (acid); OH- accepts H+ (base)."
+    },
+    {
+      "id": "lab06_l3_11",
+      "prompt": "In quantitative Kjeldahl analysis of protein, ammonium is released by heating with NaOH and distilled into standard acid. What is the next step?",
+      "options": [
+        "Back-titrating the remaining unreacted acid with standard NaOH to calculate nitrogen content.",
+        "Weighing the flask on an electronic microbalance.",
+        "Evaporating all liquid to dryness in a microwave oven.",
+        "Filtering out the insoluble nitrogen crystals."
+      ],
+      "correctIndex": 0,
+      "explanation": "Kjeldahl method traps NH3 in known excess standard acid, then back-titrates remaining acid with NaOH."
+    },
+    {
+      "id": "lab06_l3_12",
+      "prompt": "What chemical interference can cause a false positive for ammonium when testing an organic food sample with NaOH?",
+      "options": [
+        "Simple amides (e.g. urea, acetamide) can hydrolyze in hot concentrated NaOH to release ammonia gas.",
+        "Starch molecules turn litmus paper bright blue on contact.",
+        "Lipids evaporate into alkaline vapors when heated.",
+        "Glucose decomposes into ammonia gas and carbon dioxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Prolonged vigorous boiling with strong base hydrolyzes amides (R-CONH2 + OH- -> R-COO- + NH3), releasing false ammonia."
+    },
+    {
+      "id": "lab06_l3_13",
+      "prompt": "Why does the test tube must NOT be pointed toward anyone while warming with sodium hydroxide?",
+      "options": [
+        "Hot alkaline solutions can 'bump' violently and eject corrosive liquid across several meters.",
+        "The ammonia gas emitted can ignite into fireballs.",
+        "The test tube emits blinding ultraviolet laser light.",
+        "Glass test tubes bend under heat and squirt cold water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Superheating without boiling stones leads to sudden boiling eruptions ('bumping') of caustic liquid."
+    },
+    {
+      "id": "lab06_l3_14",
+      "prompt": "What is the conjugate base of the ammonium ion (NH4+)?",
+      "options": [
+        "Ammonia, NH3.",
+        "Amide ion, NH2-.",
+        "Nitride ion, N3-.",
+        "Hydrazine, N2H4."
+      ],
+      "correctIndex": 0,
+      "explanation": "Removing a single proton (H+) from NH4+ yields its conjugate base, NH3."
+    },
+    {
+      "id": "lab06_l3_15",
+      "prompt": "What is the conjugate acid of ammonia (NH3)?",
+      "options": [
+        "Ammonium ion, NH4+.",
+        "Hydronium ion, H3O+.",
+        "Amide ion, NH2-.",
+        "Nitric acid, HNO3."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding a proton (H+) to NH3 produces its conjugate acid, NH4+."
+    },
+    {
+      "id": "lab06_l3_16",
+      "prompt": "A student tests an unknown and finds: 1) White precipitate with BaCl2/HCl. 2) Ammonia gas evolved with warm NaOH. What is the compound?",
+      "options": [
+        "Ammonium sulfate, (NH4)2SO4.",
+        "Ammonium chloride, NH4Cl.",
+        "Sodium sulfate, Na2SO4.",
+        "Copper(II) sulfate, CuSO4."
+      ],
+      "correctIndex": 0,
+      "explanation": "Test 1 confirms sulfate (SO4 2-); Test 2 confirms ammonium (NH4+). The compound is (NH4)2SO4."
+    },
+    {
+      "id": "lab06_l3_17",
+      "prompt": "A student tests an unknown: 1) Yellow precipitate with AgNO3/HNO3. 2) Ammonia evolved with warm NaOH. What is the compound?",
+      "options": [
+        "Ammonium iodide, NH4I.",
+        "Ammonium chloride, NH4Cl.",
+        "Ammonium bromide, NH4Br.",
+        "Ammonium nitrate, NH4NO3."
+      ],
+      "correctIndex": 0,
+      "explanation": "AgI is a pale yellow precipitate insoluble in concentrated ammonia; cation is NH4+. The salt is NH4I."
+    },
+    {
+      "id": "lab06_l3_18",
+      "prompt": "Why does adding warm NaOH to an unknown solid ammonium salt in an open evaporating dish cause mass loss?",
+      "options": [
+        "Volatile ammonia gas (NH3, Mr=17) and water vapor escape into the atmosphere.",
+        "The sodium ions dissolve into the ceramic porcelain material.",
+        "The solid ammonium salt turns into pure energy with zero mass.",
+        "Atmospheric oxygen bleaches the solid into invisible air."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gaseous products (NH3 and H2O vapor) exit the open vessel, reducing total mass."
+    },
+    {
+      "id": "lab06_l3_19",
+      "prompt": "What happens if a student uses concentrated nitric acid instead of concentrated hydrochloric acid on the glass rod?",
+      "options": [
+        "White smoke of ammonium nitrate (NH4NO3) can form, but HNO3 fumes less readily and is a hazardous strong oxidizer.",
+        "The glass rod melts instantly into liquid quartz.",
+        "Ammonia gas turns into bright green chlorine gas.",
+        "The reaction releases solid gold powder."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3 + HNO3(g) -> NH4NO3(s) smoke, but HNO3 fumes less than HCl and poses nitric acid skin burn hazards."
+    },
+    {
+      "id": "lab06_l3_20",
+      "prompt": "How can qualitative analysis for ammonium ions be adapted into a semi-quantitative field test for soil fertility?",
+      "options": [
+        "Using standardized colorimetric test strips and a calibrated optical color comparator chart.",
+        "Tasting the soil water to measure its electrical resistance.",
+        "Weighing a handful of soil before and after a thunderstorm.",
+        "Measuring the height of weeds growing in the field."
+      ],
+      "correctIndex": 0,
+      "explanation": "Test strips calibrated against known ppm concentrations provide rapid semi-quantitative field measurement."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab06_l4_01",
+      "prompt": "Calculate the fraction of ammonium ions converted to free ammonia at pH 9.25, given the pKa of NH4+ is 9.25.",
+      "options": [
+        "Exactly 50% conversion (pH = pKa).",
+        "Exactly 99% conversion.",
+        "Exactly 10% conversion.",
+        "Exactly 1% conversion."
+      ],
+      "correctIndex": 0,
+      "explanation": "Henderson-Hasselbalch: pH = pKa + log([NH3]/[NH4+]). When pH = pKa, log([NH3]/[NH4+]) = 0 => [NH3] = [NH4+] (50% each)."
+    },
+    {
+      "id": "lab06_l4_02",
+      "prompt": "What pH is required to ensure 99.0% of ammonium ions in solution are converted to free volatile ammonia (pKa = 9.25)?",
+      "options": [
+        "pH = 11.25",
+        "pH = 9.25",
+        "pH = 10.25",
+        "pH = 7.00"
+      ],
+      "correctIndex": 0,
+      "explanation": "For [NH3]/[NH4+] = 99/1 = 99, log(99) ~ 2.0. pH = pKa + 2.0 = 9.25 + 2.00 = 11.25. (Standard bench NaOH gives pH ~ 13\u201314)."
+    },
+    {
+      "id": "lab06_l4_03",
+      "prompt": "In industrial wastewater treatment, what is the 'air stripping' process used to remove ammonium contaminants?",
+      "options": [
+        "Raising wastewater pH to >11 with lime (Ca(OH)2) and blowing counter-current air through a packed tower to strip volatile NH3.",
+        "Freezing the wastewater to -50 \u00b0C to crystallize ammonium rocks.",
+        "Adding concentrated hydrochloric acid to convert ammonium into chlorine gas.",
+        "Electrolyzing the river water with gold electrodes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Air stripping: high pH converts NH4+ to NH3 gas; air stream strips ammonia, which is absorbed into acid scrubbers."
+    },
+    {
+      "id": "lab06_l4_04",
+      "prompt": "Why does the ammonium ion (NH4+) have a perfectly regular tetrahedral geometry with bond angles of 109.5\u00b0?",
+      "options": [
+        "Four bonding electron pairs around the central nitrogen atom repel equally according to VSEPR theory, with zero lone pairs.",
+        "Three bonding pairs and one lone pair force angles down to 107\u00b0.",
+        "Two bonding pairs and two lone pairs create a bent shape at 104.5\u00b0.",
+        "The four hydrogen atoms form planar square bonds around nitrogen."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4+ is isoelectronic with CH4: 4 bonding pairs, 0 lone pairs; VSEPR predicts a perfect tetrahedral geometry (109.5\u00b0)."
+    },
+    {
+      "id": "lab06_l4_05",
+      "prompt": "Why is ammonia (NH3) trigonal pyramidal with a smaller bond angle (107\u00b0) compared to the ammonium ion (109.5\u00b0)?",
+      "options": [
+        "The lone pair of electrons on nitrogen exerts greater electrostatic repulsion than bonding pairs, compressing N-H angles to 107\u00b0.",
+        "Hydrogen atoms in ammonia are heavier and pull downward toward earth.",
+        "Ammonia molecules have a planar geometry that bends when moving.",
+        "The nitrogen nucleus in ammonia has fewer protons than in ammonium."
+      ],
+      "correctIndex": 0,
+      "explanation": "Lone pair-bonding pair repulsion is stronger than bonding pair-bonding pair repulsion, squeezing H-N-H angles to 107\u00b0."
+    },
+    {
+      "id": "lab06_l4_06",
+      "prompt": "Calculate the mass of NH3 gas produced when 5.00 g of (NH4)2SO4 (Mr=132.1) reacts with excess NaOH (NH3=17.0 g/mol).",
+      "options": [
+        "1.29 grams of ammonia gas.",
+        "0.643 grams of ammonia gas.",
+        "2.57 grams of ammonia gas.",
+        "5.00 grams of ammonia gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles salt = 5.00 / 132.1 = 0.03785 mol. Moles NH3 = 2 * 0.03785 = 0.0757 mol. Mass NH3 = 0.0757 * 17.0 = 1.287 ~ 1.29 g."
+    },
+    {
+      "id": "lab06_l4_07",
+      "prompt": "What is the thermodynamic driving force for the spontaneous gas-phase reaction NH3(g) + HCl(g) -> NH4Cl(s)?",
+      "options": [
+        "Large negative enthalpy of lattice formation (Delta H = -176 kJ/mol) overcomes the unfavorable negative entropy change.",
+        "Large positive entropy change driving the reaction at high temperature.",
+        "Continuous absorption of heat energy from the surrounding room.",
+        "Gravitational compression of gas molecules into solids."
+      ],
+      "correctIndex": 0,
+      "explanation": "Delta H is very exothermic (-176 kJ/mol), making Delta G = Delta H - T*Delta S negative despite Delta S < 0."
+    },
+    {
+      "id": "lab06_l4_08",
+      "prompt": "In an analytical laboratory, a 0.500 g sample of impure ammonium salt is distilled with NaOH into 50.0 cm3 of 0.100 mol/dm3 HCl. The excess HCl requires 18.2 cm3 of 0.100 mol/dm3 NaOH. What is % NH4+ in the sample?",
+      "options": [
+        "11.5% NH4+ by mass.",
+        "23.0% NH4+ by mass.",
+        "5.74% NH4+ by mass.",
+        "45.2% NH4+ by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "Initial HCl = 5.00 mmol. Excess HCl = 1.82 mmol. HCl consumed by NH3 = 5.00 - 1.82 = 3.18 mmol = 0.00318 mol NH4+. Mass NH4+ = 0.00318 * 18.04 = 0.05737 g. % = (0.05737 / 0.500) * 100% = 11.47% ~ 11.5%."
+    },
+    {
+      "id": "lab06_l4_09",
+      "prompt": "Why does Nessler's reagent (K2[HgI4]) produce an iodide of Millon's base precipitate [Hg2N]I.H2O with trace ammonium?",
+      "options": [
+        "Mercury(II) coordinates with deprotonated nitrogen, creating an intensely colored, highly insoluble polymeric cation network.",
+        "Mercury atoms reduce nitrogen to metallic nitrogen powder.",
+        "Iodide ions oxidize water molecules into elemental iodine crystals.",
+        "Potassium ions form an explosive alloy with nitrogen atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "Millon's base derivative [Hg2N]I.H2O forms via complexation of Hg(II) with ammonia in alkaline iodide solution."
+    },
+    {
+      "id": "lab06_l4_10",
+      "prompt": "What infrared spectroscopy (IR) absorption band definitively identifies the ammonium cation (NH4+) in solid salt pellets?",
+      "options": [
+        "Broad N-H stretching band at 3100\u20133300 cm-1 and strong asymmetric bending vibration around 1400 cm-1.",
+        "Sharp carbonyl C=O stretch at 1715 cm-1.",
+        "Isolated triple bond C#C stretch at 2200 cm-1.",
+        "Pure carbon-carbon single bond stretch at 800 cm-1."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tetrahedral NH4+ displays characteristic broad N-H stretching (~3200 cm-1) and a sharp deformation band near 1400 cm-1."
+    },
+    {
+      "id": "lab06_l4_11",
+      "prompt": "How does 1H NMR spectroscopy distinguish NH4+ from other organic amine cations in solution?",
+      "options": [
+        "A distinctive 1:1:1 triplet splitting caused by spin-spin coupling with the quadrupolar 14N nucleus (I = 1).",
+        "A single sharp singlet that never splits under any conditions.",
+        "A complex multiplet of twelve overlapping peaks.",
+        "Zero NMR signal because nitrogen absorbs all radiofrequency pulses."
+      ],
+      "correctIndex": 0,
+      "explanation": "14N has nuclear spin I = 1; coupling with 4 equivalent protons produces a 1:1:1 triplet (when proton exchange is slow)."
+    },
+    {
+      "id": "lab06_l4_12",
+      "prompt": "Why does warming an ammonium salt with sodium carbonate (Na2CO3) evolve ammonia much more slowly than with NaOH?",
+      "options": [
+        "Carbonate is a weaker base (lower [OH-] in solution) than the strong base hydroxide, yielding lower reaction rate.",
+        "Carbonate ions destroy ammonia molecules by oxidation.",
+        "Sodium carbonate creates an acidic solution that keeps NH4+ protonated.",
+        "Carbonate ions form an insoluble plastic coating over the salt."
+      ],
+      "correctIndex": 0,
+      "explanation": "CO3 2- undergoes limited hydrolysis (Kb ~ 2.1 x 10^-4), generating lower [OH-] than fully dissociated NaOH."
+    },
+    {
+      "id": "lab06_l4_13",
+      "prompt": "If ammonium chloride is heated with calcium oxide powder (quicklime) in the dry state: 2 NH4Cl(s) + CaO(s) -> CaCl2(s) + 2 NH3(g) + H2O(g). What type of reaction is this?",
+      "options": [
+        "A solid-state acid-base proton transfer reaction.",
+        "A photographic oxidation-reduction reaction.",
+        "A nuclear fission transmutation reaction.",
+        "A physical condensation change of state."
+      ],
+      "correctIndex": 0,
+      "explanation": "Basic oxide O2- in CaO extracts protons from solid NH4+ cations, generating gaseous NH3 and H2O."
+    },
+    {
+      "id": "lab06_l4_14",
+      "prompt": "Why is the reaction between dry NH4Cl and dry Ca(OH)2 historically used in laboratory Kipp's apparatus to generate ammonia gas?",
+      "options": [
+        "Solid-solid mixing with gentle heat produces a steady, controllable stream of dry ammonia gas without liquid boiling over.",
+        "The reaction produces zero heat and can be handled with bare hands.",
+        "Calcium hydroxide eliminates the pungent smell of ammonia completely.",
+        "The reaction converts all nitrogen into liquid gold."
+      ],
+      "correctIndex": 0,
+      "explanation": "Solid-phase reaction avoids boiling liquids and provides steady gas evolution when warmed."
+    },
+    {
+      "id": "lab06_l4_15",
+      "prompt": "What safety hazard arises if an ammonium salt contaminated with nitrite (NO2-) is heated with acid?",
+      "options": [
+        "Thermal decomposition generates toxic, explosive nitrogen gas and nitrous acid: NH4+ + NO2- -> N2(g) + 2 H2O.",
+        "The mixture turns into pure diamond crystals.",
+        "The test tube becomes radioactive and emits gamma rays.",
+        "The solution freezes into liquid helium."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonium nitrite decomposes exothermically: NH4NO2 -> N2 + 2 H2O; rapid heating of concentrated mixtures can detonate."
+    },
+    {
+      "id": "lab06_l4_16",
+      "prompt": "In environmental forensic testing, why is the isotopic ratio 15N/14N measured in waterborne ammonium?",
+      "options": [
+        "It differentiates synthetic Haber-Bosch fertilizer runoff from animal manure and sewage discharge.",
+        "It determines the exact date when the water was created on Earth.",
+        "It proves whether the water contains dissolved table sugar.",
+        "It measures the speed of river water flow across stones."
+      ],
+      "correctIndex": 0,
+      "explanation": "Synthetic fertilizers have delta-15N ~ 0 permil (atmospheric air); animal waste has enriched delta-15N (+10 to +20 permil)."
+    },
+    {
+      "id": "lab06_l4_17",
+      "prompt": "How does ion chromatography separate and quantify ammonium ions in drinking water samples?",
+      "options": [
+        "A cation-exchange column retards NH4+ based on charge-to-size ratio, detected by suppressed electrical conductivity.",
+        "A magnetic centrifuge separates ions by gravitational weight.",
+        "A paper filter traps all ammonium ions as solid crystals.",
+        "A laser beam vaporizes all ions into pure light."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cation chromatography separates NH4+ from Na+, K+, Ca2+, and Mg2+ with sub-ppm conductivity detection."
+    },
+    {
+      "id": "lab06_l4_18",
+      "prompt": "Why does the addition of sodium tetraphenylborate (NaB(C6H5)4) precipitate NH4+ as a white solid, similar to K+?",
+      "options": [
+        "The large, nonpolar tetraphenylborate anion forms highly insoluble ion pairs with cations of low hydration energy (NH4+, K+).",
+        "Tetraphenylborate oxidizes ammonium into nitrogen gas.",
+        "Sodium ions displace boron atoms to form borax crystals.",
+        "The solution reaches boiling point and freezes."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4+ and K+ have similar ionic radii (~1.38 A) and low hydration enthalpy, precipitating with large polarizable anions."
+    },
+    {
+      "id": "lab06_l4_19",
+      "prompt": "What biochemical reason makes high concentrations of ammonia toxic to human neurological tissue?",
+      "options": [
+        "NH3 crosses the blood-brain barrier, depleting alpha-ketoglutarate via glutamate dehydrogenase and disrupting the Krebs cycle.",
+        "Ammonia turns brain fluid into solid plastic polymers.",
+        "Ammonia extracts all iron atoms from hemoglobin molecules instantly.",
+        "Ammonia causes brain cells to undergo spontaneous nuclear decay."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hyperammonemia shifts alpha-ketoglutarate + NH4+ <=> glutamate, depleting TCA cycle intermediates and causing cerebral edema."
+    },
+    {
+      "id": "lab06_l4_20",
+      "prompt": "Why is the test for ammonium ions in Lab 06 an indispensable diagnostic tool in school chemistry education?",
+      "options": [
+        "It integrates qualitative gas detection, acid-base proton transfer, indicator equilibria, and particulate reasoning.",
+        "It allows students to manufacture commercial fertilizers in five minutes.",
+        "It teaches students how to split atomic nuclei in test tubes.",
+        "It provides a method to turn tap water into drinking milk."
+      ],
+      "correctIndex": 0,
+      "explanation": "The experiment teaches multi-sensory qualitative analysis, ionic acid-base chemistry, and dynamic equilibria."
+    }
+  ]
+}

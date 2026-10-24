@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab02_l1_01",
+      "prompt": "Which precipitate color confirms the presence of copper(II) ions upon adding dilute sodium hydroxide?",
+      "options": [
+        "A distinctive light blue gelatinous precipitate.",
+        "A murky dark dirty-green gelatinous precipitate.",
+        "A deep reddish-brown dense insoluble precipitate.",
+        "A bright canary-yellow crystalline precipitate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Copper(II) ions react with aqueous hydroxide to precipitate light blue copper(II) hydroxide, Cu(OH)2."
+    },
+    {
+      "id": "lab02_l1_02",
+      "prompt": "What is the characteristic color of iron(II) hydroxide precipitate formed with sodium hydroxide?",
+      "options": [
+        "A murky dark dirty-green gelatinous precipitate.",
+        "A distinctive light blue gelatinous precipitate.",
+        "A deep reddish-brown dense insoluble precipitate.",
+        "A brilliant chalky-white dense precipitate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Iron(II) ions react with hydroxide ions to produce dirty green iron(II) hydroxide, Fe(OH)2."
+    },
+    {
+      "id": "lab02_l1_03",
+      "prompt": "Which precipitate color identifies the presence of iron(III) ions when tested with sodium hydroxide?",
+      "options": [
+        "A deep reddish-brown dense insoluble precipitate.",
+        "A murky dark dirty-green gelatinous precipitate.",
+        "A distinctive light blue gelatinous precipitate.",
+        "A pale lavender-violet translucent precipitate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Iron(III) ions react with hydroxide ions to form a characteristic reddish-brown iron(III) hydroxide precipitate, Fe(OH)3."
+    },
+    {
+      "id": "lab02_l1_04",
+      "prompt": "What is the chemical formula of the light blue precipitate formed by copper(II) ions with hydroxide?",
+      "options": [
+        "Cu(OH)2",
+        "Cu2(OH)",
+        "Cu(OH)3",
+        "CuOH"
+      ],
+      "correctIndex": 0,
+      "explanation": "Copper(II) carries a 2+ charge and pairs with two OH- ions to form Cu(OH)2."
+    },
+    {
+      "id": "lab02_l1_05",
+      "prompt": "What is the chemical formula of the dirty green precipitate produced when iron(II) reacts with hydroxide?",
+      "options": [
+        "Fe(OH)2",
+        "Fe(OH)3",
+        "Fe2(OH)3",
+        "FeOH"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iron(II) has an oxidation state of +2, yielding Fe(OH)2 upon precipitation with hydroxide."
+    },
+    {
+      "id": "lab02_l1_06",
+      "prompt": "What is the chemical formula of the reddish-brown precipitate formed by iron(III) ions?",
+      "options": [
+        "Fe(OH)3",
+        "Fe(OH)2",
+        "Fe2OH",
+        "Fe3(OH)2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iron(III) has a +3 oxidation state and combines with three hydroxide ions to form Fe(OH)3."
+    },
+    {
+      "id": "lab02_l1_07",
+      "prompt": "Which common laboratory reagent is routinely used as the precipitating agent for testing metal cations?",
+      "options": [
+        "Dilute aqueous sodium hydroxide solution.",
+        "Concentrated hydrochloric acid solution.",
+        "Dilute aqueous sodium chloride solution.",
+        "Aqueous potassium permanganate reagent."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dilute sodium hydroxide (NaOH) provides the OH- ions that precipitate insoluble transition metal hydroxides."
+    },
+    {
+      "id": "lab02_l1_08",
+      "prompt": "What general term describes an insoluble solid that forms when two clear aqueous solutions are mixed?",
+      "options": [
+        "A precipitate solidifying from solution.",
+        "A dissolved solute circulating uniformly.",
+        "An emulsion of immiscible organic liquids.",
+        "A volatile gas bubbling from the liquid."
+      ],
+      "correctIndex": 0,
+      "explanation": "A precipitate is an insoluble solid that emerges from a liquid solution during a chemical reaction."
+    },
+    {
+      "id": "lab02_l1_09",
+      "prompt": "What charge does an aqueous copper(II) ion carry in solution?",
+      "options": [
+        "A positive charge of exactly plus two (2+).",
+        "A positive charge of exactly plus one (1+).",
+        "A positive charge of exactly plus three (3+).",
+        "A negative charge of exactly minus two (2-)."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Roman numeral (II) in copper(II) denotes an oxidation state and ionic charge of +2."
+    },
+    {
+      "id": "lab02_l1_10",
+      "prompt": "What charge does an iron(III) ion possess in an aqueous salt solution?",
+      "options": [
+        "A positive charge of exactly plus three (3+).",
+        "A positive charge of exactly plus two (2+).",
+        "A positive charge of exactly plus one (1+).",
+        "A negative charge of exactly minus three (3-)."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Roman numeral (III) designates an iron ion with a +3 positive charge."
+    },
+    {
+      "id": "lab02_l1_11",
+      "prompt": "Which state symbol is assigned to the copper(II) hydroxide solid formed during the test?",
+      "options": [
+        "The solid state symbol (s) for precipitate.",
+        "The aqueous state symbol (aq) for solution.",
+        "The liquid state symbol (l) for pure liquid.",
+        "The gaseous state symbol (g) for vapor."
+      ],
+      "correctIndex": 0,
+      "explanation": "Insoluble reaction products that precipitate out of aqueous solution carry the state symbol (s)."
+    },
+    {
+      "id": "lab02_l1_12",
+      "prompt": "What is the electrical charge of a hydroxide ion in sodium hydroxide solution?",
+      "options": [
+        "A single negative electrical charge (OH-).",
+        "A double negative electrical charge (OH2-).",
+        "A single positive electrical charge (OH+).",
+        "An overall neutral charge without ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "The hydroxide polyatomic anion carries a single negative charge: OH-."
+    },
+    {
+      "id": "lab02_l1_13",
+      "prompt": "What visual change is seen immediately when a drop of NaOH hits a solution containing Cu2+ ions?",
+      "options": [
+        "A pale blue solid suspension appears at once.",
+        "Vigorous effervescence releases a pungent gas.",
+        "The solution turns boiling hot and flashes red.",
+        "The transparent liquid turns completely black."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cu2+ ions immediately precipitate as insoluble pale blue copper(II) hydroxide."
+    },
+    {
+      "id": "lab02_l1_14",
+      "prompt": "What visual property differentiates iron(II) hydroxide from iron(III) hydroxide upon initial formation?",
+      "options": [
+        "Fe(OH)2 is green whereas Fe(OH)3 is brown.",
+        "Fe(OH)2 is red whereas Fe(OH)3 is green.",
+        "Fe(OH)2 is blue whereas Fe(OH)3 is white.",
+        "Fe(OH)2 is black whereas Fe(OH)3 is blue."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fresh iron(II) hydroxide is dirty green, while iron(III) hydroxide is distinctively reddish-brown."
+    },
+    {
+      "id": "lab02_l1_15",
+      "prompt": "Which laboratory tool is used to add sodium hydroxide drop by drop to the sample test tube?",
+      "options": [
+        "A calibrated glass or plastic dropper pipette.",
+        "A heavy porcelain pestle and mortar bowl.",
+        "A high-capacity volumetric conical flask.",
+        "A wide-mouth borosilicate glass beaker."
+      ],
+      "correctIndex": 0,
+      "explanation": "A dropper pipette allows controlled, dropwise addition of reagent to observe initial precipitation."
+    },
+    {
+      "id": "lab02_l1_16",
+      "prompt": "What is the initial appearance of an unreacted aqueous copper(II) sulfate solution?",
+      "options": [
+        "A clear transparent pale-blue liquid.",
+        "A murky opaque muddy-brown suspension.",
+        "A bright intense emerald-green slurry.",
+        "A completely colorless clear solution."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hydrated copper(II) ions impart a characteristic clear blue tint to aqueous solutions."
+    },
+    {
+      "id": "lab02_l1_17",
+      "prompt": "What is the initial appearance of an unreacted aqueous iron(II) sulfate solution?",
+      "options": [
+        "A clear pale green transparent liquid.",
+        "A dark cloudy purple-black suspension.",
+        "A bright golden-orange oily solution.",
+        "A dense milky-white colloidal liquid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hydrated Fe2+ ions typically appear pale green in dilute aqueous solutions."
+    },
+    {
+      "id": "lab02_l1_18",
+      "prompt": "What is the initial appearance of an unreacted aqueous iron(III) chloride solution?",
+      "options": [
+        "A clear yellow-brown transparent liquid.",
+        "A bright sky-blue translucent solution.",
+        "A pure deep indigo-violet suspension.",
+        "A vivid bubblegum-pink liquid sample."
+      ],
+      "correctIndex": 0,
+      "explanation": "Aqueous iron(III) ions impart a yellow to pale brown coloration to solution."
+    },
+    {
+      "id": "lab02_l1_19",
+      "prompt": "When sodium hydroxide is added to a metal salt, what role do sodium ions (Na+) play in the precipitation?",
+      "options": [
+        "They remain unreacted as dissolved spectator ions.",
+        "They precipitate out as insoluble sodium crystals.",
+        "They oxidize the transition metal cations rapidly.",
+        "They evaporate into the atmosphere as pure gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sodium ions remain dissolved as spectator ions throughout the precipitation reaction."
+    },
+    {
+      "id": "lab02_l1_20",
+      "prompt": "Why are qualitative precipitate tests valuable in secondary school chemistry laboratories?",
+      "options": [
+        "They provide rapid visual identification of ions.",
+        "They calculate the exact molar mass of atoms.",
+        "They measure the exact half-life of elements.",
+        "They determine the speed of sound in liquids."
+      ],
+      "correctIndex": 0,
+      "explanation": "Distinctive precipitate colors provide rapid qualitative identification of specific metal cations."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab02_l2_01",
+      "prompt": "Which balanced ionic equation represents the precipitation of copper(II) hydroxide?",
+      "options": [
+        "Cu2+(aq) + 2OH-(aq) -> Cu(OH)2(s)",
+        "Cu+(aq) + OH-(aq) -> CuOH(s)",
+        "Cu2+(aq) + OH-(aq) -> CuOH+(aq)",
+        "2Cu2+(aq) + 2OH-(aq) -> 2Cu(OH)(s)"
+      ],
+      "correctIndex": 0,
+      "explanation": "One Cu2+ ion combines with two OH- ions to yield insoluble neutral solid Cu(OH)2."
+    },
+    {
+      "id": "lab02_l2_02",
+      "prompt": "Which balanced ionic equation correctly represents the precipitation of iron(II) hydroxide?",
+      "options": [
+        "Fe2+(aq) + 2OH-(aq) -> Fe(OH)2(s)",
+        "Fe3+(aq) + 2OH-(aq) -> Fe(OH)2+(aq)",
+        "Fe2+(aq) + OH-(aq) -> FeOH+(aq)",
+        "Fe2+(aq) + 3OH-(aq) -> Fe(OH)3-(aq)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe2+ requires two hydroxide ions to balance charge and precipitate Fe(OH)2(s)."
+    },
+    {
+      "id": "lab02_l2_03",
+      "prompt": "Which balanced ionic equation describes the formation of iron(III) hydroxide precipitate?",
+      "options": [
+        "Fe3+(aq) + 3OH-(aq) -> Fe(OH)3(s)",
+        "Fe2+(aq) + 3OH-(aq) -> Fe(OH)3-(aq)",
+        "Fe3+(aq) + OH-(aq) -> FeOH2+(aq)",
+        "Fe3+(aq) + 2OH-(aq) -> Fe(OH)2+(aq)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe3+ reacts with three OH- ions to form the neutral precipitate Fe(OH)3(s)."
+    },
+    {
+      "id": "lab02_l2_04",
+      "prompt": "A student adds drops of NaOH to an unknown salt and sees a dirty-green precipitate. What cation is present?",
+      "options": [
+        "Iron(II) cation, Fe2+.",
+        "Copper(II) cation, Cu2+.",
+        "Iron(III) cation, Fe3+.",
+        "Ammonium cation, NH4+."
+      ],
+      "correctIndex": 0,
+      "explanation": "A dirty-green hydroxide precipitate is the unique signature test for Fe2+ ions."
+    },
+    {
+      "id": "lab02_l2_05",
+      "prompt": "A student adds drops of NaOH to an unknown salt and sees a reddish-brown precipitate. What cation is present?",
+      "options": [
+        "Iron(III) cation, Fe3+.",
+        "Iron(II) cation, Fe2+.",
+        "Copper(II) cation, Cu2+.",
+        "Calcium cation, Ca2+."
+      ],
+      "correctIndex": 0,
+      "explanation": "A foxy reddish-brown hydroxide precipitate uniquely identifies the presence of Fe3+."
+    },
+    {
+      "id": "lab02_l2_06",
+      "prompt": "A student adds drops of NaOH to an unknown salt and sees a light blue precipitate. What cation is present?",
+      "options": [
+        "Copper(II) cation, Cu2+.",
+        "Iron(II) cation, Fe2+.",
+        "Iron(III) cation, Fe3+.",
+        "Magnesium cation, Mg2+."
+      ],
+      "correctIndex": 0,
+      "explanation": "The light blue gelatinous precipitate confirms copper(II) cations, Cu2+."
+    },
+    {
+      "id": "lab02_l2_07",
+      "prompt": "What happens when excess aqueous ammonia (NH3) is added to a test tube containing Cu(OH)2 precipitate?",
+      "options": [
+        "The precipitate dissolves into a deep royal-blue solution.",
+        "The precipitate turns bright red and releases oxygen gas.",
+        "The precipitate remains completely insoluble and unchanged.",
+        "The precipitate dissolves into a completely colorless fluid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Excess ammonia acts as a ligand, dissolving Cu(OH)2 to form the deep blue complex [Cu(NH3)4(H2O)2]2+."
+    },
+    {
+      "id": "lab02_l2_08",
+      "prompt": "What happens to the green Fe(OH)2 precipitate if the test tube is left open to air for 20 minutes?",
+      "options": [
+        "The top surface turns reddish-brown due to oxidation.",
+        "The precipitate dissolves completely into clear water.",
+        "The precipitate turns bright turquoise blue throughout.",
+        "The precipitate produces heavy clouds of white smoke."
+      ],
+      "correctIndex": 0,
+      "explanation": "Atmospheric oxygen oxidizes iron(II) hydroxide, Fe(OH)2, to reddish-brown iron(III) oxide/hydroxide."
+    },
+    {
+      "id": "lab02_l2_09",
+      "prompt": "If a sample contains 0.05 moles of Cu2+ ions, how many moles of OH- ions are required for complete precipitation?",
+      "options": [
+        "Exactly 0.10 moles of hydroxide ions.",
+        "Exactly 0.05 moles of hydroxide ions.",
+        "Exactly 0.025 moles of hydroxide ions.",
+        "Exactly 0.15 moles of hydroxide ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "The stoichiometry Cu2+ : OH- is 1 : 2. 0.05 mol * 2 = 0.10 mol OH-."
+    },
+    {
+      "id": "lab02_l2_10",
+      "prompt": "If a sample contains 0.02 moles of Fe3+ ions, how many moles of OH- ions are needed for full precipitation?",
+      "options": [
+        "Exactly 0.06 moles of hydroxide ions.",
+        "Exactly 0.02 moles of hydroxide ions.",
+        "Exactly 0.04 moles of hydroxide ions.",
+        "Exactly 0.08 moles of hydroxide ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "The stoichiometry Fe3+ : OH- is 1 : 3. 0.02 mol * 3 = 0.06 mol OH-."
+    },
+    {
+      "id": "lab02_l2_11",
+      "prompt": "Which of the following represents spectator ions in the reaction of CuSO4(aq) with 2NaOH(aq)?",
+      "options": [
+        "Sodium ions (Na+) and sulfate ions (SO42-).",
+        "Copper ions (Cu2+) and hydroxide ions (OH-).",
+        "Copper ions (Cu2+) and sulfate ions (SO42-).",
+        "Sodium ions (Na+) and hydroxide ions (OH-)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Na+ and SO42- remain soluble and spectator ions; only Cu2+ and OH- form the solid precipitate."
+    },
+    {
+      "id": "lab02_l2_12",
+      "prompt": "Which observation rules out the presence of Cu2+ ions in an unknown metal solution?",
+      "options": [
+        "No pale blue precipitate forms when NaOH is added.",
+        "The solution appears clear and transparent initially.",
+        "No bubbles of carbon dioxide gas are generated.",
+        "The pH of the solution is measured to be around 6."
+      ],
+      "correctIndex": 0,
+      "explanation": "Absence of a pale blue precipitate upon adding NaOH indicates Cu2+ is not present."
+    },
+    {
+      "id": "lab02_l2_13",
+      "prompt": "A sample of water from an old pipe yields a reddish-brown precipitate with NaOH. What contaminant is identified?",
+      "options": [
+        "Rust particles containing iron(III) ions.",
+        "Dissolved copper metal from brass fittings.",
+        "Trace amounts of dissolved table salt.",
+        "Hard water containing calcium carbonate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Reddish-brown precipitate with NaOH indicates Fe3+ ions from oxidized iron rust."
+    },
+    {
+      "id": "lab02_l2_14",
+      "prompt": "Why does adding excess sodium hydroxide solution NOT dissolve the iron(III) hydroxide precipitate?",
+      "options": [
+        "Fe(OH)3 is basic and does not exhibit amphoteric behavior.",
+        "Sodium hydroxide rapidly decomposes into metallic sodium.",
+        "Iron(III) ions form volatile gaseous compounds with OH-.",
+        "Hydroxide ions neutralize iron into soluble iron oxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Iron(III) hydroxide is not amphoteric and therefore remains insoluble in excess sodium hydroxide."
+    },
+    {
+      "id": "lab02_l2_15",
+      "prompt": "How can a student confirm whether a green precipitate in a test tube is indeed Fe(OH)2 rather than another green salt?",
+      "options": [
+        "Observe the precipitate turning brown at the air surface.",
+        "Heat the tube until all water evaporates completely.",
+        "Add concentrated nitric acid to observe boiling.",
+        "Filter the solid and weigh it on an electronic scale."
+      ],
+      "correctIndex": 0,
+      "explanation": "The spontaneous surface oxidation from dirty green to reddish-brown confirms Fe(II) oxidizing to Fe(III)."
+    },
+    {
+      "id": "lab02_l2_16",
+      "prompt": "What is the spectator ion in the precipitation test of iron(II) chloride with sodium hydroxide?",
+      "options": [
+        "Chloride ions (Cl-) and sodium ions (Na+).",
+        "Iron ions (Fe2+) and chloride ions (Cl-).",
+        "Hydroxide ions (OH-) and iron ions (Fe2+).",
+        "Only the dissolved hydroxide ions (OH-)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both Na+ and Cl- remain unchanged in aqueous solution as spectator ions."
+    },
+    {
+      "id": "lab02_l2_17",
+      "prompt": "A student accidentally adds dilute hydrochloric acid instead of sodium hydroxide. What will happen to Cu(OH)2?",
+      "options": [
+        "The precipitate redissolves to form a clear blue solution.",
+        "The precipitate turns into a dense black metallic crust.",
+        "The precipitate turns into bright yellow sulfur crystals.",
+        "The precipitate remains completely insoluble and dry."
+      ],
+      "correctIndex": 0,
+      "explanation": "Acids neutralize metal hydroxides: Cu(OH)2(s) + 2HCl(aq) -> CuCl2(aq) + 2H2O(l), redissolving the solid."
+    },
+    {
+      "id": "lab02_l2_18",
+      "prompt": "Which reagent can be used in place of NaOH to test for Cu2+ and differentiate it through deep-blue complexation?",
+      "options": [
+        "Aqueous ammonia solution (NH3(aq)).",
+        "Aqueous sodium chloride solution.",
+        "Dilute sulfuric acid solution.",
+        "Ethanol alcohol solvent."
+      ],
+      "correctIndex": 0,
+      "explanation": "Aqueous ammonia forms Cu(OH)2 initially and then dissolves in excess to form a deep blue complex."
+    },
+    {
+      "id": "lab02_l2_19",
+      "prompt": "When 2 drops of NaOH are added to a solution of iron(II) sulfate, what is the net ionic product?",
+      "options": [
+        "Fe(OH)2(s) as an insoluble green solid.",
+        "FeSO4(s) as an insoluble white solid.",
+        "Na2SO4(s) as a crystalline deposit.",
+        "Fe(OH)3(s) as a reddish-brown crust."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe2+(aq) + 2OH-(aq) -> Fe(OH)2(s)."
+    },
+    {
+      "id": "lab02_l2_20",
+      "prompt": "What precaution must be taken when handling sodium hydroxide dropper bottles in Lab 02?",
+      "options": [
+        "Wear safety goggles because NaOH is corrosive to eyes.",
+        "Keep bottles inside a freezer to prevent explosion.",
+        "Perform all drops in darkness away from any light.",
+        "Wear lead-lined aprons to block radiation waves."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sodium hydroxide is corrosive and can cause irreversible eye damage; safety goggles are mandatory."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab02_l3_01",
+      "prompt": "Why does iron(II) hydroxide gradually turn brown when exposed to air, whereas iron(III) hydroxide does not change?",
+      "options": [
+        "Fe2+ oxidizes to Fe3+ by air, while Fe3+ is already fully oxidized.",
+        "Fe2+ absorbs water vapor, whereas Fe3+ loses hydration molecules.",
+        "Fe2+ decomposes into iron metal, while Fe3+ forms gaseous oxides.",
+        "Fe2+ reacts with nitrogen gas, while Fe3+ reacts with carbon dioxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe2+ has an electron to lose (oxidation: Fe2+ -> Fe3+ + e-); Fe3+ is already in its stable oxidized state."
+    },
+    {
+      "id": "lab02_l3_02",
+      "prompt": "An unknown solution produces a green precipitate with NaOH that does not turn brown. What might explain this?",
+      "options": [
+        "The cation is nickel(II) or chromium(III), not iron(II).",
+        "The student used too much water to dissolve the sample.",
+        "The atmospheric oxygen was completely converted into nitrogen.",
+        "The sodium hydroxide was saturated with hydrogen peroxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Other transition metals like Ni2+ form green hydroxides that do not oxidize to brown upon standing in air."
+    },
+    {
+      "id": "lab02_l3_03",
+      "prompt": "A solution contains both Cu2+ and Fe3+ ions. What visual sequence occurs upon gradual addition of NaOH?",
+      "options": [
+        "Both light blue and reddish-brown precipitates form a mixed sludge.",
+        "Only copper precipitates while iron remains entirely dissolved.",
+        "The solution turns pure white with vigorous bubbling effervescence.",
+        "A single green precipitate forms that gradually turns bright yellow."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both cations precipitate simultaneously as their insoluble hydroxides, yielding a mixed color precipitate."
+    },
+    {
+      "id": "lab02_l3_04",
+      "prompt": "How can aqueous ammonia be used to separate and confirm Cu2+ in a mixture with Fe3+?",
+      "options": [
+        "Excess NH3 dissolves Cu(OH)2 into deep blue solution, leaving Fe(OH)3 solid.",
+        "Excess NH3 dissolves Fe(OH)3 while leaving Cu(OH)2 as a blue solid.",
+        "Excess NH3 precipitates copper as metal and iron as volatile gas.",
+        "Excess NH3 bleaches both precipitates into completely clear liquid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cu(OH)2 dissolves in excess NH3 forming soluble [Cu(NH3)4(H2O)2]2+, while Fe(OH)3 remains insoluble."
+    },
+    {
+      "id": "lab02_l3_05",
+      "prompt": "Which half-equation correctly represents the oxidation occurring during the browning of iron(II) hydroxide?",
+      "options": [
+        "Fe2+ -> Fe3+ + e-",
+        "Fe3+ + e- -> Fe2+",
+        "Fe2+ + 2e- -> Fe",
+        "Fe -> Fe2+ + 2e-"
+      ],
+      "correctIndex": 0,
+      "explanation": "Oxidation is the loss of electrons: Fe(II) loses one electron to become Fe(III)."
+    },
+    {
+      "id": "lab02_l3_06",
+      "prompt": "A student tests a sample with NaOH and observes no precipitate at all. Which ion could be present?",
+      "options": [
+        "Sodium ion (Na+) or potassium ion (K+).",
+        "Copper(II) ion (Cu2+).",
+        "Iron(II) ion (Fe2+).",
+        "Iron(III) ion (Fe3+)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Group 1 hydroxides (NaOH, KOH) are fully soluble in water, so they do not form precipitates."
+    },
+    {
+      "id": "lab02_l3_07",
+      "prompt": "Why is the solubility product (Ksp) of Fe(OH)3 much lower than that of Fe(OH)2?",
+      "options": [
+        "Fe3+ has higher charge density, binding OH- ions more tightly.",
+        "Fe3+ has larger ionic radius and weaker lattice attraction.",
+        "Fe3+ contains more valence electrons shielding the nucleus.",
+        "Fe3+ forms unstable covalent bonds with solvent molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe3+ has a higher charge-to-size ratio (charge density), resulting in much stronger ionic bonding in the lattice."
+    },
+    {
+      "id": "lab02_l3_08",
+      "prompt": "In a titration, 25.0 cm3 of 0.10 mol/dm3 FeCl3 requires what volume of 0.30 mol/dm3 NaOH for complete reaction?",
+      "options": [
+        "Exactly 25.0 cm3 of the sodium hydroxide solution.",
+        "Exactly 75.0 cm3 of the sodium hydroxide solution.",
+        "Exactly 8.33 cm3 of the sodium hydroxide solution.",
+        "Exactly 50.0 cm3 of the sodium hydroxide solution."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles FeCl3 = 0.025 * 0.10 = 0.0025 mol. Moles NaOH needed = 3 * 0.0025 = 0.0075 mol. Vol = 0.0075 / 0.30 = 0.025 dm3 = 25.0 cm3."
+    },
+    {
+      "id": "lab02_l3_09",
+      "prompt": "If a student adds a huge excess of concentrated NaOH to Cu(OH)2, a very faint blue solution may form. Why?",
+      "options": [
+        "Cu(OH)2 slightly acts as amphoteric forming [Cu(OH)4]2- in high OH-.",
+        "Copper metal is completely reduced by the sodium ions in excess.",
+        "The water evaporates instantly due to extreme heat of solution.",
+        "The copper ions lose all their protons to the solvent water."
+      ],
+      "correctIndex": 0,
+      "explanation": "At very high hydroxide concentrations, Cu(OH)2 can act weakly amphoteric to form tetrahydroxocuprate(II)."
+    },
+    {
+      "id": "lab02_l3_10",
+      "prompt": "Which analysis explains why transition metal hydroxides are colored while group 2 hydroxides are white?",
+      "options": [
+        "Transition metals have partially filled d-orbitals that absorb visible light.",
+        "Group 2 metals absorb all wavelengths of visible light completely.",
+        "Transition metal ions are radioactive and emit visible light photons.",
+        "Group 2 metals contain delocalized conduction electrons in solution."
+      ],
+      "correctIndex": 0,
+      "explanation": "d-d electron transitions in partially filled d-orbitals absorb specific visible light wavelengths, producing color."
+    },
+    {
+      "id": "lab02_l3_11",
+      "prompt": "A solution known to contain iron ions is tested. When exposed to air it immediately stays brown. What was the original ion?",
+      "options": [
+        "Iron(III), because it was already brown and underwent no color transition.",
+        "Iron(II), because iron(II) is naturally brown in pure water.",
+        "Copper(II), because copper reacts with air to turn bright orange.",
+        "Zinc(II), because zinc ions turn dark brown upon oxidation."
+      ],
+      "correctIndex": 0,
+      "explanation": "If no color transition from green to brown occurred, the ion was already Fe3+ from the beginning."
+    },
+    {
+      "id": "lab02_l3_12",
+      "prompt": "What is the oxidizing agent responsible for converting green Fe(OH)2 into brown Fe(OH)3?",
+      "options": [
+        "Dissolved diatomic oxygen gas from the atmosphere.",
+        "Spectator sodium ions present in the test solution.",
+        "Chloride ions dissolved from the iron salt lattice.",
+        "Nitrogen gas diffusing into the surface liquid layer."
+      ],
+      "correctIndex": 0,
+      "explanation": "Atmospheric oxygen (O2) dissolved in water is the oxidizing agent: 4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3."
+    },
+    {
+      "id": "lab02_l3_13",
+      "prompt": "A student records: 'Added NaOH, brown precipitate formed, dissolved in excess NaOH'. Is this observation accurate for Fe3+?",
+      "options": [
+        "No, because Fe(OH)3 does not dissolve in excess sodium hydroxide.",
+        "Yes, because all transition metal hydroxides dissolve in excess alkali.",
+        "Yes, because Fe3+ forms a soluble hexahydroxo complex with NaOH.",
+        "No, because Fe3+ forms a dirty green precipitate that stays green."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe(OH)3 is strictly insoluble in excess NaOH. The student recorded an incorrect observation."
+    },
+    {
+      "id": "lab02_l3_14",
+      "prompt": "How would you chemically differentiate between a pale green solution of FeSO4 and a pale green solution of NiSO4?",
+      "options": [
+        "Add NaOH; Fe2+ precipitate browns in air, Ni2+ precipitate remains green.",
+        "Add distilled water; FeSO4 boils vigorously while NiSO4 freezes.",
+        "Add red litmus paper; FeSO4 turns blue while NiSO4 bleaches.",
+        "Heat both tubes; FeSO4 explodes while NiSO4 evaporates cleanly."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe(OH)2 turns brown in air due to oxidation to Fe(OH)3; Ni(OH)2 does not oxidize in air and stays green."
+    },
+    {
+      "id": "lab02_l3_15",
+      "prompt": "Why does writing a net ionic equation provide a clearer scientific understanding than a full formula equation?",
+      "options": [
+        "It highlights only the species actively taking part in the chemical change.",
+        "It eliminates all references to chemical bonds and states of matter.",
+        "It allows students to guess products without balancing atomic charges.",
+        "It shows only the spectator ions that do not change during reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "Net ionic equations isolate the reacting ions (Cu2+ + 2OH- -> Cu(OH)2), discarding spectator ions."
+    },
+    {
+      "id": "lab02_l3_16",
+      "prompt": "What analytical error occurs if a dropper contaminated with Fe3+ solution is dipped into a Cu2+ sample?",
+      "options": [
+        "A mixed precipitate forms, obscuring the clear blue copper test.",
+        "The copper ions immediately turn into elemental gold metal.",
+        "The solution violently boils and shatters the glass test tube.",
+        "The sodium hydroxide reagent becomes completely neutralized."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cross-contamination causes simultaneous precipitation of brown Fe(OH)3, masking the blue Cu(OH)2."
+    },
+    {
+      "id": "lab02_l3_17",
+      "prompt": "A student tests three unknown solutions: X gives blue ppt; Y gives green ppt turning brown; Z gives brown ppt. What are X, Y, Z?",
+      "options": [
+        "X = Cu2+, Y = Fe2+, Z = Fe3+.",
+        "X = Fe2+, Y = Cu2+, Z = Fe3+.",
+        "X = Fe3+, Y = Fe2+, Z = Cu2+.",
+        "X = Cu2+, Y = Fe3+, Z = Fe2+."
+      ],
+      "correctIndex": 0,
+      "explanation": "X is Cu2+ (blue ppt), Y is Fe2+ (green ppt turning brown), Z is Fe3+ (brown ppt)."
+    },
+    {
+      "id": "lab02_l3_18",
+      "prompt": "Why does Fe(OH)2 precipitation occur at a slightly higher pH than Fe(OH)3 precipitation?",
+      "options": [
+        "Fe(OH)3 has a vastly smaller Ksp and precipitates at lower [OH-].",
+        "Fe(OH)2 reacts with acid much more slowly than iron(III).",
+        "Fe2+ ions repel hydroxide ions due to identical nuclear charge.",
+        "Fe3+ ions are destroyed by hydroxide ions at acidic pH levels."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe(OH)3 is substantially less soluble (Ksp ~ 10^-38) than Fe(OH)2 (Ksp ~ 10^-15), precipitating at lower pH."
+    },
+    {
+      "id": "lab02_l3_19",
+      "prompt": "When Cu(OH)2 is heated gently in a water bath, it turns black. What chemical compound forms?",
+      "options": [
+        "Copper(II) oxide solid, CuO.",
+        "Metallic copper powder, Cu.",
+        "Copper(I) oxide solid, Cu2O.",
+        "Copper hydride gas, CuH2."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thermal decomposition: Cu(OH)2(s) -> CuO(s) + H2O(l). Copper(II) oxide is black."
+    },
+    {
+      "id": "lab02_l3_20",
+      "prompt": "What role does washing the precipitate with distilled water play before gravimetric analysis?",
+      "options": [
+        "It removes adsorbed soluble spectator ions such as Na+ and SO42-.",
+        "It converts the transition metal hydroxide into a noble gas.",
+        "It dissolves the insoluble precipitate into a pure solvent.",
+        "It increases the oxidation state of the metal ion by two units."
+      ],
+      "correctIndex": 0,
+      "explanation": "Washing removes trapped soluble spectator ions, ensuring accurate mass measurements of the pure precipitate."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab02_l4_01",
+      "prompt": "Why does copper(II) hydroxide dissolve in aqueous ammonia but not in excess sodium hydroxide?",
+      "options": [
+        "Ammonia is an uncharged ligand forming stable [Cu(NH3)4(H2O)2]2+ complexes.",
+        "Ammonia is a strong acid that neutralizes the basic copper hydroxide.",
+        "Sodium ions sterically block hydroxide ions from coordinating to copper.",
+        "Copper(II) ions are completely reduced to copper metal by ammonia."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3 molecules act as neutral monodentate ligands that coordinate to Cu2+, shifting equilibrium toward the soluble complex."
+    },
+    {
+      "id": "lab02_l4_02",
+      "prompt": "What is the geometry and coordination number of the deep royal-blue copper-ammine complex ion?",
+      "options": [
+        "Distorted octahedral with a coordination number of 6.",
+        "Planar trigonal with a coordination number of 3.",
+        "Linear arrangement with a coordination number of 2.",
+        "Tetrahedral shape with a coordination number of 4."
+      ],
+      "correctIndex": 0,
+      "explanation": "[Cu(NH3)4(H2O)2]2+ has 4 equatorial NH3 ligands and 2 axial H2O ligands in a Jahn-Teller distorted octahedron."
+    },
+    {
+      "id": "lab02_l4_03",
+      "prompt": "Calculate the mass of Cu(OH)2 formed when 50.0 cm3 of 0.200 mol/dm3 CuSO4 reacts with excess NaOH (Cu=63.5, O=16.0, H=1.0).",
+      "options": [
+        "0.975 grams of copper(II) hydroxide.",
+        "1.950 grams of copper(II) hydroxide.",
+        "0.488 grams of copper(II) hydroxide.",
+        "9.750 grams of copper(II) hydroxide."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles Cu2+ = 0.050 * 0.200 = 0.010 mol. Molar mass Cu(OH)2 = 63.5 + 34.0 = 97.5 g/mol. Mass = 0.010 * 97.5 = 0.975 g."
+    },
+    {
+      "id": "lab02_l4_04",
+      "prompt": "How does the Jahn-Teller effect influence the electronic structure of the copper(II) complex in aqueous solution?",
+      "options": [
+        "It causes geometric distortion of d9 complexes, lowering energy of eg orbitals.",
+        "It prevents copper from forming any coordination bonds with water.",
+        "It forces all nine d-electrons into a single low-energy orbital.",
+        "It converts paramagnetic copper ions into diamagnetic species."
+      ],
+      "correctIndex": 0,
+      "explanation": "The d9 electron configuration of Cu2+ leads to asymmetric eg orbital filling, causing axial elongation."
+    },
+    {
+      "id": "lab02_l4_05",
+      "prompt": "In terms of standard reduction potentials, why is Fe2+(aq) readily oxidized by atmospheric oxygen in alkaline conditions?",
+      "options": [
+        "The reduction potential of O2/OH- is higher than that of Fe(OH)3/Fe(OH)2.",
+        "Fe2+ has a higher electronegativity than atmospheric oxygen atoms.",
+        "Hydroxide ions act as powerful oxidizing agents in aqueous solution.",
+        "Alkaline conditions convert iron ions into metallic iron spontaneously."
+      ],
+      "correctIndex": 0,
+      "explanation": "In alkaline conditions, Fe(OH)2 oxidation is thermodynamically favored because E(cell) is positive for O2 reduction."
+    },
+    {
+      "id": "lab02_l4_06",
+      "prompt": "A solution contains 0.01 mol/dm3 Fe2+ and 0.01 mol/dm3 Fe3+. As NaOH is slowly added, which precipitates first and why?",
+      "options": [
+        "Fe(OH)3 precipitates first because its Ksp (~10^-38) is vastly smaller than Fe(OH)2 (~10^-15).",
+        "Fe(OH)2 precipitates first because its molar mass is smaller than iron(III).",
+        "Both precipitate at the exact same pH because both contain iron cations.",
+        "Neither precipitates because competing hydrolysis keeps both ions soluble."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe(OH)3 has a dramatically lower Ksp (~10^-38) and reaches its solubility product at a much lower [OH-]."
+    },
+    {
+      "id": "lab02_l4_07",
+      "prompt": "What is the equilibrium constant expression (Ksp) for the dissolution of iron(III) hydroxide solid?",
+      "options": [
+        "Ksp = [Fe3+][OH-]^3",
+        "Ksp = [Fe3+]^3[OH-]",
+        "Ksp = [Fe3+][OH-] / [Fe(OH)3]",
+        "Ksp = [Fe3+]^3[OH-]^3"
+      ],
+      "correctIndex": 0,
+      "explanation": "For Fe(OH)3(s) <=> Fe3+(aq) + 3OH-(aq), Ksp = [Fe3+][OH-]^3 (solids omitted)."
+    },
+    {
+      "id": "lab02_l4_08",
+      "prompt": "What volume of 0.50 mol/dm3 NaOH is needed to completely precipitate the iron in 40 cm3 of 0.25 mol/dm3 Fe2(SO4)3?",
+      "options": [
+        "120 cm3 of sodium hydroxide solution.",
+        "40 cm3 of sodium hydroxide solution.",
+        "60 cm3 of sodium hydroxide solution.",
+        "20 cm3 of sodium hydroxide solution."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles Fe2(SO4)3 = 0.040 * 0.25 = 0.010 mol. Fe3+ moles = 0.020 mol. OH- moles needed = 3 * 0.020 = 0.060 mol. Vol NaOH = 0.060 / 0.50 = 0.120 dm3 = 120 cm3."
+    },
+    {
+      "id": "lab02_l4_09",
+      "prompt": "Why does adding excess NaOH to an amphoteric hydroxide like Al(OH)3 dissolve it, whereas Fe(OH)3 does not dissolve?",
+      "options": [
+        "Al3+ has high enough polarizing power to form aluminate [Al(OH)4]-, Fe3+ lattice is too stable.",
+        "Aluminum has a full d-subshell that easily forms coordinate covalent bonds.",
+        "Iron is a lighter element than aluminum and cannot coordinate four hydroxides.",
+        "Sodium ions selectively bond to iron atoms and prevent complexation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Al3+ has very high charge density and amphoteric character, forming [Al(OH)4]-; Fe(OH)3 is purely basic."
+    },
+    {
+      "id": "lab02_l4_10",
+      "prompt": "A sample gives a light blue precipitate with NaOH. Addition of KI solution produces a brown mixture and white ppt. Why?",
+      "options": [
+        "Cu2+ oxidizes I- to brown I2 while precipitating white copper(I) iodide, CuI.",
+        "Copper metal displaces potassium to form metallic copper and iodine gas.",
+        "Iron(II) impurities in the potassium iodide reduce copper to elemental copper.",
+        "The hydroxide ions react with iodine to form explosive nitrogen triiodide."
+      ],
+      "correctIndex": 0,
+      "explanation": "2Cu2+ + 4I- -> 2CuI(s) [white] + I2(aq) [brown]. This is a classic redox confirmation for Cu2+."
+    },
+    {
+      "id": "lab02_l4_11",
+      "prompt": "Why does an aqueous solution of iron(III) chloride have an acidic pH (~2) even before any acid is added?",
+      "options": [
+        "[Fe(H2O)6]3+ undergoes hydrolysis: [Fe(H2O)6]3+ + H2O <=> [Fe(H2O)5(OH)]2+ + H3O+.",
+        "Chloride ions react with water to form high concentrations of hydrochloric acid.",
+        "Iron(III) chloride reacts with atmospheric oxygen to generate sulfuric acid.",
+        "Water molecules undergo spontaneous nuclear fission in the presence of iron."
+      ],
+      "correctIndex": 0,
+      "explanation": "The small, highly charged Fe3+ ion polarizes coordinated O-H bonds, releasing H3O+ ions into solution."
+    },
+    {
+      "id": "lab02_l4_12",
+      "prompt": "Which spectroscopy technique would definitively distinguish Cu(OH)2 from [Cu(NH3)4(H2O)2]2+ by d-d transitions?",
+      "options": [
+        "UV-Visible spectrophotometry detecting shift in lambda max.",
+        "Mass spectrometry measuring the isotopic abundance of copper.",
+        "Infrared spectroscopy measuring pure C-H stretching vibrations.",
+        "X-ray radiometry measuring gamma particle emission rates."
+      ],
+      "correctIndex": 0,
+      "explanation": "UV-Vis measures d-d absorption; replacing H2O ligands with stronger-field NH3 increases crystal field splitting, shifting absorption to shorter wavelengths."
+    },
+    {
+      "id": "lab02_l4_13",
+      "prompt": "If a student wants to preserve an Fe(OH)2 precipitate from turning brown, which technique would be most effective?",
+      "options": [
+        "Perform the experiment in degassed water under an inert argon or nitrogen blanket.",
+        "Expose the test tube to strong ultraviolet radiation and direct sunlight.",
+        "Add concentrated hydrogen peroxide directly to the alkaline suspension.",
+        "Stir the solution vigorously in an open shallow evaporating dish."
+      ],
+      "correctIndex": 0,
+      "explanation": "Excluding oxygen via degassed solvent and an inert gas blanket prevents oxidation of Fe(II) to Fe(III)."
+    },
+    {
+      "id": "lab02_l4_14",
+      "prompt": "What is the percentage by mass of iron in pure iron(III) hydroxide precipitate (Fe=55.8, O=16.0, H=1.0)?",
+      "options": [
+        "52.2% iron by mass.",
+        "64.1% iron by mass.",
+        "33.3% iron by mass.",
+        "72.4% iron by mass."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr Fe(OH)3 = 55.8 + 3*(17.0) = 106.8. %Fe = (55.8 / 106.8) * 100% = 52.2%."
+    },
+    {
+      "id": "lab02_l4_15",
+      "prompt": "How does Le Chatelier's principle explain why adding dilute HCl dissolves Cu(OH)2 precipitate completely?",
+      "options": [
+        "H+ reacts with OH- to form H2O, lowering [OH-] and driving Cu(OH)2 <=> Cu2+ + 2OH- right.",
+        "Cl- ions oxidize copper hydroxide into insoluble copper chloride crystals.",
+        "The acid adds heat to the tube, which vaporizes the solid copper hydroxide.",
+        "H+ ions compete with copper to form volatile hydroxide gas bubbles."
+      ],
+      "correctIndex": 0,
+      "explanation": "H+ neutralizes OH-, depleting product ions and shifting the solubility equilibrium entirely toward dissolution."
+    },
+    {
+      "id": "lab02_l4_16",
+      "prompt": "What is the molar solubility of Fe(OH)2 in pure water if its solubility product Ksp is 1.6 x 10^-14 mol3/dm9?",
+      "options": [
+        "1.6 x 10^-5 mol/dm3",
+        "4.0 x 10^-5 mol/dm3",
+        "1.2 x 10^-7 mol/dm3",
+        "2.5 x 10^-3 mol/dm3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ksp = s * (2s)^2 = 4s^3 = 1.6e-14 => s^3 = 4.0e-15 => s = 1.59e-5 mol/dm3 ~ 1.6e-5 mol/dm3."
+    },
+    {
+      "id": "lab02_l4_17",
+      "prompt": "In qualitative analysis, why is potassium hexacyanoferrate(II) solution used as an advanced confirmatory test for Fe3+?",
+      "options": [
+        "It forms an intense, highly insoluble Prussian blue precipitate, Fe4[Fe(CN)6]3.",
+        "It instantly bleaches the iron solution to completely colorless water.",
+        "It reduces iron(III) directly to shiny metallic iron mirror on glass.",
+        "It releases gaseous hydrogen cyanide without any color change."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fe3+ reacts with hexacyanoferrate(II) to form the iconic insoluble Prussian blue complex Fe4[Fe(CN)6]3."
+    },
+    {
+      "id": "lab02_l4_18",
+      "prompt": "Why does an alkaline buffer solution of pH 9 cause selective precipitation of Fe3+ while leaving Cu2+ dissolved at low concentrations?",
+      "options": [
+        "The [OH-] is high enough to exceed Ksp of Fe(OH)3 but below the Ksp threshold of Cu(OH)2.",
+        "Cu2+ ions are destroyed by buffer systems through irreversible nuclear decay.",
+        "The buffer forms covalent bonds exclusively with iron cations in solution.",
+        "Copper hydroxide is only insoluble at acidic pH levels below pH 4."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fractional precipitation exploits differing Ksp values: lower [OH-] precipitates less soluble Fe(OH)3 first."
+    },
+    {
+      "id": "lab02_l4_19",
+      "prompt": "An industrial waste stream contains 127 ppm Cu2+. What environmental hazard justifies removing it by precipitation?",
+      "options": [
+        "Copper ions are highly toxic to aquatic life, disrupting enzyme systems in fish.",
+        "Copper ions accelerate global warming by absorbing atmospheric greenhouse gases.",
+        "Copper ions react with river water to create clouds of toxic chlorine gas.",
+        "Copper ions convert river mud into radioactive heavy metal isotopes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cu2+ is an aquatic ecotoxin that inhibits cellular enzymes and gill function in fish, mandating strict discharge limits."
+    },
+    {
+      "id": "lab02_l4_20",
+      "prompt": "What experimental observation proves that the browning of Fe(OH)2 is a chemical change and not a physical change?",
+      "options": [
+        "A new chemical substance with distinct composition and oxidation state is formed.",
+        "The color change can be immediately reversed by filtering out the liquid.",
+        "The temperature of the test tube drops below the freezing point of water.",
+        "The total mass of the test tube decreases by exactly fifty percent."
+      ],
+      "correctIndex": 0,
+      "explanation": "Chemical change involves alteration of chemical bonds, electron transfer (Fe2+ -> Fe3+), and a new compound (Fe(OH)3)."
+    }
+  ]
+}

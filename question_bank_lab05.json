@@ -1,0 +1,970 @@
+{
+  "level1": [
+    {
+      "id": "lab05_l1_01",
+      "prompt": "What symbol in a chemical equation indicates that a chemical reaction is reversible?",
+      "options": [
+        "A double opposing equilibrium arrow (\u21cc).",
+        "A single forward pointing reaction arrow (->).",
+        "A double plus sign between reactant formulas (++).",
+        "An exclamation mark at the end of the line (!)."
+      ],
+      "correctIndex": 0,
+      "explanation": "The \u21cc symbol represents a reaction that can proceed in both forward and reverse directions."
+    },
+    {
+      "id": "lab05_l1_02",
+      "prompt": "What chemical compound is heated in the classic reversible reaction experiment in Lab 05?",
+      "options": [
+        "Solid white ammonium chloride, NH4Cl.",
+        "Solid blue copper(II) sulfate crystals, CuSO4.",
+        "Solid yellow elemental sulfur powder, S8.",
+        "Solid shiny metallic magnesium ribbon, Mg."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonium chloride (NH4Cl) readily demonstrates thermal decomposition and recombination."
+    },
+    {
+      "id": "lab05_l1_03",
+      "prompt": "What happens to solid ammonium chloride when it is heated at the bottom of a dry test tube?",
+      "options": [
+        "It thermally decomposes into colorless ammonia and hydrogen chloride gases.",
+        "It melts into a deep purple liquid that conducts electricity.",
+        "It permanently burns into dense black carbon ash.",
+        "It turns into liquid metallic mercury and oxygen gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Heating decomposes NH4Cl(s) into gaseous NH3 and HCl."
+    },
+    {
+      "id": "lab05_l1_04",
+      "prompt": "What observation occurs in the cooler upper region of the test tube during the heating of ammonium chloride?",
+      "options": [
+        "A white solid ring of ammonium chloride reforms on the cool glass.",
+        "Drops of liquid mercury condense on the tube wall.",
+        "Bright yellow liquid sulfur boils down the glass.",
+        "A dark red liquid fills the top of the container."
+      ],
+      "correctIndex": 0,
+      "explanation": "As the hot gases cool near the mouth of the tube, they recombine to form solid NH4Cl."
+    },
+    {
+      "id": "lab05_l1_05",
+      "prompt": "Which two gases are formed when ammonium chloride decomposes upon heating?",
+      "options": [
+        "Ammonia gas (NH3) and hydrogen chloride gas (HCl).",
+        "Nitrogen gas (N2) and pure chlorine gas (Cl2).",
+        "Nitrous oxide gas (N2O) and liquid water (H2O).",
+        "Hydrogen gas (H2) and solid carbon dioxide (CO2)."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4Cl(s) -> NH3(g) + HCl(g)."
+    },
+    {
+      "id": "lab05_l1_06",
+      "prompt": "What term describes a reaction that takes in thermal energy from the surroundings?",
+      "options": [
+        "An endothermic reaction.",
+        "An exothermic reaction.",
+        "A radioactive reaction.",
+        "A photographic reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "Endothermic reactions absorb heat energy (Delta H > 0)."
+    },
+    {
+      "id": "lab05_l1_07",
+      "prompt": "What term describes a reaction that releases thermal energy into the surroundings?",
+      "options": [
+        "An exothermic reaction.",
+        "An endothermic reaction.",
+        "A barometric reaction.",
+        "A catalytic reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "Exothermic reactions release thermal energy (Delta H < 0)."
+    },
+    {
+      "id": "lab05_l1_08",
+      "prompt": "In the reversible reaction NH4Cl(s) \u21cc NH3(g) + HCl(g), is the forward decomposition endothermic or exothermic?",
+      "options": [
+        "The forward decomposition is endothermic, requiring continuous heat input.",
+        "The forward decomposition is exothermic, releasing explosive fire.",
+        "The forward decomposition occurs at absolute zero with no energy.",
+        "The forward decomposition releases liquid nitrogen coldness."
+      ],
+      "correctIndex": 0,
+      "explanation": "Breaking the ionic/covalent bonds of NH4Cl into gases absorbs heat (endothermic)."
+    },
+    {
+      "id": "lab05_l1_09",
+      "prompt": "Is the reverse recombination reaction (NH3(g) + HCl(g) -> NH4Cl(s)) endothermic or exothermic?",
+      "options": [
+        "The reverse recombination is exothermic, releasing thermal energy.",
+        "The reverse recombination is endothermic, absorbing all surrounding heat.",
+        "The reverse recombination is completely athermal with zero energy change.",
+        "The reverse recombination destroys all surrounding energy permanently."
+      ],
+      "correctIndex": 0,
+      "explanation": "Reforming solid bonds from gases releases energy (exothermic)."
+    },
+    {
+      "id": "lab05_l1_10",
+      "prompt": "What is the initial physical state of ammonium chloride before heating?",
+      "options": [
+        "A white crystalline solid powder.",
+        "A clear transparent aqueous liquid.",
+        "A dense greenish-yellow toxic gas.",
+        "A molten silver conductive liquid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonium chloride is a white ionic crystalline solid at room temperature."
+    },
+    {
+      "id": "lab05_l1_11",
+      "prompt": "What happens to the total mass of chemicals in a sealed glass tube during this reversible reaction?",
+      "options": [
+        "The total mass remains strictly constant throughout the experiment.",
+        "The mass decreases as solid turns into invisible gas particles.",
+        "The mass increases because heat energy adds heavy atoms.",
+        "The mass fluctuates randomly between positive and negative values."
+      ],
+      "correctIndex": 0,
+      "explanation": "In a closed system, matter cannot enter or leave, so total mass is strictly conserved."
+    },
+    {
+      "id": "lab05_l1_12",
+      "prompt": "What happens to the total mass if ammonium chloride is heated in an open boiling tube?",
+      "options": [
+        "Mass decreases because escaping product gases leave the open container.",
+        "Mass remains identical because gas molecules have zero weight.",
+        "Mass increases as air rushes in to fill the empty space.",
+        "Mass drops to absolute zero within three seconds."
+      ],
+      "correctIndex": 0,
+      "explanation": "In an open system, product gases (NH3 and HCl) escape into the atmosphere, causing mass loss."
+    },
+    {
+      "id": "lab05_l1_13",
+      "prompt": "What piece of laboratory apparatus is used to provide the high heat needed to decompose NH4Cl?",
+      "options": [
+        "A laboratory Bunsen burner with an active blue heating flame.",
+        "An electronic magnetic stirrer without any heating element.",
+        "A glass thermometer submerged in melting ice cubes.",
+        "A plastic dropper bottle containing distilled water."
+      ],
+      "correctIndex": 0,
+      "explanation": "A Bunsen burner supplies the thermal energy needed for endothermic decomposition."
+    },
+    {
+      "id": "lab05_l1_14",
+      "prompt": "Why does the white solid ring form specifically on the upper walls of the test tube?",
+      "options": [
+        "The upper glass is significantly cooler, allowing exothermic recombination.",
+        "Gravity pulls all gaseous molecules upward toward the sky.",
+        "The upper glass is positively charged and attracts ammonium.",
+        "Air contains special chemicals that freeze gases instantly."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gases move away from the flame; when they reach cooler glass, reverse exothermic reaction occurs."
+    },
+    {
+      "id": "lab05_l1_15",
+      "prompt": "What type of change occurs when steam condenses back into liquid water?",
+      "options": [
+        "A reversible physical change of state.",
+        "An irreversible chemical nuclear fusion.",
+        "An irreversible chemical combustion reaction.",
+        "A permanent destruction of hydrogen atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "Condensation is a reversible physical change."
+    },
+    {
+      "id": "lab05_l1_16",
+      "prompt": "How does a reversible reaction differ from an irreversible reaction like burning a match?",
+      "options": [
+        "Reversible reactions can reform original reactants; irreversible reactions cannot easily do so.",
+        "Reversible reactions destroy atoms, while irreversible reactions conserve them.",
+        "Reversible reactions only happen in space; irreversible reactions happen on Earth.",
+        "Reversible reactions require gold catalysts to operate at any temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "In reversible reactions, products can react to regenerate original reactants under changed conditions."
+    },
+    {
+      "id": "lab05_l1_17",
+      "prompt": "What color is ammonia gas (NH3)?",
+      "options": [
+        "Colorless and invisible to the naked eye.",
+        "Bright yellow like elemental sulfur powder.",
+        "Deep reddish-brown like nitrogen dioxide gas.",
+        "Vivid electric blue like hydrated copper ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia is a colorless gas with a pungent, choking odor."
+    },
+    {
+      "id": "lab05_l1_18",
+      "prompt": "What color is hydrogen chloride gas (HCl)?",
+      "options": [
+        "Colorless and invisible in dry air.",
+        "A dense green cloud like chlorine.",
+        "A dark purple vapor like iodine.",
+        "A bright crimson red plume."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hydrogen chloride is a colorless acidic gas."
+    },
+    {
+      "id": "lab05_l1_19",
+      "prompt": "What property allows a student to smell ammonia if a small trace escapes the test tube?",
+      "options": [
+        "Its distinctively sharp, choking, and pungent odor.",
+        "A sweet scent identical to fresh vanilla ice cream.",
+        "A completely odorless and undetectable character.",
+        "A pleasant aroma of fresh rose petals."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia has a sharp, pungent, alkaline odor detectable even at low concentrations."
+    },
+    {
+      "id": "lab05_l1_20",
+      "prompt": "Why must the reversible reaction of ammonium chloride be performed in a well-ventilated laboratory or fume cupboard?",
+      "options": [
+        "To prevent inhalation of irritating, toxic ammonia and acidic hydrogen chloride vapors.",
+        "To keep the Bunsen burner flame from burning all room nitrogen.",
+        "To prevent the white solid ring from falling onto the floor.",
+        "To prevent room oxygen from converting into liquid nitrogen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both NH3 and HCl are respiratory irritants; good ventilation is mandatory."
+    }
+  ],
+  "level2": [
+    {
+      "id": "lab05_l2_01",
+      "prompt": "Which balanced equation correctly represents the reversible thermal decomposition of ammonium chloride?",
+      "options": [
+        "NH4Cl(s) \u21cc NH3(g) + HCl(g)",
+        "2 NH4Cl(s) -> N2(g) + 4 H2(g) + Cl2(g)",
+        "NH4Cl(s) -> NH4+(aq) + Cl-(aq)",
+        "NH4Cl(s) + O2(g) -> NO2(g) + HCl(g)"
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4Cl(s) \u21cc NH3(g) + HCl(g) represents the reversible decomposition and recombination."
+    },
+    {
+      "id": "lab05_l2_02",
+      "prompt": "When damp red litmus paper is held at the mouth of the heating tube with NH4Cl, what color sequence is observed?",
+      "options": [
+        "It turns blue first (due to faster NH3), then turns red (due to slower HCl).",
+        "It turns red first, then permanently bleaches to pure white.",
+        "It stays completely red and shows zero color transition.",
+        "It turns bright green, then turns dark purple."
+      ],
+      "correctIndex": 0,
+      "explanation": "Lighter NH3 diffuses faster and reaches the litmus first (turning it blue); heavier HCl arrives later (turning it red)."
+    },
+    {
+      "id": "lab05_l2_03",
+      "prompt": "Why does ammonia gas (NH3) reach the damp litmus paper before hydrogen chloride gas (HCl)?",
+      "options": [
+        "Ammonia has a lower molecular mass (Mr=17) and diffuses faster than HCl (Mr=36.5).",
+        "Ammonia is magnetically repelled by the hot glass of the test tube.",
+        "Hydrogen chloride gas freezes solid as soon as it leaves the flame.",
+        "Ammonia molecules have a positive charge that speeds them up."
+      ],
+      "correctIndex": 0,
+      "explanation": "By Graham's Law, rate of diffusion is inversely proportional to the square root of molar mass. NH3 (17) diffuses faster than HCl (36.5)."
+    },
+    {
+      "id": "lab05_l2_04",
+      "prompt": "What chemical reaction turns the damp red litmus paper blue when ammonia gas reaches it?",
+      "options": [
+        "NH3(g) + H2O(l) \u21cc NH4+(aq) + OH-(aq), producing alkaline hydroxide ions.",
+        "NH3(g) + O2(g) -> NO2(g) + H2O(l), creating intense heat.",
+        "NH3(g) dissolves in paper cellulose to create blue copper ions.",
+        "Ammonia bleaches the red dye by extracting all valence electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonia dissolves in moisture on the paper forming alkaline OH- ions that turn red litmus blue."
+    },
+    {
+      "id": "lab05_l2_05",
+      "prompt": "What chemical reaction turns the blue litmus paper red when hydrogen chloride gas reaches it?",
+      "options": [
+        "HCl(g) + H2O(l) -> H3O+(aq) + Cl-(aq), producing acidic hydronium ions.",
+        "HCl(g) decomposes water into hydrogen gas and oxygen gas.",
+        "Chloride ions precipitate as insoluble blue metal crystals.",
+        "HCl reacts with paper to form green chlorine molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "HCl dissolves in water to form hydrochloric acid (H3O+ and Cl-), which turns litmus red."
+    },
+    {
+      "id": "lab05_l2_06",
+      "prompt": "What is the apparent physical phenomenon when NH4Cl turns directly into gas and reforms as a solid called?",
+      "options": [
+        "Thermal dissociation and pseudo-sublimation.",
+        "Nuclear transmutation and fusion.",
+        "Fractional vacuum distillation.",
+        "Electrolytic refining."
+      ],
+      "correctIndex": 0,
+      "explanation": "Although often called sublimation, it is technically chemical thermal dissociation into gases followed by resynthesis."
+    },
+    {
+      "id": "lab05_l2_07",
+      "prompt": "If 5.35 g of NH4Cl completely decomposes, what total mass of combined NH3 and HCl gases is generated?",
+      "options": [
+        "Exactly 5.35 grams of combined product gases.",
+        "Exactly 2.67 grams of combined product gases.",
+        "Exactly 10.70 grams of combined product gases.",
+        "Zero grams because solids lose all mass when gaseous."
+      ],
+      "correctIndex": 0,
+      "explanation": "Conservation of mass dictates that 5.35 g of reactant yields exactly 5.35 g of products."
+    },
+    {
+      "id": "lab05_l2_08",
+      "prompt": "Calculate the molar mass of ammonia gas, NH3 (N=14.0, H=1.0).",
+      "options": [
+        "17.0 g/mol",
+        "15.0 g/mol",
+        "18.0 g/mol",
+        "28.0 g/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr = 14.0 + (3 * 1.0) = 17.0 g/mol."
+    },
+    {
+      "id": "lab05_l2_09",
+      "prompt": "Calculate the molar mass of hydrogen chloride gas, HCl (H=1.0, Cl=35.5).",
+      "options": [
+        "36.5 g/mol",
+        "35.5 g/mol",
+        "37.5 g/mol",
+        "71.0 g/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mr = 1.0 + 35.5 = 36.5 g/mol."
+    },
+    {
+      "id": "lab05_l2_10",
+      "prompt": "How many times faster does NH3 gas diffuse compared to HCl gas approximately? (Graham's Law: sqrt(36.5 / 17.0))",
+      "options": [
+        "Approximately 1.47 times faster.",
+        "Approximately 3.50 times faster.",
+        "Approximately 10.0 times faster.",
+        "They diffuse at the exact identical speed."
+      ],
+      "correctIndex": 0,
+      "explanation": "Relative diffusion rate = sqrt(36.5 / 17.0) = sqrt(2.147) ~ 1.465 ~ 1.47 times faster."
+    },
+    {
+      "id": "lab05_l2_11",
+      "prompt": "What happens if you stop heating the ammonium chloride and allow the entire test tube to cool to room temperature?",
+      "options": [
+        "The reaction shifts completely to the left, reforming solid NH4Cl until all gases are consumed.",
+        "The test tube fills with permanent liquid hydrochloric acid.",
+        "The gases remain permanently uncombined as a toxic aerosol.",
+        "The glass test tube shatters from extreme cryogenic suction."
+      ],
+      "correctIndex": 0,
+      "explanation": "At room temperature, the exothermic reverse reaction is heavily favored, reforming solid NH4Cl."
+    },
+    {
+      "id": "lab05_l2_12",
+      "prompt": "Why does dry litmus paper NOT change color when exposed to dry ammonia or dry HCl gas?",
+      "options": [
+        "Water is required to ionize gases into free mobile H+ or OH- ions that alter dye color.",
+        "Dry paper has an electrical insulation that repels all gases.",
+        "Litmus dye only reflects light when submerged in boiling oil.",
+        "Gases cannot touch dry paper due to electrostatic repulsion."
+      ],
+      "correctIndex": 0,
+      "explanation": "Without moisture, molecular gases (NH3, HCl) do not form H3O+ or OH- ions needed to trigger indicator color changes."
+    },
+    {
+      "id": "lab05_l2_13",
+      "prompt": "Which of the following is another well-known reversible chemical reaction studied in secondary chemistry?",
+      "options": [
+        "Hydration of anhydrous copper(II) sulfate: CuSO4 + 5 H2O \u21cc CuSO4.5H2O.",
+        "Combustion of charcoal: C + O2 -> CO2.",
+        "Reaction of magnesium with hydrochloric acid: Mg + 2 HCl -> MgCl2 + H2.",
+        "Decomposition of potassium chlorate: 2 KClO3 -> 2 KCl + 3 O2."
+      ],
+      "correctIndex": 0,
+      "explanation": "Anhydrous copper(II) sulfate turns blue with water (exothermic) and white when heated (endothermic), reversibly."
+    },
+    {
+      "id": "lab05_l2_14",
+      "prompt": "What color change occurs when anhydrous copper(II) sulfate is hydrated in a reversible test?",
+      "options": [
+        "White solid turns to vivid blue crystals.",
+        "Blue crystals turn to yellow powder.",
+        "Green solid turns to reddish-brown.",
+        "Black powder turns to shiny metallic copper."
+      ],
+      "correctIndex": 0,
+      "explanation": "Anhydrous CuSO4 is white; adding water yields hydrated blue CuSO4.5H2O."
+    },
+    {
+      "id": "lab05_l2_15",
+      "prompt": "In a closed container at dynamic equilibrium, what can be said about the rates of forward and reverse reactions?",
+      "options": [
+        "The forward reaction rate equals the reverse reaction rate.",
+        "The forward reaction rate is ten times faster than reverse.",
+        "The reverse reaction rate stops completely.",
+        "Both reaction rates drop to absolute zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dynamic equilibrium is defined by equal forward and reverse reaction rates."
+    },
+    {
+      "id": "lab05_l2_16",
+      "prompt": "In a closed container at dynamic equilibrium, what happens to the concentrations of reactants and products?",
+      "options": [
+        "Concentrations remain constant over time, though reactions continue microscopically.",
+        "Reactant concentration drops to zero while products reach 100%.",
+        "Product concentration drops to zero as reactants reform.",
+        "Concentrations oscillate wildly from 0% to 100% every second."
+      ],
+      "correctIndex": 0,
+      "explanation": "At equilibrium, macroscopic concentrations remain constant because formation and consumption rates are equal."
+    },
+    {
+      "id": "lab05_l2_17",
+      "prompt": "What is the ratio of moles of NH3 to moles of HCl produced when NH4Cl decomposes?",
+      "options": [
+        "A 1:1 molar ratio of ammonia to hydrogen chloride.",
+        "A 2:1 molar ratio of ammonia to hydrogen chloride.",
+        "A 1:2 molar ratio of ammonia to hydrogen chloride.",
+        "A 3:1 molar ratio of ammonia to hydrogen chloride."
+      ],
+      "correctIndex": 0,
+      "explanation": "1 mole of NH4Cl yields exactly 1 mole of NH3 and 1 mole of HCl."
+    },
+    {
+      "id": "lab05_l2_18",
+      "prompt": "A student heats NH4Cl in an open test tube until all white powder disappears. Can the reverse reaction reform the solid now?",
+      "options": [
+        "No, because the product gases escaped into the open atmosphere and are lost.",
+        "Yes, because air molecules spontaneously turn back into ammonium chloride.",
+        "Yes, if the student blows cold air into the empty test tube.",
+        "No, because ammonium chloride cannot exist at room temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "In an open system, escaping reactants prevent the reverse reaction from occurring."
+    },
+    {
+      "id": "lab05_l2_19",
+      "prompt": "Why does a mineral wool plug placed loosely in the test tube mouth help demonstrate recombination?",
+      "options": [
+        "It slows gas escape while allowing gases to mix and deposit solid on the cool wool fibers.",
+        "It acts as a chemical catalyst that splits chlorine into chloride ions.",
+        "It absorbs all oxygen gas to prevent combustion of the tube.",
+        "It neutralizes ammonia gas into harmless liquid water."
+      ],
+      "correctIndex": 0,
+      "explanation": "A loose plug retains gases in the cooling zone without sealing the tube against pressure buildup."
+    },
+    {
+      "id": "lab05_l2_20",
+      "prompt": "What would happen if a student completely sealed a thin glass test tube with a rubber stopper and heated it strongly?",
+      "options": [
+        "Gas pressure would build up dangerously, causing the test tube to explode.",
+        "The reaction would proceed in complete safety with zero pressure change.",
+        "The glass would turn into flexible rubber without breaking.",
+        "The ammonium chloride would transform into pure diamond crystals."
+      ],
+      "correctIndex": 0,
+      "explanation": "Heating a closed rigid vessel creates dangerous gas pressure: 1 mole of solid produces 2 moles of expanding gas."
+    }
+  ],
+  "level3": [
+    {
+      "id": "lab05_l3_01",
+      "prompt": "Why is the thermal decomposition of ammonium chloride considered a chemical change rather than genuine physical sublimation (like dry ice)?",
+      "options": [
+        "NH4Cl chemically breaks covalent/ionic bonds into distinct substances (NH3 and HCl), whereas dry ice merely separates CO2 molecules.",
+        "NH4Cl changes color from bright red to deep green during heating.",
+        "Dry ice forms new covalent bonds with atmospheric nitrogen gas.",
+        "Physical sublimation only occurs at temperatures above 1000 \u00b0C."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sublimation involves physical phase change without bond breaking; NH4Cl chemically dissociates into two distinct gases."
+    },
+    {
+      "id": "lab05_l3_02",
+      "prompt": "According to Le Chatelier's principle, how does increasing the temperature affect the equilibrium NH4Cl(s) \u21cc NH3(g) + HCl(g) (Delta H > 0)?",
+      "options": [
+        "It shifts equilibrium to the right, favoring endothermic decomposition and increasing gas yield.",
+        "It shifts equilibrium to the left, increasing the mass of solid ammonium chloride.",
+        "It stops both forward and reverse reactions from occurring.",
+        "It causes the gases to liquefy into molten salt."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding heat favors the endothermic direction, shifting equilibrium toward product gases."
+    },
+    {
+      "id": "lab05_l3_03",
+      "prompt": "According to Le Chatelier's principle, how does cooling the gas mixture affect the equilibrium?",
+      "options": [
+        "It shifts equilibrium to the left, favoring exothermic recombination to reform solid NH4Cl.",
+        "It shifts equilibrium to the right, producing higher concentrations of NH3 and HCl.",
+        "It converts ammonia gas into solid metallic nitrogen.",
+        "It increases the total pressure inside the container."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cooling removes thermal energy, shifting equilibrium toward the exothermic reverse direction (solid formation)."
+    },
+    {
+      "id": "lab05_l3_04",
+      "prompt": "What happens to the equilibrium position if the volume of a closed container holding NH4Cl(s) \u21cc NH3(g) + HCl(g) is decreased (pressure increased)?",
+      "options": [
+        "Equilibrium shifts left toward fewer gas moles (0 moles gas vs 2 moles gas), forming more solid NH4Cl.",
+        "Equilibrium shifts right toward more gas moles to increase container pressure.",
+        "Equilibrium does not shift because solids do not respond to pressure.",
+        "The container immediately collapses into a vacuum."
+      ],
+      "correctIndex": 0,
+      "explanation": "Increasing pressure favors the side with fewer gas moles (left: 0 moles gas; right: 2 moles gas)."
+    },
+    {
+      "id": "lab05_l3_05",
+      "prompt": "In an experiment, 1.07 g of NH4Cl is heated in a closed 1.0 dm3 vessel until fully decomposed at 400 \u00b0C. What is the total moles of gas?",
+      "options": [
+        "0.040 moles of total gas (0.020 mol NH3 + 0.020 mol HCl).",
+        "0.020 moles of total gas.",
+        "0.010 moles of total gas.",
+        "0.080 moles of total gas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moles NH4Cl = 1.07 / 53.5 = 0.020 mol. Moles gas = 0.020 mol NH3 + 0.020 mol HCl = 0.040 mol total gas."
+    },
+    {
+      "id": "lab05_l3_06",
+      "prompt": "Why does the white solid ring form slightly below the very top rim of the test tube rather than at the bottom?",
+      "options": [
+        "A thermal gradient exists: the bottom is hot (>340 \u00b0C), while upper glass drops below the 338 \u00b0C decomposition point.",
+        "Glass at the top of a test tube has a positive static electrical charge.",
+        "Ammonia gas is heavier than air and sinks toward the middle.",
+        "The Bunsen burner flame blows all solid particles downward."
+      ],
+      "correctIndex": 0,
+      "explanation": "Recombination occurs where temperature falls below the decomposition threshold (~338 \u00b0C)."
+    },
+    {
+      "id": "lab05_l3_07",
+      "prompt": "If equal masses of NH4Cl are heated in an open crucible vs a closed autoclave, how will final masses compare after cooling?",
+      "options": [
+        "Crucible mass is zero (all gases escaped); autoclave mass equals original mass (all gases recombined).",
+        "Both containers will have exactly zero mass remaining.",
+        "Crucible mass will double; autoclave mass will be halved.",
+        "Both containers will have identical masses of solid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Open system loses mass to environment; closed system retains all atoms, reforming original solid on cooling."
+    },
+    {
+      "id": "lab05_l3_08",
+      "prompt": "What is the expression for the equilibrium constant Kp for the decomposition of solid ammonium chloride?",
+      "options": [
+        "Kp = P(NH3) * P(HCl)",
+        "Kp = [P(NH3) * P(HCl)] / P(NH4Cl)",
+        "Kp = P(NH3) / P(HCl)",
+        "Kp = P(NH4Cl) / [P(NH3) * P(HCl)]"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pure solids have an activity of 1 and are omitted: Kp = P(NH3) * P(HCl)."
+    },
+    {
+      "id": "lab05_l3_09",
+      "prompt": "If the equilibrium constant Kp is 0.16 atm2 at a given temperature, what is the partial pressure of NH3 gas in a closed container?",
+      "options": [
+        "0.40 atm (since P(NH3) = P(HCl) = sqrt(Kp)).",
+        "0.16 atm.",
+        "0.08 atm.",
+        "0.32 atm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Stoichiometry yields equal partial pressures: P^2 = 0.16 => P(NH3) = 0.40 atm."
+    },
+    {
+      "id": "lab05_l3_10",
+      "prompt": "What is the total equilibrium pressure inside the container in the previous question (Kp = 0.16 atm2)?",
+      "options": [
+        "0.80 atm (P_total = P(NH3) + P(HCl) = 0.40 + 0.40).",
+        "0.40 atm.",
+        "0.16 atm.",
+        "1.60 atm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dalton's law of partial pressures: P_total = 0.40 + 0.40 = 0.80 atm."
+    },
+    {
+      "id": "lab05_l3_11",
+      "prompt": "Why does adding excess solid NH4Cl to a container already at dynamic equilibrium NOT alter the gas partial pressures?",
+      "options": [
+        "Pure solids have constant activity and do not appear in the equilibrium expression Kp.",
+        "Solid NH4Cl destroys gas molecules upon contact.",
+        "The extra solid instantly dissolves into the glass container.",
+        "The temperature of the container drops to absolute zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "Adding more solid does not change concentrations/pressures; Kp depends only on temperature."
+    },
+    {
+      "id": "lab05_l3_12",
+      "prompt": "If dry HCl gas is injected into a container at equilibrium with NH4Cl, what immediate change occurs?",
+      "options": [
+        "P(NH3) decreases as equilibrium shifts left to consume added HCl, forming more solid NH4Cl.",
+        "P(NH3) increases as more NH4Cl decomposes to compensate.",
+        "The container explodes from spontaneous acid generation.",
+        "The temperature rises to 10,000 \u00b0C."
+      ],
+      "correctIndex": 0,
+      "explanation": "Increasing [HCl] shifts equilibrium left (Le Chatelier), consuming NH3 and precipitating NH4Cl."
+    },
+    {
+      "id": "lab05_l3_13",
+      "prompt": "Why does the test with damp red litmus paper produce an apparent contradiction (both alkaline and acidic signals)?",
+      "options": [
+        "The two product gases have opposite acid-base natures and diffuse at different velocities.",
+        "The litmus paper changes color randomly when heated.",
+        "Ammonium chloride is both a strong acid and strong alkali simultaneously.",
+        "The glass of the test tube emits acidic vapors."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3 is basic and diffuses fast (blue first); HCl is acidic and diffuses slower (red second)."
+    },
+    {
+      "id": "lab05_l3_14",
+      "prompt": "How could a student prove experimentally that the white ring on the tube wall is indeed NH4Cl and not another white salt?",
+      "options": [
+        "Dissolve a scraping in water: test one portion with NaOH (ammonia released) and one with AgNO3 (white AgCl ppt).",
+        "Taste the powder to see if it tastes salty like table salt.",
+        "Heat the powder until it melts into a glowing liquid metal.",
+        "Expose the powder to sunlight to see if it turns fluorescent green."
+      ],
+      "correctIndex": 0,
+      "explanation": "Confirms NH4+ (ammonia with NaOH) and Cl- (white precipitate with AgNO3 insoluble in HNO3)."
+    },
+    {
+      "id": "lab05_l3_15",
+      "prompt": "What thermodynamic equation governs the temperature at which the decomposition of NH4Cl becomes spontaneous?",
+      "options": [
+        "Delta G = Delta H - T * Delta S, becoming spontaneous when Delta G < 0.",
+        "E = mc^2, converting mass into photon radiation.",
+        "PV = nRT, determining gas density in liquids.",
+        "F = ma, measuring gravitational acceleration of ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gibbs free energy determines spontaneity: decomposition (Delta H > 0, Delta S > 0) becomes spontaneous at T > Delta H / Delta S."
+    },
+    {
+      "id": "lab05_l3_16",
+      "prompt": "Why is Delta S (entropy change) positive for the decomposition of NH4Cl?",
+      "options": [
+        "One mole of ordered crystalline solid transforms into two moles of disordered gas molecules.",
+        "Gas molecules are more tightly bound and orderly than crystal lattices.",
+        "The atoms lose their valence electron clouds upon heating.",
+        "Entropy always decreases when chemical bonds are broken."
+      ],
+      "correctIndex": 0,
+      "explanation": "Producing 2 moles of gas from 1 mole of solid represents a massive increase in positional disorder (Delta S > 0)."
+    },
+    {
+      "id": "lab05_l3_17",
+      "prompt": "At what approximate temperature does the decomposition pressure of NH4Cl reach 1 atmosphere (the sublimation point)?",
+      "options": [
+        "Approximately 338 \u00b0C (611 K).",
+        "Approximately 100 \u00b0C (373 K).",
+        "Approximately 25 \u00b0C (298 K).",
+        "Approximately 1200 \u00b0C (1473 K)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ammonium chloride sublimes / dissociates with 1 atm decomposition pressure at ~338 \u00b0C."
+    },
+    {
+      "id": "lab05_l3_18",
+      "prompt": "Why does heating NH4Cl in a damp test tube produce choking acidic fumes at the mouth before any basic fumes?",
+      "options": [
+        "Ammonia is extremely soluble in water droplets (forming NH4OH), allowing less soluble HCl gas to escape first.",
+        "Water decomposes ammonia gas into nitrogen metal on contact.",
+        "Hydrochloric acid boils at lower temperature than ammonia gas.",
+        "Dampness converts ammonium chloride into sulfuric acid."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH3 dissolves much more readily in condensed water droplets, temporarily scrubbing NH3 and allowing HCl to exit first."
+    },
+    {
+      "id": "lab05_l3_19",
+      "prompt": "What analytical technique confirms the 1:1 stoichiometry of the gases without using indicator paper?",
+      "options": [
+        "Passing the product gases through a calibrated mass spectrometer or gas chromatography column.",
+        "Measuring the boiling point of the solid residue in a crucible.",
+        "Observing the brightness of the Bunsen burner flame.",
+        "Measuring the gravitational attraction of the test tube."
+      ],
+      "correctIndex": 0,
+      "explanation": "Gas chromatography or mass spectrometry quantitatively measures the exact 1:1 molar ratio of NH3 to HCl."
+    },
+    {
+      "id": "lab05_l3_20",
+      "prompt": "How does the reversible reaction of NH4Cl demonstrate the dynamic nature of chemical equilibrium?",
+      "options": [
+        "Isotopic labeling (e.g. using 15N) proves that molecules continuously exchange between solid and gas phases at equilibrium.",
+        "The solid crystals change color from white to yellow every ten seconds.",
+        "The temperature of the system oscillates continuously between hot and cold.",
+        "The mass of the container increases and decreases in waves."
+      ],
+      "correctIndex": 0,
+      "explanation": "Isotopic labeling shows atoms continuously cross phase boundaries even when net concentrations are static."
+    }
+  ],
+  "level4": [
+    {
+      "id": "lab05_l4_01",
+      "prompt": "Given Delta H = +176 kJ/mol and Delta S = +284 J/(mol.K) for NH4Cl(s) \u21cc NH3(g) + HCl(g), calculate the equilibrium temperature where Delta G = 0.",
+      "options": [
+        "T = 620 K (approximately 347 \u00b0C).",
+        "T = 373 K (approximately 100 \u00b0C).",
+        "T = 298 K (approximately 25 \u00b0C).",
+        "T = 850 K (approximately 577 \u00b0C)."
+      ],
+      "correctIndex": 0,
+      "explanation": "T = Delta H / Delta S = 176,000 J/mol / 284 J/(mol.K) = 619.7 K ~ 620 K (347 \u00b0C)."
+    },
+    {
+      "id": "lab05_l4_02",
+      "prompt": "Calculate the equilibrium constant Kp at 400 \u00b0C (673 K) given Delta G at 673 K is -15.1 kJ/mol (R = 8.314 J/(mol.K)).",
+      "options": [
+        "Kp = 15.0 atm2",
+        "Kp = 0.050 atm2",
+        "Kp = 1.00 atm2",
+        "Kp = 150 atm2"
+      ],
+      "correctIndex": 0,
+      "explanation": "ln(Kp) = -Delta G / (R * T) = -(-15,100) / (8.314 * 673) = 15,100 / 5595 = 2.699. Kp = e^2.699 ~ 14.86 ~ 15.0 atm2."
+    },
+    {
+      "id": "lab05_l4_03",
+      "prompt": "Why does the van 't Hoff equation predict that ln(Kp) vs 1/T yields a straight line with slope -Delta H / R for this reaction?",
+      "options": [
+        "d(ln Kp)/dT = Delta H / (R*T^2); integrating assuming constant Delta H gives ln(Kp) = -Delta H/(R*T) + C.",
+        "Temperature increases gas pressure in direct linear proportion to molar mass.",
+        "The van 't Hoff equation assumes the reaction is irreversible at all temperatures.",
+        "The slope represents the speed of sound in the product gas mixture."
+      ],
+      "correctIndex": 0,
+      "explanation": "Standard van 't Hoff relation: ln(Kp) = -Delta H / (R * T) + Delta S / R; slope is -Delta H / R."
+    },
+    {
+      "id": "lab05_l4_04",
+      "prompt": "In an industrial sublimation condenser for NH4Cl, why must temperature be maintained strictly between 200 \u00b0C and 280 \u00b0C?",
+      "options": [
+        "To ensure rapid crystal deposition while preventing moisture condensation that would dissolve the salt.",
+        "To prevent nitrogen atoms from undergoing radioactive beta decay.",
+        "Because glass condensers melt into liquid at temperatures below 200 \u00b0C.",
+        "To ensure the product forms as pure molten liquid rather than solid."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cooling below 100 \u00b0C condenses water, creating corrosive hydrochloric acid slurry; 200\u2013280 \u00b0C deposits dry, pure crystals."
+    },
+    {
+      "id": "lab05_l4_05",
+      "prompt": "How does the bond enthalpy of the ionic lattice compare to the bond dissociation energy of the N-H bond during decomposition?",
+      "options": [
+        "Lattice energy and proton transfer energy (~176 kJ/mol) are much lower than covalent N-H cleavage (~391 kJ/mol), preserving NH3 intact.",
+        "The covalent N-H bonds break completely into individual free nitrogen atoms.",
+        "The ionic lattice is indestructible and never breaks at any temperature.",
+        "Covalent bonds require zero energy to dissociate in the gas phase."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thermal decomposition transfers a proton from NH4+ to Cl-; it does not fragment NH3 into atoms (preserving covalent bonds)."
+    },
+    {
+      "id": "lab05_l4_06",
+      "prompt": "What microscopic kinetic mechanism explains why NH3 and HCl recombine so rapidly on cool surfaces?",
+      "options": [
+        "Strong dipole-dipole attractions and hydrogen bonding align molecules into an activated complex with low activation energy.",
+        "Molecules must be heated to millions of degrees before collisions can occur.",
+        "Recombination requires a nuclear collision between nitrogen and chlorine nuclei.",
+        "The cool surface removes all valence electrons from the gas molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "The reverse reaction between basic NH3 and acidic HCl has very low activation energy (gas-phase acid-base neutralization)."
+    },
+    {
+      "id": "lab05_l4_07",
+      "prompt": "Why does pure dry NH4Cl fail to dissociate at 340 \u00b0C if traces of water vapor are rigorously excluded (Baker's dry gas phenomenon)?",
+      "options": [
+        "Trace water acts as an essential catalyst for proton transfer between NH4+ and Cl- ions.",
+        "Water molecules provide mass to the container that pushes atoms apart.",
+        "Dry ammonium chloride transforms into pure diamond in the absence of moisture.",
+        "Water absorbs cosmic radiation that would otherwise prevent bond breaking."
+      ],
+      "correctIndex": 0,
+      "explanation": "H.B. Baker demonstrated that intensively dried NH4Cl does not dissociate; trace water facilitates proton transfer."
+    },
+    {
+      "id": "lab05_l4_08",
+      "prompt": "Calculate the density of the equilibrium gas mixture (NH3 + HCl) at 400 \u00b0C and 1.0 atm (R = 0.0821 L.atm/(mol.K)).",
+      "options": [
+        "0.484 g/L",
+        "1.25 g/L",
+        "2.10 g/L",
+        "0.150 g/L"
+      ],
+      "correctIndex": 0,
+      "explanation": "Average molar mass = (17.0 + 36.5) / 2 = 26.75 g/mol. Density = (P * M) / (R * T) = (1.0 * 26.75) / (0.0821 * 673) = 0.484 g/L."
+    },
+    {
+      "id": "lab05_l4_09",
+      "prompt": "Why does the presence of an inert gas like Argon at constant volume NOT affect the equilibrium position of NH4Cl \u21cc NH3 + HCl?",
+      "options": [
+        "Argon does not alter the partial pressures of NH3 or HCl, leaving Kp unaffected at constant volume.",
+        "Argon forms coordinate covalent bonds with solid ammonium chloride.",
+        "Argon converts ammonia gas into solid ammonium nitrate.",
+        "Argon absorbs all heat from the Bunsen burner flame instantly."
+      ],
+      "correctIndex": 0,
+      "explanation": "Kp depends on partial pressures; adding an inert gas at constant volume leaves partial pressures and equilibrium unchanged."
+    },
+    {
+      "id": "lab05_l4_10",
+      "prompt": "What happens to the equilibrium if Argon is added at CONSTANT TOTAL PRESSURE?",
+      "options": [
+        "Container volume expands, lowering partial pressures of NH3 and HCl; equilibrium shifts right to decompose more solid.",
+        "Equilibrium shifts left to form more solid ammonium chloride.",
+        "Equilibrium remains completely unchanged in every respect.",
+        "The temperature drops immediately to absolute zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "At constant total pressure, inert gas expands the volume, diluting reactants and shifting toward more gas moles (right)."
+    },
+    {
+      "id": "lab05_l4_11",
+      "prompt": "What spectroscopic method can monitor the real-time gas-phase concentrations of NH3 and HCl in a heated optical cell?",
+      "options": [
+        "Fourier Transform Infrared (FTIR) spectroscopy measuring distinct vibrational bands (NH3 at 950 cm-1, HCl at 2886 cm-1).",
+        "Gravimetric electronic balance measurements of the optical cell.",
+        "Paper chromatography dipping into the gaseous beam.",
+        "Magnetic resonance imaging of the laboratory bench."
+      ],
+      "correctIndex": 0,
+      "explanation": "FTIR detects distinct infrared absorption bands of NH3 (inversion/bending) and HCl (rotational-vibrational P and R branches)."
+    },
+    {
+      "id": "lab05_l4_12",
+      "prompt": "How does the rotational-vibrational spectrum of HCl gas confirm that chlorine exists as two isotopes (35Cl and 37Cl)?",
+      "options": [
+        "Each absorption line is split into a doublet with 3:1 intensity ratio reflecting isotopic abundance and reduced mass.",
+        "The spectrum displays bright green visible light emitted by chlorine-35.",
+        "Chlorine-37 does not absorb any infrared radiation.",
+        "The spectrum shows only a single broad featureless blob."
+      ],
+      "correctIndex": 0,
+      "explanation": "Difference in reduced mass splits HCl rotational-vibrational lines into doublets with ~3:1 intensity (75% 35Cl, 25% 37Cl)."
+    },
+    {
+      "id": "lab05_l4_13",
+      "prompt": "Why is the reaction NH4Cl(s) \u21cc NH3(g) + HCl(g) classified as monovariant according to the Gibbs Phase Rule (F = C - P + 2)?",
+      "options": [
+        "C = 1 (single component, since gases are in stoichiometric 1:1 ratio), P = 2 (solid + gas); F = 1 - 2 + 2 = 1 degree of freedom.",
+        "The reaction has four independent degrees of freedom.",
+        "The reaction has zero degrees of freedom and cannot occur.",
+        "The Phase Rule does not apply to chemical reactions."
+      ],
+      "correctIndex": 0,
+      "explanation": "Since P(NH3) = P(HCl), specifying temperature completely fixes equilibrium pressure (F = 1, monovariant)."
+    },
+    {
+      "id": "lab05_l4_14",
+      "prompt": "What happens if non-stoichiometric amounts of NH3 and HCl are introduced over NH4Cl(s)?",
+      "options": [
+        "The system becomes bivariant (C = 2, P = 2; F = 2); temperature and one partial pressure can be varied independently.",
+        "The system explodes instantly from chemical imbalance.",
+        "The Gibbs Phase Rule is permanently violated.",
+        "The solid ammonium chloride turns into liquid water."
+      ],
+      "correctIndex": 0,
+      "explanation": "Without stoichiometric constraint, C = 2 (two independent chemical components), giving F = 2."
+    },
+    {
+      "id": "lab05_l4_15",
+      "prompt": "In thermochemical cycles, what is the lattice energy of NH4Cl(s) if Delta H(formation) = -314 kJ/mol, and gas-phase ion formation is +647 kJ/mol?",
+      "options": [
+        "Lattice enthalpy = -961 kJ/mol (highly stable ionic crystal).",
+        "Lattice enthalpy = +333 kJ/mol.",
+        "Lattice enthalpy = -150 kJ/mol.",
+        "Lattice enthalpy = -50 kJ/mol."
+      ],
+      "correctIndex": 0,
+      "explanation": "Born-Haber cycle calculation yields lattice enthalpy ~ -961 kJ/mol for NH4Cl(s)."
+    },
+    {
+      "id": "lab05_l4_16",
+      "prompt": "Why does ammonium bromide (NH4Br) decompose at a lower temperature (~452 \u00b0C) than ammonium fluoride (NH4F, decomposes at ~100 \u00b0C)?",
+      "options": [
+        "Fluoride is a stronger base than bromide, driving low-temperature proton abstraction: NH4F -> NH3 + HF.",
+        "Bromine is a lighter element than fluorine and floats away.",
+        "Ammonium bromide contains covalent bonds that never break.",
+        "Fluoride ions cannot form crystal lattices with ammonium."
+      ],
+      "correctIndex": 0,
+      "explanation": "Strong basicity of F- promotes low-temperature proton transfer; NH4F decomposes readily compared to heavier halides."
+    },
+    {
+      "id": "lab05_l4_17",
+      "prompt": "If 1.00 mol of NH4Cl is placed in an evacuated 10.0 L vessel at 600 K where Kp = 1.20 atm2, what fraction of NH4Cl decomposes?",
+      "options": [
+        "0.222 moles decompose (fraction = 0.222).",
+        "1.00 mole decomposes completely.",
+        "0.050 moles decompose.",
+        "0.500 moles decompose."
+      ],
+      "correctIndex": 0,
+      "explanation": "P(NH3) = sqrt(1.20) = 1.095 atm. n(NH3) = PV/RT = (1.095 * 10.0) / (0.0821 * 600) = 0.222 mol. Decomposed fraction = 0.222."
+    },
+    {
+      "id": "lab05_l4_18",
+      "prompt": "What experimental error causes the measured Kp of NH4Cl to be falsely elevated in an open-manometer apparatus?",
+      "options": [
+        "Diffusion of light NH3 gas out of the heated zone leaves excess HCl, creating non-equilibrium pressure readings.",
+        "The mercury in the manometer evaporates and condenses as gold.",
+        "Atmospheric oxygen reacts with the glass to produce extra gas moles.",
+        "The Bunsen burner generates gravitational waves that lift the manometer."
+      ],
+      "correctIndex": 0,
+      "explanation": "Differential effusion of NH3 shifts gas stoichiometry, skewing partial pressure measurements away from true equilibrium."
+    },
+    {
+      "id": "lab05_l4_19",
+      "prompt": "Why does the thermal decomposition of NH4Cl demonstrate Le Chatelier's principle more dramatically than the Haber process at school bench scale?",
+      "options": [
+        "It involves an easily observable phase change (solid to gas) with distinct colored litmus indicator verification at 1 atm.",
+        "The Haber process requires zero heat and zero pressure.",
+        "Ammonium chloride decomposition occurs at the speed of light.",
+        "The Haber process produces no measurable chemical change."
+      ],
+      "correctIndex": 0,
+      "explanation": "NH4Cl decomposition is visually clear (solid disappears and reappears) and operates at accessible ambient pressures."
+    },
+    {
+      "id": "lab05_l4_20",
+      "prompt": "What safety feature must be incorporated into industrial pipelines transporting gaseous NH3 and HCl mixtures?",
+      "options": [
+        "Heat-tracing to keep pipes above 340 \u00b0C, preventing deposition of solid NH4Cl that would clog valves and pipes.",
+        "Cooling jackets with liquid helium to freeze all gases instantly.",
+        "Magnetic rings to attract nitrogen atoms away from chlorine.",
+        "Plastic tubing that dissolves when exposed to acidic vapors."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pipelines must be heated above the dissociation temperature to prevent solid NH4Cl from choking the system."
+    }
+  ]
+}
