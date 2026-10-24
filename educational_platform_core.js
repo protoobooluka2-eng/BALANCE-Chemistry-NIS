@@ -344,7 +344,14 @@ window.EducationalPlatformCore = (function() {
     document.body.appendChild(overlay);
 
     overlay.querySelector('#exploreAgainBtn').onclick = () => {
+      processedCompletionEvents.clear();
       transitionTo(LearningStage.EXPERIMENT);
+      try {
+        const frame = document.querySelector('.lab-frame.active') || document.querySelector('#frame-' + currentLabId);
+        if (frame && frame.contentWindow && typeof frame.contentWindow.balanceLabReset === 'function') {
+          frame.contentWindow.balanceLabReset();
+        }
+      } catch (_) {}
     };
 
     overlay.querySelector('#startAssessmentBtn').onclick = () => {
@@ -2316,6 +2323,7 @@ window.EducationalPlatformCore = (function() {
     getStage: function() { return currentStage; },
     transitionTo: transitionTo,
     resetToExperiment: function(labId) {
+      processedCompletionEvents.clear();
       if (labId !== undefined && labId !== null) {
         if (typeof labId === 'number') {
           currentLabId = labId < 10 ? `lab0${labId}` : `lab${labId}`;
@@ -2326,6 +2334,12 @@ window.EducationalPlatformCore = (function() {
       }
       FlowLogger.log('FLOW', `${currentLabId.toUpperCase()} opened`);
       transitionTo(LearningStage.EXPERIMENT);
+      try {
+        const frame = document.querySelector('.lab-frame.active') || document.querySelector('#frame-' + currentLabId);
+        if (frame && frame.contentWindow && typeof frame.contentWindow.balanceLabReset === 'function') {
+          frame.contentWindow.balanceLabReset();
+        }
+      } catch (_) {}
     },
     setCurrentLab: function(labId) {
       if (typeof labId === 'number') {
