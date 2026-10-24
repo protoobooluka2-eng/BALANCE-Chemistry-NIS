@@ -1016,7 +1016,7 @@ class HybridNarrationOrchestrator {
   startNarration(labIdx) {
     this.interruptCurrentAudio('user_started');
     this.narratorEnabled = true;
-    activeSpeech = true;
+    try { activeSpeech = true; } catch(_) {} if (typeof window !== 'undefined') window._activeSpeech = true;
     this.activeLab = labIdx;
     this.completedClips.clear();
     this.hadMistake = false;
@@ -1031,7 +1031,8 @@ class HybridNarrationOrchestrator {
 
     const statusEl = el('narrationStatus');
     if (statusEl) {
-      statusEl.textContent = `Teacher introducing: ${LABS[labIdx]?.name || 'Investigation'}`;
+      const _labs = (typeof LABS !== 'undefined' ? LABS : null) || window.LABS || [];
+      statusEl.textContent = `Teacher introducing: ${_labs[labIdx]?.name || 'Investigation'}`;
     }
 
     this.playCachedClip(
@@ -1081,7 +1082,7 @@ class HybridNarrationOrchestrator {
   stopNarration() {
     this.interruptCurrentAudio('user_stopped');
     this.narratorEnabled = false;
-    activeSpeech = false;
+    try { activeSpeech = false; } catch(_) {} if (typeof window !== 'undefined') window._activeSpeech = false;
     this.transitionState(TutorState.DISABLED);
   }
 
@@ -1089,7 +1090,8 @@ class HybridNarrationOrchestrator {
     if (this.narratorEnabled) {
       this.stopNarration();
     } else {
-      this.startNarration(activeLab);
+      const _activeLab = (typeof activeLab !== 'undefined' ? activeLab : null) ?? window.activeLab ?? this.activeLab ?? 0;
+      this.startNarration(_activeLab);
     }
   }
 
@@ -1153,7 +1155,8 @@ function stopSpeaking(fullDeactivate = true) {
 }
 
 function startNarration() {
-  narratorController.startNarration(activeLab);
+  const _activeLab = (typeof activeLab !== 'undefined' ? activeLab : null) ?? window.activeLab ?? 0;
+  narratorController.startNarration(_activeLab);
 }
 
 function toggleNarration() {
