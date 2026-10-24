@@ -372,6 +372,10 @@ window.EducationalPlatformCore = (function() {
   }
 
   function showCompletionPanel(verified = true) {
+    // Lazy-create overlays if init() hasn't run yet (e.g., Finish Experiment clicked before EPC.init)
+    setupCompletionPanel();
+    setupAssessmentModal();
+
     // Prevent duplicate popups if already visible or in assessment
     if (currentStage === LearningStage.READY_FOR_ASSESSMENT && !document.getElementById('completionOverlay')?.classList.contains('hidden')) {
       return;

@@ -1128,8 +1128,20 @@ NEXT-ACTION PLAYBACK RESULT: ${d.nextActionReady || 'READY'}`,
 
 // -------------------------------------------------------------
 // Global Instance & Backward-Compatible Integration Functions
+// Auto-detect school from page URL or window context
 // -------------------------------------------------------------
-const narratorController = new HybridNarrationOrchestrator('NIS');
+(function() {
+  const href = window.location.href + ' ' + (document.title || '');
+  let schoolId = 'NIS'; // safe default
+  if (/BISC/i.test(href)) schoolId = 'BISC';
+  else if (/GPIS/i.test(href)) schoolId = 'GPIS';
+  else if (/BHS/i.test(href)) schoolId = 'BHS';
+  else if (/NIS/i.test(href)) schoolId = 'NIS';
+  // Allow override from window.SCHOOL_ID set before this script loads
+  if (window.SCHOOL_ID) schoolId = window.SCHOOL_ID;
+  window._detectedSchoolId = schoolId;
+})();
+const narratorController = new HybridNarrationOrchestrator(window._detectedSchoolId || 'NIS');
 narratorController.init();
 
 function stopSpeaking(fullDeactivate = true) {
