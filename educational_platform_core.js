@@ -466,7 +466,7 @@ window.EducationalPlatformCore = (function() {
         throw new Error("Backend offline");
       }
     } catch (_) {
-      generateLocalAssessment();
+      await generateLocalAssessment();
     }
 
     transitionTo(LearningStage.ASSESSMENT_ACTIVE);
@@ -537,7 +537,7 @@ window.EducationalPlatformCore = (function() {
     card.innerHTML = `
       <div class="asmt-header">
         <div>
-          <div class="asmt-course-title">BALANCE / LABORATORY 01</div>
+          <div class="asmt-course-title">BALANCE / LABORATORY ${currentLabId.replace('lab', '').replace(/^0/, '').padStart(2, '0').toUpperCase()}</div>
           <div class="asmt-level-title">Level ${q.level} — ${levelNames[q.level - 1]}</div>
         </div>
         <div class="asmt-progress-box">
