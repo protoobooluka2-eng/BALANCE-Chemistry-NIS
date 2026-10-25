@@ -228,12 +228,19 @@ function showRole(r){
     // Asynchronously load classes for this school
     setTimeout(async ()=>{
       try {
-        const cRes = await fetch('/api/educational/classes?schoolId=NIS');
+        const DEMO_CLASSES_FALLBACK=[{"id": "NIS_MYP4A_2026", "class_name": "MYP 4A", "grade_level": "Year 10"},{"id": "NIS_MYP4B_2026", "class_name": "MYP 4B", "grade_level": "Year 10"},{"id": "NIS_MYP5A_2026", "class_name": "MYP 5A", "grade_level": "Year 11"},{"id": "NIS_MYP5B_2026", "class_name": "MYP 5B", "grade_level": "Year 11"}];
+        const DEMO_STUDENTS_FALLBACK=[{"id": "demo_1", "name": "Mariam Adel", "id_code": "NIS-001"},{"id": "demo_2", "name": "Youssef Samir", "id_code": "NIS-002"},{"id": "demo_3", "name": "Hana Rashid", "id_code": "NIS-003"},{"id": "demo_4", "name": "Karim Nour", "id_code": "NIS-004"},{"id": "demo_5", "name": "Salma Wael", "id_code": "NIS-005"}];
+        // Helper: populate class select
+        const fillClasses=(cls)=>{
+          cSel.innerHTML='<option value="">Select your child\'s class</option>'+
+            cls.map(c=>`<option value="${c.id}">${c.grade_level?c.grade_level+' — ':''}${c.class_name}</option>`).join('');
+        };
+                const cRes = await fetch('/api/educational/classes?schoolId=NIS');
         const classes = cRes.ok ? await cRes.json() : [];
         const cSel = el('parentClassSelect');
         if (cSel) {
           if (classes.length === 0) {
-            cSel.innerHTML = '<option value="">No classes registered</option>';
+            fillClasses(DEMO_CLASSES_FALLBACK);
           } else {
             cSel.innerHTML = '<option value="">Select your child\'s class</option>' + 
               classes.map(c => `<option value="${c.id}">${c.grade_level ? c.grade_level + ' — ' : ''}${c.class_name}</option>`).join('');
@@ -253,14 +260,18 @@ function showRole(r){
               const sRes = await fetch(`/api/educational/class-students?classId=${encodeURIComponent(classId)}&schoolId=NIS`);
               const students = sRes.ok ? await sRes.json() : [];
               if (students.length === 0) {
-                sSel.innerHTML = '<option value="">No students in this class</option>';
+                sSel.innerHTML='<option value="">Select student (demo)...</option>'+
+                DEMO_STUDENTS_FALLBACK.map(s=>`<option value="${s.id}" data-id-code="${s.id_code}" data-name="${s.name}">${s.name} — ${s.id_code} (Demo)</option>`).join('');
+              sSel.disabled=false;
               } else {
                 sSel.innerHTML = '<option value="">Select student...</option>' + 
                   students.map(s => `<option value="${s.id}" data-id-code="${s.student_id_code}" data-name="${s.name}" data-class="${s.class_name || ''}">${s.name} — ${s.student_id_code}${s.record_type === 'MOCK' ? ' (Demo)' : ''}</option>`).join('');
                 sSel.disabled = false;
               }
             } catch (_) {
-              sSel.innerHTML = '<option value="">Failed loading roster</option>';
+              sSel.innerHTML='<option value="">Select student (demo)...</option>'+
+              DEMO_STUDENTS_FALLBACK.map(s=>`<option value="${s.id}" data-id-code="${s.id_code}" data-name="${s.name}">${s.name} — ${s.id_code} (Demo)</option>`).join('');
+              sSel.disabled=false;
             }
           };
         }
