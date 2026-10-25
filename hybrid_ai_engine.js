@@ -188,23 +188,54 @@ class ScientificStateEngine {
           state.complexState = 'pink_hydrated';
           state.pinkObserved = true;
           state.equilibriumShift = 'left_exothermic';
-        } else {
+        } else if (event.reagent === 'chloride' || event.shift === 'blue') {
           state.complexState = 'blue_chloride';
           state.blueObserved = true;
           state.equilibriumShift = 'right_endothermic';
+        } else {
+          state.complexState = 'unspecified';
         }
       }
     } else if (lab === 'lab08') {
-      if (id === 'bath_applied') state.temperatureBath = event.bath || 'cold';
-      if (id === 'temp_slider_changed') {
-        state.temperatureC = event.value || 25;
-        state.dominantGas = state.temperatureC > 45 ? 'brown_no2' : (state.temperatureC < 20 ? 'colourless_n2o4' : 'equimolar');
+      if (id === 'bath_applied') {
+        if (event.bath === 'hot') {
+          state.temperatureBath = 'hot';
+          state.dominantGas = 'brown_no2';
+        } else if (event.bath === 'cold') {
+          state.temperatureBath = 'cold';
+          state.dominantGas = 'colourless_n2o4';
+        } else {
+          state.temperatureBath = 'unspecified';
+        }
+      }
+      if (id === 'temp_slider_changed' && typeof event.value === 'number') {
+        const prevTemp = state.temperatureC;
+        state.temperatureC = event.value;
+        if (typeof prevTemp === 'number') {
+          if (event.value > prevTemp + 1) state.tempDirection = 'heating';
+          else if (event.value < prevTemp - 1) state.tempDirection = 'cooling';
+        }
       }
       if (id === 'micro_entered') state.microActive = true;
     } else if (lab === 'lab09') {
-      if (id === 'catalyst_toggled') state.catalystActive = true;
-      if (id === 'pressure_slider_changed') state.pressureAtm = event.value || 100;
-      if (id === 'temperature_slider_changed') state.temperatureC = event.value || 300;
+      if (id === 'catalyst_toggled') {
+        if (event.value === 1 || event.value === true) {
+          state.catalystActive = true;
+        } else if (event.value === 0 || event.value === false) {
+          state.catalystActive = false;
+        }
+      }
+      if (id === 'pressure_slider_changed' && typeof event.value === 'number') {
+        state.pressureAtm = event.value;
+      }
+      if (id === 'temperature_slider_changed' && typeof event.value === 'number') {
+        const prevTemp = state.temperatureC;
+        state.temperatureC = event.value;
+        if (typeof prevTemp === 'number') {
+          if (event.value > prevTemp + 5) state.tempDirection = 'heating';
+          else if (event.value < prevTemp - 5) state.tempDirection = 'cooling';
+        }
+      }
       if (id === 'optimal_conditions_reached') state.optimalReached = true;
     }
 
@@ -370,9 +401,21 @@ class HybridNarrationOrchestrator {
     this.completedClips = new Set();
     this.hadMistake = false;
 
+    // Clip repeat prevention: cooldown (ms) per clipKey + per-session play count for rotation
+    this.clipCooldowns = new Map();   // clipKey → timestamp of last play
+    this.clipPlayCount = new Map();   // clipKey → number of times played this lab session
+    this.REPEAT_COOLDOWN_MS = 18000; // 18 s before same allowRepeat clip can fire again
+
     // Subsystems
     this.stateEngine = new ScientificStateEngine();
     this.provider = new GeminiLiveAdapter(schoolId);
+
+    // ── Pre-Generated Audio Library (Smart Narration) ──────────
+    // Handles all experiment narration from pre-generated Sulafat clips.
+    // Real-time Gemini TTS is ONLY used by Ask AI Teacher.
+    this.smartNarration = (typeof SmartNarrationController !== 'undefined')
+      ? new SmartNarrationController(this)
+      : null;
 
     // Rate limiting & batching
     this.actionBatchTimer = null;
@@ -386,6 +429,12 @@ class HybridNarrationOrchestrator {
 
   async init() {
     await this.provider.connect({ role: 'student', ageGroup: 'under_18' });
+    // Load the pre-generated narration library
+    if (this.smartNarration) {
+      const backendUrl = this.provider.backendUrl || window.location.origin;
+      await this.smartNarration.init(backendUrl);
+      console.log('[HybridNarrationOrchestrator] SmartNarrationController ready');
+    }
   }
 
   transitionState(newState) {
@@ -547,6 +596,10 @@ class HybridNarrationOrchestrator {
     // Route A: Predictable milestones & actions (High performance cached neural library)
     const cachedMapping = this.resolveAdaptiveNarration(event, wasAggregated);
     if (cachedMapping) {
+      // If the cached mapping requests dynamic TTS, route through DYNAMIC_TTS
+      if (cachedMapping.dynamic) {
+        return { route: 'DYNAMIC_TTS', actionId: id, labId: lab, labState };
+      }
       return { route: 'CACHED', mapping: cachedMapping };
     }
 
@@ -580,67 +633,62 @@ class HybridNarrationOrchestrator {
       if (lab === 'lab03' && id === 'equation_balanced') {
         return { clipKey: 'fast_balance_micro', statusText: 'Equation balanced rapidly! Viewing molecular model' };
       }
-      if (id === 'temp_slider_changed' || id === 'temperature_slider_changed' || id === 'burner_temp_changed') {
-        return { clipKey: 'fast_temp_changed', statusText: 'Rapid temperature adjustment detected' };
-      }
     }
 
-    // LAB 01
+    // LAB 01 — key scientific events use dynamic contextual narration
     if (lab === 'lab01') {
       if (id === 'crystal_drag_start') return { clipKey: 'lab01_incomplete_drag', statusText: 'Moving salt crystal to beaker' };
       if (id === 'crystal_drop_failed') return { clipKey: 'general_drop_outside', statusText: 'Crystal released outside beaker', allowRepeat: true };
-      if (id === 'crystal_dropped') return { clipKey: 'lab01_success_crystal_in_water', statusText: 'Salt crystal dropped into water' };
-      if (id === 'dissolving_started') return { clipKey: 'lab01_dissolve', statusText: 'Observing salt crystal dissolving' };
-      if (id === 'micro_entered') return { clipKey: 'lab01_micro', statusText: 'Exploring ions at particle level' };
-      if (id === 'ion_tap_na') return { clipKey: 'lab01_ion_na', statusText: 'Sodium ion hydration shell', allowRepeat: true };
-      if (id === 'ion_tap_cl') return { clipKey: 'lab01_ion_cl', statusText: 'Chloride ion hydration shell', allowRepeat: true };
+      if (id === 'crystal_dropped') return { dynamic: true }; // contextual: lattice starts breaking down
+      if (id === 'dissolving_started') return { dynamic: true }; // contextual: water pulling Na+ and Cl- away
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: describe ions + hydration shells visible
+      if (id === 'ion_tap_na') return { dynamic: true }; // contextual: Na+ hydration shell explanation
+      if (id === 'ion_tap_cl') return { dynamic: true }; // contextual: Cl- hydration shell explanation
       if (id === 'quiz_incorrect') return { clipKey: 'lab01_wrong_answer', statusText: 'Explaining particle conservation', allowRepeat: true };
       if (id === 'quiz_correct') return { clipKey: 'lab01_complete', statusText: 'Investigation completed — mass is conserved' };
     }
-    // LAB 02
+    // LAB 02 — dynamic narration for all chemical test events
     if (lab === 'lab02') {
       if (id === 'pipette_drag_start') return { clipKey: 'general_pickup_pipette', statusText: 'Pipette selected' };
       if (id === 'pipette_drop_failed') return { clipKey: 'lab02_drop_outside', statusText: 'Pipette dropped outside tubes', allowRepeat: true };
-      if (id === 'pipette_dispensed') return { clipKey: 'lab02_success_reagent_added', statusText: 'Sodium hydroxide added' };
-      if (id === 'precipitate_copper') return { clipKey: 'lab02_cu', statusText: 'Light blue copper(II) hydroxide precipitate' };
-      if (id === 'precipitate_iron_2') return { clipKey: 'lab02_fe2', statusText: 'Green iron(II) hydroxide precipitate' };
-      if (id === 'precipitate_iron_3') return { clipKey: 'lab02_fe3', statusText: 'Rust-brown iron(III) hydroxide precipitate' };
-      if (id === 'all_tubes_tested') return { clipKey: 'lab02_complete', statusText: 'All metal ions identified!' };
+      if (id === 'pipette_dispensed') return { dynamic: true }; // contextual: which tube, colour change
+      if (id === 'precipitate_copper') return { dynamic: true }; // contextual: blue Cu(OH)2 formed
+      if (id === 'precipitate_iron_2') return { dynamic: true }; // contextual: green Fe(OH)2
+      if (id === 'precipitate_iron_3') return { dynamic: true }; // contextual: rust-brown Fe(OH)3
+      if (id === 'excess_reagent_added' || id === 'excessBtn') return { dynamic: true }; // contextual: excess ammonia test
+      if (id === 'all_tubes_tested') return { dynamic: true }; // contextual: all three ions identified
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: precipitate particles
     }
     // LAB 03
     if (lab === 'lab03') {
       if (id === 'tile_drag_start') return { clipKey: 'lab03_pickup_tile', statusText: 'Formula tile selected' };
       if (id === 'tile_wrong_side') return { clipKey: 'lab03_wrong_side', statusText: 'Formula placed on wrong side', allowRepeat: true };
-      if (id === 'tile_dropped') return { clipKey: 'lab03_success_tile_added', statusText: 'Formula tile placed' };
-      if (id === 'coefficient_increased' || id === 'coefficient_decreased') {
-        return { clipKey: 'lab03_adjust', statusText: `Adjusting coefficient for ${event.target || 'species'}`, allowRepeat: true };
-      }
-      if (id === 'equation_balanced') return { clipKey: 'lab03_balanced', statusText: 'Chemical equation balanced!' };
-      if (id === 'equation_unbalanced') return { clipKey: 'lab03_unbalanced', statusText: 'Equation unbalanced — check atom counts' };
-      if (id === 'micro_entered') return { clipKey: 'lab03_micro', statusText: 'Viewing balanced molecular model' };
+      if (id === 'tile_dropped') return { dynamic: true }; // contextual: correct/incorrect + atom count state
+      if (id === 'coefficient_increased' || id === 'coefficient_decreased') return { dynamic: true }; // contextual: atom count feedback
+      if (id === 'equation_balanced') return { dynamic: true }; // contextual: congratulate + invite micro
+      if (id === 'equation_unbalanced') return { dynamic: true }; // contextual: hint about which side
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: Fe+O molecular model
     }
     // LAB 04
     if (lab === 'lab04') {
       if (id === 'tool_drag_start') return { clipKey: 'general_pickup_tool', statusText: 'Equipment selected' };
-      if (id === 'ammonia_added') {
-        if (event.value < 50) return { clipKey: 'lab04_incomplete_neutralize', statusText: 'Adding ammonia to neutralize nitric acid' };
-        return { clipKey: 'lab04_success_neutralized', statusText: 'Neutralization complete' };
-      }
-      if (id === 'neutralization_complete') return { clipKey: 'lab04_success_neutralized', statusText: 'Neutralization complete — ready to concentrate' };
+      if (id === 'ammonia_added') return { dynamic: true }; // contextual: neutralisation progress
+      if (id === 'neutralization_complete') return { dynamic: true }; // contextual: (NH4)2SO4 formed
       if (id === 'temp_slider_changed') return { clipKey: 'lab04_heat', statusText: 'Evaporating water to concentrate solution' };
-      if (id === 'crystals_formed') return { clipKey: 'lab04_crystals', statusText: 'Ammonium nitrate fertilizer crystals formed!' };
-      if (id === 'micro_entered') return { clipKey: 'lab04_crystals', statusText: 'Viewing crystal lattice' };
+      if (id === 'crystals_formed') return { dynamic: true }; // contextual: ionic lattice forming
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: NH4+ and SO4(2-) ionic lattice
     }
     // LAB 05
     if (lab === 'lab05') {
       if (id === 'collar_drag_start') return { clipKey: 'lab05_pickup_collar', statusText: 'Cooling collar selected' };
       if (id === 'collar_drop_failed') return { clipKey: 'general_drop_outside', statusText: 'Collar dropped outside tube', allowRepeat: true };
-      if (id === 'collar_attached') return { clipKey: 'lab05_success_collar_attached', statusText: 'Cooling collar attached to tube' };
+      if (id === 'collar_attached') return { dynamic: true }; // contextual: explain reversibility demonstration
       if (id === 'burner_temp_changed') return { clipKey: 'lab05_heat', statusText: 'Heating ammonium chloride' };
-      if (id === 'decomposition_started') return { clipKey: 'lab05_success_decomposing', statusText: 'Thermal decomposition into NH₃ and HCl' };
-      if (id === 'recombination_solid_formed') return { clipKey: 'lab05_cool', statusText: 'Recombination into solid NH₄Cl in cool zone' };
-      if (id === 'micro_view_hot') return { clipKey: 'lab05_micro_hot', statusText: 'Hot zone: NH₃ + HCl gases' };
-      if (id === 'micro_view_cool') return { clipKey: 'lab05_micro_cool', statusText: 'Cool zone: solid NH₄Cl reforming' };
+      if (id === 'decomposition_started') return { dynamic: true }; // contextual: ionic bonds breaking into gases
+      if (id === 'recombination_solid_formed') return { dynamic: true }; // contextual: gases rejoining as solid
+      if (id === 'micro_view_hot') return { dynamic: true }; // contextual: NH3+HCl gas molecules in hot zone
+      if (id === 'micro_view_cool') return { dynamic: true }; // contextual: recombination in cool zone
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: dual-zone particle view
     }
     // LAB 06
     if (lab === 'lab06') {
@@ -650,54 +698,48 @@ class HybridNarrationOrchestrator {
         return { clipKey: 'general_pickup_pipette', statusText: 'Selecting reagent pipette' };
       }
       if (id === 'tool_drop_failed') return { clipKey: 'general_drop_outside', statusText: 'Reagent dropped outside tube', allowRepeat: true };
-      if (id === 'naoh_drop_added') return { clipKey: 'lab06_naoh', statusText: 'Adding sodium hydroxide to sample' };
+      if (id === 'naoh_drop_added') return { dynamic: true }; // contextual: OH- + NH4+ releasing ammonia
       if (id === 'heat_slider_changed') return { clipKey: 'lab06_02', statusText: 'Gentle heating to liberate ammonia gas' };
-      if (id === 'litmus_tested') return { clipKey: 'lab06_litmus_blue', statusText: 'Damp red litmus turns BLUE (alkaline ammonia)' };
-      if (id === 'hcl_tested') return { clipKey: 'lab06_hcl_fumes', statusText: 'White ammonium chloride smoke confirms NH₄⁺' };
+      if (id === 'litmus_tested') return { dynamic: true }; // contextual: blue litmus = alkaline NH3
+      if (id === 'hcl_tested') return { dynamic: true }; // contextual: white smoke NH4Cl confirmation
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: NH4+ reacting with OH-
     }
     // LAB 07
     if (lab === 'lab07') {
       if (id === 'reagent_drag_start') return { clipKey: 'lab07_pickup_reagent', statusText: 'Selecting equilibrium reagent' };
       if (id === 'reagent_drop_failed') return { clipKey: 'general_drop_outside', statusText: 'Reagent dropped outside beaker', allowRepeat: true };
-      if (id === 'reagent_added') {
-        if (event.reagent === 'water' || event.shift === 'pink') return { clipKey: 'lab07_water', statusText: 'Adding water: shift towards pink complex' };
-        if (event.reagent === 'chloride' || event.shift === 'blue') return { clipKey: 'lab07_chloride', statusText: 'Adding chloride: shift towards blue complex' };
-        return { clipKey: 'lab07_success_reagent', statusText: 'Equilibrium shifted by reagent' };
-      }
-      if (id === 'both_shifts_observed') return { clipKey: 'lab07_03', statusText: 'Reversible equilibrium demonstrated in both directions' };
-      if (id === 'micro_complex_pink') return { clipKey: 'lab07_cold', statusText: 'Cooling favours pink hydrated cobalt complex' };
-      if (id === 'micro_complex_blue') return { clipKey: 'lab07_hot', statusText: 'Heating favours blue tetrachloro cobalt complex' };
+      if (id === 'reagent_added') return { dynamic: true }; // contextual: Le Chatelier shift direction
+      if (id === 'both_shifts_observed') return { dynamic: true }; // contextual: reversibility proven
+      if (id === 'micro_complex_pink') return { dynamic: true }; // contextual: pink hydrated cobalt
+      if (id === 'micro_complex_blue') return { dynamic: true }; // contextual: blue tetrachloro cobalt
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: cobalt complex particles visible
     }
     // LAB 08
     if (lab === 'lab08') {
       if (id === 'bath_drag_start') return { clipKey: 'lab08_pickup_bath', statusText: 'Selecting temperature bath' };
       if (id === 'bath_drop_failed') return { clipKey: 'general_drop_outside', statusText: 'Bath dropped outside tube', allowRepeat: true };
-      if (id === 'bath_applied') {
-        if (event.bath === 'hot') return { clipKey: 'lab08_hot', statusText: 'Hot bath: shift towards brown NO₂ gas' };
-        if (event.bath === 'cold') return { clipKey: 'lab08_cold', statusText: 'Cold bath: shift towards colourless N₂O₄ gas' };
-        return { clipKey: 'lab08_exploration_bath', statusText: 'Temperature bath applied to gas syringe' };
-      }
-      if (id === 'temp_slider_changed') {
-        if (event.value > 45) return { clipKey: 'lab08_hot', statusText: `High temperature (${event.value}°C): dark brown NO₂ gas` };
-        if (event.value < 20) return { clipKey: 'lab08_cold', statusText: `Low temperature (${event.value}°C): colourless N₂O₄ gas` };
-        return { clipKey: 'lab08_success_temp', statusText: `Temperature set to ${event.value}°C` };
-      }
-      if (id === 'micro_entered') return { clipKey: 'lab08_micro', statusText: 'Observing NO₂ ⇌ N₂O₄ molecular equilibrium' };
+      if (id === 'bath_applied') return { dynamic: true }; // contextual: colour change expected + Le Chatelier
+      if (id === 'temp_slider_changed') return { dynamic: true }; // contextual: heating vs cooling shift
+      if (id === 'micro_entered') return { dynamic: true }; // contextual: NO2/N2O4 molecular equilibrium
     }
     // LAB 09
     if (lab === 'lab09') {
       if (id === 'catalyst_drag_start') return { clipKey: 'general_pickup_tool', statusText: 'Selecting iron catalyst cartridge' };
-      if (id === 'catalyst_toggled') return { clipKey: 'lab09_success_catalyst', statusText: 'Iron catalyst active: increases reaction rate' };
+      if (id === 'catalyst_toggled') return { dynamic: true }; // contextual: catalyst ON vs catalyst OFF
       if (id === 'pressure_slider_changed') {
         if (event.value >= 190) return { clipKey: 'lab09_success_pressure', statusText: `High pressure (${event.value} atm): increases ammonia yield` };
         return { clipKey: 'lab09_slider_pressure', statusText: `Operating pressure: ${event.value} atm` };
       }
-      if (id === 'temperature_slider_changed') return { clipKey: 'lab09_temp_tradeoff', statusText: `Temperature compromise: ${event.value}°C` };
+      if (id === 'temperature_slider_changed') return { dynamic: true }; // contextual: increasing vs decreasing trade-off
       if (id === 'optimal_conditions_reached') return { clipKey: 'lab09_optimal', statusText: 'Optimal Haber Process industrial balance!' };
       if (id === 'micro_tab_reactants' || id === 'micro_tab_products') return { clipKey: 'lab09_03', statusText: 'Viewing molecular equilibrium bonds' };
     }
 
     if (id === 'lab_reset' || id === 'equation_reset' || id === 'step_undone') {
+      // On reset: clear completed clips so all narration can replay fresh
+      this.completedClips.clear();
+      this.clipCooldowns.clear();
+      this.clipPlayCount.clear();
       return { isSilent: true, statusText: 'Laboratory reset to initial conditions' };
     }
 
@@ -741,7 +783,7 @@ class HybridNarrationOrchestrator {
     const labIdx = parseInt(String(event.labId).replace('lab', ''), 10) - 1;
     if (labIdx !== this.activeLab) return;
 
-    // Continuous slider aggregation
+    // Continuous slider aggregation with 350ms debounce
     const isContinuous = event.actionId && (event.actionId.includes('slider') || event.actionId.includes('burner'));
     if (this.actionBatchTimer) {
       clearTimeout(this.actionBatchTimer);
@@ -753,14 +795,12 @@ class HybridNarrationOrchestrator {
       this.actionBatchTimer = setTimeout(() => {
         this.actionBatchTimer = null;
         const latest = this.recentActions.pop() || event;
-        const wasAggregated = this.recentActions.length > 0;
         this.recentActions = [];
-        this.processAction(latest, wasAggregated);
-      }, 70);
+        this.processAction(latest, false);
+      }, 350);
     } else {
-      const wasAggregated = this.recentActions.length > 0;
       this.recentActions = [];
-      this.processAction(event, wasAggregated);
+      this.processAction(event, false);
     }
   }
 
@@ -808,12 +848,55 @@ class HybridNarrationOrchestrator {
       return;
     }
 
-    // Case B: Route A — Cached Audio Clip
+    // Case B: Pre-Generated Library Clip (replaces real-time DYNAMIC_TTS)
+    // All experiment narration uses pre-generated Sulafat recordings.
+    // Real-time Gemini TTS is ONLY for Ask AI Teacher (/api/tutor/question).
+    if (decision.route === 'DYNAMIC_TTS') {
+      const actionId = decision.actionId;
+      const labId    = decision.labId;
+
+      if (this.smartNarration) {
+        // Route through pre-generated library — zero real-time API calls
+        const sessionToken = ++this.generation;
+        this.transitionState(TutorState.RESOLVING);
+        this.smartNarration.playLibraryClip(
+          labId, actionId, event, sessionToken, labNum, prevPlayback
+        ).then(handled => {
+          if (!handled && sessionToken === this.generation) {
+            // Library miss — show text from scripts if available
+            const vars = this.smartNarration.library.getVariations(
+              labId, this.smartNarration.library.normaliseEventId(actionId, event));
+            if (vars.length > 0) {
+              const statusEl = (typeof el === 'function') ? el('narrationStatus') : null;
+              if (statusEl) statusEl.textContent = `Miss Balance: ${vars[0].text.slice(0, 120)}`;
+            }
+            this.transitionState(TutorState.ACTIVE_IDLE);
+          }
+        });
+        return;
+      }
+
+      // Fallback: no SmartNarrationController — use real-time TTS (legacy)
+      const dynKey  = `dyn_${labId}_${actionId}`;
+      const lastDyn = this.clipCooldowns.get(dynKey) || 0;
+      if (Date.now() - lastDyn < 15000) { this.transitionState(TutorState.ACTIVE_IDLE); return; }
+      this.clipCooldowns.set(dynKey, Date.now());
+      this.interruptCurrentAudio('dynamic_narration');
+      const sessionToken = ++this.generation;
+      this.transitionState(TutorState.RESOLVING);
+      const labState = decision.labState && decision.labState.snapshot
+        ? decision.labState.snapshot
+        : this.stateEngine.getLabState(labId);
+      this.playDynamicNarration(labId, actionId, labState, sessionToken, labNum, prevPlayback);
+      return;
+    }
+
+    // Case C: Route A — Cached Audio Clip
     const mapping = decision.mapping;
     const clipKey = mapping.clipKey;
     const clipId = `${this.activeLab}_${clipKey}`;
 
-    // Deduplication check
+    // Deduplication check: once-per-session clips
     if (!mapping.allowRepeat && this.completedClips.has(clipId)) {
       if (this.currentAudio && !this.currentAudio.paused) {
         this.transitionState(TutorState.PLAYING_CACHED_AUDIO);
@@ -836,6 +919,16 @@ class HybridNarrationOrchestrator {
         nextActionReady: 'READY'
       });
       return;
+    }
+
+    // Cooldown check: allowRepeat clips must wait REPEAT_COOLDOWN_MS between plays
+    if (mapping.allowRepeat) {
+      const lastPlayed = this.clipCooldowns.get(clipKey) || 0;
+      const elapsed = Date.now() - lastPlayed;
+      if (elapsed < this.REPEAT_COOLDOWN_MS) {
+        this.transitionState(TutorState.ACTIVE_IDLE);
+        return; // Silent — avoid nagging the student with the same audio
+      }
     }
 
     // New explanation supersedes ongoing speech -> Sub-millisecond interruption
@@ -879,6 +972,11 @@ class HybridNarrationOrchestrator {
       () => {
         if (sessionToken === this.generation) {
           this.completedClips.add(clipId);
+          // Record cooldown timestamp for allowRepeat clips
+          if (mapping.allowRepeat) {
+            this.clipCooldowns.set(clipKey, Date.now());
+            this.clipPlayCount.set(clipKey, (this.clipPlayCount.get(clipKey) || 0) + 1);
+          }
           this.currentAudio = null;
           this.currentClipKey = null;
           this.transitionState(TutorState.ACTIVE_IDLE);
@@ -924,6 +1022,91 @@ class HybridNarrationOrchestrator {
     }, 50);
   }
 
+  // -------------------------------------------------------------------
+  // Dynamic TTS Narration — calls /api/narrate with live lab state
+  // Returns contextual Gemini Flash text synthesized as Sulafat audio
+  // -------------------------------------------------------------------
+  async playDynamicNarration(labId, actionId, labState, sessionToken, labNum, prevPlayback) {
+    if (!this.narratorEnabled || sessionToken !== this.generation) return;
+
+    const backendUrl = this.provider.backendUrl || window.location.origin;
+    const statusEl = typeof el === 'function' ? el('narrationStatus') : null;
+    if (statusEl) statusEl.textContent = `Teacher preparing contextual explanation...`;
+
+    try {
+      const resp = await fetch(`${backendUrl}/api/narrate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ labId, actionId, labState, context: '' })
+      });
+
+      // Stale token — a newer action superseded this one, discard silently
+      if (sessionToken !== this.generation) return;
+
+      if (!resp.ok) throw new Error(`/api/narrate HTTP ${resp.status}`);
+      const data = await resp.json();
+
+      // Stale token check after slow network
+      if (sessionToken !== this.generation) return;
+
+      // If TTS audio unavailable but text exists, show as text in the status bar
+      if (!data.audioUri || data.voiceFailed) {
+        if (data.text && statusEl) {
+          statusEl.textContent = `🟣 Miss Balance: ${data.text.slice(0, 160)} — [⚠️ Voice temporarily unavailable]`;
+          // Also populate the narration transcript if present
+          const descEl = typeof el === 'function' ? el('audioDescription') : null;
+          if (descEl) descEl.textContent = data.text;
+        }
+        this.transitionState(TutorState.ACTIVE_IDLE);
+        return;
+      }
+
+      // Play the returned Sulafat audio
+      const audio = new Audio(data.audioUri);
+      this.currentAudio = audio;
+      this.currentClipKey = `dyn_${actionId}`;
+
+      if (statusEl && data.text) statusEl.textContent = `Teacher: ${data.text.slice(0, 60)}...`;
+
+      audio.onplay = () => {
+        if (sessionToken === this.generation) {
+          this.transitionState(TutorState.PLAYING_CACHED_AUDIO);
+          this.logDiagnostic({
+            event: actionId, outcome: 'DYNAMIC_TTS', lab: labNum,
+            stateVersion: 1, enabled: this.narratorEnabled,
+            prevPlayback, cancelReason: 'none',
+            newAudio: `dyn_${actionId}`, loadingStatus: 'playing',
+            playbackResult: 'PLAYING_CACHED_AUDIO',
+            suppressionReason: 'none', recoveryResult: 'READY', nextActionReady: 'READY'
+          });
+        }
+      };
+      audio.onended = () => {
+        if (sessionToken === this.generation) {
+          this.currentAudio = null;
+          this.currentClipKey = null;
+          this.transitionState(TutorState.ACTIVE_IDLE);
+        }
+      };
+      audio.onerror = () => {
+        if (sessionToken === this.generation) {
+          this.currentAudio = null;
+          this.currentClipKey = null;
+          this.transitionState(TutorState.ACTIVE_IDLE);
+        }
+      };
+
+      audio.play().catch(() => {
+        if (sessionToken === this.generation) this.transitionState(TutorState.ACTIVE_IDLE);
+      });
+
+    } catch (err) {
+      console.warn(`[DYNAMIC_TTS] ${labId}/${actionId} error:`, err.message);
+      if (sessionToken === this.generation) this.transitionState(TutorState.ACTIVE_IDLE);
+    }
+  }
+
+
   async handleStudentQuestion(question) {
     if (!question || !question.trim()) return;
     this.interruptCurrentAudio('student_question');
@@ -944,7 +1127,7 @@ class HybridNarrationOrchestrator {
     }
 
     // Display in question drawer with provider information
-    displayTeacherAnswer(answerText, res.provider || 'Miss Balance (Google Gemini)', res.voice || 'Miss Balance (en-GB-LibbyNeural · Friendly Academic Voice)');
+    displayTeacherAnswer(answerText, res.provider || 'Miss Balance (Google Gemini)', res.voice || 'Miss Balance (Sulafat · Google Gemini TTS)');
 
     // Play real dynamic neural voice audio if returned from backend
     if (res.audioUri && typeof res.audioUri === 'string' && res.audioUri.startsWith('data:audio/')) {
@@ -957,9 +1140,7 @@ class HybridNarrationOrchestrator {
 
       audio.onplay = () => {
         if (token === this.generation) {
-          if (statusEl) {
-            statusEl.textContent = `Miss Balance speaking...`;
-          }
+          if (statusEl) statusEl.textContent = `🟣 Miss Balance speaking...`;
         }
       };
       audio.onended = () => {
@@ -980,30 +1161,19 @@ class HybridNarrationOrchestrator {
       try {
         await audio.play();
       } catch (err) {
-        // Autoplay policy fallback: use SpeechSynthesis if browser blocked Audio.play()
-        if ('speechSynthesis' in window && token === this.generation) {
-          window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(answerText);
-          utterance.lang = (res.voice && res.voice.startsWith('ar')) ? 'ar-SA' : 'en-GB';
-          utterance.rate = 0.95;
-          utterance.onend = () => {
-            if (token === this.generation) this.transitionState(TutorState.ACTIVE_IDLE);
-          };
-          window.speechSynthesis.speak(utterance);
-        } else {
-          this.transitionState(TutorState.ACTIVE_IDLE);
-        }
+        // Autoplay blocked — transition to idle (no Microsoft TTS fallback, keep Sulafat-only voice)
+        console.warn('[Miss Balance] Audio play blocked by browser policy:', err.message || err);
+        if (token === this.generation) this.transitionState(TutorState.ACTIVE_IDLE);
       }
-    } else if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(answerText);
-      utterance.lang = (res.voice && res.voice.startsWith('ar')) ? 'ar-SA' : 'en-GB';
-      utterance.rate = 0.95;
-      utterance.onend = () => {
-        this.transitionState(TutorState.ACTIVE_IDLE);
-      };
-      this.transitionState(TutorState.STREAMING_AI_AUDIO);
-      window.speechSynthesis.speak(utterance);
+    } else if (res.voiceFailed || !res.audioUri) {
+      // Gemini Sulafat voice quota exhausted — display answer as text clearly, no silent failure
+      if (statusEl) {
+        statusEl.textContent = `🟣 Miss Balance: ${answerText.slice(0, 140)} — [⚠️ Voice temporarily unavailable]`;
+      }
+      // Also show in the description area if available
+      const descEl = typeof el === 'function' ? el('audioDescription') : null;
+      if (descEl) descEl.textContent = answerText;
+      this.transitionState(TutorState.ACTIVE_IDLE);
     } else if (res.cachedAudioFallbackKey) {
       this.playCachedClip(res.cachedAudioFallbackKey, ++this.generation, () => {
         this.transitionState(TutorState.PLAYING_CACHED_AUDIO);
@@ -1024,56 +1194,66 @@ class HybridNarrationOrchestrator {
     this.transitionState(TutorState.RESOLVING);
 
     const labNum = String(labIdx + 1).padStart(2, '0');
-    const labId = 'lab' + labNum;
-    const introKey = `${labId}_intro`;
-    const token = ++this.generation;
-    this.currentClipKey = introKey;
+    const labId  = 'lab' + labNum;
+    const token  = ++this.generation;
 
-    const statusEl = el('narrationStatus');
+    const statusEl = (typeof el === 'function') ? el('narrationStatus') : document.getElementById('narrationStatus');
     if (statusEl) {
       const _labs = (typeof LABS !== 'undefined' ? LABS : null) || window.LABS || [];
-      statusEl.textContent = `Teacher introducing: ${_labs[labIdx]?.name || 'Investigation'}`;
+      statusEl.textContent = `Miss Balance introducing: ${_labs[labIdx]?.name || 'Investigation'}`;
     }
 
+    // Notify SmartNarrationController of lab change (resets shuffle-bags, starts preloading)
+    if (this.smartNarration) {
+      this.smartNarration.onLabChanged(labId);
+    }
+
+    // ── Play intro from pre-generated library ──────────────────
+    if (this.smartNarration && this.smartNarration.library.ready) {
+      const fakeIntroEvent = {
+        source: 'BALANCE_LAB', labId, actionId: 'lab_intro_loaded', outcome: 'SUCCESS'
+      };
+      this.smartNarration.playLibraryClip(
+        labId, 'lab_intro_loaded', fakeIntroEvent, token, labNum, 'DISABLED'
+      ).then(handled => {
+        if (!handled && token === this.generation) {
+          // Library not ready yet — fall through to legacy cached clip
+          this._playLegacyIntro(labId, labNum, token);
+        }
+      });
+      return;
+    }
+
+    // ── Legacy fallback: old cached clips (labXX_intro / labXX_01) ──
+    this._playLegacyIntro(labId, labNum, token);
+  }
+
+  _playLegacyIntro(labId, labNum, token) {
+    const introKey = `${labId}_intro`;
+    this.currentClipKey = introKey;
     this.playCachedClip(
-      introKey,
-      token,
+      introKey, token,
+      () => {
+        if (token === this.generation && this.narratorEnabled)
+          this.transitionState(TutorState.PLAYING_CACHED_AUDIO);
+      },
       () => {
         if (token === this.generation && this.narratorEnabled) {
-          this.transitionState(TutorState.PLAYING_CACHED_AUDIO);
-          this.logDiagnostic({
-            event: 'intro_started',
-            outcome: 'SUCCESS',
-            lab: labNum,
-            stateVersion: 1,
-            enabled: this.narratorEnabled,
-            prevPlayback: 'DISABLED',
-            cancelReason: 'none',
-            newAudio: introKey,
-            loadingStatus: 'playing',
-            playbackResult: 'PLAYING_CACHED_AUDIO',
-            suppressionReason: 'none',
-            recoveryResult: 'READY',
-            nextActionReady: 'READY'
-          });
+          this.completedClips.add(`${this.activeLab}_${introKey}`);
+          this.currentAudio = null; this.currentClipKey = null;
+          const firstKey = `${labId}_01`;
+          this.playCachedClip(firstKey, token,
+            () => { this.transitionState(TutorState.PLAYING_CACHED_AUDIO); },
+            () => { this.transitionState(TutorState.ACTIVE_IDLE); }
+          );
         }
       },
       () => {
         if (token === this.generation) {
-          this.completedClips.add(`${labIdx}_${introKey}`);
-          this.currentAudio = null;
-          this.currentClipKey = null;
-          this.transitionState(TutorState.ACTIVE_IDLE);
-        }
-      },
-      () => {
-        if (token === this.generation) {
-          const fallbackKey = `${labId}_01`;
-          this.playCachedClip(fallbackKey, token, () => {
-            this.transitionState(TutorState.PLAYING_CACHED_AUDIO);
-          }, () => {
-            this.transitionState(TutorState.ACTIVE_IDLE);
-          });
+          this.playCachedClip(`${labId}_01`, token,
+            () => { this.transitionState(TutorState.PLAYING_CACHED_AUDIO); },
+            () => { this.transitionState(TutorState.ACTIVE_IDLE); }
+          );
         }
       }
     );
@@ -1144,6 +1324,7 @@ NEXT-ACTION PLAYBACK RESULT: ${d.nextActionReady || 'READY'}`,
   window._detectedSchoolId = schoolId;
 })();
 const narratorController = new HybridNarrationOrchestrator(window._detectedSchoolId || 'NIS');
+window.narratorController = narratorController;
 narratorController.init();
 
 function stopSpeaking(fullDeactivate = true) {
@@ -1163,11 +1344,14 @@ function toggleNarration() {
   narratorController.toggle();
 }
 
-window.addEventListener('message', (e) => {
-  if (e.data && e.data.source === 'BALANCE_LAB') {
-    narratorController.handleAction(e.data);
-  }
-});
+if (!window._balanceLabMessageBridgeAttached) {
+  window._balanceLabMessageBridgeAttached = true;
+  window.addEventListener('message', (e) => {
+    if (e.data && e.data.source === 'BALANCE_LAB') {
+      narratorController.handleAction(e.data);
+    }
+  });
+}
 
 function attachLabBridge(labIdx, frame) {
   try {
@@ -1668,7 +1852,7 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-function displayTeacherAnswer(text, provider = "Miss Balance (Google Gemini)", voice = "Miss Balance (en-GB-LibbyNeural · Friendly Academic Voice)") {
+function displayTeacherAnswer(text, provider = "Miss Balance (Google Gemini)", voice = "Miss Balance (Sulafat · Google Gemini TTS)") {
   const box = el('teacherAnswerBox');
   if (!box) return;
   const isArabic = /[\u0600-\u06FF]/.test(text);
@@ -1824,7 +2008,7 @@ class LiveAudioClient {
       }
     } else if (mtype === 'AI_ANSWER_READY') {
       const ans = msg.text || '';
-      const voiceName = /[\u0600-\u06FF]/.test(ans) ? 'ar-EG-SalmaNeural' : 'Miss Balance (en-GB-LibbyNeural · Friendly Academic Voice)';
+      const voiceName = /[\u0600-\u06FF]/.test(ans) ? 'ar-EG-SalmaNeural' : 'Miss Balance (Sulafat · Google Gemini TTS)';
       displayTeacherAnswer(ans, 'Miss Balance (Google Gemini)', voiceName);
       if (msg.translation) {
         showYouSaidTranscript(msg.text || '', msg.bookPage, msg.translation);
@@ -1834,7 +2018,7 @@ class LiveAudioClient {
       }
     } else if (mtype === 'TURN_COMPLETE') {
       const ans = msg.response || '';
-      const voiceName = /[\u0600-\u06FF]/.test(ans) ? 'ar-EG-SalmaNeural' : 'Miss Balance (en-GB-LibbyNeural · Friendly Academic Voice)';
+      const voiceName = /[\u0600-\u06FF]/.test(ans) ? 'ar-EG-SalmaNeural' : 'Miss Balance (Sulafat · Google Gemini TTS)';
       displayTeacherAnswer(ans, 'Miss Balance (Google Gemini)', voiceName);
       if (msg.translation) {
         showYouSaidTranscript(msg.transcript || '', null, msg.translation);

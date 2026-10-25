@@ -1,0 +1,439 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "voice": "Sulafat",
+    "model": "gemini-3.8-flash-lite-tts",
+    "language": "en-GB",
+    "notes": "Lab04 uses H2SO4+2NH3 ammonium sulfate (verified). Lab07 reagent_added splits into reagent_added_water and reagent_added_chloride via event.shift field. Lab08 bath_applied splits into bath_applied_hot and bath_applied_cold via event.bath field. Lab09 slider events use _amap."
+  },
+  "lab01": {
+    "name": "Dissolving Salt",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Dissolving Salt laboratory! Today we are going to find out what actually happens when sodium chloride meets water at the particle level.",
+        "Hello, scientist! In this lab we are going to watch what happens when an ionic solid like sodium chloride dissolves in water, and you will be able to zoom right inside the beaker.",
+        "Great to see you here! We are investigating how salt disappears into water — and I promise it is far more exciting at the particle level than it looks from the outside.",
+        "Welcome! In today's experiment we are exploring dissolution — the process by which an ionic lattice like sodium chloride breaks apart and disperses into water."
+      ],
+      "crystal_dropped": [
+        "The sodium chloride crystal has entered the water. Watch how the polar water molecules immediately begin pulling at the edges of that ionic lattice.",
+        "Excellent! The salt crystal is now in contact with the water. Those water molecules are polar — their oxygen ends are slightly negative — so they are attracted straight to the positive sodium ions on the surface.",
+        "There goes the crystal! The water molecules are clustering around the ions on the surface of the lattice right now, beginning to break those ionic bonds one by one.",
+        "Perfect drop! The ionic lattice of sodium chloride is already being attacked by the surrounding water molecules, which are polar and drawn to the charged ions.",
+        "Well done! Notice how the crystal starts to lose its sharp edges — that is because the water molecules are hydrating the surface ions and pulling them away from the lattice.",
+        "The salt crystal is in the water. The polar water molecules will orient themselves around the surface sodium and chloride ions, and the dissolving process is about to begin."
+      ],
+      "dissolving_started": [
+        "The dissolving is underway! Sodium and chloride ions are being surrounded by water molecules and carried away from the crystal — this is called hydration.",
+        "Look at that — the crystal is shrinking as ions leave the surface. Each sodium ion becomes surrounded by water molecules with their negative oxygen ends pointing inward.",
+        "The ionic lattice is breaking down. The energy released when water molecules bond to the individual ions is enough to overcome the lattice energy holding the crystal together.",
+        "Dissolution is in progress! The Na⁺ and Cl⁻ ions are becoming hydrated — each one is now wrapped in a shell of water molecules and dispersed throughout the solution.",
+        "The crystal is dissolving beautifully. Notice how the solution stays clear — the ions are too small to scatter light, so the solution remains transparent even as it fills with dissolved ions."
+      ],
+      "micro_entered": [
+        "Welcome to the microscopic view! Those purple spheres are sodium ions and the green ones are chloride ions — and look how every single one is surrounded by a cage of water molecules.",
+        "Here we are inside the beaker at the particle level! The purple particles are Na⁺ ions and the green ones are Cl⁻ ions, each wrapped in a hydration shell of polar water molecules.",
+        "Now you can see what is really happening. The water molecules are not just passive — their slightly negative oxygen ends point toward the positive sodium ions, and their positive hydrogen ends point toward the negative chloride ions.",
+        "Look at this — at the particle level, the ionic lattice has completely broken down. Every ion is now free, surrounded by water molecules, and moving independently through the solution.",
+        "Fascinating, is it not? At this scale you can see the hydration shells — layers of oriented water molecules that stabilise each ion in solution and prevent them from rejoining as a crystal."
+      ],
+      "ion_tap_na": [
+        "That purple sphere is a sodium ion — Na⁺. It carries a single positive charge, and you can see how the surrounding water molecules have their negative oxygen ends pointing directly toward it.",
+        "You have selected a sodium ion! Na⁺ has a positive charge because it has lost one electron from its outer shell. The polar water molecules orientate around it with their negative oxygen ends facing inward.",
+        "Excellent observation! Sodium ions are relatively small and carry a 1+ charge, so they attract a tight hydration shell. This electrostatic attraction between the ion and the water dipoles is what keeps it in solution.",
+        "This is Na⁺ — a sodium ion. It was part of the crystal lattice just moments ago, held by ionic bonds to chloride ions. Now it is free and stabilised by the surrounding water molecules."
+      ],
+      "ion_tap_cl": [
+        "That green sphere is a chloride ion — Cl⁻. It carries a single negative charge, so the water molecules surrounding it have their slightly positive hydrogen ends pointing inward.",
+        "You have found a chloride ion! Cl⁻ has a negative charge because it has gained one electron. The water molecules around it are oriented the opposite way to those around the sodium ion.",
+        "Good eye! The chloride ion is larger than the sodium ion, so it tends to have a slightly looser hydration shell. But it is still effectively stabilised by the surrounding polar water molecules.",
+        "This is Cl⁻ — a chloride ion. The positive hydrogen atoms on nearby water molecules are attracted to its negative charge, keeping it dissolved and dispersed throughout the solution."
+      ],
+      "crystal_drop_failed": [
+        "Oops! The salt crystal missed the beaker. Be sure to drag and release the crystal directly into the water so dissolution can begin.",
+        "The crystal dropped onto the lab bench! Water is the polar solvent needed to pull the ionic lattice apart — drop it inside the beaker.",
+        "Careful there! Salt can only dissolve when surrounded by water molecules. Let us try dropping the crystal right into the liquid.",
+        "Missed the target! Drag the crystal over the mouth of the beaker and release it into the water."
+      ]
+    }
+  },
+  "lab02": {
+    "name": "Metal Ion Detective",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Metal Ion Detective laboratory! You are going to use sodium hydroxide solution to identify three different metal ions — copper, iron two-plus, and iron three-plus — by the colour of their precipitates.",
+        "Hello, detective! In this lab we are testing unknown solutions with NaOH and identifying which metal ion is present based on the colour of the precipitate that forms.",
+        "Welcome! You will be adding sodium hydroxide to three different metal ion solutions. Each one produces a distinctively coloured precipitate — your job is to identify them all.",
+        "Great to see you here! Today we are doing qualitative analysis — using a chemical test to distinguish between Cu²⁺, Fe²⁺, and Fe³⁺ ions in aqueous solution."
+      ],
+      "pipette_dispensed": [
+        "Good technique! The sodium hydroxide is being added to the metal ion solution. A precipitation reaction is about to happen.",
+        "Well handled with the pipette. NaOH is a source of hydroxide ions, and the metal ions in solution will react with them to form insoluble metal hydroxides.",
+        "The reagent is in. Sodium hydroxide provides OH⁻ ions, which will combine with the metal cation to form an insoluble precipitate — watch for the colour change.",
+        "The NaOH has been added. The hydroxide ions will now react with the metal ions in solution to produce a solid metal hydroxide — and the colour will tell us exactly which ion is present.",
+        "Spot on — the sodium hydroxide is now mixing with the metal ion solution. The precipitate that appears will be the key to identifying which metal is present."
+      ],
+      "precipitate_copper": [
+        "That pale blue precipitate is copper two hydroxide — Cu(OH)₂. The sky-blue colour is the definitive test for Cu²⁺ ions. The reaction is Cu²⁺ plus two OH⁻ forming this insoluble blue solid.",
+        "Excellent result! The pale blue precipitate confirms you have copper two-plus ions. Cu²⁺ plus 2OH⁻ produces Cu(OH)₂ — that beautiful blue solid sinking in the tube.",
+        "Look at that gorgeous pale blue solid! Copper two hydroxide forms immediately when Cu²⁺ meets hydroxide ions. This is a classic qualitative test — the blue colour is unmistakable.",
+        "A pale blue precipitate — that means copper! Cu²⁺ ions react with the OH⁻ from sodium hydroxide to give Cu(OH)₂, which is insoluble and appears as this blue solid.",
+        "Brilliant detective work! The blue colour of that precipitate is characteristic of copper two hydroxide, formed when the Cu²⁺ ions react with the hydroxide ions you added."
+      ],
+      "precipitate_iron_2": [
+        "That green precipitate is iron two hydroxide — Fe(OH)₂. The dirty green colour confirms the presence of Fe²⁺ ions in the original solution.",
+        "Well spotted! The green precipitate is characteristic of Fe(OH)₂ — iron two hydroxide. Fe²⁺ plus 2OH⁻ gives this green insoluble solid.",
+        "Look at that green solid forming! Iron two hydroxide has a distinctive green colour that distinguishes it clearly from the blue copper precipitate and the rust-brown iron three precipitate.",
+        "That green precipitate tells us we have iron two-plus ions — Fe²⁺. The reaction Fe²⁺ plus 2OH⁻ produces Fe(OH)₂ — this green solid that is insoluble in water.",
+        "Excellent identification! The green precipitate is Fe(OH)₂. Iron two ions react with hydroxide ions to form this green solid — a reliable qualitative test for Fe²⁺."
+      ],
+      "precipitate_iron_3": [
+        "That reddish-brown precipitate is iron three hydroxide — Fe(OH)₃. The rust colour is the definitive test for Fe³⁺ ions — quite different from the green of iron two.",
+        "Brilliant detective work! The rust-brown colour confirms Fe³⁺ ions. Fe³⁺ plus 3OH⁻ produces Fe(OH)₃ — this characteristic reddish-brown precipitate.",
+        "There is the rust-brown precipitate of iron three hydroxide! Notice how different it looks from the green iron two hydroxide — the oxidation state of iron completely changes the colour.",
+        "Look at that reddish-brown solid! Fe(OH)₃ forms when Fe³⁺ ions react with hydroxide ions. The reaction needs three hydroxide ions per iron atom because Fe³⁺ has a 3+ charge.",
+        "That brown precipitate confirms iron three-plus — Fe³⁺. Remember that Fe³⁺ needs three hydroxide ions to form Fe(OH)₃, whereas Fe²⁺ only needed two to form its green hydroxide."
+      ],
+      "micro_entered": [
+        "Welcome to the microscopic view! You can see the metal ions and hydroxide ions in the solution — watch how they collide and form the insoluble precipitate as the ions pair up.",
+        "Here we are at the particle level! The coloured spheres represent the metal cations and the hydroxide ions. The precipitate forms when they bond together and become insoluble.",
+        "Fascinating particle view! At this scale you can see why the precipitate is insoluble — the metal hydroxide compound has no affinity for water molecules and simply sinks as a solid.",
+        "At this scale you can see the ionic reaction happening directly. The metal ions and hydroxide ions are combining to form an insoluble lattice — that is the precipitate you saw form in the tube."
+      ],
+      "all_tubes_tested": [
+        "Excellent detective work! You have tested all three samples. Each metal ion produced a uniquely coloured precipitate — pale blue for Cu²⁺, green for Fe²⁺, and reddish-brown for Fe³⁺.",
+        "Brilliant — all three tubes are tested! You have now seen the definitive results for each metal ion using this standard qualitative analysis test.",
+        "Outstanding! You have identified all three metal ions using just sodium hydroxide. This kind of qualitative analysis is used in real chemistry labs to quickly identify unknown metal cations.",
+        "Superb work completing all three tests! The colour of the precipitate formed with NaOH is a reliable and simple way to distinguish between these three important metal ions.",
+        "Well done — investigation complete! Remember: pale blue means Cu²⁺, green means Fe²⁺, and reddish-brown means Fe³⁺. This pattern is essential knowledge for your chemistry qualification."
+      ],
+      "excess_reagent_added": [
+        "You added reagent in excess! Notice what happens to the copper precipitate: light blue copper two hydroxide dissolves in excess aqueous ammonia to form a deep royal blue tetraamminecopper(II) solution. Iron hydroxides remain insoluble.",
+        "Excess reagent added! For copper, excess ammonia acts as a ligand, replacing hydroxide to form the soluble deep blue complex [Cu(NH₃)₄(H₂O)₂]²⁺. This confirms copper beyond any doubt.",
+        "Testing solubility in excess! Copper two hydroxide dissolves in excess ammonia into an intense royal blue solution, while iron two and iron three precipitates remain insoluble in excess.",
+        "Excess ammonia test complete! The distinctive deep blue solution proves copper two plus forms a soluble amine complex, distinguishing it clearly from the iron cations."
+      ]
+    }
+  },
+  "lab03": {
+    "name": "Balance the Reaction",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Balancing Reactions laboratory! We are going to use the law of conservation of mass to balance a chemical equation by placing atom tiles on each side.",
+        "Hello, scientist! In this lab we need to balance a chemical equation — every atom that enters as a reactant must leave as a product. Let us make both sides equal.",
+        "Welcome! Today we are applying the law of conservation of mass. You cannot create or destroy atoms in a chemical reaction, so the equation must be balanced.",
+        "Great to see you here! We are balancing equations by adding coefficient tiles. You can change how many molecules you use, but you cannot change the formula of the compounds themselves."
+      ],
+      "tile_dropped": [
+        "Good placement! Check both sides of the equation now — count the atoms of each element and see if they balance yet.",
+        "That coefficient is placed. Now compare the atom count on the reactant side with the product side — are they equal yet?",
+        "Well tried! Keep checking the atom counts as you add tiles. The equation is balanced when every element has the same total number of atoms on both sides.",
+        "Coefficient placed! Remember that a coefficient multiplies every atom in that formula — so if you put a 2 in front of Fe₂O₃, you now have four iron atoms and six oxygen atoms from that compound.",
+        "Good thinking! Look carefully at which element is still unbalanced and decide which coefficient needs adjusting — start with the element that appears in only one compound on each side."
+      ],
+      "equation_balanced": [
+        "Perfectly balanced! Every element has exactly the same number of atoms on both sides. That is the law of conservation of mass — atoms are rearranged but never created or destroyed.",
+        "Excellent work — the equation is balanced! You have shown that the total mass of reactants equals the total mass of products. That is one of the most fundamental laws in all of chemistry.",
+        "Brilliant! The equation is now perfectly balanced. Well done for working systematically through each element — that methodical approach is exactly how chemists tackle balancing problems.",
+        "Outstanding! You have balanced the equation correctly. This skill is essential for all of quantitative chemistry — stoichiometry, calculating yields, and working out reactant quantities all depend on balanced equations.",
+        "Smashing work! The equation is balanced. Atoms are conserved — none are gained or lost in a chemical reaction, which is why both sides of the equation must have identical atom counts."
+      ],
+      "micro_entered": [
+        "Welcome to the molecular model! Here you can see the actual three-dimensional arrangement of atoms in the reactants and products — watch how the atoms rearrange but none disappear.",
+        "Here we are at the molecular level! The model shows you exactly which bonds break and which new bonds form during the reaction — conservation of mass is visible right here.",
+        "Fascinating view! At the molecular scale you can confirm that balancing equations reflects a real physical truth — atoms are conserved in every chemical reaction.",
+        "Look at the molecular model! Every atom that was a reactant reappears in the products — just in a different arrangement. That is the beauty of chemical reactions."
+      ],
+      "tile_wrong_side": [
+        "Careful with placement! That formula belongs on the other side of the arrow. Reactants go on the left, and products go on the right.",
+        "Check your equation side! You placed a coefficient on the wrong side. Make sure you are balancing the correct chemical species.",
+        "That tile does not belong there. Look at the chemical formula and place the coefficient in front of the matching molecules.",
+        "Wrong position! Remember, coefficients multiply the molecules directly behind them. Place the tile in the correct slot."
+      ]
+    }
+  },
+  "lab04": {
+    "name": "Fertilizer Lab",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Fertilizer Laboratory! Today we are making ammonium sulfate — one of the most important nitrogen fertilisers in the world — by neutralising sulfuric acid with ammonia solution.",
+        "Hello, scientist! In this lab we are carrying out an acid-base neutralisation reaction between dilute sulfuric acid and ammonia solution to produce ammonium sulfate crystals.",
+        "Welcome! We are making ammonium sulfate fertiliser. The reaction is H₂SO₄ plus two NH₃ producing ammonium sulfate — watch the pH change as we add the ammonia.",
+        "Great to see you here! Today we are neutralising sulfuric acid with ammonia. The product — ammonium sulfate — provides nitrogen to plants, making it a vital fertiliser in agriculture."
+      ],
+      "ammonia_added": [
+        "The ammonia solution is being added to the sulfuric acid. Watch the pH meter — as the ammonia neutralises the acid, the pH will rise from its very low starting value.",
+        "Good technique with the dropper! Each addition of ammonia reacts with the sulfuric acid: H₂SO₄ plus 2NH₃ gives ammonium sulfate solution, and the mixture becomes less acidic with every drop.",
+        "The ammonia is reacting with the sulfuric acid. The H⁺ ions from the acid are combining with the NH₃ molecules — and the solution is becoming less acidic with every addition.",
+        "Well done! The ammonia is neutralising the sulfuric acid. We need to reach stoichiometric equivalence where both protons of the diprotic acid are neutralised before we evaporate the solution to obtain the crystals.",
+        "The ammonia is being added carefully. H₂SO₄ plus 2NH₃ gives ammonium sulfate — two moles of ammonia are needed for every mole of sulfuric acid because the acid is diprotic."
+      ],
+      "neutralization_complete": [
+        "Stoichiometric neutralisation is complete! Two moles of ammonia have reacted with every mole of sulfuric acid to form ammonium sulfate. Because ammonium is a conjugate weak acid cation undergoing partial hydrolysis, the solution at stoichiometric equivalence is slightly acidic rather than neutral. Next, gentle heating will evaporate the water to yield solid crystals.",
+        "All sulfuric acid has reacted! We have reached the stoichiometric equivalence point where all H₂SO₄ is converted into (NH₄)₂SO₄. Notice the indicator colour confirming the reaction is complete.",
+        "Equivalence point reached! The reaction H₂SO₄ plus two NH₃ yields (NH₄)₂SO₄. The solution is slightly acidic due to ammonium ion hydrolysis — now we are ready to evaporate the excess water.",
+        "Stoichiometric neutralisation achieved! Sulfuric acid has been fully reacted with aqueous ammonia in a precise one-to-two ratio. Next step: gentle heating to concentrate and crystallise the fertilizer."
+      ],
+      "temp_slider_changed": [
+        "The temperature is rising. Gentle heating causes the water in the ammonium sulfate solution to evaporate — as the water leaves, the concentration increases until crystals begin to form.",
+        "Good — adjusting the temperature. Evaporation is a physical process: as the water molecules gain enough energy to escape the liquid surface, the dissolved ammonium sulfate becomes more concentrated.",
+        "The heater is on. We need to evaporate the water slowly and carefully — gentle evaporation is the correct laboratory technique to obtain good quality ammonium sulfate crystals.",
+        "Temperature adjustment noted! As the water evaporates, the ammonium sulfate solution becomes more concentrated until it reaches the point where crystallisation begins."
+      ],
+      "crystals_formed": [
+        "Look at those beautiful crystals forming! As the water evaporated, the ammonium sulfate reached its solubility limit and began crystallising out of solution — this is called recrystallisation.",
+        "The crystals are growing! Ammonium sulfate is crystallising as the water evaporates. The ions arrange themselves into a regular ionic lattice — the physical form of the fertiliser.",
+        "Excellent outcome! The ammonium sulfate crystals are forming as the water content decreases. When the solution becomes supersaturated, crystallisation is spontaneous.",
+        "Wonderful! The crystals are appearing. This is the final product — solid ammonium sulfate fertiliser. The nitrogen atoms from the ammonia are now locked into these crystals, ready to nourish plants.",
+        "Look at those crystals! Ammonium sulfate solidifies as the water is removed by evaporation. The regular crystal shape reflects the ordered ionic lattice of alternating ammonium and sulfate ions."
+      ],
+      "micro_entered": [
+        "Here we are at the particle level inside the ammonium sulfate solution. You can see the NH₄⁺ and SO₄²⁻ ions dispersed in the water — notice how they come together as the solution concentrates.",
+        "Welcome to the microscopic view of crystallisation! At this scale you can see the ammonium and sulfate ions arranging themselves into the ordered ionic lattice that forms the solid crystal.",
+        "Fascinating particle view! The ammonium ions and sulfate ions in solution move freely in the water, but as the water evaporates they lock into a regular ionic lattice — the crystal you can see forming.",
+        "At this scale you can see the ionic interactions between NH₄⁺ and SO₄²⁻. When enough water is removed, the electrostatic attractions pull these oppositely charged ions into a crystalline solid."
+      ]
+    }
+  },
+  "lab05": {
+    "name": "Reversible Reaction",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Reversible Reaction laboratory! Today we are heating ammonium chloride and watching it decompose — and then cooling it to see the products recombine.",
+        "Hello, scientist! In this lab we are investigating the thermal decomposition of ammonium chloride. When heated, it splits into ammonia and hydrogen chloride gases — and when cooled, they rejoin.",
+        "Welcome! Today we are demonstrating reversibility. Ammonium chloride decomposes on heating and reforms on cooling, showing that the forward and reverse reactions can both occur.",
+        "Great to see you here! We are studying NH₄Cl — a solid that appears to sublime when heated, but actually decomposes into two gases that travel up the tube and recombine as a white solid."
+      ],
+      "collar_attached": [
+        "The cooling collar is attached! Now watch what happens to the ammonia and hydrogen chloride gases as they travel into the cooler region of the tube.",
+        "Well done with the cooling collar. The temperature drops in that section of the tube, which means the gases will lose energy and the reverse reaction — recombination — becomes favourable.",
+        "Excellent placement of the cooling collar! The lower temperature will cause the NH₃ and HCl gases to lose kinetic energy and come back together to reform ammonium chloride.",
+        "The collar is on — now watch the cooler end of the tube. The gases that decomposed at the hot end will recombine at the cool end, demonstrating the reversibility of this reaction.",
+        "Perfect! The cooling collar has changed the temperature gradient in the tube. The ammonia and hydrogen chloride gases are now moving toward the cooler zone where they will rejoin as white ammonium chloride."
+      ],
+      "burner_temp_changed": [
+        "The temperature is changing. Notice how the rate of decomposition responds — higher temperatures increase the rate of the forward reaction, breaking down the ammonium chloride more rapidly.",
+        "Temperature adjusted! At higher temperatures, more NH₄Cl molecules have enough energy to overcome the activation energy barrier and decompose into NH₃ and HCl gases.",
+        "Good use of the temperature control! The equilibrium position shifts as temperature changes — increasing temperature favours the endothermic decomposition direction.",
+        "The heater is adjusted. Watch how the amount of white solid and the density of gas in the tube changes as you alter the temperature — the system is responding to the changed conditions."
+      ],
+      "recombination_solid_formed": [
+        "Look at that white solid forming at the cool end of the tube! The ammonia and hydrogen chloride gases have rejoined to reform ammonium chloride — the reverse reaction is happening right before your eyes.",
+        "Excellent observation! The white solid is ammonium chloride reforming. NH₃ plus HCl is recombining to give NH₄Cl — the reverse of the decomposition you saw during heating.",
+        "Brilliant — the recombination is complete! The gases have met in the cool zone and reformed the solid ammonium chloride, proving the reaction is genuinely reversible.",
+        "Look at that white solid! The ammonium chloride has reformed at the cooler end. This is the reverse reaction: NH₃ plus HCl giving NH₄Cl. The total amount of material is conserved — nothing was lost.",
+        "The white solid is reforming — fantastic! This is clear evidence of a reversible reaction. The same chemical that decomposed at the hot end is now being reformed at the cool end of the tube."
+      ],
+      "micro_entered": [
+        "Here we are at the particle level inside the test tube! You can see the individual NH₃ and HCl molecules in the gas phase and the ammonium chloride in the solid — watch them decompose and reform.",
+        "Welcome to the microscopic view! At this scale you can see why the reaction is reversible — the molecular collisions between NH₃ and HCl can form NH₄Cl, and vice versa, given the right temperature.",
+        "Fascinating particle view! You can observe the thermal energy breaking the ionic bonds in solid NH₄Cl, releasing gaseous molecules. In the cool region, the reverse happens — molecules collide and bond.",
+        "At this scale the reversibility becomes completely clear. The molecules can separate under heat and rejoin under cooling — both processes are happening simultaneously."
+      ]
+    }
+  },
+  "lab06": {
+    "name": "Ammonium Detective",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Ammonium Detective laboratory! We are going to test for the presence of the ammonium ion using sodium hydroxide, heat, and two chemical tests — damp red litmus paper and hydrochloric acid.",
+        "Hello, detective! In this lab we are carrying out the standard qualitative test for the ammonium ion. We will add NaOH, heat the mixture, and then test the gas that is produced.",
+        "Welcome! Today we are testing for NH₄⁺ ions. Adding sodium hydroxide to an ammonium salt and heating releases ammonia gas, which we can identify using its alkaline properties.",
+        "Great to see you here! We are identifying the ammonium ion using two confirmatory tests — litmus paper turning blue and the formation of white smoke with hydrochloric acid. Let us begin!"
+      ],
+      "naoh_drop_added": [
+        "The sodium hydroxide is reacting with the ammonium salt. The hydroxide ions are accepting protons from the ammonium ions — this produces ammonia gas: NH₄⁺ plus OH⁻ gives NH₃ plus water.",
+        "Good addition of the NaOH! The hydroxide ions are removing hydrogen ions from the ammonium ions, releasing ammonia molecules. You should be able to detect the pungent smell of ammonia.",
+        "The sodium hydroxide is in. The reaction NH₄⁺ plus OH⁻ giving NH₃ and H₂O is occurring — the ammonia produced is a gas and will rise up through the test tube.",
+        "Well done! Each drop of sodium hydroxide reacts with the ammonium ions to liberate ammonia gas. We need to heat the mixture to drive the reaction and produce enough gas for our tests."
+      ],
+      "heat_slider_changed": [
+        "Gentle heating is being applied to drive the release of ammonia gas. The heat provides the activation energy needed to complete the reaction and volatilise the ammonia.",
+        "The temperature is increasing. Heating the NaOH and ammonium salt mixture drives the equilibrium toward ammonia production and increases the rate at which the gas is released.",
+        "Good use of the heat. The gentle warming ensures that enough ammonia gas is produced to give a positive result with both the litmus paper and the hydrochloric acid test.",
+        "Temperature adjusted. The warmth drives off the ammonia gas from solution — gentle heat gives a clear, testable result without degrading the sample."
+      ],
+      "litmus_tested": [
+        "The damp red litmus paper has turned blue! This confirms the gas is alkaline — and ammonia is the only common alkaline gas produced in laboratory conditions. This is a positive test for NH₄⁺.",
+        "Blue litmus — positive result! Ammonia is an alkaline gas, and it turns damp red litmus paper blue. This test confirms that the gas released is NH₃, which means the sample contained ammonium ions.",
+        "Excellent! The litmus paper is turning blue. Ammonia dissolves in the water on the damp paper to form an alkaline solution, which turns the red litmus blue.",
+        "Blue litmus confirms ammonia! This is the first positive test — the gas produced is alkaline. Ammonia has a lone pair on the nitrogen atom that allows it to accept a proton, making it a base.",
+        "Brilliant result! The red litmus has turned blue, confirming that the gas produced is alkaline ammonia. This is the first step of the confirmatory test for ammonium ions."
+      ],
+      "hcl_tested": [
+        "White smoke forming! When ammonia meets hydrogen chloride, they react immediately to form solid ammonium chloride — those tiny white particles are NH₄Cl forming in the air.",
+        "Look at that white smoke — the second confirmatory test! Ammonia gas reacting with hydrogen chloride gas gives white solid ammonium chloride: NH₃ plus HCl giving NH₄Cl.",
+        "Excellent! The dense white smoke is ammonium chloride forming instantaneously as the ammonia from the test tube meets the HCl from the glass rod. This is a definitive confirmatory test for NH₃.",
+        "The white smoke confirms ammonia beyond doubt! This reaction — NH₃ plus HCl giving NH₄Cl — produces such a visible and immediate result that it is one of the most reliable tests in qualitative chemistry.",
+        "Both tests positive! The blue litmus and the white smoke with HCl both confirm the presence of ammonia gas, which in turn confirms that the original sample contained the ammonium ion, NH₄⁺."
+      ],
+      "micro_entered": [
+        "Here we are at the particle level! You can see the ammonium ions, the hydroxide ions from the NaOH, and the ammonia molecules being released as the reaction proceeds.",
+        "Welcome to the microscopic view! At this scale you can observe the proton transfer directly — the OH⁻ ion is taking a hydrogen ion from the NH₄⁺, converting it to neutral NH₃ that escapes as gas.",
+        "Fascinating particle view! The hydroxide ion acts as a base — it accepts a proton from the ammonium ion to produce water and the neutral ammonia gas molecule.",
+        "At this scale you can see the chemistry clearly. The ammonium ions carry a positive charge and the hydroxide ions a negative charge, and the proton transfer between them releases the ammonia gas."
+      ],
+      "litmus_tested_unheated": [
+        "The litmus paper did not change colour! Why? Because we have not heated the mixture yet. Ammonia gas remains dissolved in the liquid until thermal energy drives it out of solution.",
+        "No change on the litmus paper! In cold solution, most ammonia stays dissolved in water as aqueous NH₃. Apply gentle heat to volatilise the ammonia gas up to the tube mouth.",
+        "Testing before heating! Remember, ammonia is soluble in water. You must apply gentle heat to drive the gas out of solution before the litmus paper can detect it.",
+        "Notice the litmus remains red! The proton transfer happened, but the ammonia molecules need heat to escape the liquid phase and reach the paper."
+      ]
+    }
+  },
+  "lab07": {
+    "name": "Cobalt Chloride Equilibrium",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Cobalt Chloride Equilibrium laboratory! We are investigating the reversible equilibrium between the pink hydrated cobalt ion and the blue tetrachlorocobaltate ion.",
+        "Hello, scientist! In this lab we are going to shift the equilibrium between the pink form and the blue form of cobalt chloride by adding different reagents — observing Le Chatelier's principle in action.",
+        "Welcome! Today we are studying a visual equilibrium. The pink solution contains the hydrated cobalt complex and the blue solution contains the chloride complex — we can shift between them by adding water or chloride ions.",
+        "Great to see you here! We are exploring Le Chatelier's principle using the cobalt chloride equilibrium. You will shift the position of equilibrium in both directions."
+      ],
+      "reagent_added_water": [
+        "Water has been added, diluting the solution! Dilution lowers the concentrations of all dissolved ions. Because the reactant side has five dissolved ions while the product side has only one complex ion, Le Chatelier's principle drives the equilibrium toward the side with more dissolved solute particles — forming the pink hydrated complex [Co(H₂O)₆]²⁺.",
+        "The solution is turning pink! Adding water dilutes the chloride ions. The system opposes this dilution by shifting toward the side with more solute particles in solution: five ions on the left versus one complex on the right.",
+        "Dilution observed! Adding distilled water increases the solvent volume. By Le Chatelier's principle, dilution favours the pink octahedral complex because five separate ions are generated for every one blue complex that dissociates.",
+        "Pink colour deepening! The lower concentration of chloride ions shifts the equilibrium in reverse, restoring water ligands around the central cobalt(II) ion to form [Co(H₂O)₆]²⁺.",
+        "Shift to pink confirmed! Diluting with water shifts the balance toward the side with the greater number of dissolved particles — turning the mixture from tetrahedral blue to octahedral pink."
+      ],
+      "reagent_added_chloride": [
+        "Chloride ions have been added! Increasing the chloride concentration increases the denominator of the reaction quotient Q, decreasing Q below Kc. To restore equilibrium, the reaction proceeds forward, driving the shift toward the blue tetrachlorocobaltate complex.",
+        "The chloride addition is shifting the equilibrium toward the blue form! Adding Cl⁻ ions increases their concentration, so the system shifts to reduce that concentration by forming more of the blue complex.",
+        "Look at the blue colour intensifying! Adding chloride ions has shifted the equilibrium position to the right, favouring the blue cobalt-chloride complex.",
+        "Excellent — you added chloride and shifted the equilibrium. The extra Cl⁻ ions drive the formation of more of the blue cobalt-chloride complex — a clear demonstration of Le Chatelier's principle.",
+        "The solution is turning more intensely blue! That is the equilibrium shifting as you increased the chloride ion concentration — a beautiful visible demonstration of Le Chatelier's principle."
+      ],
+      "both_shifts_observed": [
+        "Outstanding! You have shifted the equilibrium in both directions — toward the pink hydrated form with water, and toward the blue chloride complex with chloride ions. This proves the reaction is genuinely reversible.",
+        "Brilliant! You have demonstrated Le Chatelier's principle in both directions. The equilibrium can shift either way depending on the stress applied — that is the essence of a dynamic equilibrium.",
+        "Excellent scientific investigation! By observing both colour changes you have confirmed that this is a dynamic equilibrium — both the forward and reverse reactions are occurring simultaneously.",
+        "Superb work observing both shifts! The pink-to-blue shift with chloride and the blue-to-pink shift with water both demonstrate that the equilibrium responds predictably to concentration changes.",
+        "Both directions observed — perfect! You have evidence that this equilibrium is dynamic and reversible. Le Chatelier's principle correctly predicted the direction of each shift."
+      ],
+      "micro_entered": [
+        "Here we are at the particle level of the cobalt equilibrium! You can see the pink hydrated cobalt complexes and the blue tetrachlorocobaltate complexes — the equilibrium is constantly adjusting between them.",
+        "Welcome to the microscopic view! At this scale you can see why the colour changes occur — different ligands around each cobalt ion produce different light absorption and therefore different colours.",
+        "Fascinating particle view! The pink and blue forms differ only in which ligands are attached to the cobalt ion. The hydrated form has six water ligands, while the blue form has four chloride ligands.",
+        "At this scale the equilibrium becomes visible! The cobalt ions are constantly exchanging water and chloride ligands — the overall colour reflects the ratio of pink to blue complexes at any given moment."
+      ]
+    }
+  },
+  "lab08": {
+    "name": "NO₂/N₂O₄ Equilibrium",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Nitrogen Dioxide Equilibrium laboratory! We are studying the reversible reaction between brown nitrogen dioxide and colourless dinitrogen tetroxide, and investigating how temperature affects the equilibrium position.",
+        "Hello, scientist! In this lab we can observe the equilibrium 2NO₂ ⇌ N₂O₄ directly — the brown NO₂ and the colourless N₂O₄ make every shift of the equilibrium visible by eye.",
+        "Welcome! Today we are using Le Chatelier's principle to predict and observe the effect of temperature on the NO₂/N₂O₄ equilibrium. The forward reaction is exothermic — can you predict which way heat will shift the balance?",
+        "Great to see you here! The sealed tube contains a mixture of brown NO₂ and colourless N₂O₄ at equilibrium. You will change the temperature to shift the equilibrium and observe dramatic colour changes."
+      ],
+      "bath_applied_hot": [
+        "The hot bath is applied! Heat energy is being transferred to the gas mixture. Since the forward reaction forming N₂O₄ is exothermic, heat shifts the equilibrium to the left — favouring the brown NO₂. Watch the colour darken.",
+        "The warm bath is shifting the equilibrium! Increasing temperature adds energy, and Le Chatelier's principle tells us the system responds by favouring the endothermic direction — the reverse reaction producing more brown NO₂.",
+        "Look at that darker brown colour forming! The heat has shifted the equilibrium toward NO₂. Since the combination of NO₂ to form N₂O₄ releases heat, adding more heat pushes the reaction in reverse.",
+        "The hot bath has pushed the equilibrium to the left! More brown NO₂ is being formed at the expense of the colourless N₂O₄ — exactly what Le Chatelier's principle predicts for this exothermic forward reaction.",
+        "Excellent application of heat! The tube is darker because more NO₂ is present. The forward exothermic reaction is being reversed by the additional heat energy — Le Chatelier's principle in action."
+      ],
+      "bath_applied_cold": [
+        "The ice bath is cooling the gas mixture! Removing heat energy favours the exothermic forward reaction — the one that releases energy. Watch the mixture become paler as more N₂O₄ forms.",
+        "The cold bath is working! Cooling the mixture favours the forward exothermic reaction, so NO₂ molecules are combining to form colourless N₂O₄. The brown colour should be fading.",
+        "The colour is fading to pale yellow! The cold bath has shifted the equilibrium to the right, favouring the formation of colourless N₂O₄ — Le Chatelier's principle correctly predicted this.",
+        "Look at how the brown colour is decreasing! The ice bath removes heat, and the equilibrium responds by shifting in the direction that releases heat — the forward reaction forming the colourless N₂O₄.",
+        "Excellent use of the ice bath! The tube is becoming paler because more N₂O₄ is forming. The equilibrium has shifted right in response to the temperature decrease."
+      ],
+      "temp_slider_changed": [
+        "The temperature is changing. Watch for the corresponding colour change — darker brown means more NO₂, while a paler mixture means more N₂O₄ at the new equilibrium position.",
+        "Temperature adjustment! As you move the slider, the equilibrium re-establishes itself. Compare the colour intensity before and after — that difference shows you the shift in equilibrium position.",
+        "The temperature is shifting the equilibrium position. The forward reaction is exothermic — so higher temperatures favour more brown NO₂, while lower temperatures favour more colourless N₂O₄.",
+        "Excellent exploration! The colour tells you the ratio of NO₂ to N₂O₄ at each temperature. This is how chemists know the equilibrium constant changes with temperature."
+      ],
+      "micro_entered": [
+        "Here we are at the molecular level of the NO₂/N₂O₄ equilibrium! You can see the brown NO₂ molecules and the colourless N₂O₄ molecules — and the equilibrium between them is constantly shifting.",
+        "Welcome to the microscopic view! NO₂ molecules absorb visible light and appear brown, while N₂O₄ molecules are colourless. The ratio of these two species determines the overall colour you observe.",
+        "Fascinating particle view! The equilibrium is dynamic — NO₂ molecules are constantly combining to form N₂O₄, and N₂O₄ is constantly breaking apart back into NO₂. Temperature determines which direction is favoured.",
+        "At the molecular level you can see the dimerisation directly. Two brown NO₂ molecules combine to form one colourless N₂O₄ molecule in the forward reaction — and the reverse is equally real and constant."
+      ],
+      "temp_slider_heating": [
+        "Temperature is increasing! Heat energy is entering the system. Because the forward reaction is exothermic, Le Chatelier's principle drives the equilibrium in the endothermic reverse direction — producing more brown NO₂ gas.",
+        "Warming the mixture! Notice the brown colour deepening as temperature rises. The system absorbs added thermal energy by breaking colourless N₂O₄ molecules into brown NO₂ monomers.",
+        "Higher temperature applied! At elevated temperatures, the endothermic dissociation into NO₂ is thermodynamically favoured. Watch the gas darken.",
+        "Heating observed! Increasing the temperature shifts the equilibrium constant in favour of nitrogen dioxide. The mixture becomes a richer, darker brown."
+      ],
+      "temp_slider_cooling": [
+        "Temperature is decreasing! Thermal energy is leaving the system. By Le Chatelier's principle, the equilibrium shifts in the exothermic forward direction to release heat — pairing NO₂ molecules into colourless N₂O₄.",
+        "Cooling the mixture! Notice the brown colour fading as the gas cools. Two NO₂ radicals collide and bond along their nitrogen-nitrogen axis to form colourless N₂O₄ dimers.",
+        "Lower temperature applied! Lowering the temperature favours the exothermic reaction that releases heat energy, driving more brown NO₂ into colourless N₂O₄.",
+        "Cooling observed! As the temperature falls, the gas mixture becomes distinctly paler as dinitrogen tetroxide becomes the dominant species."
+      ]
+    }
+  },
+  "lab09": {
+    "name": "Haber Factory",
+    "events": {
+      "lab_intro_loaded": [
+        "Welcome to the Haber Factory! Today you are the industrial chemist responsible for producing ammonia from nitrogen and hydrogen. You need to find the best compromise conditions for pressure, temperature, and catalyst.",
+        "Hello, industrial chemist! In this lab we are optimising the Haber process — the industrial production of ammonia by the reaction N₂ plus 3H₂ giving 2NH₃. Your task is to find the best conditions.",
+        "Welcome! Today we are exploring the Haber process. The challenge is that the conditions giving the best yield also give the slowest reaction rate — you need to find a practical compromise.",
+        "Great to see you here! The Haber process is one of the most important industrial chemical processes ever developed — it produces the ammonia used in fertilisers that feed billions of people."
+      ],
+      "pressure_slider_changed": [
+        "Pressure is being adjusted. Higher pressure favours the side with fewer moles of gas — and since four moles of reactant gas give two moles of ammonia gas, higher pressure gives a better yield.",
+        "Good use of the pressure control! Le Chatelier's principle predicts that high pressure favours ammonia production because it reduces the total moles of gas from four to two.",
+        "The pressure is changing. In industry, very high pressures of around 150 to 300 atmospheres are used in the Haber process — the higher the pressure, the better the equilibrium yield.",
+        "Pressure adjusted! While higher pressure gives better yield, it also requires stronger and more expensive equipment. Industrial chemists use around 200 atmospheres as a practical compromise."
+      ],
+      "temperature_slider_changed": [
+        "Temperature is being adjusted. The Haber process reaction is exothermic — N₂ plus 3H₂ giving 2NH₃ releases heat. Higher temperatures give a faster reaction rate but a lower equilibrium yield.",
+        "Good temperature adjustment! Lower temperatures give better yields — because the forward reaction is exothermic — but they also give a very slow reaction rate. A compromise is essential.",
+        "Temperature changed! The industrial Haber process uses around 450°C — hot enough for a reasonable reaction rate, but not so hot that the equilibrium yield becomes too low.",
+        "Temperature set. Since the forward reaction is exothermic, increasing temperature shifts the equilibrium left toward the reactants, reducing the ammonia yield — Le Chatelier's principle at work."
+      ],
+      "catalyst_toggled": [
+        "The iron catalyst is activated! The catalyst provides an alternative reaction pathway with lower activation energy, dramatically increasing the rate of the reaction without affecting the equilibrium yield.",
+        "Excellent — the catalyst is on! An iron catalyst with promoters is used in the industrial Haber process. It allows the reaction to proceed at 450°C at a useful rate.",
+        "The catalyst is in place! Remember that a catalyst increases the rate of both the forward and reverse reactions equally — it does not change the equilibrium position, only how quickly equilibrium is reached.",
+        "Catalyst activated! The heterogeneous iron catalyst provides a surface for the nitrogen and hydrogen molecules to adsorb onto, weakening their bonds and making the reaction proceed much faster.",
+        "The iron catalyst is working! Without a catalyst, breaking the strong N≡N triple bond would require impractically high temperatures. The catalyst makes the industrial process viable."
+      ],
+      "micro_tab_reactants": [
+        "Welcome to the molecular view of the reactants! Here you can see the nitrogen and hydrogen molecules entering the reactor. Notice the strong triple bond in N₂ — this is why the Haber process requires a catalyst.",
+        "Excellent exploration of the reactant side! The N₂ molecules have a very strong triple bond that requires significant energy to break — that is why high temperature and a catalyst are both essential.",
+        "Here are the reactant molecules — N₂ and H₂ — at the molecular level. The relative proportions reflect the 1:3 stoichiometric ratio required by the balanced equation N₂ plus 3H₂ giving 2NH₃.",
+        "Look at the reactant molecules! The nitrogen molecule with its triple bond is the key challenge. The iron catalyst helps break this bond by providing a surface for the molecules to adsorb onto and react."
+      ],
+      "optimal_conditions_reached": [
+        "Brilliant! You have found the optimal conditions for the Haber process — around 450°C, 200 atmospheres, and an iron catalyst. This is the industrial compromise that balances yield, rate, and equipment cost.",
+        "Excellent work finding the optimal conditions! The Haber process uses 150 to 300 atmospheres, approximately 450°C, and an iron catalyst — a compromise between yield, reaction rate, and practical engineering.",
+        "Outstanding! You have cracked the Haber process conditions. High pressure for better yield, moderate temperature for a practical rate, and a catalyst to make the whole thing work efficiently.",
+        "Perfect conditions! This is exactly how the industrial Haber process is run — a carefully chosen compromise that maximises ammonia production. These conditions were first developed by Fritz Haber and Carl Bosch."
+      ],
+      "catalyst_toggled_on": [
+        "The iron catalyst is activated! The iron surface provides an alternative reaction pathway with lower activation energy, dramatically increasing the rate of reaction without altering the equilibrium yield.",
+        "Iron catalyst engaged! The catalyst accelerates both forward and reverse reactions equally. It does not alter the percentage of ammonia at equilibrium, but it allows that equilibrium to be reached exponentially faster.",
+        "Catalyst active! The iron surface helps dissociate the very strong nitrogen triple bond, making commercial ammonia synthesis viable at economical operating temperatures.",
+        "Catalyst turned on! Remember this fundamental principle: catalysts increase the rate of reaction by lowering the activation energy, but they leave the final equilibrium position unchanged.",
+        "Iron catalyst in operation! Adsorbing onto the catalyst surface weakens the nitrogen-nitrogen bonds, allowing reaction with hydrogen at a practical industrial pace."
+      ],
+      "catalyst_toggled_off": [
+        "The iron catalyst has been switched off! Without the catalytic surface, the reaction rate drops dramatically because nitrogen and hydrogen molecules must overcome the huge uncatalyzed activation energy.",
+        "Catalyst deactivated! Notice the production rate plummeting. Without iron to help break the strong nitrogen triple bond, ammonia forms far too slowly for industrial use.",
+        "Catalyst disengaged! The equilibrium yield remains theoretically identical, but without the catalyst, reaching that yield would take hours instead of seconds.",
+        "Iron catalyst removed! The reaction rate is now severely limited by the high activation energy of breaking N₂ triple bonds in the gas phase.",
+        "Catalyst switched off! This demonstrates why Fritz Haber's discovery of an effective catalyst was essential — without it, the reaction is far too slow to feed the world."
+      ],
+      "temperature_slider_increasing": [
+        "Temperature is increasing! Higher temperature gives molecules more kinetic energy, increasing collision frequency and reaction rate. However, because the Haber synthesis is exothermic, higher temperature reduces the equilibrium yield of ammonia.",
+        "Furnace heating applied! Raising the temperature accelerates the rate of reaching equilibrium, but Le Chatelier's principle shifts the equilibrium backwards toward nitrogen and hydrogen.",
+        "Higher temperature set! You get faster reaction kinetics, but thermodynamics penalises you with a lower percentage of ammonia at equilibrium. This is the central Haber dilemma.",
+        "Temperature increased! Industrial plants compromise around 450°C — high enough for an acceptable reaction rate with catalyst, but not so high that ammonia yield vanishes."
+      ],
+      "temperature_slider_decreasing": [
+        "Temperature is decreasing! Lower temperature shifts the exothermic equilibrium forward, which theoretically increases the equilibrium yield of ammonia. However, the molecules move more slowly, drastically reducing reaction rate.",
+        "Furnace cooling applied! Thermodynamically, low temperature favours ammonia formation. But kinetically, the reaction becomes sluggish because fewer molecules possess the necessary activation energy.",
+        "Lower temperature set! Yield increases on paper, but the rate of ammonia formation drops severely. Without sufficient thermal energy, even with a catalyst, the factory cannot produce ammonia fast enough.",
+        "Temperature decreased! Notice how production slows. A factory needs tons of ammonia per hour, not just a high equilibrium percentage in theory — that is why 450°C is the optimal compromise."
+      ]
+    }
+  }
+}
