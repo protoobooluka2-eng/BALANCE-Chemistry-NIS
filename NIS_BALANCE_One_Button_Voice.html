@@ -510,11 +510,27 @@ function toggleNarration() {
   narratorController.toggle();
 }
 
-window.addEventListener('message', (e) => {
-  if (e.data && e.data.source === 'BALANCE_LAB') {
-    narratorController.handleAction(e.data);
-  }
-});
+if (!window._balanceLabMessageBridgeAttached) {
+  window._balanceLabMessageBridgeAttached = true;
+  window.addEventListener('message', (e) => {
+    if (!e.data) return;
+    // Route A: New direct action events from patched lab bridge
+    if (e.data.source === 'BALANCE_LAB') {
+      narratorController.handleAction(e.data);
+      return;
+    }
+    // Route B: Legacy BALANCE_LAB_EVENT format (experiment completed)
+    if (e.data.type === 'BALANCE_LAB_EVENT' && e.data.event === 'EXPERIMENT_COMPLETED') {
+      narratorController.handleAction({
+        source: 'BALANCE_LAB',
+        labId: e.data.labId,
+        actionId: 'experiment_completed',
+        outcome: 'EXPERIMENT_COMPLETED',
+        verifiedMilestones: e.data.verifiedMilestones || []
+      });
+    }
+  });
+}
 
 function attachLabBridge(labIdx, frame) {
   try {
