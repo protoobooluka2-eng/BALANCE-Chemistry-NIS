@@ -27,16 +27,21 @@ class NarrationLibrary {
   }
 
   async load(backendUrl = '') {
+    // NOTE: backendUrl is intentionally NOT used for manifest/scripts fetches.
+    // Audio assets are static files served from the same origin as the page.
+    // Using relative paths (no base prefix) ensures correct resolution on both:
+    //   localhost  → http://localhost:8085/audio_library/manifest.json
+    //   GitHub Pages → https://protoobooluka2-eng.github.io/BALANCE-Chemistry-BISC/audio_library/manifest.json
+    // The backendUrl parameter is kept in the signature so callers don't need changes.
     try {
-      const cleanBase = backendUrl ? backendUrl.replace(/\/+$/, '') + '/' : '';
       // Load manifest (tracks which clips exist as audio files)
-      const mRes = await fetch(`${cleanBase}audio_library/manifest.json`);
+      const mRes = await fetch('audio_library/manifest.json');
       if (mRes.ok) {
         this.manifest = await mRes.json();
       }
 
       // Load scripts for text fallback
-      const sRes = await fetch(`${cleanBase}audio_library/narration_scripts.json`);
+      const sRes = await fetch('audio_library/narration_scripts.json');
       if (sRes.ok) {
         this.scripts = await sRes.json();
       }
@@ -349,10 +354,12 @@ class SmartNarrationController {
   // ── Internal helpers ─────────────────────────────────────────────
 
   _resolveUrl(path) {
-    const cleanPath = (path || '').replace(/^\/+/, '');
-    if (!this._backendUrl) return cleanPath;
-    const cleanBase = this._backendUrl.replace(/\/+$/, '');
-    return `${cleanBase}/${cleanPath}`;
+    // Audio clips are static assets co-located with the page.
+    // Always return a relative path so the browser resolves it correctly on:
+    //   localhost  → http://localhost:8085/audio_library/clips/...
+    //   GitHub Pages → https://.../BALANCE-Chemistry-BISC/audio_library/clips/...
+    // this._backendUrl is preserved for any future use by other subsystems.
+    return (path || '').replace(/^\/+/, '');
   }
 
   async _playAudioFile(audioPath, token, text, event, labNum, prevPlayback) {
