@@ -90,6 +90,56 @@ window.EducationalPlatformCore = (function() {
     class_name: "MYP 4A"
   };
 
+  // ======================================================================
+  // CLOUD DATABASE INTEGRATION (PostgREST HTTPS API Gateway)
+  // ======================================================================
+  const CLOUD_API_BASE = 'https://jungle-volunteers-original-pressing.trycloudflare.com';
+
+  function detectSchoolCode() {
+    if (window.BALANCE_SCHOOL_ID) return String(window.BALANCE_SCHOOL_ID).toUpperCase();
+    const path = (window.location.pathname || '').toUpperCase();
+    const title = (document.title || '').toUpperCase();
+    if (path.includes('BISC') || title.includes('BISC')) return 'BISC';
+    if (path.includes('NIS') || title.includes('NIS') || title.includes('NERMIEN')) return 'NIS';
+    if (path.includes('GPIS') || title.includes('GPIS') || title.includes('GREEN LAND')) return 'GPIS';
+    if (path.includes('BHS') || title.includes('BHS') || title.includes('BRUMMANA') || title.includes('BRITISH HEIGHTS')) return 'BHS';
+    return (currentUser && currentUser.school_id) ? currentUser.school_id.toUpperCase() : 'NIS';
+  }
+
+  function getSchoolApiUrl() {
+    const sId = detectSchoolCode().toLowerCase();
+    return `${CLOUD_API_BASE}/${sId}`;
+  }
+
+  async function ensureLabAttemptRecord(stageName) {
+    const sCode = detectSchoolCode();
+    if (!activeAttempt || !activeAttempt.attemptId) {
+      activeAttempt = {
+        attemptId: 'att_' + (currentUser ? currentUser.id : 'anon') + '_' + (currentLabId || 'lab01') + '_' + Date.now(),
+        attemptNumber: (activeAttempt && activeAttempt.attemptNumber) ? activeAttempt.attemptNumber : 1
+      };
+    }
+    try {
+      await fetch(`${getSchoolApiUrl()}/lab_attempts`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Prefer': 'resolution=merge-duplicates'
+        },
+        body: JSON.stringify({
+          id: activeAttempt.attemptId,
+          user_id: currentUser ? currentUser.id : 'student_mariam',
+          school_id: sCode,
+          lab_id: currentLabId || 'lab01',
+          attempt_number: activeAttempt.attemptNumber || 1,
+          completed_stage: stageName || (isVerifiedCompletion ? 'STAGE_1_VERIFIED' : 'STAGE_1_MANUAL'),
+          record_type: 'REAL'
+        })
+      });
+    } catch (_) {}
+    return activeAttempt;
+  }
+
   let currentLabId = "lab01";
   let isVerifiedCompletion = false;
   let activeAttempt = {
@@ -304,19 +354,26 @@ window.EducationalPlatformCore = (function() {
   }
 
   async function logStudentAction(evt) {
+    const sCode = detectSchoolCode();
+    const attId = (activeAttempt && activeAttempt.attemptId) ? activeAttempt.attemptId : ('att_' + (currentUser ? currentUser.id : 'anon') + '_' + (evt.labId || currentLabId || 'lab01'));
     try {
-      await fetch('/api/educational/action/log', {
+      await fetch(`${getSchoolApiUrl()}/student_actions`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
         body: JSON.stringify({
-          userId: currentUser.id,
-          schoolId: currentUser.school_id,
-          labId: evt.labId || currentLabId,
-          attemptNumber: activeAttempt.attemptNumber,
-          actionId: evt.actionId || 'unknown_action',
-          actionType: evt.actionType || evt.type || 'ACTION',
+          id: 'act_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
+          attempt_id: attId,
+          user_id: currentUser ? currentUser.id : 'student_mariam',
+          school_id: sCode,
+          lab_id: evt.labId || currentLabId || 'lab01',
+          attempt_number: (activeAttempt && activeAttempt.attemptNumber) || 1,
+          action_id: evt.actionId || 'unknown_action',
+          action_type: evt.actionType || evt.type || 'ACTION',
           outcome: evt.outcome || 'SUCCESS',
-          details: evt
+          details_json: evt
         })
       });
     } catch (_) {}
@@ -631,27 +688,65 @@ window.EducationalPlatformCore = (function() {
       isCorrect: activeAssessment.answers[idx] === q.correctIndex
     }));
 
+    await ensureLabAttemptRecord('STAGE_2_ASSESSMENT');
+    const sCode = detectSchoolCode();
+    const recordId = 'asmt_' + (activeAttempt ? activeAttempt.attemptId : Date.now()) + '_' + Math.random().toString(36).substr(2, 6);
+
     try {
-      await fetch('/api/educational/assessment/submit', {
+      await fetch(`${getSchoolApiUrl()}/assessment_records`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
         body: JSON.stringify({
-          attemptId: activeAttempt.attemptId,
-          userId: currentUser.id,
-          schoolId: currentUser.school_id,
-          labId: currentLabId,
-          attemptNumber: activeAttempt.attemptNumber,
-          level1Id: activeAssessment.questions[0].id,
-          level2Id: activeAssessment.questions[1].id,
-          level3Id: activeAssessment.questions[2].id,
-          level4Id: activeAssessment.questions[3].id,
-          answers: activeAssessment.answers,
+          id: recordId,
+          attempt_id: activeAttempt.attemptId,
+          user_id: currentUser ? currentUser.id : 'student_mariam',
+          school_id: sCode,
+          lab_id: currentLabId,
+          attempt_number: activeAttempt.attemptNumber || 1,
+          level1_id: (activeAssessment.questions[0] && activeAssessment.questions[0].id) || 'l1',
+          level2_id: (activeAssessment.questions[1] && activeAssessment.questions[1].id) || 'l2',
+          level3_id: (activeAssessment.questions[2] && activeAssessment.questions[2].id) || 'l3',
+          level4_id: (activeAssessment.questions[3] && activeAssessment.questions[3].id) || 'l4',
+          answers_json: activeAssessment.answers,
           score: score,
           percentage: percentage,
-          questionDetails: questionDetails
+          record_type: 'REAL'
         })
       });
-      FlowLogger.log('BACKEND', 'Assessment attempt saved');
+      FlowLogger.log('BACKEND', 'Assessment attempt saved to VPS Supabase');
+    } catch (err) {
+      FlowLogger.log('BACKEND', 'Assessment cloud sync: ' + (err.message || 'offline'));
+    }
+
+    try {
+      const qInserts = questionDetails.map((qd, idx) => ({
+        id: 'qr_' + recordId + '_' + idx,
+        attempt_id: activeAttempt.attemptId,
+        user_id: currentUser ? currentUser.id : 'student_mariam',
+        school_id: sCode,
+        lab_id: currentLabId,
+        attempt_number: activeAttempt.attemptNumber || 1,
+        level: qd.level || (idx + 1),
+        question_id: qd.variantId || ('q' + idx),
+        question_text: qd.questionPrompt || '',
+        options_json: JSON.stringify(qd.options || []),
+        selected_index: qd.selectedAnswerIndex !== undefined ? qd.selectedAnswerIndex : -1,
+        correct_index: qd.correctAnswerIndex !== undefined ? qd.correctAnswerIndex : -1,
+        correct_text: qd.correctAnswerText || '',
+        is_correct: qd.isCorrect ? 1 : 0
+      }));
+
+      await fetch(`${getSchoolApiUrl()}/assessment_question_responses`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify(qInserts)
+      });
     } catch (_) {}
 
     transitionTo(LearningStage.ASSESSMENT_SAVED, { score, percentage });
@@ -752,26 +847,34 @@ window.EducationalPlatformCore = (function() {
 
   async function handleChallengeSubmission(res) {
     FlowLogger.log('CASE', `Challenge completed with score ${res.score}/100`);
+    await ensureLabAttemptRecord('STAGE_3_CHALLENGE');
+    const sCode = detectSchoolCode();
+
     try {
-      await fetch('/api/educational/challenge/submit', {
+      await fetch(`${getSchoolApiUrl()}/challenge_records`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
         body: JSON.stringify({
-          attemptId: activeAttempt.attemptId,
-          userId: currentUser.id,
-          schoolId: currentUser.school_id,
-          labId: currentLabId,
-          attemptNumber: activeAttempt.attemptNumber,
-          scenarioId: res.scenarioId,
-          scenarioSeed: res.scenarioSeed,
-          score: res.score,
-          timeSeconds: res.timeSeconds,
-          actionsCount: res.actionsCount,
-          parameters: res.parameters,
-          feedback: res.feedback
+          id: 'ch_' + activeAttempt.attemptId + '_' + Date.now(),
+          attempt_id: activeAttempt.attemptId,
+          user_id: currentUser ? currentUser.id : 'student_mariam',
+          school_id: sCode,
+          lab_id: currentLabId,
+          attempt_number: activeAttempt.attemptNumber || 1,
+          scenario_id: res.scenarioId || 'scenario_01',
+          scenario_seed: res.scenarioSeed || 12345,
+          score: res.score || 0,
+          time_seconds: res.timeSeconds || 0,
+          actions_count: res.actionsCount || 0,
+          parameters_json: res.parameters || {},
+          feedback_json: res.feedback || {},
+          record_type: 'REAL'
         })
       });
-      FlowLogger.log('BACKEND', 'Challenge attempt saved');
+      FlowLogger.log('BACKEND', 'Challenge attempt saved to VPS Supabase');
     } catch (_) {}
 
     transitionTo(LearningStage.CASE_SAVED);
@@ -1290,11 +1393,30 @@ window.EducationalPlatformCore = (function() {
           description: container.querySelector('#parentFeedbackBody').value
         };
 
+        const sCode = detectSchoolCode();
+        const pTicket = {
+          id: 'tkt_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
+          sender_role: 'parent',
+          sender_name: currentUser ? currentUser.name : 'Parent',
+          school_id: sCode,
+          student_id: (parentActiveChild && parentActiveChild.student_id) || (currentUser ? currentUser.id : null),
+          category: container.querySelector('#parentFeedbackCategory').value,
+          lab_id: currentLabId,
+          component: 'Parent Dashboard',
+          subject: container.querySelector('#parentFeedbackSubject').value,
+          description: container.querySelector('#parentFeedbackBody').value,
+          priority: 'Normal',
+          status: 'New'
+        };
+
         try {
-          const res = await fetch('/api/educational/comments/submit', {
+          const res = await fetch(`${getSchoolApiUrl()}/feedback_tickets`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
+            headers: {
+              'Content-Type': 'application/json',
+              'Prefer': 'return=representation'
+            },
+            body: JSON.stringify(pTicket)
           });
           if (res.ok) {
             msg.style.color = '#16a34a';
@@ -1322,7 +1444,7 @@ window.EducationalPlatformCore = (function() {
     const child = parentActiveChild || { student_id: currentUser.id };
 
     try {
-      const res = await fetch(`/api/educational/comments/list?role=parent&studentId=${child.student_id}&schoolId=${currentUser.school_id}`);
+      const res = await fetch(`${getSchoolApiUrl()}/feedback_tickets?order=created_at.desc&limit=20`);
       if (res.ok) {
         const tickets = await res.json();
         if (tickets.length === 0) {
@@ -2009,11 +2131,30 @@ window.EducationalPlatformCore = (function() {
         priority: modal.querySelector('#tRepPriority').value
       };
 
+      const sCode = detectSchoolCode();
+      const tTicket = {
+        id: 'tkt_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6),
+        sender_role: 'teacher',
+        sender_name: currentUser ? currentUser.name : 'Teacher',
+        school_id: sCode,
+        student_id: null,
+        category: container.querySelector('#teacherFeedbackCategory').value,
+        lab_id: container.querySelector('#teacherFeedbackLab').value || currentLabId,
+        component: 'Teacher Dashboard',
+        subject: container.querySelector('#teacherFeedbackSubject').value,
+        description: container.querySelector('#teacherFeedbackBody').value,
+        priority: container.querySelector('#teacherFeedbackPriority').value || 'Normal',
+        status: 'New'
+      };
+
       try {
-        const res = await fetch('/api/educational/comments/submit', {
+        const res = await fetch(`${getSchoolApiUrl()}/feedback_tickets`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
+          headers: {
+            'Content-Type': 'application/json',
+            'Prefer': 'return=representation'
+          },
+          body: JSON.stringify(tTicket)
         });
         if (res.ok) {
           msg.style.color = '#16a34a';
@@ -2054,7 +2195,7 @@ window.EducationalPlatformCore = (function() {
 
     let tickets = [];
     try {
-      const res = await fetch('/api/educational/comments/list');
+      const res = await fetch(`${getSchoolApiUrl()}/feedback_tickets?order=created_at.desc`);
       if (res.ok) tickets = await res.json();
     } catch (_) {}
 
@@ -2224,13 +2365,15 @@ window.EducationalPlatformCore = (function() {
         btn.innerHTML = `<span>Saving...</span>`;
 
         try {
-          const res = await fetch('/api/educational/developer/tickets/update', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+          const res = await fetch(`${getSchoolApiUrl()}/feedback_tickets?id=eq.${encodeURIComponent(tid)}`, {
+            method: 'PATCH',
+            headers: {
+              'Content-Type': 'application/json',
+              'Prefer': 'return=representation'
+            },
             body: JSON.stringify({
-              ticketId: tid,
               status: newStatus,
-              developerReply: replyText
+              developer_reply: replyText
             })
           });
           if (res.ok) {
